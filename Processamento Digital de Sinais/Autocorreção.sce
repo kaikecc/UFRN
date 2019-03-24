@@ -12,45 +12,42 @@ analise os resultados considerando sinais de ruído com N ∗L amostras, para N 
 e L = 50, 500, 5000, em que L é o número de blocos utilizados no cálculo do sinal médio
 (aproximação) de Rxx(n, τ ).
 
-
 clc 
 clear all;
-close all;
 
 N = input("DIGITE O VALOR DE N: ");
 L = input("DIGITE O VALOR DE L: ");
 
-
-
-function [autoCorr] = Rxx(N, L)
- */   
-    clear all
-    clc
-   N = 10
-   L = 50; 
+// Função que recebe os valores de entrada e executa a autocorreção
+function [Rx]=Rxx(N, L)   
+     
    
-    x = rand(1,N*L, "normal");
+    x = rand(1,N*L, "normal");  // cria um vetor de amostra de dimensão N * L
     
-    
-   Rx = zeros(N,N);
+    Rx = zeros(N,N); // inicia uma matriz N por N com zeros
        
-   for l = 0:L-1 
+   for l = 0:L-1 // faz o somatório de L blocos 
        
-       x_l = x(1+l*N: N+ l*N);
+       x_l = x(1+l*N: N+ l*N);// vetor que recebe uma pequena parte do vetor x
          
-       for t = 0: N-1
-         x_aux = zeros(1,N);
+       for t = 0: N-1 // construção da matriz
+           
+         x_aux = zeros(1,N);// cria um vetor auxilia de  N posicoes 
+         
          x_aux(1:N-t) = x_aux(1:N-t) + x_l(1+t:N);
-         Rx(t + 1, :) =  x_l.*x_aux + Rx(t+1, :);
+         
+         Rx(t + 1, :) =  x_l.*x_aux + Rx(t+1, :);// preenche a matriz 
      end
           
     end
     
-    Rx = Rx/L;
+    Rx = Rx/L;// tira a media elemento a elemento
     
-    figure
-    mesh(abs(Rx))
-//endfunction
+    figure// plota o grafico
+    mesh(abs(Rx))// tira o módulo
+    
+   
+endfunction
 
-
-
+// mostra os resultados
+ [Rx]=Rxx(N, L)
