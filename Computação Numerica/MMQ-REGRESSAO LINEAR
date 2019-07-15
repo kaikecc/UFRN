@@ -1,0 +1,32 @@
+// MINIMOS QUADRADOS - REGRESSÃO LINEAR
+
+clc
+clear all;
+
+X = input("DIGITE A MATRZ X: ");
+c = input("DIGITE O VETOR SOLUCAO: ");
+
+// X = [1,2;1,3.5;1,6.5]
+// c = [1.2;3.7;4.5]
+function [E, e] = mqrl(X,c)
+    
+    
+    
+    XT = X'; // TRANSPORTA DE X
+    XTX = XT*X; // MULTIPLICACA O DA MATRIX TRANSPORTA * X;
+    XTC = XT*c;
+    
+    
+    //PROCESSO DE ESCALONAMENTO
+    I = inv(XTX);    
+    E = I*XTC;
+    //*************************
+    
+     e = X*E - c;
+      
+endfunction
+
+
+[E, e] = mqrl(X,c) // PARA MOSTRA O RESULTADO
+ 
+

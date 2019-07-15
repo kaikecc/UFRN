@@ -1,0 +1,88 @@
+//METODO DE PRIMEIRA ORDEM EULER
+
+clc
+clear all;
+
+function y = f(x) // SOLUÇÃO EXATA
+ // y = (70/9)*exp(-0.3*x) - (43/9)*exp(-1.2*x);
+endfunction
+
+
+
+function z = g(x,y) // SOLUÇÃO DA EDO
+    z = y + x.^(3/2);
+endfunction
+
+//APLICAÇÃO DO MÉTODO DE EULER
+
+function [x,y] = euler(a,b,h,y0)
+    
+    x = a:h:b;// CALCULAR TODOS OS VALORES DE X
+    
+    n = length(x); // quantos elementos do vetor
+    y(1) = y0; // primeiro elemtento é o y0;
+    
+    
+    for i = 1:n-1;
+        y(i+1) = y(i) + g(x(i),y(i))*h;
+    end
+endfunction
+
+function hnovo = passo(x,y,h,E)
+    
+
+    y1 = y + g(x,y)*h;
+    yi = y + g(x,y)*(h/2);
+    y2 = yi + g(x+(h/2),yi)*(h/2);
+    
+   
+    
+    erroatual = abs(y2 - y1);
+    
+    if erroatual <= E then
+        alfa = 0.2;
+    else 
+     alfa = 0.25;
+    end
+    
+        
+    hnovo = h * abs(E/erroatual)^(alfa);
+
+    
+endfunction
+
+
+function [x,y] = euleradaptivo(a,b,h,y0,E)
+    
+    x(1) = a;// CALCULAR TODOS OS VALORES DE X
+     y(1) = y0;
+     
+    i=1;
+    while %t
+        
+       h =  passo(x(i),y(i),h,E);
+        
+        x(i+1) = x(i) + h;
+        y(i+1) = y(i) + g(x(i),y(i))*h;
+        if x(i+1) > b then
+            break;
+        end
+        i = i + 1;
+    end
+    
+    n = length(x); // quantos elementos do vetor
+    y(1) = y0; // primeiro elemtento é o y0;
+    
+    
+    for i = 1:n-1;
+        y(i+1) = y(i) + g(x(i),y(i))*h;
+         x(i+1) = x(i) + h;
+    end
+endfunction
+
+// Para chamar a função resultado
+//[x,ye] = euler(0,2.5,0.5,3)
+
+//a = -0.5:.0.1:3;
+//b = f(a);
+//plot(a,b)

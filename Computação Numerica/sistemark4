@@ -1,0 +1,67 @@
+//METODO DE RESOLUÇÃO DE SISTEMAS QUARTA ORDEM DE RUNGE-KUTTA
+
+clc
+clear all;
+
+
+
+// FUNÇÃO 1 DO SISTEMA
+//function z = gL1(t,L1,L2)
+//  z = -0.004918*sqrt(1960*L1)+(0.2218)*7;
+//endfunction
+//
+//function z = gL1(t,L1,L2)
+//   z = -0.004918*sqrt(1960*L1)+(0.2218)*(8+6*sin(t));
+//endfunction
+//
+//
+function z = gL1(t,L1,L2)
+    z = -0.004918*sqrt(1960*L1)+(0.2218)*t;
+endfunction
+
+
+// FUNÇÃO 2 DO SISTEMA
+function z = gL2(t,L1,L2)
+    z = -0.0069*sqrt(1960*L2)+ (0.004918)*sqrt(1960*L1);
+endfunction
+
+//APLICAÇÃO DO MÉTODO DE SISTEMA RK-4
+
+function [t,L1,L2] = rk4Sistemas(a,b,h,L10,L20)
+    
+   
+    
+    t = a:h:b;// CALCULAR TODOS OS VALORES DE X
+    
+    n = length(t); // quantos elementos do vetor
+    L1(1) = L10; // primeiro elemtento é o y0;
+    L2(1) = L20; // primeiro elemtento é o y0;
+    
+    for i = 1:n-1;
+        
+        //CALCULA AS INCLINAÇÕES
+        k1L1 =  gL1(t(i),L1(i),L2(i));   
+        k1L2 =  gL2(t(i),L1(i),L2(i)); 
+                       
+        k2L1 =  gL1(t(i) + (h/2), L1(i) + k1L1*(h/2), L2(i) + k1L2*(h/2));
+        k2L2 =  gL2(t(i) + (h/2), L1(i) + k1L1*(h/2), L2(i) + k1L2*(h/2));  
+                     
+        k3L1 =  gL1(t(i) + (h/2), L1(i) + k2L1*(h/2),L2(i) + k2L2*(h/2));
+        k3L2 =  gL2(t(i) + (h/2), L1(i) + k2L1*(h/2),L2(i) + k2L2*(h/2));
+        
+        k4L1 =  gL1(t(i) + h, L1(i) + k3L1*h, L2(i) + k3L2*h);
+        k4L2 =  gL2(t(i) + h, L1(i) + k3L1*h, L2(i) + k3L2*h);
+        
+        //INCLINAÇÃO CALCULADA PONDERADA
+        kL1 = (1/6)*(k1L1+2*k2L1+2*k3L1+k4L1);
+        kL2 = (1/6)*(k1L2+2*k2L2+2*k3L2+k4L2);
+        
+        L1(i+1) = L1(i) + kL1*h;
+        L2(i+1) = L2(i) + kL2*h;
+    end
+endfunction
+
+// Para chamar a função resultado
+//[t,L1,L2] = rk4Sistemas(0,20,0.5,0,0)
+
+

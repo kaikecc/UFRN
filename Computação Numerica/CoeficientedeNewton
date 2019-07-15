@@ -1,0 +1,25 @@
+// Código de interpolação de Newton
+// Nesse código dados nPontos retora os n-coeficientes de um polinomio n-1
+
+
+function coeficientes  = coeficientesdeNewton(x,y)// função que recebe os vetores x e y
+    
+    nPontos = length(x); // guarda o tamanho do vetor x
+    
+    T = zeros(nPontos,nPontos); // cria uma matriz de zeros quadrada do NxN    
+    T(:,1) = y;// a primeia coluna da matriz recebe os valores de y    
+    for j = 2:nPontos// coluna j inicia em dois e vai até a ordem da matriz        
+        for i = 1:(nPontos - j +1)   // linha que começa em um e vai a ordem menos a coluna mais um         
+            T(i,j) = (T(i+1,j-1) - T(i,j-1))/(x(j+i-1) - x(i)); // NAO ERRAR
+            end            
+    end
+    
+    coeficientes = T(1,:);// retorna como vetor de coeficinetes
+endfunction
+
+//EXEMPLO:
+
+//x = [-2 1 2]'
+//y = [11 2 3]'
+
+//coeficientes = coeficientesdeNewton(x,y)

@@ -1,0 +1,32 @@
+// Nesse exemplo resolve problemas de integracao pelo método de simpson 1/3
+// Esse metodo consiste em aproximar um polinomio de segundo grau a funcao que deseja saber o valor da integral
+
+clc
+clear all;
+
+// Funcao que deseja saber o valor da integral
+function y = f(x)
+    
+    y = 1/x;
+endfunction
+
+// Metodo de simpson 1/3
+function integral = simpson13(a,b,n)
+    
+    h = (b-a)/2*n; // parametro para definir o intervalo dos pontos do polinomios de segundo grau
+    x = a:h:b;// define um vetor de pontos em x
+    y = f(x);// depois calcula o valor da funcao em relacao o vetor de x
+    
+    
+    soma = 0;// inicia em 0 a variavel soma
+    
+    for i = 1:n
+        
+        soma = soma + y(2*i-1)+4*y(2*i) + y(2*i+1); // calcula e recebe o valor do polinomio de segundo grau advindo de interpolacao
+    end
+    
+    integral = (h/3)*soma; // finalmente o valor da integral é a soma multiplicado pelo parametro sobre 3
+endfunction
+
+// para executar esse codigo basta copiar e colar isso em baixo e lembrar de substituir os parametros da funcao
+// integral = simpson13(a,b,n) 

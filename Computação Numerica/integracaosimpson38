@@ -1,0 +1,27 @@
+//Nesse exemplo consiste em calcular o valor aproxima de uma funcao usando o metodo de 3/8 de simpson
+// Esse metodo é melhor que o simpson 1/3
+
+clc
+clear all;
+
+function y = f(x)
+    
+    y = 1/x;
+endfunction
+
+function integral = simpson38(a,b,n)
+    
+    h = (b-a)/3*n;
+    x = a:h:b;
+    y = f(x);
+    
+    
+    soma = 0;
+    
+    for i = 1:n
+        
+        soma = soma + y(3*i-2)+3*y(3*i-1) + 3*y(3*i) + y(3*i+1);
+    end
+    
+    integral = (3*h/8)*soma; 
+endfunction

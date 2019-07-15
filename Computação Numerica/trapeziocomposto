@@ -1,0 +1,32 @@
+// Nesse exemplo resolve problemas de integracao pelo método do trapezio composto
+// Esse metodo consiste em aproximar o valor da integral pela areas de n trapezios
+
+clc
+clear all;
+
+// Funcao que deseja saber o valor da integral
+function y = f(x)
+    
+    y = 200 ./(x+8);
+endfunction
+
+// Metodo de trapezio composto
+function integral = trapezio(a,b,n)
+    
+    h = (b-a)/n; 
+    x = a:h:b;// define um vetor de pontos em x
+    y = f(x);// depois calcula o valor da funcao em relacao o vetor de x
+    
+    
+    soma = 0;// inicia em 0 a variavel soma
+    
+    for i = 1:n
+        
+        soma = soma + y(i)+ y(i+1); 
+    end
+    
+    integral = (h/2)*soma; 
+endfunction
+
+// para executar esse codigo basta copiar e colar isso em baixo e lembrar de substituir os parametros da funcao
+ //integral = trapezio(a,b,n) 
