@@ -96,3 +96,45 @@ force C 0 0ns, 1 20ns -repeat 40ns
 force D 0 0ns, 1 10ns -repeat 20ns
 run 100ns
 ```
+#### 2.3 CIRCUITO 3
+![C3](https://user-images.githubusercontent.com/42541528/61715868-61123a80-ad34-11e9-8911-75c6af663117.png)
+
+* Definindo as entradas e saídas do circuito na descrição:
+
+``` vhdl
+entity ckt3 is
+
+port(A,B,C,D: in bit;
+           S1,S2: OUT bit);               
+        end ckt3;
+```
+* Implementação do projeto fazendo as ligaçoes entre os componentes:
+
+``` vhdl
+architecture CKT of ckt3 is
+
+signal m,o,n,p : bit;-- declara as variables
+ begin
+
+    m <= D or C;
+    n <= B and C;
+    o <= D and n;
+    p <= A or n;
+    S1 <= m xnor o;
+    S2 <= p or o;
+
+end CKT;
+```
+* O arquivo .do:
+
+``` vhdl
+vsim ckt1
+
+add wave *
+
+force A 0 0ns, 1 60ns -- force ENTRADA NIVEL LOGICO TEMPO, NIVEL LOGICO TEMPO
+force B 0 0ns, 1 40ns -repeat 60ns
+force C 0 0ns, 1 20ns -repeat 40ns
+force D 0 0ns, 1 10ns -repeat 20ns
+run 100ns
+```
