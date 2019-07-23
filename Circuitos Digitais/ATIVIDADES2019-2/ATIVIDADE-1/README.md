@@ -86,7 +86,7 @@ end CKT;
 * O arquivo .do:
 
 ``` vhdl
-vsim ckt1
+vsim ckt2
 
 add wave *
 
@@ -128,7 +128,7 @@ end CKT;
 * O arquivo .do:
 
 ``` vhdl
-vsim ckt1
+vsim ckt3
 
 add wave *
 
@@ -170,7 +170,7 @@ end CKT;
 * O arquivo .do:
 
 ``` vhdl
-vsim ckt1
+vsim ckt4
 
 add wave *
 
