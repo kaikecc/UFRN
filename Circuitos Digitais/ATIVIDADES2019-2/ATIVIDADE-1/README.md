@@ -57,3 +57,42 @@ run 100ns
 ```
 #### 2.2 CIRCUITO 2
 ![C2](https://user-images.githubusercontent.com/42541528/61715345-5014f980-ad33-11e9-8ae5-62ff6dec453f.png)
+
+* Definindo as entradas e saídas do circuito na descrição:
+
+``` vhdl
+entity ckt2 is
+port(A,B,C,D: in bit;
+           S1,S2: OUT bit);               
+        end ckt2;
+```
+* Implementação do projeto fazendo as ligaçoes entre os componentes:
+
+``` vhdl
+architecture CKT of ckt2 is
+
+signal m,o,n,p : bit;-- declara as variables
+ begin
+
+    m <= A xor B;
+    o <= B xnor C;
+    n <= A and o;
+    p <= o xor D;
+    S1 <= m and n;
+    S2 <= n or p;
+
+end CKT;
+```
+* O arquivo .do:
+
+``` vhdl
+vsim ckt1
+
+add wave *
+
+force A 0 0ns, 1 60ns -- force ENTRADA NIVEL LOGICO TEMPO, NIVEL LOGICO TEMPO
+force B 0 0ns, 1 40ns -repeat 60ns
+force C 0 0ns, 1 20ns -repeat 40ns
+force D 0 0ns, 1 10ns -repeat 20ns
+run 100ns
+```
