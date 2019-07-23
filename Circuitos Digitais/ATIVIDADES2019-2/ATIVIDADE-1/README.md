@@ -138,3 +138,45 @@ force C 0 0ns, 1 20ns -repeat 40ns
 force D 0 0ns, 1 10ns -repeat 20ns
 run 100ns
 ```
+#### 2.4 CIRCUITO 4
+![C4](https://user-images.githubusercontent.com/42541528/61716114-d1b95700-ad34-11e9-9a03-c0713584b502.png)
+* Definindo as entradas e saídas do circuito na descrição:
+
+``` vhdl
+entity ckt4 is
+
+port(A,B,C,D: in bit;
+           S1,S2: OUT bit);
+               
+        end ckt4;
+```
+* Implementação do projeto fazendo as ligaçoes entre os componentes:
+
+``` vhdl
+architecture CKT of ckt4 is
+
+signal m,o,n,p : bit;-- declara as variables
+ begin
+
+    m <= D xor C;
+    n <= B or C;
+    o <= D or n;
+    p <= A xor n;
+    S1 <= m xnor o;
+    S2 <= p or o;
+
+end CKT;
+```
+* O arquivo .do:
+
+``` vhdl
+vsim ckt1
+
+add wave *
+
+force A 0 0ns, 1 60ns -- force ENTRADA NIVEL LOGICO TEMPO, NIVEL LOGICO TEMPO
+force B 0 0ns, 1 40ns -repeat 60ns
+force C 0 0ns, 1 20ns -repeat 40ns
+force D 0 0ns, 1 10ns -repeat 20ns
+run 100ns
+```
