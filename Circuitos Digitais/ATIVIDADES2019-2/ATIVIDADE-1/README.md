@@ -138,6 +138,7 @@ A | B | C | D | S1 | S2
 1 | 1 | 0 | 1 | 0  | 1
 1 | 1 | 1 | 0 | 0  | 1
 1 | 1 | 1 | 1 | 0  | 1
+
 #### 2.3 CIRCUITO 3
 ![C3](https://user-images.githubusercontent.com/42541528/61715868-61123a80-ad34-11e9-8911-75c6af663117.png)
 
@@ -180,6 +181,27 @@ force C 0 0ns, 1 20ns -repeat 40ns
 force D 0 0ns, 1 10ns -repeat 20ns
 run 100ns
 ```
+#### Tabela Verdade
+
+D | C | B | A | S1 | S2
+--|---|---|---|----|---
+0 | 0 | 0 | 0 | 1  | 0
+0 | 0 | 0 | 1 | 1  | 1
+0 | 0 | 1 | 0 | 1  | 0
+0 | 0 | 1 | 1 | 1  | 1
+0 | 1 | 0 | 0 | 0  | 0
+0 | 1 | 0 | 1 | 0  | 1
+0 | 1 | 1 | 0 | 0  | 1
+0 | 1 | 1 | 1 | 0  | 1
+1 | 0 | 0 | 0 | 0  | 0
+1 | 0 | 0 | 1 | 0  | 1
+1 | 0 | 1 | 0 | 0  | 0
+1 | 0 | 1 | 1 | 0  | 1
+1 | 1 | 0 | 0 | 1  | 0
+1 | 1 | 0 | 1 | 1  | 1
+1 | 1 | 1 | 0 | 0  | 1
+1 | 1 | 1 | 1 | 0  | 1
+
 #### 2.4 CIRCUITO 4
 ![C4](https://user-images.githubusercontent.com/42541528/61716114-d1b95700-ad34-11e9-9a03-c0713584b502.png)
 * Definindo as entradas e saídas do circuito na descrição:
