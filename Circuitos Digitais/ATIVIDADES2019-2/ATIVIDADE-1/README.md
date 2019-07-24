@@ -32,7 +32,7 @@ port(A,B,C,D: in bit; -- define as entradas do projeto
 ``` vhdl
 architecture CKT of ckt1 is -- CKT é o nome do projeto 
 
-Signal m,o,n,p : bit;-- declaração das variáveis auxiliares
+signal m,o,n,p : bit;-- declaração das variáveis auxiliares
  begin
 
     m <= A or B;
