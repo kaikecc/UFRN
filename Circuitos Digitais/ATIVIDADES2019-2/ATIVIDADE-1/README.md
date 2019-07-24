@@ -257,7 +257,7 @@ force C 0 0ns, 1 20ns -repeat 40ns
 force D 0 0ns, 1 10ns -repeat 20ns
 run 100ns
 ```
-#### Tabela Verdade
+#### Tabela Verdade 4
 
 D | C | B | A | S1 | S2
 --|---|---|---|----|---
