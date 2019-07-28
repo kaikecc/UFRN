@@ -47,15 +47,15 @@ end CKT;
 * O arquivo .do em que as entradas são forçada para gerar os resultados do circuito:
 
 ``` vhdl
-vsim ckt1
-
+vsim ckt1 -- vai simular a tabela verdade
 add wave *
 
-force A 0 0ns, 1 60ns -- force ENTRADA NIVEL LOGICO TEMPO, NIVEL LOGICO TEMPO
-force B 0 0ns, 1 40ns -repeat 60ns
+force A 0 0ns, 1 80ns
+force B 0 0ns, 1 40ns -repeat 80ns
 force C 0 0ns, 1 20ns -repeat 40ns
 force D 0 0ns, 1 10ns -repeat 20ns
-run 100ns
+
+run 150ns
 ```
 
 #### Tabela Verdade 1
@@ -114,15 +114,15 @@ end CKT;
 * O arquivo .do em que as entradas são forçada para gerar os resultados do circuito:
 
 ``` vhdl
-vsim ckt2
-
+vsim ckt2 -- vai simular a tabela verdade
 add wave *
 
-force A 0 0ns, 1 60ns -- force ENTRADA NIVEL LOGICO TEMPO, NIVEL LOGICO TEMPO
-force B 0 0ns, 1 40ns -repeat 60ns
+force A 0 0ns, 1 80ns
+force B 0 0ns, 1 40ns -repeat 80ns
 force C 0 0ns, 1 20ns -repeat 40ns
 force D 0 0ns, 1 10ns -repeat 20ns
-run 100ns
+
+run 150ns
 ```
 #### Tabela Verdade 2
 
@@ -180,15 +180,15 @@ end CKT;
 * O arquivo .do em que as entradas são forçada para gerar os resultados do circuito:
 
 ``` vhdl
-vsim ckt3
-
+vsim ckt3 -- vai simular a tabela verdade
 add wave *
 
-force A 0 0ns, 1 60ns -- force ENTRADA NIVEL LOGICO TEMPO, NIVEL LOGICO TEMPO
-force B 0 0ns, 1 40ns -repeat 60ns
+force A 0 0ns, 1 80ns
+force B 0 0ns, 1 40ns -repeat 80ns
 force C 0 0ns, 1 20ns -repeat 40ns
 force D 0 0ns, 1 10ns -repeat 20ns
-run 100ns
+
+run 150ns
 ```
 #### Tabela Verdade 3
 
@@ -247,15 +247,15 @@ end CKT;
 *  O arquivo .do em que as entradas são forçada para gerar os resultados do circuito:
 
 ``` vhdl
-vsim ckt4
-
+vsim ckt4 -- vai simular a tabela verdade
 add wave *
 
-force A 0 0ns, 1 60ns -- force ENTRADA NIVEL LOGICO TEMPO, NIVEL LOGICO TEMPO
-force B 0 0ns, 1 40ns -repeat 60ns
+force A 0 0ns, 1 80ns
+force B 0 0ns, 1 40ns -repeat 80ns
 force C 0 0ns, 1 20ns -repeat 40ns
 force D 0 0ns, 1 10ns -repeat 20ns
-run 100ns
+
+run 150ns
 ```
 #### Tabela Verdade 4
 
