@@ -1,5 +1,6 @@
 # Atv_2715_001
-#### ESTUDANTE: KAIKE CASTRO CARVALHO
+#### PROFESSOR Dr.: SAMAHERNI MORAIS DIAS 
+#### ESTUDANTE    : KAIKE CASTRO CARVALHO
 
 
 
@@ -46,6 +47,14 @@ end CKT;
 ```
 * O arquivo .do em que as entradas são forçada para gerar os resultados do circuito:
 
+> A primeira linha traz o comando vsim que serve para carregar o simulador. O ckt1 é o
+nome da entidade que se deseja simular. O comando add wave * serve para apresentar
+todas as ondas da entidade na tela do simulador (ports e signals). O comando force
+serve para for¸car uma entrada a ter um determinado valor em um determinado tempo
+(Todas as entradas devem ser forçadas e não se deve forçar as saídas). O -repeat serve
+para repetir o trecho anterior a este comando continuamente até o final da simulação.
+Por fim, o comando run serve para determinar o tempo de duração da simulaçao.
+
 ``` vhdl
 vsim ckt1 -- vai simular a tabela verdade
 add wave *
@@ -57,6 +66,7 @@ force D 0 0ns, 1 10ns -repeat 20ns
 
 run 150ns
 ```
+A tabela abaixo foi gerada a partir da simulaçao modelsim do arquivo run.do.
 
 #### Tabela Verdade 1
 
@@ -113,6 +123,13 @@ end CKT;
 ```
 * O arquivo .do em que as entradas são forçada para gerar os resultados do circuito:
 
+> A primeira linha traz o comando vsim que serve para carregar o simulador. O ckt2 é o
+nome da entidade que se deseja simular. O comando add wave * serve para apresentar
+todas as ondas da entidade na tela do simulador (ports e signals). O comando force
+serve para for¸car uma entrada a ter um determinado valor em um determinado tempo
+(Todas as entradas devem ser forçadas e não se deve forçar as saídas). O -repeat serve
+para repetir o trecho anterior a este comando continuamente até o final da simulação.
+Por fim, o comando run serve para determinar o tempo de duração da simulaçao.
 ``` vhdl
 vsim ckt2 -- vai simular a tabela verdade
 add wave *
@@ -124,6 +141,8 @@ force D 0 0ns, 1 10ns -repeat 20ns
 
 run 150ns
 ```
+A tabela abaixo foi gerada a partir da simulaçao modelsim do arquivo run.do.
+
 #### Tabela Verdade 2
 
 A | B | C | D | S1 | S2
@@ -179,6 +198,13 @@ end CKT;
 ```
 * O arquivo .do em que as entradas são forçada para gerar os resultados do circuito:
 
+> A primeira linha traz o comando vsim que serve para carregar o simulador. O ckt3 é o
+nome da entidade que se deseja simular. O comando add wave * serve para apresentar
+todas as ondas da entidade na tela do simulador (ports e signals). O comando force
+serve para for¸car uma entrada a ter um determinado valor em um determinado tempo
+(Todas as entradas devem ser forçadas e não se deve forçar as saídas). O -repeat serve
+para repetir o trecho anterior a este comando continuamente até o final da simulação.
+Por fim, o comando run serve para determinar o tempo de duração da simulaçao.
 ``` vhdl
 vsim ckt3 -- vai simular a tabela verdade
 add wave *
@@ -190,6 +216,8 @@ force D 0 0ns, 1 10ns -repeat 20ns
 
 run 150ns
 ```
+A tabela abaixo foi gerada a partir da simulaçao modelsim do arquivo run.do.
+
 #### Tabela Verdade 3
 
 D | C | B | A | S1 | S2
@@ -246,6 +274,14 @@ end CKT;
 ```
 *  O arquivo .do em que as entradas são forçada para gerar os resultados do circuito:
 
+> A primeira linha traz o comando vsim que serve para carregar o simulador. O ckt4 é o
+nome da entidade que se deseja simular. O comando add wave * serve para apresentar
+todas as ondas da entidade na tela do simulador (ports e signals). O comando force
+serve para for¸car uma entrada a ter um determinado valor em um determinado tempo
+(Todas as entradas devem ser forçadas e não se deve forçar as saídas). O -repeat serve
+para repetir o trecho anterior a este comando continuamente até o final da simulação.
+Por fim, o comando run serve para determinar o tempo de duração da simulaçao.
+
 ``` vhdl
 vsim ckt4 -- vai simular a tabela verdade
 add wave *
@@ -257,6 +293,8 @@ force D 0 0ns, 1 10ns -repeat 20ns
 
 run 150ns
 ```
+A tabela abaixo foi gerada a partir da simulaçao modelsim do arquivo run.do.
+
 #### Tabela Verdade 4
 
 D | C | B | A | S1 | S2
