@@ -4,7 +4,7 @@
 
 
 
-### 1. INTRODUÇÃO
+### 1. INTRODUÇÃO <br/>
 
 > - Implemente um circuito lógico para exibir em um display de 7 segmentos o valor decimal
 correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas de CIs do tipo
@@ -28,12 +28,12 @@ A2| A1| A0| a | b | c | d | e | f | g
 1 | 1 | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 1
 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1
 
-**a** = A1' + A2A0
-**b** = A0 + A2'A1' + A2A1
-**c** = A2' + A1
-**d** = A2 + A1'A0 + A1A0'
-**e** = A1' + A0'
-**f** = A2'A1' + A2'A0' + A1'A0'
-**g** = A2'A0' + A1A0' + A2A0
+* **a** = A1' + A2A0</p>
+* **b** = A0 + A2'A1' + A2A1</p>
+* **c** = A2' + A1</p>
+* **d** = A2 + A1'A0 + A1A0'</p>
+* **e** = A1' + A0'</p>
+* **f** = A2'A1' + A2'A0' + A1'A0'</p>
+* **g** = A2'A0' + A1A0' + A2A0</p>
 
 
