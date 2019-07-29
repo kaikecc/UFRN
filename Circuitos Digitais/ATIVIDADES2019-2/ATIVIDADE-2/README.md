@@ -11,9 +11,13 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 7400, 7432, 7408 e 7404.
 
 
-![disp](https://user-images.githubusercontent.com/42541528/62086978-7dcbd800-b236-11e9-932a-6ee290b8c627.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42541528/62086978-7dcbd800-b236-11e9-932a-6ee290b8c627.png" width="100" heigth="100"> 
+</p>
 
-![prob](https://user-images.githubusercontent.com/42541528/62086997-88866d00-b236-11e9-9756-0626e24ee752.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42541528/62086997-88866d00-b236-11e9-9756-0626e24ee752.png" width="400" heigth="400"> 
+ </p>
 
 #### Tabela Verdade 1
 
