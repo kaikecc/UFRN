@@ -43,4 +43,4 @@ As expressões abaixo são resultados da simplificação por mapa K em que as le
 * **g** = A2'A0' + A1A0' + A2A0</p>
 
 
-
+![A002-1](https://user-images.githubusercontent.com/42541528/62088854-1c5b3780-b23d-11e9-8af0-0bd08e849068.png)
