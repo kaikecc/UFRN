@@ -24,7 +24,7 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 
 #### 2.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
 
-#### Tabela-verdade da conversão entre um número binário de 3 bits e um display de sete segmentos <br/> <br/>
+#### TABELA 1. Tabela-verdade da conversão entre um número binário de 3 bits e um display de sete segmentos <br/> <br/>
 
 
 A2| A1| A0| a | b | c | d | e | f | g
