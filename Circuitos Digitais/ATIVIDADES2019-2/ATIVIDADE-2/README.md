@@ -20,8 +20,7 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
  </p>
 
 ### 2. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL <br/> <br/>
->
->
+
 
 #### 2.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
 
@@ -52,4 +51,7 @@ As expressões abaixo são resultados da simplificação por mapa K em que as en
 
 #### 2.3 Criar uma circuito lógico correspondente à equação das saídas.<br/><br/>
 
-![A002-1](https://user-images.githubusercontent.com/42541528/62088854-1c5b3780-b23d-11e9-8af0-0bd08e849068.png)
+Figura - 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42541528/62131906-7a763200-b2b2-11e9-8523-7279fd1c4858.png"> 
+ </p>
