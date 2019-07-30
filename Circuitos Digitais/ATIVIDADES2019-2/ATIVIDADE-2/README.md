@@ -4,10 +4,9 @@
 
 
 
-### 1. INTRODUÇÃO 
->
->
-> - Implemente um circuito lógico para exibir em um display de 7 segmentos o valor decimal
+### 1. INTRODUÇÃO <br/> <br/>
+
+> > - Implemente um circuito lógico para exibir em um display de 7 segmentos o valor decimal
 correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas de CIs do tipo
 7400, 7432, 7408 e 7404.
 
