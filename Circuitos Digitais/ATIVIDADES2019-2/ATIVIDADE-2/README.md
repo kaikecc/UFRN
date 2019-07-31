@@ -3,7 +3,6 @@
 #### ESTUDANTE    : KAIKE CASTRO CARVALHO
 
 
-
 ### 1. INTRODUÇÃO <br/> <br/>
 
 >   Implemente um circuito lógico para exibir em um display de 7 segmentos o valor decimal
@@ -11,15 +10,25 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 7400, 7432, 7408 e 7404.
 
 
+ 
 <p align="center">
+ <b>Figura 1.</b>
+ <a href="#">Bloco entrada-saída</a> 
+ <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62086978-7dcbd800-b236-11e9-932a-6ee290b8c627.png" width="100" heigth="100"> 
 </p>
 
 <p align="center">
+  <b>Figura 2.</b>
+ <a href="#">Sequência de exibição</a> 
+ <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62086997-88866d00-b236-11e9-9756-0626e24ee752.png" width="400" heigth="400"> 
  </p>
  
 <p align="center">
+  <b>Figura 3.</b>
+ <a href="#">Configuração do display 7 segmentos</a> 
+ <br><br>
 <img src="https://http2.mlstatic.com/display-led-7-segmentos-D_NQ_NP_312305-MLB20868058153_082016-F.jpg" width="200" heigth="200"> 
  </p>
 
@@ -44,7 +53,7 @@ A2| A1| A0| a | b | c | d | e | f | g
 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1
 
 
-#### 2.2 Criar uma equação para cada saída.<br/> <br/>
+#### </br>  </br>  2.2 Criar uma equação para cada saída.<br/> <br/>
 
 As expressões abaixo são resultados da simplificação por mapa K em que as entradas de **a** a **g** são entradas display de 7 segmentos.</p>
 
