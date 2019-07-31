@@ -72,7 +72,7 @@ As expressões abaixo são resultados da simplificação por mapa K em que as le
 * **f** = A2'A1' + A2'A0' + A1'A0'</p>
 * **g** = A2'A0' + A1A0' + A2A0</p>
 
-#### 2.3 Criar uma circuito lógico correspondente à equação das saídas.<br/><br/>
+#### 2.3 Criar um circuito lógico correspondente à equação das saídas.<br/><br/>
 
 <p align="center">
  <b>Figura 4.</b>
