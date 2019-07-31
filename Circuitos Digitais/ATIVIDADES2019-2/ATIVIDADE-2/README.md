@@ -18,6 +18,11 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 <p align="center">
 <img src="https://user-images.githubusercontent.com/42541528/62086997-88866d00-b236-11e9-9756-0626e24ee752.png" width="400" heigth="400"> 
  </p>
+ 
+<p align="center">
+<img src="https://http2.mlstatic.com/display-led-7-segmentos-D_NQ_NP_312305-MLB20868058153_082016-F.jpg" width="200" heigth="200"> 
+ </p>
+
 
 ### 2. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL <br/> <br/>
 
