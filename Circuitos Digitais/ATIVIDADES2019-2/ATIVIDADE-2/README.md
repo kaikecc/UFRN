@@ -19,7 +19,7 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 <img src="https://user-images.githubusercontent.com/42541528/62086978-7dcbd800-b236-11e9-932a-6ee290b8c627.png" width="100" heigth="100"> 
 </p>
 
-O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso independentemente dos demais. Ao exibir o dígito desejado os sinais de entrada a, b, c, d, e, f e g deve ser ligados seguindo uma tabela-verdade que mapea as entradas de até 4 bits que em um display aparecerá os valores em hexadecimal de 0 a 15. A figura 2 exibe a sequência em que deve ser construido a solução baseado em tabela verdade.
+O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso independentemente dos demais. Ao exibir o dígito desejado os sinais de entrada a, b, c, d, e, f e g devem ser ligados seguindo uma tabela-verdade que mapea as entradas de até 4 bits que em um display aparecerá os valores em hexadecimal de 0 a 15. A figura 2 exibe a sequência em que deve ser construido a solução baseado em tabela verdade.
 
 <p align="center">
   <b>Figura 2.</b>
