@@ -53,7 +53,6 @@ As expressões abaixo são resultados da simplificação por mapa K em que as en
 
 #### 2.3 Criar uma circuito lógico correspondente à equação das saídas.<br/><br/>
 
-
 <p align="center">
 <img src="https://user-images.githubusercontent.com/42541528/62177151-420a3e80-b31a-11e9-83c7-f0e733b96e1c.png"> 
  </p>
