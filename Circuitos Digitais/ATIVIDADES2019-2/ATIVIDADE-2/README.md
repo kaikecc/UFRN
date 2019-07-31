@@ -41,6 +41,7 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 **TABELA 1.** Tabela-verdade da conversão entre um número binário de 3 bits e um display de sete segmentos <br/> <br/>
 
 
+ 
 A2| A1| A0| a | b | c | d | e | f | g
 --|---|---|---|---|---|---|---|---|---
 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 1
@@ -51,6 +52,7 @@ A2| A1| A0| a | b | c | d | e | f | g
 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 1
 1 | 1 | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 1
 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1
+
 
 
 #### </br>  </br>  2.2 Criar uma equação para cada saída.<br/> <br/>
@@ -68,5 +70,8 @@ As expressões abaixo são resultados da simplificação por mapa K em que as en
 #### 2.3 Criar uma circuito lógico correspondente à equação das saídas.<br/><br/>
 
 <p align="center">
+ <b>Figura 4.</b>
+ <a href="#">Circuito lógico</a> 
+ <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62177151-420a3e80-b31a-11e9-83c7-f0e733b96e1c.png"> 
  </p>
