@@ -75,7 +75,9 @@ As expressões abaixo são resultados da simplificação por mapa K em que as le
 * **g** = A2'A0' + A1A0' + A2A0</p>
 
 #### 2.3 Criar um circuito lógico correspondente à equação das saídas.<br/><br/>
-
+ 
+ 
+ O circuito abaixo foi desenvolvido no logisim seguindo a lógica de expressões.
 <p align="center">
  <b>Figura 4.</b>
  <a href="#">Circuito lógico</a> 
