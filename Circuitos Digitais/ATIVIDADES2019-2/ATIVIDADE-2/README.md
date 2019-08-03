@@ -19,29 +19,30 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 <img src="https://user-images.githubusercontent.com/42541528/62086978-7dcbd800-b236-11e9-932a-6ee290b8c627.png" width="100" heigth="100"> 
 </p>
 
-O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso independentemente dos demais. Ao exibir o dígito desejado os sinais de entrada a, b, c, d, e, f e g devem ser ligados seguindo uma tabela-verdade que mapea as entradas de até 4 bits que em um display aparecerá os valores em hexadecimal de 0 a 15. A figura 2 exibe a sequência em que deve ser construido a solução.
+O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso independentemente dos demais. Ao exibir o dígito desejado os sinais de entrada a, b, c, d, e, f e g devem ser ligados seguindo uma tabela-verdade que mapea as entradas de até 4 bits que em um display aparecerá os valores em hexadecimal de 0 a 15. A figura 2 exibe a configuração do display.
 
 <p align="center">
   <b>Figura 2.</b>
+ <a href="#">Configuração do display 7 segmentos</a> 
+ <br><br>
+<img src="https://http2.mlstatic.com/display-led-7-segmentos-D_NQ_NP_312305-MLB20868058153_082016-F.jpg" width="200" heigth="200"> 
+ </p>
+ 
+### 2. OBJETIVO
+
+<p align="center">
+  <b>Figura 3.</b>
  <a href="#">Sequência de exibição</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62086997-88866d00-b236-11e9-9756-0626e24ee752.png" width="400" heigth="400"> 
  </p>
  
- No display para facilitar a impressão do digito se conveciona atribuir letras para o sinal de entrada e desenvolver a tabela verdade. A figura 4 exemplifica a forma.
-<p align="center">
-  <b>Figura 3.</b>
- <a href="#">Configuração do display 7 segmentos</a> 
- <br><br>
-<img src="https://http2.mlstatic.com/display-led-7-segmentos-D_NQ_NP_312305-MLB20868058153_082016-F.jpg" width="200" heigth="200"> 
- </p>
 
-
-### 2. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL <br/> <br/>
+### 3. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL <br/> <br/>
 
 O método direto para projetar lógica combinacional segue as seções a seguir.
 
-#### 2.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
+#### 3.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
 
 A tabela 1 descreve a conversão de cada número binário em sinais para o display de 7 segmentos. Os bits A0, A1 e A2 formam a entrada de 000-111 em que 
 
@@ -62,7 +63,7 @@ A2| A1| A0| a | b | c | d | e | f | g
 
 
 
-#### </br>  </br>  2.2 Criar uma equação para cada saída.<br/> <br/>
+#### </br>  </br>  3.2 Criar uma equação para cada saída.<br/> <br/>
 
 As expressões abaixo são resultados da simplificação por mapa K em que as letras de **a** a **g** são entradas display de 7 segmentos.</p>
 
@@ -74,7 +75,7 @@ As expressões abaixo são resultados da simplificação por mapa K em que as le
 * **f** = A2'A1' + A2'A0' + A1'A0'</p>
 * **g** = A2'A0' + A1A0' + A2A0</p>
 
-#### 2.3 Criar um circuito lógico correspondente à equação das saídas.<br/><br/>
+#### </br>  </br> 3.3 Criar um circuito lógico correspondente à equação das saídas.<br/><br/>
  
  
  O circuito abaixo foi desenvolvido no logisim seguindo a lógica de expressões.
