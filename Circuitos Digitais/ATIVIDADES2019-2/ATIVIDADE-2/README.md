@@ -10,8 +10,6 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 7400, 7432, 7408 e 7404. A figura 1 demonstra o circuito do problema.
 
 
-
- 
 <p align="center">
  <b>Figura 1.</b>
  <a href="#">Bloco entrada-saída</a> 
@@ -19,7 +17,8 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 <img src="https://user-images.githubusercontent.com/42541528/62086978-7dcbd800-b236-11e9-932a-6ee290b8c627.png" width="100" heigth="100"> 
 </p>
 
-> > O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso independentemente dos demais. Ao exibir o dígito desejado os sinais de entrada a, b, c, d, e, f e g devem ser ligados seguindo uma tabela-verdade que mapea as entradas de até 4 bits que em um display aparecerá os valores em hexadecimal de 0 a 15. A figura 2 exibe a configuração do display.
+
+O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso independentemente dos demais. Ao exibir o dígito desejado os sinais de entrada a, b, c, d, e, f e g devem ser ligados seguindo uma tabela-verdade que mapea as entradas de até 4 bits que em um display aparecerá os valores em hexadecimal de 0 a 15. A figura 2 exibe a estrutura dos segmentos com as entradas de a-g.
 
 <p align="center">
   <b>Figura 2.</b>
@@ -30,6 +29,9 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
  
 ### </br>  </br> 2. OBJETIVO
 
+Criar um conversor de número binário para um display de sete segmentos para a sequência da figura 3.
+
+ </br>  </br>
 <p align="center">
   <b>Figura 3.</b>
  <a href="#">Sequência de exibição</a> 
