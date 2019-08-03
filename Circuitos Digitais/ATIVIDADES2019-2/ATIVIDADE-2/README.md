@@ -28,7 +28,7 @@ O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso
 <img src="https://http2.mlstatic.com/display-led-7-segmentos-D_NQ_NP_312305-MLB20868058153_082016-F.jpg" width="200" heigth="200"> 
  </p>
  
-### 2. OBJETIVO
+### </br>  </br> 2. OBJETIVO
 
 <p align="center">
   <b>Figura 3.</b>
@@ -38,11 +38,11 @@ O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso
  </p>
  
 
-### 3. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL <br/> <br/>
+### </br>  </br> 3. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL <br/> <br/>
 
 O método direto para projetar lógica combinacional segue as seções a seguir.
 
-#### 3.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
+#### </br>  </br> 3.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
 
 A tabela 1 descreve a conversão de cada número binário em sinais para o display de 7 segmentos. Os bits A0, A1 e A2 formam a entrada de 000-111 em que 
 
