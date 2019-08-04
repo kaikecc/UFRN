@@ -87,3 +87,8 @@ As expressões abaixo são resultados da simplificação por mapa K em que as le
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62177151-420a3e80-b31a-11e9-83c7-f0e733b96e1c.png"> 
  </p>
+
+### 4. CONCLUSÃO <br/> <br/>
+
+O desenvolvimento desse trabalho possibilitou o contato com montagem de circuito em protoboard e o início de projeto em que a partir de um problema foi construido uma solução baseado em um projeto lógico.
+ 
