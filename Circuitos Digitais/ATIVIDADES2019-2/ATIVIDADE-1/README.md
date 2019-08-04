@@ -15,8 +15,13 @@
 
 O circuito CKT1 apresenta quatro variáveis de entrada **A** ,**B** ,**C**  e  **D**. As duas variáveis de saídas do circutos são **S1** e **S2**. A cada saída de uma porta lógica foi atribuida uma variável auxiliar (**m**, **n**, **o**, **p**) para implementar o vhd.
            
- ![C1](https://user-images.githubusercontent.com/42541528/61714934-5bb3f080-ad32-11e9-82af-9896e262179b.png )
- 
+
+ <p align="center">
+ <b>Figura 1.</b>
+ <a href="#">Circuito 1</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/61714934-5bb3f080-ad32-11e9-82af-9896e262179b.png" width="600" heigth="600"> 
+</p>
 
 * Definindo as entradas e saídas do circuito na descrição:
 
@@ -94,8 +99,13 @@ A | B | C | D | S1 | S2
 
 O circuito CKT2 apresenta quatro variáveis de entrada **A** ,**B** ,**C**  e  **D**. As duas variáveis de saídas do circutos são **S1** e **S2**. A cada saída de uma porta lógica foi atribuida uma variável auxiliar (**m**, **n**, **o**, **p**) para implementar o vhd.
     
-![C2](https://user-images.githubusercontent.com/42541528/61715345-5014f980-ad33-11e9-8ae5-62ff6dec453f.png)
 
+<p align="center">
+ <b>Figura 2.</b>
+ <a href="#">Circuito 2</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/61715345-5014f980-ad33-11e9-8ae5-62ff6dec453f.png" width="600" heigth="600"> 
+</p>
 * Definindo as entradas e saídas do circuito na descrição:
 
 ``` vhdl
@@ -168,8 +178,13 @@ A | B | C | D | S1 | S2
 
 O circuito CKT3 apresenta quatro variáveis de entrada **A** ,**B** ,**C**  e  **D**. As duas variáveis de saídas do circutos são **S1** e **S2**. A cada saída de uma porta lógica foi atribuida uma variável auxiliar (**m**, **n**, **o**, **p**) para implementar o vhd.
     
-![C3](https://user-images.githubusercontent.com/42541528/61715868-61123a80-ad34-11e9-8911-75c6af663117.png)
 
+<p align="center">
+ <b>Figura 3.</b>
+ <a href="#">Circuito 3</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/61715868-61123a80-ad34-11e9-8911-75c6af663117.png" width="600" heigth="600"> 
+</p>
 * Definindo as entradas e saídas do circuito na descrição:
 
 ``` vhdl
@@ -243,8 +258,13 @@ D | C | B | A | S1 | S2
 
 O circuito CKT4 apresenta quatro variáveis de entrada **A** ,**B** ,**C**  e  **D**. As duas variáveis de saídas do circutos são **S1** e **S2**. A cada saída de uma porta lógica foi atribuida uma variável auxiliar (**m**, **n**, **o**, **p**) para implementar o vhd.
 
-![C4](https://user-images.githubusercontent.com/42541528/61716114-d1b95700-ad34-11e9-9a03-c0713584b502.png)
 
+<p align="center">
+ <b>Figura 4.</b>
+ <a href="#">Circuito 4</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/61716114-d1b95700-ad34-11e9-9a03-c0713584b502.png" width="600" heigth="600"> 
+</p>
 * Definindo as entradas e saídas do circuito na descrição:
 
 ``` vhdl
