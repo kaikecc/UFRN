@@ -18,7 +18,7 @@ correspondente a um valor binário de 3 bits. O circuito deve fazer uso apenas d
 </p>
 
 
-O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso independentemente dos demais. Ao exibir o dígito desejado os sinais de entrada a, b, c, d, e, f e g devem ser ligados seguindo uma tabela-verdade que mapea as entradas de até 4 bits que em um display aparecerá os valores em hexadecimal de 0 a 15. A figura 2 exibe a estrutura dos segmentos com as entradas de a-g.
+O display consiste em sete segmentos luminosos, cada um dos quais pode ser aceso independentemente dos demais. Ao exibir o dígito desejado os sinais de entrada a, b, c, d, e, f e g devem ser ligados seguindo uma tabela-verdade que mapea as entradas de até 4 bits que em um display aparecerá os valores em hexadecimal de 0 a 15. A figura 2 exibe a estrutura dos segmentos com as entradas de **a-g**.
 
 <p align="center">
   <b>Figura 2.</b>
@@ -46,7 +46,7 @@ O método direto para projetar lógica combinacional segue as seções a seguir.
 
 #### </br>  </br> 3.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
 
-A tabela 1 descreve a conversão de cada número binário em sinais para o display de 7 segmentos. Os bits A0, A1 e A2 formam a entrada de 000-111 e as letras de a-g a saída correspondente a ordem da sequência da figura 3.
+A tabela 1 descreve a conversão de cada número binário em sinais para o display de 7 segmentos. Os bits **A0**, **A1** e **A2** formam a entrada de **000-111** e as letras de **a-g** a saída correspondente a ordem da sequência da figura 3.
 
 **TABELA 1.** Tabela-verdade da conversão entre um número binário de 3 bits e um display de sete segmentos <br/> <br/>
 
@@ -67,7 +67,7 @@ A2| A1| A0| a | b | c | d | e | f | g
 
 #### </br>  </br>  3.2 Criar uma equação para cada saída.<br/> <br/>
 
-As expressões abaixo são resultados da simplificação por mapa K em que as letras de **a** a **g**. Dessa forma, o circuito lógico pode ser criado.</p>
+As expressões abaixo são resultados da simplificação por mapa K em que as letras de **a** à **g**. Dessa forma, o circuito lógico pode ser criado.</p>
 
 * **a** = A1' + A2A0</p>
 * **b** = A0 + A2'A1' + A2A1</p>
