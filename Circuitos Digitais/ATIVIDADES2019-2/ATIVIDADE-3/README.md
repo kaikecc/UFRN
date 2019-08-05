@@ -32,7 +32,10 @@ dezenas e HEX2 para as centenas).
   <b>Figura 3.</b>
  <a href="#">Configuração do display 7 segmentos</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/62499735-1d9ae000-b7ba-11e9-9077-81a5440916e3.png" width="200" heigth="200"> 
+<img src="https://user-images.githubusercontent.com/42541528/62499735-1d9ae000-b7ba-11e9-9077-81a5440916e3.png" width="400" heigth="200"> 
  </p>
  
- * **S3** = 
+ * **S3** = A3'1A2A0 + A3'A2A1 + A3A2'A1';
+ * **S2** = A3'A2A1'A0' + A3A2'A1'A0;
+ * **S1** = A3'A2'A1' + A3'A1A0 + A3A2'A1'A0';
+ * **S0** = A3'A2'A0 + A3'A2A1A0' + A3A2'A1'A0';
