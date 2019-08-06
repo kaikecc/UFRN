@@ -61,6 +61,15 @@ end;
   S(0) <= (not(A(3)) and not(A(2)) and A(0)) or (not(A(3)) and A(2) and A(1) and not(A(0))) or (A(3) and not(A(2)) and not(A(1)) and not(A(0)));
 end CKT;
  ```
+ 
+
+  <p align="center">
+  <b>Figura 3.</b>
+ <a href="#">Configuração do display 7 segmentos</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png" heigth="400"> 
+ </p>
+ 
  * entidade da main
   ``` vhdl
 entity main is
