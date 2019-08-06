@@ -49,29 +49,6 @@ entity bloco is
 end;
 ```
  ``` vhdl
- architecture CKT of bloco is 
-
-
- begin
-
- S(3) <= (not(A(3)) and A(2) and A(0)) or (not(A(3)) and A(2) and A(1)) or (A(3) and not(A(2)) and not(A(1)));
- S(2) <= (not(A(3)) and A(2) and not(A(1)) and not (A(0)));
- S(1) <= (not(A(3)) and not (A(2)) and A(1)) or (not(A(3)) and A(1) and A(0)) or (A(3) and not(A(2)) and not(A(1)) and not(A(0)));
- S(0) <= (not(A(3)) and not(A(2)) and A(0)) or (not(A(3)) and A(2) and A(1) and not(A(0))) or (A(3) and not(A(2)) and not(A(1)) and not(A(0)));
-
-end CKT;
-
-
- ```
-  ``` vhdl
-entity main is
-  
-  port(SW : in  bit_vector(7 downto 0);
-       HEX0, HEX1, HEX2 : out bit_vector(6 downto 0));
-    
-end;
- ```
- ``` vhdl
 architecture CKTO of main is 
 
 
@@ -90,6 +67,7 @@ signal AUX4     : bit_vector(3 downto 0);
 signal AUX5     : bit_vector(3 downto 0);
 signal AUX6     : bit_vector(3 downto 0);
 signal AUX7     : bit_vector(3 downto 0);
+
 begin
   
 B1: bloco port map(
@@ -161,6 +139,45 @@ B1: bloco port map(
 	S(1) => AUX7(1),
 	S(2) => AUX7(2),
 	S(3) => AUX7(3) );
+	
+	bintodec(0) <= SW(0);
+	bintodec(1) <= AUX7(0);
+	bintodec(2) <= AUX7(1);
+	bintodec(3) <= AUX7(2);
+	bintodec(4) <= AUX7(3);
+	bintodec(5) <= AUX6(0);
+	bintodec(6) <= AUX6(1);
+	bintodec(7) <= AUX6(2);
+	bintodec(8) <= AUX6(3);
+	bintodec(9) <= AUX4(3);
+	bintodec(10) <= 0;
+	bintodec(11) <= 0;
+	
+	
+	HEX0(0) <= bintodec(0);
+	HEX0(1) <= bintodec(1);
+	HEX0(2) <= bintodec(2);
+	HEX0(3) <= bintodec(3);
+	HEX0(4) <= 0;
+	HEX0(5) <= 0;
+	HEX0(6) <= 0;
+	
+	HEX1(0) <= bintodec(4);
+	HEX1(1) <= bintodec(5);
+	HEX1(2) <= bintodec(6);
+	HEX1(3) <= bintodec(7);
+	HEX1(4) <= 0;
+	HEX1(5) <= 0;
+	HEX1(6) <= 0;
+	
+	HEX2(0) <= bintodec(8);
+	HEX2(1) <= bintodec(9);
+	HEX2(2) <= bintodec(10);
+	HEX2(3) <= bintodec(11);
+	HEX2(4) <= 0;
+	HEX2(5) <= 0;
+	HEX2(6) <= 0;
+	
 	
  
 end CKTO;
