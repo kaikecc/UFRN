@@ -1,0 +1,28 @@
+C:/Users/Aluno/Desktop/CD-A3/main.vhd {0 {vcom -work work -2002 -explicit C:/Users/Aluno/Desktop/CD-A3/main.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity main
+-- Compiling architecture CKTO of main
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(108): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(109): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(116): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(117): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(118): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(124): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(125): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(126): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(132): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(133): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(134): Target type std.STANDARD.BIT in signal assignment is different from expression type Integer.
+** Error: C:/Users/Aluno/Desktop/CD-A3/main.vhd(138): VHDL Compiler exiting
+
+} {6.0 18.0} {}} C:/Users/Aluno/Desktop/CD-A3/bloco.vhd {1 {vcom -work work -2002 -explicit C:/Users/Aluno/Desktop/CD-A3/bloco.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity bloco
+-- Compiling architecture CKT of bloco
+-- Loading package STANDARD
+-- Compiling entity bloco
+-- Compiling architecture CKT of bloco
+
+} {} {}}
