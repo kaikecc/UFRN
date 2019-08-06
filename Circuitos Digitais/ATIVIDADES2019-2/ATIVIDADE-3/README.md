@@ -6,7 +6,7 @@
 ### 1. INTRODUÇÃO <br/> <br/>
 
 > 1 - Projete um circuito lógico para exibir em um conjunto de displays de 7 segmentos o valor
-em BCD de um n´umero binário qualquer com 8 bits. O aluno deverá utilizar um vetor SW[7:0]
+em BCD de um número binário qualquer com 8 bits. O aluno deverá utilizar um vetor SW[7:0]
 para o valor binário de entrada e a saída será direcionada para os displays de 7 segmentos
 (três vetores HEX0[6:0], HEX1[6:0] e HEX2[6:0], sendo HEX0 para as unidades, HEX1 para as
 dezenas e HEX2 para as centenas).
@@ -14,7 +14,7 @@ dezenas e HEX2 para as centenas).
 
 <p align="center">
   <b>Figura 1.</b>
- <a href="#">Configuração do display 7 segmentos</a> 
+ <a href="#">Bloco do problema</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62499610-b3823b00-b7b9-11e9-92eb-84c196656166.png" width="200" heigth="200"> 
  </p>
@@ -22,7 +22,7 @@ dezenas e HEX2 para as centenas).
   
  <p align="center">
   <b>Figura 2.</b>
- <a href="#">Configuração do display 7 segmentos</a> 
+ <a href="#">Bloco BCD</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62499665-e298ac80-b7b9-11e9-8795-b0c3fc0375a2.png" width="200" heigth="200"> 
  </p>
@@ -30,16 +30,20 @@ dezenas e HEX2 para as centenas).
  
  <p align="center">
   <b>Figura 3.</b>
- <a href="#">Configuração do display 7 segmentos</a> 
+ <a href="#">Diagrama da conversão binário-BCD</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62499735-1d9ae000-b7ba-11e9-9077-81a5440916e3.png" width="600" heigth="400"> 
  </p>
+ 
+ * Expressão decorrente da figura 2.
  
  * **S3** = A3'1A2A0 + A3'A2A1 + A3A2'A1';
  * **S2** = A3'A2A1'A0' + A3A2'A1'A0;
  * **S1** = A3'A2'A1' + A3'A1A0 + A3A2'A1'A0';
  * **S0** = A3'A2'A0 + A3'A2A1A0' + A3A2'A1'A0';
  
+CODE
+
 * Entidade do componente bloco:
 
  ``` vhdl
@@ -64,8 +68,8 @@ end CKT;
  
 
   <p align="center">
-  <b>Figura 3.</b>
- <a href="#">Configuração do display 7 segmentos</a> 
+  <b>Figura 4.</b>
+ <a href="#">Bloco de conversão com labels</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png" heigth="400"> 
  </p>
