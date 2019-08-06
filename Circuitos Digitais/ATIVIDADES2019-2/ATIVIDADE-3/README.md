@@ -94,7 +94,7 @@ signal AUX7     : bit_vector(3 downto 0);
 begin
  
 B1: bloco port map(
- A(0) => SW(5),
+   A(0) => SW(5),
    A(1) => SW(6), 
    A(2) => SW(7),
    A(3) => '0',
@@ -104,7 +104,7 @@ B1: bloco port map(
    S(3) => AUX1(3) );
    
    B2: bloco port map(
- A(0) => SW(4),
+   A(0) => SW(4),
    A(1) => AUX1(0), 
    A(2) => AUX1(1),
    A(3) => AUX1(2),
@@ -114,7 +114,7 @@ B1: bloco port map(
    S(3) => AUX2(3) );
    
    B3: bloco port map(
- A(0) => SW(3),
+   A(0) => SW(3),
    A(1) => AUX2(0), 
    A(2) => AUX2(1),
    A(3) => AUX2(2),
@@ -124,7 +124,7 @@ B1: bloco port map(
    S(3) => AUX3(3) );
    
    B4: bloco port map(
- A(0) => AUX3(3),
+   A(0) => AUX3(3),
    A(1) => AUX2(3), 
    A(2) => AUX1(3),
    A(3) => '0',
@@ -134,7 +134,7 @@ B1: bloco port map(
    S(3) => AUX4(3) );
    
    B5: bloco port map(
- A(0) => SW(2),
+   A(0) => SW(2),
    A(1) => AUX3(0), 
    A(2) => AUX3(1),
    A(3) => AUX3(2),
@@ -144,7 +144,7 @@ B1: bloco port map(
    S(3) => AUX5(3) );
    
    B6: bloco port map(
- A(0) => AUX5(3),
+   A(0) => AUX5(3),
    A(1) => AUX4(0), 
    A(2) => AUX4(1),
    A(3) => AUX4(2),
@@ -154,7 +154,7 @@ B1: bloco port map(
    S(3) => AUX6(3) );
    
  B7: bloco port map(
- A(0) => SW(1),
+   A(0) => SW(1),
    A(1) => AUX5(0), 
    A(2) => AUX5(1),
    A(3) => AUX5(2),
@@ -163,14 +163,17 @@ B1: bloco port map(
    S(2) => AUX7(2),
    S(3) => AUX7(3) );
    
+-- PRIMIERO DIGITO
    bintodec(0) <= SW(0);
    bintodec(1) <= AUX7(0);
    bintodec(2) <= AUX7(1);
    bintodec(3) <= AUX7(2);
+-- SEGUNDO DIGITO
    bintodec(4) <= AUX7(3);
    bintodec(5) <= AUX6(0);
    bintodec(6) <= AUX6(1);
    bintodec(7) <= AUX6(2);
+--TERCEIRO DIGITO
    bintodec(8) <= AUX6(3);
    bintodec(9) <= AUX4(3);
    bintodec(10) <= '0';
