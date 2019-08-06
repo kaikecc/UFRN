@@ -22,7 +22,7 @@ dezenas e HEX2 para as centenas).
   
  <p align="center">
   <b>Figura 2.</b>
- <a href="#">Bloco BCD</a> 
+ <a href="#">Tabela Verdade BCD</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62499665-e298ac80-b7b9-11e9-8795-b0c3fc0375a2.png" width="200" heigth="200"> 
  </p>
@@ -42,7 +42,7 @@ dezenas e HEX2 para as centenas).
  * **S1** = A3'A2'A1' + A3'A1A0 + A3A2'A1'A0';
  * **S0** = A3'A2'A0 + A3'A2A1A0' + A3A2'A1'A0';
  
-CODE
+
 
 * Entidade do componente bloco:
 
