@@ -71,7 +71,7 @@ end CKT;
   <b>Figura 4.</b>
  <a href="#">Bloco de conversão com labels</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png"  width="600" heigth="400"> 
  </p>
  
  * entidade da main
