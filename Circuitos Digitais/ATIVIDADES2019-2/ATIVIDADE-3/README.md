@@ -239,3 +239,48 @@ force SW(7) 0 0, 1 256 -repeat 512
 
 run 512
  ```
+  
+           
+B1: bloco port map(
+  A(2 downto 0) => SW(7 downto 5),
+  A(3) => '0',
+  S => AUX1);
+  
+  B2: bloco port map(
+  A(0) => SW(4),
+  A(3 downto 1) => AUX1(2 downto 0),  
+  S => AUX2);
+  
+  B3: bloco port map(
+  A5: bloco port map(
+  A(0) => SW(2),
+  A(3 downto 1) => AUX3(2 downto 0),
+    
+  S => AUX5);
+  
+    
+  B4: bloco port map((
+  A(0) => AUX3(3),
+  A(1) => AUX2(3), 
+  A(2) => AUX1(3),
+  A(3) => '0',
+    
+  S => AUX4);
+  
+  B5: bloco port map(
+  A(0) => SW(2),
+  A(3 downto 1) => AUX3(2 downto 0),
+    
+  S => AUX5);
+  
+  B6: bloco port map(
+  A(0) => AUX5(3),
+  A(3 downto 1) => AUX4(2 downto 0),
+    
+  S => AUX6 );
+  
+B7: bloco port map(
+  A(0) => SW(1),
+  A(3 downto 1) => AUX5(2 downto 0),
+  
+  S => AUX7);
