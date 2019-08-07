@@ -54,7 +54,7 @@ entity bloco is
     
 end;
 ```
-* Arquictetura do bloco 
+* Arquitetura do bloco:
 
 ``` vhdl
  architecture CKT of bloco is 
@@ -83,7 +83,7 @@ entity main is
     
 end;
  ```
- * arquitura da main
+ * Arquitetura da main:
  ``` vhdl
 architecture CKTO of main is 
 
