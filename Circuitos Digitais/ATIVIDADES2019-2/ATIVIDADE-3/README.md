@@ -239,48 +239,74 @@ force SW(7) 0 0, 1 256 -repeat 512
 
 run 512
  ```
-  
-           
+ * teste
+  ``` vhdl           
 B1: bloco port map(
-  A(2 downto 0) => SW(7 downto 5),
-  A(3) => '0',
-  S => AUX1);
+ A(2 downto 0) => SW(7 downto 5),
+ A(3) => '0', 
+ S => AUX1);
+
+B2: bloco port map( 
+A(0) => SW(4),
+A(3 downto 1) => AUX1(2 downto 0),
+S => AUX2);
+
+B3: bloco port map( 
+A(0) => SW(2),
+A(3 downto 1) => AUX3(2 downto 0),
+S => AUX5);
+
+B4: bloco port map(
+A(0) => AUX3(3),
+A(1) => AUX2(3),
+A(2) => AUX1(3),
+A(3) => '0',
+S => AUX4);
+
+B5: bloco port map(
+A(0) => SW(2),
+A(3 downto 1) => AUX3(2 downto 0),
+S => AUX5);
+
+B6: bloco port map( 
+A(0) => AUX5(3),
+A(3 downto 1) => AUX4(2 downto 0),
+S => AUX6 );
+
+B7: bloco port map( 
+A(0) => SW(1), 
+A(3 downto 1) => AUX5(2 downto 0),
+S => AUX7);
+
   
-  B2: bloco port map(
-  A(0) => SW(4),
-  A(3 downto 1) => AUX1(2 downto 0),  
-  S => AUX2);
+-- PRIMIERO DIGITO
+  bintodec(0) <= SW(0);
+  bintodec(3 downto 1) <= AUX7(2 downto 0);
+-- SEGUNDO DIGITO
+  bintodec(4) <= AUX7(3);
+  bintodec(7 downto 5) <= AUX6(2 downto 0);
+--TERCEIRO DIGITO
+  bintodec(8) <= AUX6(3);
+  bintodec(9) <= AUX4(3);
+  bintodec(10) <= '0';
+  bintodec(11) <= '0';
   
-  B3: bloco port map(
-  A5: bloco port map(
-  A(0) => SW(2),
-  A(3 downto 1) => AUX3(2 downto 0),
-    
-  S => AUX5);
+  HEX0(3 downto 0) <= bintodec(3 downto 0);
+  HEX0(4) <= '0';
+  HEX0(5) <= '0';
+  HEX0(6) <= '0';
   
-    
-  B4: bloco port map((
-  A(0) => AUX3(3),
-  A(1) => AUX2(3), 
-  A(2) => AUX1(3),
-  A(3) => '0',
-    
-  S => AUX4);
   
-  B5: bloco port map(
-  A(0) => SW(2),
-  A(3 downto 1) => AUX3(2 downto 0),
-    
-  S => AUX5);
+  HEX1(3 downto 0) <= bintodec(7 downto 4);
+  HEX1(4) <= '0';
+  HEX1(5) <= '0';
+  HEX1(6) <= '0';
   
-  B6: bloco port map(
-  A(0) => AUX5(3),
-  A(3 downto 1) => AUX4(2 downto 0),
-    
-  S => AUX6 );
   
-B7: bloco port map(
-  A(0) => SW(1),
-  A(3 downto 1) => AUX5(2 downto 0),
   
-  S => AUX7);
+  HEX2(3 downto 0) <= bintodec(11 downto 8);
+  HEX2(4) <= '0';
+  HEX2(5) <= '0';
+  HEX2(6) <= '0';
+  ```
+  
