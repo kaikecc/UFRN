@@ -19,13 +19,6 @@ dezenas e HEX2 para as centenas).
 <img src="https://user-images.githubusercontent.com/42541528/62499610-b3823b00-b7b9-11e9-92eb-84c196656166.png" width="200" heigth="200"> 
  </p>
  
-  
- <p align="center">
-  <b>Figura 2.</b>
- <a href="#">Tabela Verdade BCD</a> 
- <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/62499665-e298ac80-b7b9-11e9-8795-b0c3fc0375a2.png" width="200" heigth="200"> 
- </p>
  
  
  <p align="center">
@@ -35,33 +28,55 @@ dezenas e HEX2 para as centenas).
 <img src="https://user-images.githubusercontent.com/42541528/62499735-1d9ae000-b7ba-11e9-9077-81a5440916e3.png" width="600" heigth="400"> 
  </p>
  
- * Expressão decorrente da figura 2.
+ ### 2. OBJETIVO <br/> <br/>
  
- * **S3** = A3'1A2A0 + A3'A2A1 + A3A2'A1';
+ Criar um conversor de número binário para dois display de sete segmentos para a sequência da figura 3.
+ 
+ ### </br>  </br> 3. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL <br/> <br/>
+ 
+ #### </br>  </br> 3.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
+ 
+ <p align="center">
+  <b>Figura 2.</b>
+ <a href="#">Tabela Verdade BCD</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/62499665-e298ac80-b7b9-11e9-8795-b0c3fc0375a2.png" width="200" heigth="200"> 
+ </p>
+ 
+ #### </br>  </br>  3.2 Criar uma equação para cada saída.<br/> <br/>
+ 
+  Expressão decorrente da figura 2.
+ 
+ * **S3** = A3'A2A0 + A3'A2A1 + A3A2'A1';
  * **S2** = A3'A2A1'A0' + A3A2'A1'A0;
  * **S1** = A3'A2'A1' + A3'A1A0 + A3A2'A1'A0';
  * **S0** = A3'A2'A0 + A3'A2A1A0' + A3A2'A1'A0';
  
+### </br> </br> 4. DESCRIÇÃO EM LINGUAGEM DE HARDWARE
 
+#### </br> </br> 4.1 VHD COMPONENTE BLOCO
 
-* Entidade do componente bloco:
+O código a seguir faz parte da entidade do bloco em que as entradas e saídas são declaradas. 
 
- ``` vhdl
-entity bloco is
+``` vhdl
+entity bloco is -- entidade chamada bloco
   
-  port(A : in  bit_vector(3 downto 0);
-       S : out bit_vector(3 downto 0));
+  port(A : in  bit_vector(3 downto 0); -- vetor de 4 posicoes como entrada
+       S : out bit_vector(3 downto 0)); -- vetor de 4 posicoes como saida
     
 end;
 ```
-* Arquitetura do bloco:
+Essa segunda parte do código diz a respeito da arquitetura, isto é, onde acontece as ligações entres as portas lógicas.
 
 ``` vhdl
- architecture CKT of bloco is 
+ architecture CKT of bloco is -- CKT nome da arquitetura do bloco
  begin
-  S(3) <= (not(A(3)) and A(2) and A(0)) or (not(A(3)) and A(2) and A(1)) or (A(3) and not(A(2)) and not(A(1)));
+ 
+ -- Faz parte do conjunto de expressões da figura 2
+ 
+  S(3) <= (not(A(3)) and A(2) and (A(0)) or A(1))) or (A(3) and not(A(2)) and not(A(1)));
   S(2) <= (not(A(3)) and A(2) and not(A(1)) and not (A(0)));
-  S(1) <= (not(A(3)) and not (A(2)) and A(1)) or (not(A(3)) and A(1) and A(0)) or (A(3) and not(A(2)) and not(A(1)) and not(A(0)));
+  S(1) <= ((not(A(2)) and not (A(1)) and (not(A(3)) or A(3) and not(A(0))) or (not(A(3)) and A(1) and A(0)));
   S(0) <= (not(A(3)) and not(A(2)) and A(0)) or (not(A(3)) and A(2) and A(1) and not(A(0))) or (A(3) and not(A(2)) and not(A(1)) and not(A(0)));
 end CKT;
  ```
