@@ -172,29 +172,16 @@ S => AUX7);
    bintodec(11) <= '0';
    
    
-   HEX0(0) <= bintodec(0);
-   HEX0(1) <= bintodec(1);
-   HEX0(2) <= bintodec(2);
-   HEX0(3) <= bintodec(3);
-   HEX0(4) <= '0';
-   HEX0(5) <= '0';
-   HEX0(6) <= '0';
+   HEX0(3 downto 0) <= bintodec(3 downto 0);
+   HEX0(6 downto 4) <= '0';  
    
-   HEX1(0) <= bintodec(4);
-   HEX1(1) <= bintodec(5);
-   HEX1(2) <= bintodec(6);
-   HEX1(3) <= bintodec(7);
-   HEX1(4) <= '0';
-   HEX1(5) <= '0';
-   HEX1(6) <= '0';
    
-   HEX2(0) <= bintodec(8);
-   HEX2(1) <= bintodec(9);
-   HEX2(2) <= bintodec(10);
-   HEX2(3) <= bintodec(11);
-   HEX2(4) <= '0';
-   HEX2(5) <= '0';
-   HEX2(6) <= '0';
+   HEX1(3 downto 0) <= bintodec(7 downto 4);
+   HEX1(6 downto 4) <= '0';
+   
+   
+   HEX2(3 downto 0) <= bintodec(11 downto 8);
+   HEX2(6 downto 4) <= '0';
 
 end CKTO;
  ```
