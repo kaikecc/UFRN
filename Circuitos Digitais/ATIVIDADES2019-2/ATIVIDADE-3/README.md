@@ -82,12 +82,19 @@ end CKT;
  ```
  
 
-  <p align="center">
-  <b>Figura 4.</b>
+ 
+ 
+ #### </br> </br> 4.2 VHD MAIN
+ 
+ A figura 4 
+ 
+ <p align="center">
+ <b>Figura 4.</b>
  <a href="#">Bloco de conversão com labels</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png"  width="600" heigth="400"> 
  </p>
+ 
  
  * entidade da main
   ``` vhdl
