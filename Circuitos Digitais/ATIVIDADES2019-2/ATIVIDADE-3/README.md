@@ -54,7 +54,7 @@ dezenas e HEX2 para as centenas).
  
 ### </br> </br> 4. DESCRIÇÃO EM LINGUAGEM DE HARDWARE
 
-#### </br> </br> 4.1 VHD COMPONENTE BLOCO
+####  </br> 4.1 VHD COMPONENTE BLOCO
 
 O código a seguir faz parte da entidade do bloco em que as entradas e saídas são declaradas. 
 
@@ -192,7 +192,9 @@ S => AUX7);
 
 end CKTO;
  ```
- * Arquivo .do:
+ #### </br> </br> 4.3 VHD FORCE
+ 
+Arquivo .do:
 ``` vhdl
 vsim main
 
