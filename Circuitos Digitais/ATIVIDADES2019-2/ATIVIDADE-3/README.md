@@ -5,11 +5,11 @@
 
 ### 1. INTRODUÇÃO <br/> <br/>
 
-> 1 - Projete um circuito lógico para exibir em um conjunto de displays de 7 segmentos o valor
+> Projete um circuito lógico para exibir em um conjunto de displays de 7 segmentos o valor
 em BCD de um número binário qualquer com 8 bits. O aluno deverá utilizar um vetor SW[7:0]
 para o valor binário de entrada e a saída será direcionada para os displays de 7 segmentos
 (três vetores HEX0[6:0], HEX1[6:0] e HEX2[6:0], sendo HEX0 para as unidades, HEX1 para as
-dezenas e HEX2 para as centenas).
+dezenas e HEX2 para as centenas). A figura 1, mostra o cirtuito proposto pelo exercício.
 
 
 <p align="center">
@@ -18,11 +18,12 @@ dezenas e HEX2 para as centenas).
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62499610-b3823b00-b7b9-11e9-92eb-84c196656166.png" width="200" heigth="200"> 
  </p>
- 
+
+A figura 2 foi proposto pelo exercício e mostra um diagrama a ser construído em VHD que converte um número de 8 bits em binário para o formato em BCD nos três display de 7 segmentos.
  
  
  <p align="center">
-  <b>Figura 3.</b>
+  <b>Figura 2.</b>
  <a href="#">Diagrama da conversão binário-BCD</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62499735-1d9ae000-b7ba-11e9-9077-81a5440916e3.png" width="600" heigth="400"> 
