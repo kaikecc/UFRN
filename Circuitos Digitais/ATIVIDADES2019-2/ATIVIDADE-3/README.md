@@ -56,6 +56,7 @@ dezenas e HEX2 para as centenas).
 
 ####  </br> 4.1 VHD COMPONENTE BLOCO
 
+#####  </br> 4.1.1 VHD COMPONENTE BLOCO
 O código a seguir faz parte da entidade do bloco em que as entradas e saídas são declaradas. 
 
 ``` vhdl
@@ -66,6 +67,7 @@ entity bloco is -- entidade chamada bloco
     
 end;
 ```
+#####  </br> 4.1.2 VHD COMPONENTE BLOCO
 Essa segunda parte do código diz a respeito da arquitetura, isto é, onde acontece as ligações entres as portas lógicas.
 
 ``` vhdl
@@ -80,11 +82,9 @@ Essa segunda parte do código diz a respeito da arquitetura, isto é, onde acont
   S(0) <= (not(A(3)) and not(A(2)) and A(0)) or (A(1) and not(A(0))) and (not(A(3) and A(2) or A(3) and not (A(2)));
 end CKT;
  ```
- 
-
- 
- 
+  
  #### </br> </br> 4.2 VHD MAIN
+ 
  
  A figura 4 
  
@@ -95,7 +95,7 @@ end CKT;
 <img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png"  width="600" heigth="400"> 
  </p>
  
- 
+ #####  </br> 4.2.1 VHD ENTINDADE MAIN
  * entidade da main
   ``` vhdl
 entity main is
@@ -105,6 +105,7 @@ entity main is
     
 end;
  ```
+ #####  </br> 4.2.2 VHD ARQUITETURA MAIN
  * Arquitetura da main:
  ``` vhdl
 architecture CKTO of main is 
