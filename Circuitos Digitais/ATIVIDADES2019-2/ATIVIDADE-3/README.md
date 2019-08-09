@@ -108,11 +108,10 @@ entity main is
     
 end;
  ```
- #####  </br> 4.2.2 VHD ARQUITETURA MAIN
- * Arquitetura da main:
+ #####  </br> 4.2.2 VHD ARQUITETURA MAIN </br> </br> 
+ Arquitetura da main:
  ``` vhdl
-architecture CKTO of main is 
-
+architecture CKTO of main is
 
 component bloco is
  
