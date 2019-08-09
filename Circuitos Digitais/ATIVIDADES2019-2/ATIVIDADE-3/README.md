@@ -33,7 +33,9 @@ A figura 2 foi proposto pelo exercício e mostra um diagrama a ser construído e
  
  Criar um conversor de número binário para dois display de sete segmentos para a sequência da figura 3.
  
- ### </br>  </br> 3. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL <br/> <br/>
+ ### </br>  </br> 3. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL 
+ 
+ 
  
  #### </br>  </br> 3.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
  
