@@ -210,11 +210,11 @@ force SW(7) 0 0, 1 256 -repeat 512
 
 run 512
  ```
-###</br> </br> 5. CONCLUSÃO
+### 5. CONCLUSÃO <br/> <br/>
 
  <p align="center">
   <b>Figura 5.</b>
  <a href="#">Tabela Verdade BCD</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/62778746-971b2280-ba87-11e9-93e7-f23112afb061.png" width="200" heigth="200"> 
+<img src="https://user-images.githubusercontent.com/42541528/62778746-971b2280-ba87-11e9-93e7-f23112afb061.png" width="800" heigth="600"> 
  </p>
