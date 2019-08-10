@@ -96,7 +96,7 @@ end CKT;
   
  #####  </br> 4.2.1 VHD ENTINDADE MAIN
  
- * entidade da main
+ 
   ``` vhdl
 entity main is
   
