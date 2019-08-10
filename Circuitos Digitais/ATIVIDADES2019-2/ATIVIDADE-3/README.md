@@ -31,16 +31,16 @@ A figura 2 foi proposto pelo exercício e mostra um diagrama a ser construído e
  
  ### 2. OBJETIVO <br/> <br/>
  
- Criar um conversor de número binário para dois display de sete segmentos para a sequência da figura 3.
+ Criar um conversor de número binário para três display de sete segmentos para a sequência da figura 3.
  
- ### </br>  </br> 3. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL 
- 
- 
+ ### </br>  </br> 3. O PROCESSO DE PROJETO LÓGICO COMBINACIONAL  
  
  #### </br>  </br> 3.1 Criar uma tabela-verdade para descrever o problema. <br/> <br/>
  
+ A figura 3 foi cedida pelo exercício e mostra a tabela que será feito o mapa K das saídas para a conversão do valor binário o formato BCD.
+ 
  <p align="center">
-  <b>Figura 2.</b>
+  <b>Figura 3.</b>
  <a href="#">Tabela Verdade BCD</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/62499665-e298ac80-b7b9-11e9-8795-b0c3fc0375a2.png" width="200" heigth="200"> 
@@ -48,7 +48,7 @@ A figura 2 foi proposto pelo exercício e mostra um diagrama a ser construído e
  
  #### </br>  </br>  3.2 Criar uma equação para cada saída.<br/> <br/>
  
-  Expressão decorrente da figura 2.
+  Expressão decorrente da figura 3 que no VHD será um componente do projeto principal.
  
  * **S3** = A3'A2A0 + A3'A2A1 + A3A2'A1';
  * **S2** = A3'A2A1'A0' + A3A2'A1'A0;
@@ -57,9 +57,14 @@ A figura 2 foi proposto pelo exercício e mostra um diagrama a ser construído e
  
 ### </br> </br> 4. DESCRIÇÃO EM LINGUAGEM DE HARDWARE
 
+O VHD foi divido em duas partes o componente chamado BLOCO que será solicitado no programa main.
+
 ####  </br> 4.1 VHD COMPONENTE BLOCO
 
-#####  </br> 4.1.1 VHD COMPONENTE BLOCO
+
+
+#####  </br> 4.1.1 VHD ENTIDADE BLOCO
+
 O código a seguir faz parte da entidade do bloco em que as entradas e saídas são declaradas. 
 
 ``` vhdl
@@ -70,7 +75,8 @@ entity bloco is -- entidade chamada bloco
     
 end;
 ```
-#####  </br> 4.1.2 VHD COMPONENTE BLOCO
+#####  </br> 4.1.2 VHD ARQUITETURA BLOCO
+
 Essa segunda parte do código diz a respeito da arquitetura, isto é, onde acontece as ligações entres as portas lógicas.
 
 ``` vhdl
@@ -87,17 +93,9 @@ end CKT;
   
  #### </br> </br> 4.2 VHD MAIN
  
- 
- A figura 4 
- 
- <p align="center">
- <b>Figura 4.</b>
- <a href="#">Bloco de conversão com labels</a> 
- <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png"  width="600" heigth="400"> 
- </p>
- 
+  
  #####  </br> 4.2.1 VHD ENTINDADE MAIN
+ 
  * entidade da main
   ``` vhdl
 entity main is
@@ -107,8 +105,18 @@ entity main is
     
 end;
  ```
+ 
  #####  </br> 4.2.2 VHD ARQUITETURA MAIN </br> </br> 
- Arquitetura da main:
+ 
+  A figura 4 foi modificado para facilitar as variáveis auxiliares da arquitetura.
+ 
+ <p align="center">
+ <b>Figura 4.</b>
+ <a href="#">Bloco de conversão com labels</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png"  width="600" heigth="400"> 
+ </p>
+ 
  ``` vhdl
 architecture CKTO of main is
 
@@ -197,6 +205,7 @@ end CKTO;
  #### </br> </br> 4.3 VHD FORCE
  
 Arquivo .do:
+
 ``` vhdl
 vsim main
 
@@ -215,6 +224,7 @@ force SW(7) 0 0, 1 256 -repeat 512
 run 512
  ```
 ### 5. CONCLUSÃO <br/> <br/>
+
 
  <p align="center">
   <b>Figura 5.</b>
