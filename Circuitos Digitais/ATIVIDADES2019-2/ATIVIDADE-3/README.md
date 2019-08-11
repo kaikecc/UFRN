@@ -117,6 +117,7 @@ end;
 <img src="https://user-images.githubusercontent.com/42541528/62580305-44214f80-b87c-11e9-857b-1eef0c99665f.png"  width="600" heigth="400"> 
  </p>
  
+ </br> </br> 
  ``` vhdl
 architecture CKTO of main is
 
@@ -224,7 +225,8 @@ force SW(7) 0 0, 1 256 -repeat 512
 run 512
  ```
 ### 5. CONCLUSÃO <br/> <br/>
-
+ 
+ A codificação do diagrama em VHD gerou resultado esperado em que colocado um valor em binário de 8 bits esse mesmo é representado em BCD em três display de sete segmentos conforme a figura 5.
 
  <p align="center">
   <b>Figura 5.</b>
