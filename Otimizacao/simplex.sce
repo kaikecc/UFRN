@@ -8,7 +8,7 @@
  
 function [zo] = simplex(A,b)
     
-    q = zeros(1,length(b)); // vetor do Fator Limitante
+    q = zeros(1,length(b)-1); // vetor do Fator Limitante
     a = min(A(1,:)); // menor valor da primeira linha
     
     //*****
@@ -16,26 +16,28 @@ function [zo] = simplex(A,b)
     index = find(aux == a);
     //*****
     
-    
+    // tá bom para achar o vetor de fator limitante
     for i = 1:length(b)-1
-        if abs(A(i,index)) == 0 then
-            q(i) = 0;
+        if abs(A(i+1,index)) == 0 then
+            q(i) = 100000;
           else
-        q(i) = b(i) / abs(A(i,index));
+        q(i) = b(i+1) / abs(A(i+1,index));
         end
     end
+    
     
     ql = min(q);// Fator Limitante
     
     l = find(q == ql); // indice que identifica a posicao no conjunto B que deve deixar a base
     
-    for j = 1: length(A(:,index)
-        
-        A(:,index) =  A(:,index) - (A(:,index)/A(l,index)) * A(l,index);
-        
-        if i == l then
-            A(:,index) = A(:,index);
+    for j = 1: length(A(:,index))
+                     
+        if j == l+1 then
+            A(j,index) = A(j,index);
+        else
+            A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
            end 
+           
     end
     
     
