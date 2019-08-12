@@ -1,6 +1,7 @@
 
 
-
+clc
+clear all
 // Matriz de coeficientes
 A = [1,-12,-15,0,0,0,0;0,1,0,1,0,0,0;0,0,1,0,1,0,0;0,1,1,0,0,1,0;0,1,3,0,0,0,1]
 // vetor solucao 
@@ -25,10 +26,10 @@ function [zo] = simplex(A,b)
 
         // tá bom para achar o vetor de fator limitante
         for i = 1:length(b)-1
-            if abs(A(i+1,index)) == 0 then
+            if A(i+1,index) <= 0 then // tanto divisao por zero e o denominador negativo dever ser excluido
                 q(i) = 100000; // VALOR BEM GRANDE PARA SER EXCLUIDO NA FUNCAO min
             else
-                q(i) = b(i+1) / abs(A(i+1,index));
+                q(i) = b(i+1) / A(i+1,index);
             end
         end
 
@@ -40,8 +41,11 @@ function [zo] = simplex(A,b)
         for j = 1: length(A(:,index))
 
             if j == l+1 then
+                
                 A(j,index) = A(j,index);
+                
                 b(j) = b(j);
+                
             else
                 A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
 
@@ -49,13 +53,16 @@ function [zo] = simplex(A,b)
             end 
 
         end
-
+       // ****** DECIDIR A HORA DE ACABAR ******
+       
         linha1 = A(1,:);
         negativos = find(linha1 < 0);
 
         if length(negativos) < 0 then
             m = length(A(1,:)) + 1;
         end
+        
+        //***********
 
 
 
