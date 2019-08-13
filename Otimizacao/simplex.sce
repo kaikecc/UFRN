@@ -1,9 +1,11 @@
 
-
+// DESENVOLVER UM ALGORITMO SIMPLEX PARA RESOLVER PROBLEMAS DE MAXIMIZACAO MENOR QUE
 clc
 clear all
+
+//Exercicio 
 // Matriz de coeficientes
-A = [1,-12,-15,0,0,0,0;0,1,0,1,0,0,0;0,0,1,0,1,0,0;0,1,1,0,0,1,0;0,1,3,0,0,0,1]
+A = [1,-12,-15,0,0,0,0;0,1,0,1,0,0,0;0,0,1,0,1,0,0;0,1,1,0,0,1,0;0,1,3,0,0,0,1];
 // vetor solucao 
 b = [0;3;4;6;13];
 
@@ -19,7 +21,8 @@ function [zo] = simplex(A,b)
 
 
         a = min(A(1,:)); // menor valor da primeira linha  (variavel nao basica)  
-        //*****
+        
+        //***** SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
         aux = A(1,:);        
         index = find(aux == a);
         //*****
@@ -36,8 +39,9 @@ function [zo] = simplex(A,b)
 
         ql = min(q);// Fator Limitante
 
-        l = find(q == ql); // indice que identifica a posicao no conjunto B que deve deixar a base
+        l = find(q == ql); // indice  que identifica a posicao no conjunto B que deve deixar a base
 
+//************** ROLE PRA ZERAR ELEMENTOS ******************
         for j = 1: length(A(:,index))
 
             if j == l+1 then
@@ -47,12 +51,15 @@ function [zo] = simplex(A,b)
                 b(j) = b(j);
                 
             else
+                 b(j) = b(j) - (A(j,index)/A(l+1,index))*b(l+1);
                 A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
 
-                b(j) = b(j) - (A(j,index)/A(l+1,index))*b(l+1);
+               
             end 
 
-        end
+    end
+    //*********************
+    
        // ****** DECIDIR A HORA DE ACABAR ******
        
         linha1 = A(1,:);
