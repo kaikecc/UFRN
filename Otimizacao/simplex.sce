@@ -1,3 +1,4 @@
+
 clc
 clear all
 
@@ -8,7 +9,7 @@ b = [0;3;4;6;13];
 
 
 
-function [zo] = simplex(A,b)
+function zo = simplex(A,b)
 
     q = zeros(1,length(b)-1); // vetor do Fator Limitante
 
@@ -54,7 +55,7 @@ function [zo] = simplex(A,b)
                  for k = 1:length(A(1,:))
                      
                // A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
-                A(j ,k) =  A(j,k) - (A(j,index)/A(l+1,index))pi * A(l+1,k);
+                A(j ,k) =  A(j,k) - pivo * A(l+1,k);
                 
                 end
                
@@ -68,7 +69,7 @@ function [zo] = simplex(A,b)
         linha1 = A(1,:);
         negativos = find(linha1 < 0);
 
-        if length(negativos) < 0 then
+        if length(negativos) <= 0 then
             m = length(A(1,:)) + 1;
         end
         
@@ -82,4 +83,3 @@ function [zo] = simplex(A,b)
 
 
 endfunction
-
