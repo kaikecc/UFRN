@@ -1,5 +1,3 @@
-
-
 clc
 clear all
 
@@ -41,7 +39,7 @@ function [zo] = simplex(A,b)
         l = find(q == ql); // indice  que identifica a posicao no conjunto B que deve deixar a base
 
 //************** ROLE PRA ZERAR ELEMENTOS ******************
-        for j = 1: length(A(:,index))
+        for j = 1: length(A(:,1))
 
             if j == l+1 then
                 
@@ -50,12 +48,13 @@ function [zo] = simplex(A,b)
                 b(j) = b(j);
                 
             else
-                 b(j) = b(j) - (A(j,index)/A(l+1,index))*b(l+1);
-
+                pivo = (A(j,index)/A(l+1,index))
+                 b(j) = b(j) - pivo*b(l+1);
+                 
                  for k = 1:length(A(1,:))
                      
                // A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
-                A(j ,k) =  A(j,k) - (A(j,index)/A(l+1,index)) * A(l+1,k);
+                A(j ,k) =  A(j,k) - (A(j,index)/A(l+1,index))pi * A(l+1,k);
                 
                 end
                
@@ -81,6 +80,6 @@ function [zo] = simplex(A,b)
 
     zo = b(1);
 
-endfunction
 
+endfunction
 
