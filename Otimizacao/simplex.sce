@@ -1,9 +1,8 @@
 
-// DESENVOLVER UM ALGORITMO SIMPLEX PARA RESOLVER PROBLEMAS DE MAXIMIZACAO MENOR QUE
+
 clc
 clear all
 
-//Exercicio 
 // Matriz de coeficientes
 A = [1,-12,-15,0,0,0,0;0,1,0,1,0,0,0;0,0,1,0,1,0,0;0,1,1,0,0,1,0;0,1,3,0,0,0,1];
 // vetor solucao 
@@ -46,14 +45,19 @@ function [zo] = simplex(A,b)
 
             if j == l+1 then
                 
-                A(j,index) = A(j,index);
+                A(j,:) = A(j,:);
                 
                 b(j) = b(j);
                 
             else
                  b(j) = b(j) - (A(j,index)/A(l+1,index))*b(l+1);
-                A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
 
+                 for k = 1:length(A(1,:))
+                     
+               // A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
+                A(j ,k) =  A(j,k) - (A(j,index)/A(l+1,index)) * A(l+1,k);
+                
+                end
                
             end 
 
