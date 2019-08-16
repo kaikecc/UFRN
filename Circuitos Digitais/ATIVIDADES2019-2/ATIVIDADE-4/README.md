@@ -35,15 +35,28 @@ Construir um somador de 2 bits utilizando um tipo de porta lógica.
 
 ### 3. SOMADOR COMPLETO DE 2 BITs <br/> <br/>
 
+
+<p align="center">
+ <b>Figura 3.</b>
+ <a href="#">Porta Xor formado a partir de Nands</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/63178971-7885d000-c021-11e9-812d-07ca802cc3b9.png" width="600" heigth="400"> 
+</p>
+
+<p align="center">
+ <b>Figura 4.</b>
+ <a href="#">Somador de 1 bit com portas NANDs</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/63179037-a834d800-c021-11e9-98a9-6f8d2a9ad40c.png" width="600" heigth="400"> 
+</p>
+
 #### 3.1 Captura a função <br/> <br/>
 #### 3.2 Converta para equações <br/> <br/>
 #### 3.3 Criar o circuito <br/> <br/>
 
-<p align="center">
- <b>Figura 3.</b>
- <a href="#">Somador de 2 bits com portas NANDs</a> 
- <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/63171968-09a17a80-c013-11e9-841c-d06b30244a1b.png" width="800" heigth="600"> 
-</p>
+
+
+
+
 
 ### 4. CONCLUSÃO <br/> <br/>
