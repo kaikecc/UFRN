@@ -10,6 +10,8 @@ um display de 7 segmentos (O circuito deverá utilizar apenas um tipo de CI. Ex 
 escolher o 7408, ele poderá utilizar quantas unidades forem necessárias, por´em apenas deste
 CI).
 
+Um somador de **N** bits é um componente de bloco operacional que adiciona dois números A e B gerando uma  S de N bits e um transporte carry out de 1 bit.
+
 
 
 <p align="center">
@@ -20,7 +22,9 @@ CI).
 </p>
 
 
+### 2. OBJETIVO <br/> <br/>
 
+Construir um somador de 2 bits utilizando um tipo de porta lógica.
 
 <p align="center">
  <b>Figura 2.</b>
@@ -29,7 +33,11 @@ CI).
 <img src="https://user-images.githubusercontent.com/42541528/63171864-d65eeb80-c012-11e9-8ea9-bc616d6fd01e.png" width="300" heigth="100"> 
 </p>
 
+### 3. SOMADOR COMPLETO DE 2 BITs <br/> <br/>
 
+#### 3.1 Captura a função <br/> <br/>
+#### 3.2 Converta para equações <br/> <br/>
+#### 3.3 Criar o circuito <br/> <br/>
 
 <p align="center">
  <b>Figura 3.</b>
@@ -37,3 +45,5 @@ CI).
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/63171968-09a17a80-c013-11e9-841c-d06b30244a1b.png" width="800" heigth="600"> 
 </p>
+
+### 4. CONCLUSÃO <br/> <br/>
