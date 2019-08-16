@@ -30,7 +30,7 @@ Construir um somador de 2 bits utilizando um tipo de porta lógica.
  <b>Figura 2.</b>
  <a href="#">Diagrama dos blocos</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/63171864-d65eeb80-c012-11e9-8ea9-bc616d6fd01e.png" width="300" heigth="100"> 
+<img src="https://user-images.githubusercontent.com/42541528/63171864-d65eeb80-c012-11e9-8ea9-bc616d6fd01e.png" width="400" heigth="200"> 
 </p>
 
 ### 3. SOMADOR COMPLETO DE 2 BITs <br/> <br/>
