@@ -43,6 +43,19 @@ Construir um somador de 2 bits utilizando um tipo de porta lógica.
 <img src="https://user-images.githubusercontent.com/42541528/63178971-7885d000-c021-11e9-812d-07ca802cc3b9.png" width="600" heigth="400"> 
 </p>
 
+**Tabela-verdade** - Somador de 1 bit
+
+A | B | Ci| Co | S 
+--|---|---|---|---
+0 | 0 | 0 | 0 | 0  
+0 | 0 | 1 | 0 | 1  
+0 | 1 | 0 | 0 | 1  
+0 | 1 | 1 | 1 | 0  
+1 | 0 | 0 | 0 | 1  
+1 | 0 | 1 | 1 | 0  
+1 | 1 | 0 | 1 | 0  
+1 | 1 | 1 | 1 | 1  
+
 <p align="center">
  <b>Figura 4.</b>
  <a href="#">Somador de 1 bit com portas NANDs</a> 
