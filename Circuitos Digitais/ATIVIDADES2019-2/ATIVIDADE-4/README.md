@@ -55,7 +55,12 @@ Construir um somador de 2 bits utilizando um tipo de porta lógica.
 #### 3.3 Criar o circuito <br/> <br/>
 
 
-
+<p align="center">
+ <b>Figura 5.</b>
+ <a href="#">Somador completo de 2 bit com portas NANDs</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/63179842-6311a580-c023-11e9-9061-839d999dc72a.png" width="800" heigth="600"> 
+</p>
 
 
 
