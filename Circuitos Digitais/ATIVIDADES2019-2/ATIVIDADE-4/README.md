@@ -30,5 +30,5 @@
  <b>Figura 3.</b>
  <a href="#">Somador de 2 bits com portas NANDs</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/63171968-09a17a80-c013-11e9-841c-d06b30244a1b.png" width="300" heigth="100"> 
+<img src="https://user-images.githubusercontent.com/42541528/63171968-09a17a80-c013-11e9-841c-d06b30244a1b.png" width="600" heigth="400"> 
 </p>
