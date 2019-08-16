@@ -1,1 +1,4 @@
-#
+# Método Simplex
+
+
+
