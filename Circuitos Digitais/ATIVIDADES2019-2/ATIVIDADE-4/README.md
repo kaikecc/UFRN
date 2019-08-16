@@ -5,6 +5,11 @@
 
 ### 1. INTRODUÇÃO <br/> <br/>
 
+> Implemente um circuito para somar dois valores de 2 bit (A,B) e apresentar o resultado em
+um display de 7 segmentos (O circuito deverá utilizar apenas um tipo de CI. Ex se o aluno
+escolher o 7408, ele poderá utilizar quantas unidades forem necessárias, por´em apenas deste
+CI).
+
 
 
 <p align="center">
