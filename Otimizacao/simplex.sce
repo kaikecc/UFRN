@@ -1,28 +1,43 @@
 
+
 clc
 clear all
 
 // Matriz de coeficientes
-A = [1,-12,-15,0,0,0,0;0,1,0,1,0,0,0;0,0,1,0,1,0,0;0,1,1,0,0,1,0;0,1,3,0,0,0,1];
+//A = [1,-12,-15,0,0,0,0;0,1,0,1,0,0,0;0,0,1,0,1,0,0;0,1,1,0,0,1,0;0,1,3,0,0,0,1];
 // vetor solucao 
-b = [0;3;4;6;13];
+//b = [0;3;4;6;13];
+//A = [1, -7, -9, 0, 0, 0; 0, -1, 1, -1, 0, 0; 0, 3, 5, 0, 1, 0; 0, 5, 4, 0, 0, 1];
+//b = [0;2;15;20]
+
+arq = uigetfile();
+matriz_aumentada = fscanfMat(arq);
+
+function [zo, A, b] = simplex(matriz_aumentada)
+//function metodo = simplex(matriz_aumentada)
 
 
 
-function zo = simplex(A,b)
-
+    i = size(matriz_aumentada);
+    
+    
+    A = matriz_aumentada(:,1:i(2)-1);
+    b = matriz_aumentada(:,i(2));
+    
     q = zeros(1,length(b)-1); // vetor do Fator Limitante
+    vb = zeros(1,length(b)-1); // variaveis BASICAS
+    linha1 = A(1,:);
+    m = -1;// para iniciar o while
 
-    m = -1;
+    while m < length(linha1)
+  
+          
 
-    while m < length(A(1,:))
-
-
-        a = min(A(1,:)); // menor valor da primeira linha  (variavel nao basica)  
+        a = min(linha1); // menor valor da primeira linha  (variavel nao basica)  
         
         //***** SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
-        aux = A(1,:);        
-        index = find(aux == a);
+             
+        index = find(linha1 == a);
         //*****
 
         // tá bom para achar o vetor de fator limitante
@@ -52,7 +67,7 @@ function zo = simplex(A,b)
                 pivo = (A(j,index)/A(l+1,index))
                  b(j) = b(j) - pivo*b(l+1);
                  
-                 for k = 1:length(A(1,:))
+                 for k = 1:length(linha1)
                      
                // A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
                 A(j ,k) =  A(j,k) - pivo * A(l+1,k);
@@ -64,22 +79,21 @@ function zo = simplex(A,b)
     end
     //*********************
     
-       // ****** DECIDIR A HORA DE ACABAR ******
-       
+       // ****** PRA DECIDIR A HORA DE ACABAR ******       
         linha1 = A(1,:);
         negativos = find(linha1 < 0);
-
         if length(negativos) <= 0 then
             m = length(A(1,:)) + 1;
         end
         
-        //***********
-
-
-
+        //******************************************
     end
+    
+zo = b(1);
 
-    zo = b(1);
-
+salvar(A,b);
+//show(b(1));
 
 endfunction
+
+
