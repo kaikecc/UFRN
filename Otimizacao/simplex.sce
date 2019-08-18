@@ -82,7 +82,7 @@ function metodo = simplex(matriz_aumentada)
     end
 
 //zo = b(1);   
-printf('O valor otimo de z = %f',b(1)); 
+printf('O valor otimo de z = %5.1f',b(1)); 
 
 salvar(A,b);
 
