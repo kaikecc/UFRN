@@ -10,7 +10,7 @@ um display de 7 segmentos (O circuito deverá utilizar apenas um tipo de CI. Ex 
 escolher o 7408, ele poderá utilizar quantas unidades forem necessárias, por´em apenas deste
 CI).
 
-Um somador de **N** bits é um componente de bloco operacional que adiciona dois números A e B gerando uma  S de N bits e um transporte carry out de 1 bit.
+Um somador de **N** bits é um componente de bloco operacional que adiciona dois números **A** e **B** gerando uma  **S** de **N** bits e um transporte carry out de 1 bit. A figura 1 apresenta o bloco de um somador de 1 bit.
 
 
 
@@ -26,6 +26,11 @@ Um somador de **N** bits é um componente de bloco operacional que adiciona dois
 
 Construir um somador de 2 bits utilizando um tipo de porta lógica.
 
+
+### 3. SOMADOR COMPLETO DE 2 BITs <br/> <br/>
+
+A partir de um somador completo de 1 bit é possível concatenar a saída carry out na entrada carry in e dessa forma formar um somador de 2 bits. A figura 2 mostra-se o diagrama em que se deve desenvolver o projeto no retângulo pontilhado está o somador que tem como entradas **A0**, **A1**,**B0** e **B1** com saída direto em decodificador BCD 7448 que representará o resultado da soma no display de 7 segmentos.
+
 <p align="center">
  <b>Figura 2.</b>
  <a href="#">Diagrama dos blocos</a> 
@@ -33,15 +38,25 @@ Construir um somador de 2 bits utilizando um tipo de porta lógica.
 <img src="https://user-images.githubusercontent.com/42541528/63171864-d65eeb80-c012-11e9-8ea9-bc616d6fd01e.png" width="400" heigth="200"> 
 </p>
 
-### 3. SOMADOR COMPLETO DE 2 BITs <br/> <br/>
+Uma porta **XOR** pode ser representar a partir de um reanjo de portas **NANDs** e a figura 3 exemplifica a ligação.
 
-
-<p align="center">
+<p alexign="center">
  <b>Figura 3.</b>
- <a href="#">Porta Xor formado a partir de Nands</a> 
+ <a href="#">Porta XOR formado a partir de Nands</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/63178971-7885d000-c021-11e9-812d-07ca802cc3b9.png" width="600" heigth="400"> 
 </p>
+
+  
+
+<p align="center">
+ <b>Figura 4.</b>
+ <a href="#">Somador de 1 bit com portas NANDs</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/63179037-a834d800-c021-11e9-98a9-6f8d2a9ad40c.png" width="600" heigth="400"> 
+</p>
+
+#### 3.1 Captura a função <br/> <br/>
 
 **Tabela-verdade** - Somador de 1 bit
 
@@ -54,16 +69,8 @@ A | B | Ci| Co | S
 1 | 0 | 0 | 0 | 1  
 1 | 0 | 1 | 1 | 0  
 1 | 1 | 0 | 1 | 0  
-1 | 1 | 1 | 1 | 1  
+1 | 1 | 1 | 1 | 1
 
-<p align="center">
- <b>Figura 4.</b>
- <a href="#">Somador de 1 bit com portas NANDs</a> 
- <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/63179037-a834d800-c021-11e9-98a9-6f8d2a9ad40c.png" width="600" heigth="400"> 
-</p>
-
-#### 3.1 Captura a função <br/> <br/>
 #### 3.2 Converta para equações <br/> <br/>
 #### 3.3 Criar o circuito <br/> <br/>
 
