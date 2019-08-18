@@ -47,7 +47,8 @@ Uma porta **XOR** pode ser representar a partir de um reanjo de portas **NANDs**
 <img src="https://user-images.githubusercontent.com/42541528/63178971-7885d000-c021-11e9-812d-07ca802cc3b9.png" width="600" heigth="400"> 
 </p>
 
-  
+ 
+ A figura 4 abaixo representa o bloco de somador de 1 bit completo que é base para a construção do trabalho em questão.
 
 <p align="center">
  <b>Figura 4.</b>
@@ -70,6 +71,27 @@ A | B | Ci| Co | S
 1 | 0 | 1 | 1 | 0  
 1 | 1 | 0 | 1 | 0  
 1 | 1 | 1 | 1 | 1
+
+**Tabela-verdade** - Somador de 2 bits
+
+A1 | A0 | B1 | B0 | Cin | Co | S
+---|----|----|----|-----|----| --
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0 
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0 
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
+0  | 0  | 0  | 0  |  0  | 0  | 0
 
 #### 3.2 Converta para equações <br/> <br/>
 #### 3.3 Criar o circuito <br/> <br/>
