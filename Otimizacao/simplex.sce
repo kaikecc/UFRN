@@ -1,44 +1,34 @@
-
-
+// METODO SIMPLEX PARA PROBLEMAS DE MAXIMIZACAO
 clc
 clear all
 
-// Matriz de coeficientes
-//A = [1,-12,-15,0,0,0,0;0,1,0,1,0,0,0;0,0,1,0,1,0,0;0,1,1,0,0,1,0;0,1,3,0,0,0,1];
-// vetor solucao 
-//b = [0;3;4;6;13];
-//A = [1, -7, -9, 0, 0, 0; 0, -1, 1, -1, 0, 0; 0, 3, 5, 0, 1, 0; 0, 5, 4, 0, 0, 1];
-//b = [0;2;15;20]
+arq = uigetfile(); // Funcao para pegar um arquivo
+matriz_aumentada = fscanfMat(arq);// pega o arquivo de formato especificado 
 
-arq = uigetfile();
-matriz_aumentada = fscanfMat(arq);
+function metodo = simplex(matriz_aumentada)
 
-function [zo, A, b] = simplex(matriz_aumentada)
-//function metodo = simplex(matriz_aumentada)
+    
 
-
-
-    i = size(matriz_aumentada);
+    dim = size(matriz_aumentada);// vetor que tem a qnt de linhas por qnt de colunas
     
     
-    A = matriz_aumentada(:,1:i(2)-1);
-    b = matriz_aumentada(:,i(2));
-    
+    A = matriz_aumentada(:,1:dim(2)-1);// Matriz de coeficientes
+    b = matriz_aumentada(:,dim(2));// vetor de resultados
+       
     q = zeros(1,length(b)-1); // vetor do Fator Limitante
     vb = zeros(1,length(b)-1); // variaveis BASICAS
-    linha1 = A(1,:);
+    linha1 = A(1,:);// primeira linha da matriz de coeficientes
     m = -1;// para iniciar o while
+ 
 
     while m < length(linha1)
   
-          
-
-        a = min(linha1); // menor valor da primeira linha  (variavel nao basica)  
+          a = min(linha1); // menor valor da primeira linha  (variavel nao basica)  
         
         //***** SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
              
         index = find(linha1 == a);
-        //*****
+        //*****************
 
         // tá bom para achar o vetor de fator limitante
         for i = 1:length(b)-1
@@ -69,8 +59,7 @@ function [zo, A, b] = simplex(matriz_aumentada)
                  
                  for k = 1:length(linha1)
                      
-               // A(j ,index) =  A(j,index) - (A(j,index)/A(l+1,index)) * A(l+1,index);
-                A(j ,k) =  A(j,k) - pivo * A(l+1,k);
+                   A(j ,k) =  A(j,k) - pivo * A(l+1,k);
                 
                 end
                
@@ -88,12 +77,17 @@ function [zo, A, b] = simplex(matriz_aumentada)
         
         //******************************************
     end
-    
-zo = b(1);
+
+//zo = b(1);   
+printf('O valor otimo de z = %f',b(1)); 
 
 salvar(A,b);
-//show(b(1));
+
+
 
 endfunction
+
+
+simplex(matriz_aumentada)
 
 
