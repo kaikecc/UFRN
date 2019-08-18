@@ -33,3 +33,41 @@ O conjunto de função a seguir captura a dimensão da matriz aumentada e separa
     A = matriz_aumentada(:,1:dim(2)-1);// Matriz de coeficientes
     b = matriz_aumentada(:,dim(2));// vetor de resultados
 ``` 
+Algumas variáveis são criadas para auxiliar o método.
+
+``` scilab
+q = zeros(1,length(b)-1); // vetor do Fator Limitante
+//vb = zeros(1,length(b)-1); // variaveis BASICAS
+linha1 = A(1,:);// primeira linha da matriz de coeficientes
+```
+Nesse ponto o código precisa fazer algumas interações até que a linha 1 não tenha mais nenhum elemento negativo.
+
+``` scilab
+m = -1;
+ while m < length(linha1)
+ ```
+ O primeiro passo do método começa com a escolha da variável básica com o menor valor da primeira linha da matriz de coeficientes. Em seguida, indentificar o endereço da matriz para iniciar o processo com a variável index e caso tenha uma duplicidade do valor escolha a primeira posição do index.
+ 
+ ``` scilab
+  a = min(linha1); // menor valor da primeira linha  (variavel nao basica)  
+        
+ //***** SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
+             
+ index = find(linha1 == a);
+
+ if length(index) > 1 then
+ 
+      index = index(1);
+      
+ end
+ ``` 
+``` scilab
+ // tá bom para achar o vetor de fator limitante
+        for i = 1:length(b)-1
+            if A(i+1,index) <= 0 then // tanto divisao por zero e o denominador negativo dever ser excluido
+                q(i) = 100000; // VALOR BEM GRANDE PARA SER EXCLUIDO NA FUNCAO min
+            else
+                q(i) = b(i+1) / A(i+1,index);
+            end
+        end
+``` 
