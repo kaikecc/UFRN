@@ -29,7 +29,10 @@ function metodo = simplex(matriz_aumentada)
              
         index = find(linha1 == a);
         //*****************
-
+       if length(index) > 1 then
+           index = index(1);
+           end
+          
         // tá bom para achar o vetor de fator limitante
         for i = 1:length(b)-1
             if A(i+1,index) <= 0 then // tanto divisao por zero e o denominador negativo dever ser excluido
