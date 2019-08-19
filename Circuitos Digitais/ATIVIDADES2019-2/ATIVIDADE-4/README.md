@@ -102,7 +102,7 @@ Cin | A1 | A0 | B1 | B0  | Co | S1 | S0
 
 #### 3.2 Converta para equações <br/> <br/>
 
-A partir do mapa k das saídas da tabela-verdade 1 foi construído as equações das saídas em função das entradas.
+A partir do mapa K das saídas da tabela-verdade 1 foi construído as equações das saídas em função das entradas.
 
 * **S0** = A0 xor B0 xor Cin;
 * **Co1** = A0*B0 + Cin * (A0 xor B0);
@@ -112,7 +112,7 @@ A partir do mapa k das saídas da tabela-verdade 1 foi construído as equações
 
 #### 3.3 Criar o circuito <br/> <br/>
 
-O circuito da figura 5 foi construído no programa Proteus na versao 8.0 e nele foi possível fazer a simulação e a posteriori a montagem em protoboard. As portas lógicas utilizadas foram da série 4000, portanto todos os componentes são do tipo CMOs.
+O circuito da figura 5 foi construído no programa Proteus na versao 8.0 e nele foi possível fazer a simulação e a posteriori a montagem em protoboard. As portas lógicas utilizadas foram da série 4000, portanto todos os componentes são do tipo CMOs. O desenvolvimento do circuito foi a partir das equações proviniente do mapa K das saídas.
 
 
 <p align="center">
