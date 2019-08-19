@@ -29,7 +29,7 @@ Construir um somador de 2 bits utilizando um tipo de porta lógica.
 
 ### 3. SOMADOR COMPLETO DE 2 BITs <br/> <br/>
 
-A partir de um somador completo de 1 bit é possível concatenar a saída carry out na entrada carry in e dessa forma formar um somador de 2 bits. A figura 2 mostra-se o diagrama em que se deve desenvolver o projeto no retângulo pontilhado está o somador que tem como entradas **A0**, **A1**,**B0** e **B1** com saída direto em decodificador BCD 7448 que representará o resultado da soma no display de 7 segmentos.
+A partir de um somador completo de 1 bit é possível concatenar a saída carry out na entrada carry in e assim formando um somador de 2 bits. A figura 2 mostra-se o diagrama em que se deve desenvolver o projeto, no retângulo pontilhado está o somador que tem como entradas **A0**, **A1**, **B0** e **B1** com saída direto em decodificador BCD 7448 que representará o resultado da soma no display de 7 segmentos.
 
 <p align="center">
  <b>Figura 2.</b>
@@ -38,7 +38,7 @@ A partir de um somador completo de 1 bit é possível concatenar a saída carry 
 <img src="https://user-images.githubusercontent.com/42541528/63171864-d65eeb80-c012-11e9-8ea9-bc616d6fd01e.png" width="400" heigth="200"> 
 </p>
 
-Uma porta **XOR** pode ser representar a partir de um reanjo de portas **NANDs** e a figura 3 exemplifica a ligação.
+Uma porta **XOR** pode ser representada a partir de um reanjo de portas **NANDs** e na figura 3 exemplifica as ligações.
 
 <p alexign="center">
  <b>Figura 3.</b>
@@ -48,7 +48,7 @@ Uma porta **XOR** pode ser representar a partir de um reanjo de portas **NANDs**
 </p>
 
  
- A figura 4 abaixo representa o bloco de somador de 1 bit completo que é base para a construção do trabalho em questão.
+ A figura 4 abaixo representa o bloco de somador de 1 bit completo com portas NANDs que é base para a construção do trabalho em questão.
 
 <p align="center">
  <b>Figura 4.</b>
@@ -57,7 +57,7 @@ Uma porta **XOR** pode ser representar a partir de um reanjo de portas **NANDs**
 <img src="https://user-images.githubusercontent.com/42541528/63179037-a834d800-c021-11e9-98a9-6f8d2a9ad40c.png" width="600" heigth="400"> 
 </p>
 
-#### 3.1 Captura a função <br/> <br/>
+#### 3.1 Capturar a função <br/> <br/>
 
 **Tabela-verdade** - Somador de 1 bit
 
@@ -78,7 +78,7 @@ Cin | A1 | A0 | B1 | B0  | Co | S1 | S0
 ----|----|----|----|-----|----|----|---
 0   | 0  | 0  | 0  |  0  | 0  | 0  | 0
 0   | 0  | 0  | 0  |  1  | 0  | 0  | 1
-0   | 0  | 0  | 1  |  0  | 0  | 0  | 1
+0   | 0  | 0  | 1  |  0  | 0  | 1  | 0
 0   | 0  | 0  | 1  |  1  | 0  | 1  | 1
 0   | 0  | 1  | 0  |  0  | 0  | 0  | 1
 0   | 0  | 1  | 0  |  1  | 0  | 1  | 0
@@ -89,8 +89,8 @@ Cin | A1 | A0 | B1 | B0  | Co | S1 | S0
 0   | 1  | 0  | 1  |  0  | 1  | 0  | 0
 0   | 1  | 0  | 1  |  1  | 1  | 0  | 1
 0   | 1  | 1  | 0  |  0  | 0  | 1  | 1
-0   | 1  | 1  | 0  |  1  | 0  | 0  | 0
-0   | 1  | 1  | 1  |  0  | 0  | 0  | 0
+0   | 1  | 1  | 0  |  1  | 1  | 0  | 0
+0   | 1  | 1  | 1  |  0  | 1  | 0  | 1
 0   | 1  | 1  | 1  |  1  | 0  | 0  | 0
 1   | 0  | 0  | 0  |  0  | 0  | 0  | 0
 1   | 0  | 0  | 0  |  1  | 0  | 0  | 0
@@ -110,6 +110,13 @@ Cin | A1 | A0 | B1 | B0  | Co | S1 | S0
 1   | 1  | 1  | 1  |  1  | 0  | 0  | 0
 
 #### 3.2 Converta para equações <br/> <br/>
+
+* **S0** = A0 xor B0 xor Cin;
+* **Co1** = A0*B0 + Cin*(A0 xor B0);
+
+* **S1** = A1 xor B1 xor (A0*B0 + Cin*(A0 xor B0));
+* **Co2** = A1*B1 + A0*B0 + Cin*(A0 xor B0)*(A0 xor B0);
+
 #### 3.3 Criar o circuito <br/> <br/>
 
 
