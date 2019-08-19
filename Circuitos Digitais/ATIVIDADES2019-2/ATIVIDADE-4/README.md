@@ -59,20 +59,10 @@ Uma porta **XOR** pode ser representada a partir de um reanjo de portas **NANDs*
 
 #### 3.1 Capturar a função <br/> <br/>
 
-**Tabela-verdade** - Somador de 1 bit
+A função para o desevolvimento do projeto baseou-se na construção da tabela-verdade 1.
 
-A | B | Ci| Co | S 
---|---|---|---|---
-0 | 0 | 0 | 0 | 0  
-0 | 0 | 1 | 0 | 1  
-0 | 1 | 0 | 0 | 1  
-0 | 1 | 1 | 1 | 0  
-1 | 0 | 0 | 0 | 1  
-1 | 0 | 1 | 1 | 0  
-1 | 1 | 0 | 1 | 0  
-1 | 1 | 1 | 1 | 1
 
-**Tabela-verdade** - Somador de 2 bits
+**1. Tabela-verdade** - Somador de 2 bits
 
 Cin | A1 | A0 | B1 | B0  | Co | S1 | S0
 ----|----|----|----|-----|----|----|---
@@ -112,12 +102,14 @@ Cin | A1 | A0 | B1 | B0  | Co | S1 | S0
 #### 3.2 Converta para equações <br/> <br/>
 
 * **S0** = A0 xor B0 xor Cin;
-* **Co1** = A0*B0 + Cin*(A0 xor B0);
+* **Co1** = A0*B0 + Cin * (A0 xor B0);
 
 * **S1** = A1 xor B1 xor (A0*B0 + Cin*(A0 xor B0));
-* **Co2** = A1*B1 + A0*B0 + Cin*(A0 xor B0)*(A0 xor B0);
+* **Co2** = A1*B1 + A0*B0 + Cin * (A0 xor B0)*(A0 xor B0);
 
 #### 3.3 Criar o circuito <br/> <br/>
+
+O circuito da figura 5 foi construído no programa Proteus na versao 8.0 e nele foi possível fazer a simulação e a posteriori a montagem em protoboard. As portas lógicas utilizadas foram da série 4000, portanto todos os componentes são do tipo CMOs.
 
 
 <p align="center">
@@ -130,3 +122,6 @@ Cin | A1 | A0 | B1 | B0  | Co | S1 | S0
 
 
 ### 4. CONCLUSÃO <br/> <br/>
+
+A montagem do circuito foi devidamente feita e testada e assim atendendo o objetivo da questão que é a soma de 2 bits.
+
