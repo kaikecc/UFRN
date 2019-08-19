@@ -59,7 +59,8 @@ Uma porta **XOR** pode ser representada a partir de um reanjo de portas **NANDs*
 
 #### 3.1 Capturar a função <br/> <br/>
 
-A função para o desevolvimento do projeto baseou-se na construção da tabela-verdade 1.
+A função para o desevolvimento do projeto baseou-se na construção da tabela-verdade 1. As entradas da tabela são **Cin**, **A1**, **A0**, **B1** e **B0**. As saídas da tabela são **Co**, **S1** e **S0**.
+
 
 
 **1. Tabela-verdade** - Somador de 2 bits
@@ -100,6 +101,8 @@ Cin | A1 | A0 | B1 | B0  | Co | S1 | S0
 1   | 1  | 1  | 1  |  1  | 0  | 0  | 0
 
 #### 3.2 Converta para equações <br/> <br/>
+
+A partir do mapa k das saídas da tabela-verdade 1 foi construído as equações das saídas em função das entradas.
 
 * **S0** = A0 xor B0 xor Cin;
 * **Co1** = A0*B0 + Cin * (A0 xor B0);
