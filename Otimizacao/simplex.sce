@@ -18,7 +18,7 @@ function metodo = simplex(matriz_aumentada)
     q = zeros(1,length(b)-1); // vetor do Fator Limitante
     linha1 = A(1,:);// primeira linha da matriz de coeficientes
     vb = zeros(1,length(b)-1); // variaveis BASICAS
-
+    interacao = 0;
 
     m = -1;// para iniciar o while
 
@@ -28,7 +28,7 @@ function metodo = simplex(matriz_aumentada)
         a = min(linha1); // menor valor da primeira linha  (variavel nao basica)  
 
         //***** SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
-
+        interacao = interacao + 1;
         index = find(linha1 == a);
         //*****************
         if length(index) > 1 then
@@ -94,6 +94,7 @@ function metodo = simplex(matriz_aumentada)
     end
     //zo = b(1);   
     printf('O valor otimo de z = %5.1f',b(1)); 
+    printf('\n Numero de interacoes = %5.1f',interacao);
     disp('Os indices das variaveis básicas: ');
     disp(vb);
     salvar(A,b);
