@@ -2,11 +2,11 @@
 clc
 clear all
 
-arq = uigetfile(); // Funcao para pegar um arquivo
+
+arq = uigetfile("*.txt",pwd(),"Escolha um arquivo .txt: "); // Funcao para pegar um arquivo
 matriz_aumentada = fscanfMat(arq);// pega o arquivo de formato especificado 
 
 function metodo = simplex(matriz_aumentada)
-
 
 
     dim = size(matriz_aumentada);// vetor que tem a qnt de linhas por qnt de colunas
@@ -17,14 +17,14 @@ function metodo = simplex(matriz_aumentada)
 
     q = zeros(1,length(b)-1); // vetor do Fator Limitante
     linha1 = A(1,:);// primeira linha da matriz de coeficientes
-    vb = zeros(1,length(b)-1); // variaveis BASICAS
+   
     interacao = 0;
 
     m = -1;// para iniciar o while
 
 
     while m < length(linha1)
-
+      
         a = min(linha1); // menor valor da primeira linha  (variavel nao basica)  
 
         //***** SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
@@ -47,12 +47,13 @@ function metodo = simplex(matriz_aumentada)
 
 
         ql = min(q);// Fator Limitante
-
         l = find(q == ql); // indice  que identifica a posicao no conjunto B que deve deixar a base
 
         //************** ROLE PRA ZERAR ELEMENTOS ******************
         for j = 1: length(A(:,1))
-
+            
+           
+            
             if j == l+1 then
 
                 A(j,:) = A(j,:);
@@ -60,11 +61,11 @@ function metodo = simplex(matriz_aumentada)
                 b(j) = b(j);
 
             else
-                pivo = (A(j,index)/A(l+1,index))
+                pivo = (A(j,index)/A(l+1,index));
+                disp(pivo)
                 b(j) = b(j) - pivo*b(l+1);
 
                 for k = 1:length(linha1)
-
 
                     A(j ,k) =  A(j,k) - pivo * A(l+1,k);
 
@@ -80,28 +81,24 @@ function metodo = simplex(matriz_aumentada)
         linha1 = A(1,:);
         negativos = find(linha1 < 0);
         if length(negativos) <= 0 then
-            m = length(A(1,:)) + 1;
+            m = length(linha1) + 1;
         end
 
         //******************************************
+        
     end
-    // PARA ACHAR VARIAVEIS BÁSICAS
-    for o = 1:length(linha1)
-
-        if sum(A(:,o)) == 1 then
-            vb(o) = o;
-        end 
-    end
-    //zo = b(1);   
-    printf('O valor otimo de z = %5.1f',b(1)); 
+    
+   
+    disp(A)
+    disp(b)
+    printf('O valor otimo de z = %5.2f',b(1)); 
     printf('\n Numero de interacoes = %5.1f',interacao);
-    disp('Os indices das variaveis básicas: ');
-    disp(vb);
-    salvar(A,b);
-
+    salvar(A,b);  
+    
     metodo = 0;
 
 endfunction
 
 
 simplex(matriz_aumentada)
+
