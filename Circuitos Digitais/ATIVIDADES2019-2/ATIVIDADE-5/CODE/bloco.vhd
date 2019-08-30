@@ -12,3 +12,4 @@ end;
         S(1) <= ((not A(2)) AND A(1)) OR (A(1) AND A(0)) OR (A(3) AND (not A(0)));        
         S(0) <= (A(3) AND (not A(0))) OR ((not A(3)) AND (not A(2)) AND A(0)) OR (A(2) AND A(1) AND (not A(0)));  
 end CKT;
+
