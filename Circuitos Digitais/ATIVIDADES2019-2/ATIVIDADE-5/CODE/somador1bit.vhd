@@ -13,3 +13,4 @@ architecture ckt of somador1bit is
    Cout <= ((A xor B) and Cin) or (A and B);
   
 end ckt;
+
