@@ -1,11 +1,11 @@
-entity main_bin_bcd is
+entity bin_bcd is
 
 port(SW : in  bit_vector(7 downto 0);
      HEX0, HEX1, HEX2 : out bit_vector(6 downto 0));
   
 end;
 
-architecture CKTO of main_bin_bcd is 
+architecture CKTO of bin_bcd is 
 
 
 component bloco is
@@ -102,6 +102,4 @@ S => AUX7);
    HEX2(6) <= '0';
 
 end CKTO;
-
-
 
