@@ -15,7 +15,11 @@ o bit de sinal).
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/63904305-e1d4ee00-c9e6-11e9-8201-87064fc3df44.png" width="400" heigth="400"> 
  </p>
- 
+
+### 2. OBJETIVO <br/> <br/>
+
+
+
  
 <p align="center">
   <b>Figura 2.</b>
@@ -24,3 +28,4 @@ o bit de sinal).
 <img src="https://user-images.githubusercontent.com/42541528/64054461-7b261080-cb5d-11e9-8968-c3f7a9410550.png" width="400" heigth="200"> 
  </p>
 
+https://carlosrafaelgn.com.br/Aula/Binario.html
