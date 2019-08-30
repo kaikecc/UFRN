@@ -48,6 +48,8 @@ function metodo = simplex(matriz_aumentada)
 
         ql = min(q);// Fator Limitante
         l = find(q == ql); // indice  que identifica a posicao no conjunto B que deve deixar a base
+        
+        
         vb(l) = index - 1;
         //************** ROLE PRA ZERAR ELEMENTOS ******************
         for j = 1: length(A(:,1))
@@ -72,8 +74,12 @@ function metodo = simplex(matriz_aumentada)
                 end
 
             end 
+     
+    end
+    
+                A(l+1,:) = A(l+1,:) * (1/A(l+1,index));
 
-        end
+                b(l+1) = b(l+1) * (1/A(l+1,index));
         //*********************
 
 
@@ -92,7 +98,12 @@ function metodo = simplex(matriz_aumentada)
     printf('O valor otimo de z = %5.2f',b(1)); 
     printf('\n Numero de interacoes = %5.1f',interacao);
     disp('Os indices da base: ');
-    disp(vb);
+    //disp(gsort(unique(vb(1:interacao+1))));
+    disp(((vb(1:interacao+1))));
+    disp('Matriz de coeficientes: ');
+    disp(A);
+    disp('Vetor solução: ');
+    disp(b);
     salvar(A,b);  
     
     metodo = 0;
@@ -101,3 +112,4 @@ endfunction
 
 
 simplex(matriz_aumentada)
+
