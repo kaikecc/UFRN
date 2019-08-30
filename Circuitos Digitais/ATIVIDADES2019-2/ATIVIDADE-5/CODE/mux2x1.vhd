@@ -9,7 +9,7 @@ architecture ckt of mux2x1 is
   
  begin
   
-  Saida <= (Ea and not(SEL)) or ( Eb and SEL);
+  Saida <= (Ea and not(SEL)) or ( Eb and (SEL));
   
 end ckt;
 
