@@ -15,13 +15,13 @@ component complemento2 is
 
 component mux14x7 is
   
-  port(A1, B1: in bit_vector(6 downto 0); 
-  SEL1: in bit;    
-  S1 : out bit_vector(6 downto 0));
+  port(SELI: in bit;
+  AI, BI: in bit_vector(6 downto 0);     
+  SI : out bit_vector(6 downto 0));
   
 end component;
 
-component main_bin_bcd is
+component bin_bcd is
 
 port(SW : in  bit_vector(7 downto 0);
      HEX0, HEX1, HEX2 : out bit_vector(6 downto 0));
@@ -39,17 +39,18 @@ C: complemento2 port map(
     
     C(6 downto 0) => B(6 downto 0),
     R(6 downto 0) => AUX(6 downto 0));
-    
+ 
+  
 M: mux14x7 port map(
 
-A1(6 downto 0) => B(6 downto 0),
-B1(6 downto 0) => AUX(6 downto 0),
-SEL1 => B(6),
-S1(6 downto 0) => AUX2(6 downto 0));
+AI(6 downto 0) => B(6 downto 0),
+BI(6 downto 0) => AUX(6 downto 0),
+SELI => B(6),
+SI(6 downto 0) => AUX2(6 downto 0));
   
 
 
-BB: main_bin_bcd port map(
+BB: bin_bcd port map(
   
     SW(0) => AUX2(0),
     SW(1) => AUX2(1),
@@ -80,3 +81,4 @@ BB: main_bin_bcd port map(
   VD <= AUX3(7 downto 4);
   
 end ckt1;
+
