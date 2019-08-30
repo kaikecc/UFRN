@@ -1,4 +1,4 @@
-entity somador8bit is
+entity somador8bit is --
   
   port( X, Y: in bit_vector(7 downto 0);
         Ce: in bit;
