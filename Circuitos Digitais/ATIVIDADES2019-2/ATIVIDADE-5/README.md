@@ -18,12 +18,21 @@ o bit de sinal).
 
 ### 2. OBJETIVO <br/> <br/>
 
+Desenvolver um VHD que imprima o módulo de um número de 7 bits.
 
+### 3. DESENVOLVIMENTO EM BLOCOS <br/> <br/>
 
- 
+#### 3.1 COMPLEMENTO A 2 <br/> <br/>
+
+#### 3.2 MULTIPLEXADOR 14x1 <br/> <br/>
+
+#### 3.2 CONVERSOR BIN-BCD <br/> <br/>
+
+### 4. CONCLUSÃO <br/> <br/>
+
 <p align="center">
   <b>Figura 2.</b>
- <a href="#">Bloco da Solulçaia</a> 
+ <a href="#">Bloco da Solulção</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/64054461-7b261080-cb5d-11e9-8968-c3f7a9410550.png" width="400" heigth="200"> 
  </p>
