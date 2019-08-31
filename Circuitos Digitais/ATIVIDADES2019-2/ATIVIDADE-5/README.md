@@ -39,6 +39,7 @@ Desenvolver um VHD que imprima o módulo de um número de 7 bits.
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/64069108-64dd8a80-cc19-11e9-9902-b3c2cfd4d3ea.png" width="800" heigth="400"> 
  </p>
+ 
 #### 3.3 CONVERSOR BIN-BCD <br/> <br/>
 
 ### 4. CONCLUSÃO <br/> <br/>
