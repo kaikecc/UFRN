@@ -25,20 +25,26 @@ Desenvolver um VHD que imprima o módulo de um número de 7 bits.
 #### 3.1 COMPLEMENTO A 2 <br/> <br/>
 
 <p align="center">
-  <b>Figura 1.</b>
+  <b>Figura 2.</b>
  <a href="#">Bloco complemento a 2</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64068996-2646d080-cc17-11e9-919c-18fc52718337.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/64068996-2646d080-cc17-11e9-919c-18fc52718337.png" width="200" heigth="200"> 
  </p>
 #### 3.2 MULTIPLEXADOR 14x1 <br/> <br/>
 
+<p align="center">
+  <b>Figura 3.</b>
+ <a href="#">Bloco Multiplexador 14x1</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/64069108-64dd8a80-cc19-11e9-9902-b3c2cfd4d3ea.png" width="200" heigth="200"> 
+ </p>
 #### 3.2 CONVERSOR BIN-BCD <br/> <br/>
 
 ### 4. CONCLUSÃO <br/> <br/>
 
 <p align="center">
-  <b>Figura 2.</b>
- <a href="#">Bloco da Solulção</a> 
+  <b>Figura 5.</b>
+ <a href="#">Bloco da Solução</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/64054461-7b261080-cb5d-11e9-8968-c3f7a9410550.png" width="400" heigth="200"> 
  </p>
