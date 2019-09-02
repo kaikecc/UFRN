@@ -43,12 +43,12 @@ O multiplexador é o seletor do problema. Com ele, é possível utilizar dois ou
   <b>Figura 3.</b>
  <a href="#">Bloco Multiplexador 14x7</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64069108-64dd8a80-cc19-11e9-9902-b3c2cfd4d3ea.png" width="800" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/64069108-64dd8a80-cc19-11e9-9902-b3c2cfd4d3ea.png" width="900" heigth="500"> 
  </p>
  
 #### 3.3 CONVERSOR BIN-BCD <br/> <br/>
 
-O conversor binário para BCD permite a visualização dos valores em um display de 7 segmentos. A figura 4 apresenta um bloco bin-bcd para representação de valores de até 6 bits.
+O conversor binário para BCD permite a visualização dos valores em um display de 7 segmentos. A figura 4 apresenta um bloco bin-bcd para representação de valores de até 6 bits. <br/> <br/>
 
 <p align="center">
   <b>Figura 4.</b>
@@ -56,6 +56,7 @@ O conversor binário para BCD permite a visualização dos valores em um display
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/64129762-857e1f80-cd94-11e9-9702-6036f6c2a0a5.png" width="300" heigth="300"> 
  </p>
+ 
 ### 4. DESCRIÇÃO EM LINGUAGEM DE HARDWARE <br/> <br/>
 
 #### 4.1 VHD ENTIDADE DO MÓDULO <br/> <br/>
