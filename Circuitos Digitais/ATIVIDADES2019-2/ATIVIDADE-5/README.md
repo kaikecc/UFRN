@@ -151,11 +151,12 @@ end ckt1;
 ```
 ### 5. CONCLUSÃO <br/> <br/>
 
+O projeto foi executado conforme o bloco solução na figura 5.  <br/> <br/>
 <p align="center">
   <b>Figura 5.</b>
  <a href="#">Bloco da Solução</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64054461-7b261080-cb5d-11e9-8968-c3f7a9410550.png" width="400" heigth="200"> 
+<img src="https://user-images.githubusercontent.com/42541528/64054461-7b261080-cb5d-11e9-8968-c3f7a9410550.png" width="300" heigth="100"> 
  </p>
 
 
