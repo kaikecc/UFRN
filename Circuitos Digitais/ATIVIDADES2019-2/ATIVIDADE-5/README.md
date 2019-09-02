@@ -57,7 +57,7 @@ O conversor binário para BCD permite a visualização dos valores em um display
 <img src="https://user-images.githubusercontent.com/42541528/64129762-857e1f80-cd94-11e9-9702-6036f6c2a0a5.png" width="300" heigth="300"> 
  </p>
 
-### 4. CONCLUSÃO <br/> <br/>4
+### 4. CONCLUSÃO <br/> <br/>
 
 <p align="center">
   <b>Figura 5.</b>
@@ -66,4 +66,11 @@ O conversor binário para BCD permite a visualização dos valores em um display
 <img src="https://user-images.githubusercontent.com/42541528/64054461-7b261080-cb5d-11e9-8968-c3f7a9410550.png" width="400" heigth="200"> 
  </p>
 
+
+<p align="center">
+  <b>Figura 6.</b>
+ <a href="#"> Resultado da simulação</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/64129940-a3984f80-cd95-11e9-9238-22ca98857972.png" width="800" heigth="400"> 
+ </p>
 https://carlosrafaelgn.com.br/Aula/Binario.html
