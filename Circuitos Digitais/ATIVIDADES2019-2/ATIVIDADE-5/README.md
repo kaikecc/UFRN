@@ -119,14 +119,9 @@ SI(6 downto 0) => AUX2(6 downto 0));
 
 BB: bin_bcd port map(
   
-    SW(0) => AUX2(0),
-    SW(1) => AUX2(1),
-    SW(2) => AUX2(2),
-    SW(3) => AUX2(3),
-    SW(4) => AUX2(4),
-    SW(5) => AUX2(5),
-    SW(6) => AUX2(6),
+    SW(6 downto 0) => AUX2(6 downto 0);
     SW(7) => '0',
+    
     
     HEX0(0) => AUX3(0),
     HEX0(1) => AUX3(1),
@@ -166,4 +161,4 @@ O projeto foi executado conforme o bloco solução na figura 5.  <br/> <br/>
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/64129940-a3984f80-cd95-11e9-9238-22ca98857972.png" width="800" heigth="400"> 
  </p>
-https://carlosrafaelgn.com.br/Aula/Binario.html
+
