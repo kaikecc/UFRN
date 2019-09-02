@@ -48,13 +48,13 @@ O multiplexador é o seletor do problema. Com ele, é possível utilizar dois ou
  
 #### 3.3 CONVERSOR BIN-BCD <br/> <br/>
 
-![bin-bcd]()
+O conversor binário para BCD permite a visualização dos valores em um display de 7 segmentos. A figura 4 apresenta um bloco bin-bcd para representação de valores de até 6 bits.
 
 <p align="center">
   <b>Figura 4.</b>
  <a href="#">Bloco Conversor BIN-BCD</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64129762-857e1f80-cd94-11e9-9702-6036f6c2a0a5.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/64129762-857e1f80-cd94-11e9-9702-6036f6c2a0a5.png" width="300" heigth="300"> 
  </p>
 
 ### 4. CONCLUSÃO <br/> <br/>4
