@@ -16,7 +16,7 @@ adicionada para zerar a saída dos registradores do circuito X ou Y. <br/> <br/>
   <b>Figura 1.</b>
  <a href="#">Bloco problema</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64452107-0c483a80-d0bc-11e9-8bc4-21733da550b1.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/64452107-0c483a80-d0bc-11e9-8bc4-21733da550b1.png" width="600" heigth="600"> 
  </p>
 
 
@@ -25,5 +25,5 @@ adicionada para zerar a saída dos registradores do circuito X ou Y. <br/> <br/>
   <b>Figura 2.</b>
  <a href="#">Bloco solução</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64451824-65639e80-d0bb-11e9-94f7-113ea5eb3b76.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/64451824-65639e80-d0bb-11e9-94f7-113ea5eb3b76.png" width="600" heigth="600"> 
  </p>
