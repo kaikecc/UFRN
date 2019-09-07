@@ -40,7 +40,7 @@ A utilização de carga paralela permite com que uma informação seja carregada
   <b>Figura 2.</b>
  <a href="#">Circuito Y</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64476399-83d1a480-d164-11e9-92fd-cd20033a2b51.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/64476399-83d1a480-d164-11e9-92fd-cd20033a2b51.png" width="200" heigth="200"> 
  </p>
 
 
@@ -50,7 +50,7 @@ A utilização de carga paralela permite com que uma informação seja carregada
   <b>Figura 3.</b>
  <a href="#">Registrador 4 bits com carga paralela</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64476288-5afcdf80-d163-11e9-9a77-f6d8e0f5cdab.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/64476288-5afcdf80-d163-11e9-9a77-f6d8e0f5cdab.png" width="200" heigth="200"> 
  </p>
 
 <p align="center">
