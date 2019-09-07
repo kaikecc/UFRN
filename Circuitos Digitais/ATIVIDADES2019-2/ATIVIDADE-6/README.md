@@ -33,27 +33,28 @@ Um registrador de **N** bits de base 2 é um componente que armazena bits. O nom
 A utilização de carga paralela permite com que uma informação seja carregada em paralela em um registrador e possibilita uma maior flexibilidade no controle do tipo, manter a informação, carregar e deslocar os bits nele armazenado.
 
 
-<p align="center">
-  <b>Figura 2.</b>
- <a href="#">Registrador 4 bits com carga paralela</a> 
- <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64476288-5afcdf80-d163-11e9-9a77-f6d8e0f5cdab.png" width="600" heigth="600"> 
- </p>
+
 #### 3.2 CIRCUITO Y <br/> <br/>
 
 <p align="center">
-  <b>Figura 3.</b>
+  <b>Figura 2.</b>
  <a href="#">Circuito Y</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64476399-83d1a480-d164-11e9-92fd-cd20033a2b51.png" width="600" heigth="600"> 
+<img src="https://user-images.githubusercontent.com/42541528/64476399-83d1a480-d164-11e9-92fd-cd20033a2b51.png" width="400" heigth="400"> 
  </p>
 
 
-
-
+#### 3.2 CIRCUITO X <br/> <br/>
 
 <p align="center">
-  <b>Figura 2.</b>
+  <b>Figura 3.</b>
+ <a href="#">Registrador 4 bits com carga paralela</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/64476288-5afcdf80-d163-11e9-9a77-f6d8e0f5cdab.png" width="400" heigth="400"> 
+ </p>
+
+<p align="center">
+  <b>Figura 4.</b>
  <a href="#">Bloco solução</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/64451824-65639e80-d0bb-11e9-94f7-113ea5eb3b76.png" width="600" heigth="600"> 
