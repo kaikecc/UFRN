@@ -20,6 +20,20 @@ adicionada para zerar a saída dos registradores do circuito X ou Y. <br/> <br/>
  </p>
 
 
+### 2. OBJETIVO <br/> <br/>
+
+### 3. DESCRIÇÃO EM LINGUAGEM DE HARDWARE <br/> <br/>
+
+#### 3.1 REGISTRADORES <br/> <br/>
+
+Um registrador de **N** bits de base 2 é um componente que armazena bits. O nome comum de armazenar os valores é **carregar**, mas também se utiliza as palavras escrever e armazenar. É possível fazer a leitura de um registrador atráves de suas saídas. Um circuito simples de registrador consiste em conjunto de flip-flops que são carregados a cada ciclo de relógio.
+
+#### 3.1.1 REGISTRADOR DE CARGA PARALELA <br/> <br/>
+
+A utilização de carga paralela permite com que uma informação seja carregada em paralela em um registrador e possibilita uma maior flexibilidade no controle do tipo, manter a informação, carregar e deslocar os bits nele armazenado.
+
+#### 3.2 REGISTRADORES <br/> <br/>
+
 
 <p align="center">
   <b>Figura 2.</b>
