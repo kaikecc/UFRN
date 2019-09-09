@@ -69,9 +69,10 @@ port ( I: in bit_vector(3 downto 0);
 end;
 ```
 <br/> <br/>
- Arquitetura do circuito Y contará com dois componentes. O primeiro será um **reg4bit** (registrador de 4 bits) que terá o papel de armazenar os bits proviniente da chave **A** e o segundo **cp4bits** (carga paralela de 4 bits) que tornará as funções de manter, deslocar e carregar possível de ser executadas no circuito Y. 
+* Arquitetura do circuito Y contará com dois componentes. O primeiro será um **reg4bit** (registrador de 4 bits) que terá o papel de armazenar os bits proviniente da chave **A** e o segundo **cp4bits** (carga paralela de 4 bits) que tornará as funções de manter, deslocar e carregar possível de ser executadas no circuito Y. 
 A figura 2 mostra o bloco do circuito em bloco com a entrada **I** de 4 bits que recebe os valores da entrada **A** e a saída de **Q** de 4 bits terá seu bit menos significativo responsável pelo canal serial com o circuito X. A entrada **shr_in** fica configurada em 0, pois não receberá nenhum dado via serial e as entradas **s0** e **s1** são proviniente da entrada do circuito como **K**.
 <br/> <br/>
+
 <p align="center">
   <b>Figura 2.</b>
  <a href="#">Circuito Y</a> 
@@ -139,6 +140,8 @@ end cktY;
 
 #### 3.2 CIRCUITO X <br/> <br/>
 
+O circuito X recebe via serial do circuito Y e apresentará na saída **Z** os 4 bits.
+
 * Entidade do circuito X:
 
 ``` vhdl
@@ -153,7 +156,8 @@ port ( U: in bit;
   
 end;
 ```
-A figura 3
+A figura 3 mostra o bloco do registrador com carga paralela que deslocar os bits a direita para representar os valores.
+<br/> <br/>
 
 <p align="center">
   <b>Figura 3.</b>
@@ -161,6 +165,8 @@ A figura 3
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/64476288-5afcdf80-d163-11e9-9a77-f6d8e0f5cdab.png" width="300" heigth="300"> 
  </p>
+ 
+ <br/> <br/>
  
 ``` vhdl
 architecture cktX of circuitoX is
@@ -210,6 +216,9 @@ end cktX;
  
  #### 3.3 MAIN <br/> <br/>
  
+ No circuito MAIN fará a concatenação dos circuitos X e Y com as entradas **A**, **K** bem como a reoresentação da saída **Z**.
+ 
+ <br/> <br/>
 ``` vhdl 
 entity com_serial is
   
@@ -272,6 +281,9 @@ end ckt_serial;
 ```
 ### 4. CONCLUSÃO <br/> <br/>
 
+O circuito da figura 4 é o circuito solução que une o X com Y.
+
+<br/> <br/>
 <p align="center">
   <b>Figura 4.</b>
  <a href="#">Bloco solução</a> 
