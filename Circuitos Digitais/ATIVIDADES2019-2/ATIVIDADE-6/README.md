@@ -80,6 +80,7 @@ A figura 2 mostra o bloco do circuito em bloco com a entrada **I** de 4 bits que
  </p>
 
 <br/> <br/>
+
 ``` vhdl
 architecture cktY of circuitoY is
   
@@ -141,6 +142,7 @@ end cktY;
 * Entidade do circuito X:
 
 ``` vhdl
+
 entity circuitoX is
   
 port ( U: in bit;
@@ -159,6 +161,7 @@ A figura 3
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/64476288-5afcdf80-d163-11e9-9a77-f6d8e0f5cdab.png" width="300" heigth="300"> 
  </p>
+ 
 ``` vhdl
 architecture cktX of circuitoX is
   
@@ -206,6 +209,7 @@ end cktX;
 
  
  #### 3.3 MAIN <br/> <br/>
+ 
 ``` vhdl 
 entity com_serial is
   
@@ -217,7 +221,8 @@ entity com_serial is
 end;
 
 ```
- ``` vhdl 
+
+``` vhdl 
  architecture ckt_serial of com_serial is
   
 component circuitoX is
