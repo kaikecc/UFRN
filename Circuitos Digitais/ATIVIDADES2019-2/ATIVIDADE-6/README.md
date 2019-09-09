@@ -41,7 +41,7 @@ A utilização de carga paralela permite com que uma informação seja carregada
 
 #### 3.2 CIRCUITO Y <br/> <br/>
 
-O circuito Y é responsável por receber um valor de 4 bits e para isso foi desenvolvido um componente de carga paralela que executará alguns funcionalidades de: **Manter**, **Carga Paralela**, **Deslocar a direita** e **zerar as saídas dos registradores**. O circuito também terá como entrada um valor K de 2 bits que executará a lógica do circuito carga paralela. <br/> <br/>
+O circuito Y é responsável por receber um valor de 4 bits e para isso foi desenvolvido um componente de carga paralela que executará alguns funcionalidades de: **Manter**, **Carga Paralela**, **Deslocar a Direita** e **Zerar as saídas dos registradores**. O circuito também terá como entrada um valor K de 2 bits que executará a lógica do circuito carga paralela. <br/> <br/>
 
 **Tabela 1** - Funcionalidades do circuito
 
@@ -53,9 +53,10 @@ K(0) | K(1) | Operação
 1 | 1 | Zerar o registrador
 
 <br/> <br/>
+
 * Entidade do circuito Y:
 
-
+<br/> <br/>
 ``` vhdl
 entity circuitoY is
   
@@ -68,7 +69,16 @@ port ( I: in bit_vector(3 downto 0);
 end;
 ```
 <br/> <br/>
-* Arquitetura do circuito Y contará com dois componentes. O primeiro será um **reg4bit** (registrador de 4 bits) que terá o papel de armazenar os bits proviniente da chave **A** e o segundo **cp4bits** (carga paralela de 4 bits) que tornará as funções de manter, deslocar e carregar possível de ser executadas no circuito Y.
+ Arquitetura do circuito Y contará com dois componentes. O primeiro será um **reg4bit** (registrador de 4 bits) que terá o papel de armazenar os bits proviniente da chave **A** e o segundo **cp4bits** (carga paralela de 4 bits) que tornará as funções de manter, deslocar e carregar possível de ser executadas no circuito Y. 
+A figura 2 mostra o bloco do circuito em bloco com a entrada **I** de 4 bits que recebe os valores da entrada **A** e a saída de **Q** de 4 bits terá seu bit menos significativo responsável pelo canal serial com o circuito X. A entrada **shr_in** fica configurada em 0, pois não receberá nenhum dado via serial e as entradas **s0** e **s1** são proviniente da entrada do circuito como **K**.
+<br/> <br/>
+<p align="center">
+  <b>Figura 2.</b>
+ <a href="#">Circuito Y</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/64476399-83d1a480-d164-11e9-92fd-cd20033a2b51.png" width="300" heigth="300"> 
+ </p>
+
 <br/> <br/>
 ``` vhdl
 architecture cktY of circuitoY is
@@ -124,15 +134,6 @@ S <= Qo(0);
 
 end cktY;
 ```
-A figura 2 mostra o bloco do circuito em bloco com a entrada **I** de 4 bits que recebe os valores da entrada **A** e a saída de **Q** de 4 bits terá seu bit menos significativo responsável pelo canal serial com o circuito X. 
-
-<p align="center">
-  <b>Figura 2.</b>
- <a href="#">Circuito Y</a> 
- <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64476399-83d1a480-d164-11e9-92fd-cd20033a2b51.png" width="200" heigth="200"> 
- </p>
-
 
 
 #### 3.2 CIRCUITO X <br/> <br/>
