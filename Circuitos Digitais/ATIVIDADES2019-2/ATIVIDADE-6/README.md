@@ -22,7 +22,11 @@ adicionada para zerar a saída dos registradores do circuito X ou Y. <br/> <br/>
 
 ### 2. OBJETIVO <br/> <br/>
 
+Desenvolver em VHD um circuito Y que receba um valor de 4 bits e repasse para outro circuito X via serial o valor de 4 bits.
+
 ### 3. DESCRIÇÃO EM LINGUAGEM DE HARDWARE <br/> <br/>
+
+
 
 #### 3.1 REGISTRADORES <br/> <br/>
 
@@ -34,7 +38,20 @@ A utilização de carga paralela permite com que uma informação seja carregada
 
 
 
+
 #### 3.2 CIRCUITO Y <br/> <br/>
+
+O circuito Y é responsável por receber um valor de 4 bits e para isso foi desenvolvido um componente de carga paralela que executará alguns funcionalidades de: **Manter**, **Carga Paralela**, **Deslocar a direita** e **zerar as saídas dos registradores**. O circuito também terá como entrada um valor K de 2 bits que executará a lógica do circuito carga paralela.
+
+**Tabela 1** - Funcionalidades do circuito
+K(0) | K(1) | Operação
+--|---|---------------
+0 | 0 | Manter o valor atual
+0 | 1 | Carga paralela
+1 | 0 | Deslocar a direita
+1 | 1 | Zerar o registrador
+
+*Entidade do circuito Y:
 
 
 ``` vhdl
