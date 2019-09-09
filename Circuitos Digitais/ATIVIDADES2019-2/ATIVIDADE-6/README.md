@@ -124,7 +124,8 @@ S <= Qo(0);
 
 end cktY;
 ```
-A figura 2 mostra o bloco do circuito em bloco com as entradas 
+A figura 2 mostra o bloco do circuito em bloco com a entrada **I** de 4 bits que recebe os valores da entrada **A** e a saída de **Q** de 4 bits terá seu bit menos significativo responsável pelo canal serial com o circuito X. 
+
 <p align="center">
   <b>Figura 2.</b>
  <a href="#">Circuito Y</a> 
