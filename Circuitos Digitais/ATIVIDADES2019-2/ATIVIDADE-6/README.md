@@ -138,6 +138,8 @@ end cktY;
 
 #### 3.2 CIRCUITO X <br/> <br/>
 
+* Entidade do circuito X:
+
 ``` vhdl
 entity circuitoX is
   
@@ -149,7 +151,14 @@ port ( U: in bit;
   
 end;
 ```
+A figura 3
 
+<p align="center">
+  <b>Figura 3.</b>
+ <a href="#">Registrador 4 bits com carga paralela</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/64476288-5afcdf80-d163-11e9-9a77-f6d8e0f5cdab.png" width="300" heigth="300"> 
+ </p>
 ``` vhdl
 architecture cktX of circuitoX is
   
@@ -194,12 +203,7 @@ CP: cp2bit port map(
   
 end cktX;
 ```
-<p align="center">
-  <b>Figura 3.</b>
- <a href="#">Registrador 4 bits com carga paralela</a> 
- <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/64476288-5afcdf80-d163-11e9-9a77-f6d8e0f5cdab.png" width="200" heigth="200"> 
- </p>
+
  
  #### 3.3 MAIN <br/> <br/>
 ``` vhdl 
