@@ -66,7 +66,7 @@ O conjunto de registradores possui 4 flip-flops JK da família SN76 e o funciona
  </p>
   <br/> <br/>
   
- ### 3.3 MULTIPLEXADOR 6x3  <br/> <br/>
+ #### 3.3 MULTIPLEXADOR 6x3  <br/> <br/>
 
  <br/> <br/>
  O circuito contador foi utilizado uma lógica de multiplexador que possui seis entradas que converte em três saídas. A figura 5 mostra o esquemático do multiplexador em que as entradas AUX_A, AUX_B e QD são resultados de uma lógica combinacional up e as entradas AUX_A’, AUX_B’ e QD’ fazem parte do circuito down.
