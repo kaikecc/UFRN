@@ -78,7 +78,9 @@ O conjunto de registradores possui 4 flip-flops JK da família SN76 e o funciona
 <img src="https://user-images.githubusercontent.com/42541528/65081514-2c101600-d97a-11e9-8535-3b58d351ee6d.png" width="400" heigth="400"> 
  </p>
   <br/> <br/>
-### 4. RESULTADOS <br/> <br/>
+  
+  ### 4. RESULTADOS <br/> <br/>
+  
  <br/> <br/>
 Após a construção dos blocos operacionais todos foram conectados no diagrama em bloco para uma melhor visualização do projeto conforme a figura 6.
  <br/> <br/>
@@ -89,6 +91,8 @@ Após a construção dos blocos operacionais todos foram conectados no diagrama 
 <img src="https://user-images.githubusercontent.com/42541528/65081737-b3f62000-d97a-11e9-926a-83810c51c08f.png" width="400" heigth="400"> 
  </p>
   <br/> <br/>
-### 5. CONCLUSÃO <br/> <br/> 
+  
+### 5. CONCLUSÃO <br/> <br/>
+
  <br/> <br/>
 O trabalho do contador até um número binário colocado na chave de 4 bits mostrou-se bastante trabalhoso, mas foi possível ter um melhor contato com o flip-flop JK e entender seu funcionamento.
