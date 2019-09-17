@@ -79,7 +79,7 @@ O conjunto de registradores possui 4 flip-flops JK da família SN76 e o funciona
  </p>
   <br/> <br/>
   
-  ### 4. RESULTADOS <br/> <br/>
+### 4. RESULTADOS <br/> <br/>
   
  <br/> <br/>
 Após a construção dos blocos operacionais todos foram conectados no diagrama em bloco para uma melhor visualização do projeto conforme a figura 6.
