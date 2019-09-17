@@ -69,10 +69,24 @@ O conjunto de registradores possui 4 flip-flops JK da família SN76 e o funciona
  O circuito contador foi utilizado uma lógica de multiplexador que possui seis entradas que converte em três saídas. A figura 5 mostra o esquemático do multiplexador em que as entradas AUX_A, AUX_B e QD são resultados de uma lógica combinacional up e as entradas AUX_A’, AUX_B’ e QD’ fazem parte do circuito down.
 	As saídas A, B e C são entradas do registrador de 4 bits.
 	
-![mux6x4-1]()
+
 <p align="center">
   <b>Figura 5.</b>
  <a href="#">Diagrama de ligação do multiplexador.</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65081514-2c101600-d97a-11e9-8535-3b58d351ee6d.png" width="400" heigth="400"> 
  </p>
+### 4. RESULTADOS <br/> <br/>
+
+Após a construção dos blocos operacionais todos foram conectados no diagrama em bloco para uma melhor visualização do projeto conforme a figura 6.
+
+<p align="center">
+  <b>Figura 6.</b>
+ <a href="#">Diagrama em bloco do contador de 4 bits.</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/65081737-b3f62000-d97a-11e9-926a-83810c51c08f.png" width="400" heigth="400"> 
+ </p>
+ 
+### 5. CONCLUSÃO <br/> <br/> 
+
+O trabalho do contador até um número binário colocado na chave de 4 bits mostrou-se bastante trabalhoso, mas foi possível ter um melhor contato com o flip-flop JK e entender seu funcionamento.
