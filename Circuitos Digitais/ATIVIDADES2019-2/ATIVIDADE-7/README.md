@@ -59,8 +59,20 @@ O conjunto de registradores possui 4 flip-flops JK da família SN76 e o funciona
 
 
 <p align="center">
-  <b>Figura 3.</b>
+  <b>Figura 4.</b>
  <a href="#">Diagrama de ligação dos comparadores.</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65081335-cb80d900-d979-11e9-909e-d5ed464321f9.png" width="800" heigth="600"> 
+<img src="https://user-images.githubusercontent.com/42541528/65081335-cb80d900-d979-11e9-909e-d5ed464321f9.png" width="400" heigth="400"> 
+ </p>
+ 
+#### 3.3 MULTIPLEXADOR 6x3  <br/> <br/>
+ O circuito contador foi utilizado uma lógica de multiplexador que possui seis entradas que converte em três saídas. A figura 5 mostra o esquemático do multiplexador em que as entradas AUX_A, AUX_B e QD são resultados de uma lógica combinacional up e as entradas AUX_A’, AUX_B’ e QD’ fazem parte do circuito down.
+	As saídas A, B e C são entradas do registrador de 4 bits.
+	
+![mux6x4-1]()
+<p align="center">
+  <b>Figura 5.</b>
+ <a href="#">Diagrama de ligação do multiplexador.</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/65081514-2c101600-d97a-11e9-8535-3b58d351ee6d.png" width="400" heigth="400"> 
  </p>
