@@ -18,7 +18,7 @@ imediatamente para 0. O circuito pode fazer uso de CIs do tipo 7400, 7432, 7408,
   <b>Figura 1.</b>
  <a href="#">Bloco problema</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65080525-e2263080-d977-11e9-8a39-0a806ecaefa3.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/65080525-e2263080-d977-11e9-8a39-0a806ecaefa3.png" width="200" heigth="200"> 
  </p>
 
 ### 2. OBJETIVO <br/> <br/>
@@ -44,12 +44,23 @@ O conjunto de registradores possui 4 flip-flops JK da família SN76 e o funciona
  
  A figura 3 mostra o conjunto de flip-flops JK (7476) que forma o bloco registrador do contador. As entradas J e K de cada flip-flop são unidas e recebe do multiplexador o estado de subida (up) e descida (down). As saídas do registrador QA, QB, QC e QD são os bits que dará a representação em BCD no display.
 
-
-
-
 <p align="center">
   <b>Figura 3.</b>
  <a href="#">Diagrama de ligação dos flip-flops</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65081010-046c7e00-d979-11e9-8f59-eea92a47b9ba.png" width="800" heigth="600"> 
+ </p>
+ 
+ 
+ #### 3.2 COMPARADORES  <br/> <br/>
+ 
+  O componente lógicos que opera igualdade e desigualdades são chamados de compradores. O problema do contador possui dois comparadores de 4 bits de igualdade que recebe uma entrada da chave de 4 bits e o outro compara com zero para que a lógica de repetição entre o valor da chave e zero fique cíclico.  O componente U8 da figura 4 recebe as saídas QA, QB, QC e QD do registrador de 4 bits para comparar com zero e o elemento U6 recebe para comparar as saídas do registrador e a entrada da chave de 4 bits A0, A1, A2 e A3.
+	Os dois comparadores têm como saída SEL1 proveniente da comparação com zero e SEL2  resultante da comparação com o valor da chave. 
+
+
+<p align="center">
+  <b>Figura 3.</b>
+ <a href="#">Diagrama de ligação dos comparadores.</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/65081335-cb80d900-d979-11e9-909e-d5ed464321f9.png" width="800" heigth="600"> 
  </p>
