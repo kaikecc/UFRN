@@ -16,8 +16,7 @@ em zero, se este n˜ao faz parte do intervalo, o contador contar´a de forma cre
 maior valor).
 
 
-<p>
-  align="center">
+<p  align="center">
   <b>Figura 1.</b>
  <a href="#">Bloco problema</a> 
  <br><br>
@@ -25,8 +24,7 @@ maior valor).
  </p>
  
  
-<p>
- align="center">
+<p align="center">
   <b>Figura 2.</b>
  <a href="#">Bloco solução</a> 
  <br><br>
