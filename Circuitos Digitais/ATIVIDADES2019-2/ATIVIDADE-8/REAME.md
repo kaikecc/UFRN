@@ -29,20 +29,30 @@ maior valor).
  
   ### 3. LINGUAGEM DE DESCRIÇÃO DE HARDWARE <br/> <br/>
  
+ O programa principal é onde todos os blocos se unem para gerar o circuito do problema. A entidade abaixa mostra as entradas e saídas do circuito.
  
- 
- 
+ ``` vhdl
+ entity main is
+  
+  port(A,B: in bit_vector(3 downto 0);
+    EN, CLR, clock: in bit;
+    C: out bit_vector(3 downto 0));
+end;
+  ```
  
  
  ### 4. RESULTADOS <br/> <br/>
  
+O multiplexador 8x4 recebe as entradas **A** e **B** que através de um compaador de A menor B determina o menor valor que será carregado no registrador de 4 bit. O menor valor entre A e B entra no bit menos signitificativo da carga paralela de 4 bits 4x1 e a segunda entrada recebe saída do registrado somado mais 1 e a terceira entrada recebe a saída do multiplexador menos 1 e por fim a saída mais signficativa do multiplexado recebe a saída atual do mux.
+
+A seleção para entrada para o registrador de 4 bits vem de dois flip-flops tipo D que são ativadas de acordo com a comparação entre o maior e menor valor com a saída do registrador.
 
  
 <p align="center">
   <b>Figura 2.</b>
  <a href="#">Bloco solução</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65466269-b7831e80-de34-11e9-8271-ceff3fa59c27.png" width="600" heigth="600"> 
+<img src="https://user-images.githubusercontent.com/42541528/65467567-244be800-de38-11e9-95b8-12d11d2f3408.png" width="600" heigth="600"> 
  </p>
  
  
