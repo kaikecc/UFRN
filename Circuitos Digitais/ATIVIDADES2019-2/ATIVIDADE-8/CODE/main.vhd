@@ -62,7 +62,7 @@ end component;
 signal A1, A2, A3, B1, B2, B3, AA1, AA2, AA3, AAA1, A11: bit;
 signal menor_valor, maior_valor: bit_vector(3 downto 0);
 signal Qmais, Qmenos: bit_vector(3 downto 0);
-signal s0, s1: bit;
+signal s0, s1, ss0, ss1: bit;
 signal mux_saida: bit_vector(3 downto 0);
 signal QQ: bit_vector(3 downto 0);
 
@@ -87,7 +87,7 @@ MX8X4: mux8x4 port map(
  ------------ FIM ------------------
  
  
- --------- COMPARAÇÃO PARA O MAIOR VALOR ----------    
+ --------- COMPARAÃ‡ÃƒO PARA O MAIOR VALOR ----------    
      
   comparador_4_bits_A_maior_B: comparador4bit port map(
   
@@ -110,12 +110,13 @@ carga_paralela: cp4bit port map(
     E0 => menor_valor,
     E1 => Qmais,
     E2 => Qmenos,
-    E3(0) => '0', 
-    E3(1) => '0', 
-    E3(2) => '0', 
-    E3(3) => '0', 
-    SS(0) => s0,
-    SS(1) => s1,
+  --  E3(0) => '0', 
+  --  E3(1) => '0', 
+  --  E3(2) => '0', 
+ --   E3(3) => '0', 
+ E3 => QQ,
+    SS(0) => ss0, -- MODIFIFCADO DE s0 para ss0
+    SS(1) => ss1, -- MODIFICADO DE s1 para ss1
     
     V => mux_saida);
   
@@ -165,6 +166,9 @@ registrador_4_bits: reg4bit port map(
       C => B1,
       q => s0);  
       
+ ss0 <= EN or (s0 and not EN); -- colocado agora
+ ss1 <= EN or (s1 and not EN); -- colocado agora     
+      
 somador_4_bit_0: somador4bit port map(
 
     Z => QQ,
@@ -188,3 +192,4 @@ somador_4_bit_0: somador4bit port map(
   C <= QQ;
   
 end ckto;
+
