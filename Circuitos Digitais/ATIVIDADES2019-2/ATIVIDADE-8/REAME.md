@@ -27,12 +27,23 @@ maior valor).
  
  Desenvolver um circuito em vhd que identifica de dois números o menor e inicia a contagem até o maior valor e depois retorna para o menor.
  
+  ### 3. LINGUAGEM DE DESCRIÇÃO DE HARDWARE <br/> <br/>
  
  
+ 
+ 
+ 
+ 
+ ### 4. RESULTADOS <br/> <br/>
+ 
+
  
 <p align="center">
   <b>Figura 2.</b>
  <a href="#">Bloco solução</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65446786-7b879380-de0b-11e9-86af-d692ab54b0d4.png" width="600" heigth="600"> 
+<img src="https://user-images.githubusercontent.com/42541528/65466269-b7831e80-de34-11e9-8271-ceff3fa59c27.png" width="600" heigth="600"> 
  </p>
+ 
+ 
+ ### 5. CONCLUSÃO <br/> <br/>
