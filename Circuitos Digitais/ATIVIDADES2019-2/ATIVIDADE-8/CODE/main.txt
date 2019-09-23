@@ -1,0 +1,12 @@
+vsim main
+
+
+add wave *
+
+force clock 0 0, 1 1 -repeat 2
+force A "0101" 0 
+force B "0001" 0 
+force CLR 1 1
+force EN 0 0
+
+run 16
