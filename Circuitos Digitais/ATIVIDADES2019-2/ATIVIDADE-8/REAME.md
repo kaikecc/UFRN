@@ -16,17 +16,19 @@ em zero, se este n˜ao faz parte do intervalo, o contador contar´a de forma cre
 maior valor).
 
 
-p align="center">
+<p>
+  align="center">
   <b>Figura 1.</b>
  <a href="#">Bloco problema</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65446743-627ee280-de0b-11e9-812f-8ae02559c97a.png" width="200" heigth="200"> 
+<img src="https://user-images.githubusercontent.com/42541528/65446743-627ee280-de0b-11e9-812f-8ae02559c97a.png" width="400" heigth="400"> 
  </p>
  
  
-p align="center">
+<p>
+ align="center">
   <b>Figura 2.</b>
  <a href="#">Bloco solução</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65446786-7b879380-de0b-11e9-86af-d692ab54b0d4.png" width="200" heigth="200"> 
+<img src="https://user-images.githubusercontent.com/42541528/65446786-7b879380-de0b-11e9-86af-d692ab54b0d4.png" width="600" heigth="600"> 
  </p>
