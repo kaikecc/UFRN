@@ -23,6 +23,12 @@ maior valor).
 <img src="https://user-images.githubusercontent.com/42541528/65446743-627ee280-de0b-11e9-812f-8ae02559c97a.png" width="400" heigth="400"> 
  </p>
  
+ ### 2. OBJETIVO <br/> <br/>
+ 
+ Desenvolver um circuito em vhd que identifica de dois números o menor e inicia a contagem até o maior valor e depois retorna para o menor.
+ 
+ 
+ 
  
 <p align="center">
   <b>Figura 2.</b>
