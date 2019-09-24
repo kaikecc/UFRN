@@ -5,7 +5,7 @@
 
 ### 1. INTRODUÇÃO <br/> <br/>
 
-> - Implemente, em VHDL, um circuito contador que oscila sua contagem entre valores colocados
+> Implemente, em VHDL, um circuito contador que oscila sua contagem entre valores colocados
 em suas entradas A (A3, A2, A1, A0) e B (B3, B2, B1, B0). E importante notar que o contador ´
 sempre iniciará do valor menor e contará de forma crescente até a atingir o valor maior, neste
 momento o contador passar´a a contar de forma decrescente até o valor menor. Assim, o contador
@@ -247,4 +247,4 @@ A seleção para entrada para o registrador de 4 bits vem de dois flip-flops tip
  
  ### 5. CONCLUSÃO <br/> <br/>
  
- A implementação em blocos do problema mostrou-se ser bastante
+ A implementação em blocos do problema mostrou-se ser bastante eficiente para resolver o circuito. 
