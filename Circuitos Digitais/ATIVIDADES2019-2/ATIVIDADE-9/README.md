@@ -53,21 +53,28 @@ O circuito lógico foi construído a partir da tabela da figura 3 e 4.
  A partir das figuras 3 e 4 foi extraído as equações que fazerá parte da entrada do registrador de 5 bits.
  
  <br/> <br/>
+ 
  * **DA** = D'E + A'BC + ABC'
  * **DB** = D'E + AB' + A'CD + ABC
  * **DC** = A'E + A'CD + A'BC'
  * **DD** = E + A'B'D'
  * **DE** = AE + D'E + A'B'C'E'
+ 
  <br/> <br/>
+ 
  As figuras 5 e 6 são os circuitos lógicos a partir das equações.
+ 
  <br/> <br/>
+ 
 <p  align="center">  
   <b>Figura 5.</b>
  <a href="#">Circuito lógico</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845134-54e7c200-e30f-11e9-903e-dfaf3a42ccf4.png" width="600" heigth="400"> 
  </p>
+ 
  <br/> <br/>
+ 
  <p  align="center">
   <b>Figura 6.</b>
  <a href="#">Diagrama de estados</a> 
@@ -93,6 +100,7 @@ O circuito lógico foi construído a partir da tabela da figura 3 e 4.
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845137-54e7c200-e30f-11e9-8d1d-594c57d433c2.png" width="800" heigth="600"> 
  </p>
+ 
 ## 4. CONCLUSÃO  <br/> <br/>
 
 O circuito em questão foi bastante simples na construção da lógica e na implementação em protoboard.
