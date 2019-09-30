@@ -6,7 +6,7 @@
 ### 1. INTRODUÇÃO <br/> <br/>
 
 > Projete e implemente um circuito lógico para um pequeno sinalizador luminoso. O circuito
-deve apresentar 5 leds de sa´ıda os quais são acionados conforme a figura abaixo. Após o instante
+deve apresentar 5 leds de saída os quais são acionados conforme a figura abaixo. Após o instante
 10, o ciclo recomeça pelo instante 1 novamente.
 
 
@@ -26,11 +26,32 @@ deve apresentar 5 leds de sa´ıda os quais são acionados conforme a figura aba
 <img src="https://user-images.githubusercontent.com/42541528/65844752-ce7eb080-e30d-11e9-9bf8-940510a09d41.png" width="400" heigth="400"> 
  </p>
 
+O circuito lógico foi construído a partir da tabela 
+
+
+
 
 <p  align="center">
   
   <b>Figura 3.</b>
- <a href="#">Diagrama de estados</a> 
+ <a href="#">Tabela verdade</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/65918951-61245b80-e3b1-11e9-8f5b-c682aaf9a488.JPG" width="400" heigth="400"> 
+ </p>
+ 
+ <p  align="center">
+  
+  <b>Figura 4.</b>
+ <a href="#">Tabela verdade</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/65918952-61bcf200-e3b1-11e9-9968-e4f60b29d71b.JPG" width="400" heigth="400"> 
+ </p>
+ 
+
+<p  align="center">
+  
+  <b>Figura 3.</b>
+ <a href="#">Circuito lógico</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845134-54e7c200-e30f-11e9-903e-dfaf3a42ccf4.png" width="400" heigth="400"> 
  </p>
