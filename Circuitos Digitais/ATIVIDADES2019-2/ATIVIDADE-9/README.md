@@ -39,7 +39,7 @@ O circuito lógico foi construído a partir da tabela da figura 3 e 4.
   <b>Figura 3.</b>
  <a href="#">Tabela verdade</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65918952-61bcf200-e3b1-11e9-9968-e4f60b29d71b.JPG" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/65918952-61bcf200-e3b1-11e9-9968-e4f60b29d71b.JPG" width="800" heigth="600"> 
  </p>
 
 <p  align="center">
