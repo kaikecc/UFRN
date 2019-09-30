@@ -56,7 +56,7 @@ O circuito lógico foi construído a partir da tabela da figura 3 e 4.
   <b>Figura 5.</b>
  <a href="#">Circuito lógico</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65845134-54e7c200-e30f-11e9-903e-dfaf3a42ccf4.png" width="800" heigth="600"> 
+<img src="https://user-images.githubusercontent.com/42541528/65845134-54e7c200-e30f-11e9-903e-dfaf3a42ccf4.png" width="600" heigth="400"> 
  </p>
  
  <p  align="center">
