@@ -76,16 +76,23 @@ O circuito lógico foi construído a partir da tabela da figura 3 e 4.
  </p>
  <br/> <br/>
 <p  align="center">
+  
   <br/> <br/>
+  
  <b>Figura 7.</b>
- <a href="#">Diagrama de estados</a> 
+ <a href="#">Lógica do EN em 5 bits MUX2X1</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845136-54e7c200-e30f-11e9-8c9f-d5b9734b2178.png" width="400" heigth="400"> 
  </p>
+ 
  <br/> <br/>
+ 
  <p  align="center">  
  <b>Figura 8.</b>
- <a href="#">Diagrama de estados</a> 
+ <a href="#">Registrador de 5 bits</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845137-54e7c200-e30f-11e9-8d1d-594c57d433c2.png" width="800" heigth="600"> 
  </p>
+## 4. CONCLUSÃO  <br/> <br/>
+
+O circuito em questão foi bastante simples na construção da lógica e na implementação em protoboard.
