@@ -24,6 +24,8 @@ Construir um circuito que obedeça uma sequência lógica de acendimento de cinc
 
 ## 3. DESENVOLVIMENTO  <br/> <br/>
 
+A partir da Figura 1 foi construindo uma tabela verdade que relaciona o estado presente com o futuro e os estados não utilizado foram colocados em dont'care para simplificação do circuito.
+
 <p  align="center">
   <b>Figura 2.</b>
  <a href="#">Diagrama de estados</a> 
@@ -47,6 +49,15 @@ O circuito lógico foi construído a partir da tabela da figura 3 e 4.
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65918951-61245b80-e3b1-11e9-8f5b-c682aaf9a488.JPG" width="800" heigth="600"> 
  </p>
+ 
+ A partir das figuras 3 e 4 foi extraído as equações que fazerá parte da entrada do registrador de 5 bits.
+ 
+ 
+ * **DA** = D'E + A'BC + ABC'
+ * **DB** = D'E + AB' + A'CD + ABC
+ * **DC** = A'E + A'CD + A'BC'
+ * **DD** = E + A'B'D'
+ * **DE** = AE + D'E + A'B'C'E'
  
  
 <p  align="center">
