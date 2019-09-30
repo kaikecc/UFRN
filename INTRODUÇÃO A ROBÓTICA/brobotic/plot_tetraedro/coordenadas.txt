@@ -1,0 +1,68 @@
+------Thetas------
+
+Theta 1: 0
+
+Theta 2: 80
+
+Theta 3: -90
+
+Theta 4: -25
+
+Cinematica Direta:
+
+X = 27.6049
+
+Y = 0.0000
+
+Z = 13.0840
+
+------Thetas------
+
+Theta 1: -11
+
+Theta 2: 55
+
+Theta 3: -85
+
+Theta 4: -15
+
+Cinematica Direta:
+
+X = 29.7518
+
+Y = -5.7832
+Z = 3.5395
+------Thetas------
+
+Theta 1: 9
+
+Theta 2: 55
+
+Theta 3: -85
+
+Theta 4: -20
+
+Cinematica Direta:
+
+X = 29.3909
+
+Y = 4.6551
+
+Z = 3.0343
+
+------Thetas------
+
+Theta 1: 0
+
+Theta 2: 80
+
+Theta 3: -115
+
+Theta 4: -10
+
+Cinematica Direta:
+X = 23.6088
+
+Y = 0.0000
+
+Z = 4.6107
