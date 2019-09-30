@@ -15,7 +15,7 @@ deve apresentar 5 leds de sa´ıda os quais são acionados conforme a figura aba
   <b>Figura 1.</b>
  <a href="#">Bloco problema</a> 
  <br><br>
-<img src="" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/65844797-f79f4100-e30d-11e9-97e6-3db345d383f1.png" width="400" heigth="400"> 
  </p>
  
  
