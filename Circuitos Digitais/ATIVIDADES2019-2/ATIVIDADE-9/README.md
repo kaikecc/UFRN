@@ -33,6 +33,8 @@ A partir da Figura 1 foi construindo uma tabela verdade que relaciona o estado p
 <img src="https://user-images.githubusercontent.com/42541528/65844752-ce7eb080-e30d-11e9-9bf8-940510a09d41.png" width="400" heigth="400"> 
  </p>
 
+ <br/> <br/>
+ 
 O circuito lógico foi construído a partir da tabela da figura 3 e 4.
 
 <br/> <br/>
