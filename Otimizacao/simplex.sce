@@ -16,8 +16,8 @@ function metodo = simplex(matriz_aumentada)
 
     q = zeros(1,length(b)-1); // vetor do Fator Limitante
     linha1 = A(1,:);// primeira linha da matriz de coeficientes
-    vb = length(q)-1:1:length(linha1)-1;
-    
+    //vb = length(q)-1:1:length(linha1)-1;
+    vb = zeros(1,length(b)-1);
     interacao = 0;
 
     m = -1;// para iniciar o while
