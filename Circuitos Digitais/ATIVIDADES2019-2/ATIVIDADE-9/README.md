@@ -51,6 +51,7 @@ deve apresentar 5 leds de sa´ıda os quais são acionados conforme a figura aba
  </p>
  
  <p  align="center">
+  
  <b>Figura 6.</b>
  <a href="#">Diagrama de estados</a> 
  <br><br>
