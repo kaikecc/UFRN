@@ -29,35 +29,35 @@ deve apresentar 5 leds de saída os quais são acionados conforme a figura abaix
 O circuito lógico foi construído a partir da tabela 
 
 
-
-
 <p  align="center">
   
   <b>Figura 3.</b>
+ <a href="#">Tabela verdade</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/65918952-61bcf200-e3b1-11e9-9968-e4f60b29d71b.JPG" width="400" heigth="400"> 
+ </p>
+
+<p  align="center">
+  
+  <b>Figura 4.</b>
  <a href="#">Tabela verdade</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65918951-61245b80-e3b1-11e9-8f5b-c682aaf9a488.JPG" width="400" heigth="400"> 
  </p>
  
- <p  align="center">
-  
-  <b>Figura 4.</b>
- <a href="#">Tabela verdade</a> 
- <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65918952-61bcf200-e3b1-11e9-9968-e4f60b29d71b.JPG" width="400" heigth="400"> 
- </p>
+ 
  
 
 <p  align="center">
   
-  <b>Figura 3.</b>
+  <b>Figura 5.</b>
  <a href="#">Circuito lógico</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845134-54e7c200-e30f-11e9-903e-dfaf3a42ccf4.png" width="400" heigth="400"> 
  </p>
  
  <p  align="center">
-  <b>Figura 4.</b>
+  <b>Figura 6.</b>
  <a href="#">Diagrama de estados</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845135-54e7c200-e30f-11e9-9ae5-60e70e766662.png" width="400" heigth="400"> 
@@ -65,7 +65,7 @@ O circuito lógico foi construído a partir da tabela
  
 <p  align="center">
   
- <b>Figura 5.</b>
+ <b>Figura 7.</b>
  <a href="#">Diagrama de estados</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845136-54e7c200-e30f-11e9-8c9f-d5b9734b2178.png" width="400" heigth="400"> 
@@ -73,7 +73,7 @@ O circuito lógico foi construído a partir da tabela
  
  <p  align="center">
   
- <b>Figura 6.</b>
+ <b>Figura 8.</b>
  <a href="#">Diagrama de estados</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/65845137-54e7c200-e30f-11e9-8d1d-594c57d433c2.png" width="400" heigth="400"> 
