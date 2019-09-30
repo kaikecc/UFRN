@@ -87,5 +87,5 @@ O circuito lógico foi construído a partir da tabela da figura 3 e 4.
  <b>Figura 8.</b>
  <a href="#">Diagrama de estados</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/65845137-54e7c200-e30f-11e9-8d1d-594c57d433c2.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/65845137-54e7c200-e30f-11e9-8d1d-594c57d433c2.png" width="800" heigth="600"> 
  </p>
