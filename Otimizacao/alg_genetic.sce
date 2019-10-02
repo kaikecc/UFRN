@@ -14,17 +14,22 @@
 function y = f(x)
     
     y = x.^2 - 3.x + 4;
+    
 endfunction
 
 function I = individuos(a,b,n)
     
-    I = zeros(5,n);
+    u = length(max(a,b));
+    
+    
+    I = zeros(5,u+1);
+    
+    
     
     for i = 0:5
-        for j = 0:n
-            
-            
-            
+        for j = 0:u
+              
+            if                   
             I(i,j) = r;
         
         end
