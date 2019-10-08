@@ -20,12 +20,12 @@ float tetha1 = 90, tetha2 = 90, tetha3 = 90, tetha4 = 90;
     size(800, 600);
  
      
-  String portName = Serial.list()[0];
-  myPort = new Serial(this, portName, 9600);
+ //  String portName = Serial.list()[0];
+ //  myPort = new Serial(this, portName, 9600);
  
- println(portName);
+ //  println(portName);
          
-      
+     // print((v3.sub(v2)).mag());
   }
   
   void draw() {
@@ -49,12 +49,13 @@ float tetha1 = 90, tetha2 = 90, tetha3 = 90, tetha4 = 90;
    
    if(dist(mouse.x, mouse.y, v3.x, v3.y) < r)
     { 
-     println(dist(mouse.x, mouse.y, v2.x, v2.y));//147
+      float a = PVector.angleBetween(v2, v3);
+      println(degrees(a));//147
       v3.sub(center0);
         mouse.normalize();
         mouse.mult(275);
-        mouse.setMag(275);
-     
+       mouse.setMag(275);
+    // mouse.limit(275);
        v3.set(mouse.x,mouse.y);
     }
     
@@ -133,8 +134,9 @@ float tetha1 = 90, tetha2 = 90, tetha3 = 90, tetha4 = 90;
      
  
   }
-  
+  /*
   void mouseClicked() {
   myPort.write("#0P1500");
   println("ENVIADO");
 }
+*/

@@ -19,21 +19,34 @@ endfunction
 
 function I = individuos(a,b,n)
     
-    u = length(max(a,b));
+    u = length(dec2bin(max(a,b)));
+    i = 0;
+    q = zeros(1,n);
+    I = zeros(u+1,n);
+    
+    while i < n
+        
+      i = i + 1;  
+      q(i) = ceil(rand(1,'uniform')*(max(a,b)));  
+      /*
+      if q(i) < (max(a,b)/2) then
+         q(i) = q(i) * (-1);
+      end
+       */     
+    end
     
     
-    I = zeros(5,u+1);
-    
-    
-    
-    for i = 0:5
-        for j = 0:u
-              
-            if                   
-            I(i,j) = r;
+    for i = 1:u+1
+        
+        v = strsplit(dec2bin(abs(q(i))),1:length(dec2bin(abs(q(i))))-1);
+        
+        for j = 1:n
+                                        
+            I(i,j) = v(j);
         
         end
      end  
+   
     
     
     
