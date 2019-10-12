@@ -1,0 +1,19 @@
+vsim main
+
+
+add wave *
+
+force clk 0 0, 1 1 -repeat 2
+
+force ld 0 0, 1 1 -repeat 4
+force shr 0 0
+force shl 0 0
+force set 0 0
+force clr 0 0
+
+force I "0000" 0, "0001" 2, "0010" 3 -repeat 6
+
+force shr_in 0 0
+force shl_in 0 0
+
+run 16
