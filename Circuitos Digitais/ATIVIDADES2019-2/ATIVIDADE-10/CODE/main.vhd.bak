@@ -41,42 +41,43 @@ BLOCO1 : cp4bits port map(
 
     CP(0) => '0',
     CP(1) => '1',
-    CP(2) => shl_in,
-    CP(3) => shl_in,
-    CP(4) => F(2),
-    CP(5) => F(2),
-    CP(6) => I(3),
-    CP(7) => F(3),
+    CP(2) => F(1),
+    CP(3) => F(1),
+    CP(4) => shr_in,
+    CP(5) => shr_in,
+    CP(6) => I(0),
+    CP(7) => F(0),
     
     CP(8) => '0',
     CP(9) => '1',
-    CP(10) => F(3),
-    CP(11) => F(3),
-    CP(12) => F(2),
-    CP(13) => F(2),
-    CP(14) => I(2),
-    CP(15) => F(2),
+    CP(10) => F(2),
+    CP(11) => F(2),
+    CP(12) => F(0),
+    CP(13) => F(0),
+    CP(14) => I(1),
+    CP(15) => F(1),
     
     
     CP(16) => '0',
     CP(17) => '1',
-    CP(18) => F(1),
-    CP(19) => F(1),
-    CP(20) => F(0),
-    CP(21) => F(0),
-    CP(22) => I(1),
-    CP(23) => F(1),
+    CP(18) => F(3),
+    CP(19) => F(3),
+    CP(20) => F(1),
+    CP(21) => F(1),
+    CP(22) => I(2),
+    CP(23) => F(2),
     
     CP(24) => '0',
     CP(25) => '1',
-    CP(26) => F(1),
-    CP(27) => F(1),
-    CP(28) => shr_in,
-    CP(29) => shr_in,
-    CP(30) => I(0),
-    CP(31) => F(0),  
+    CP(26) => shl_in,
+    CP(27) => shl_in,
+    CP(28) => F(2),
+    CP(29) => F(2),
+    CP(30) => I(3),
+    CP(31) => F(3),  
       
-    SELECIONAR => SSS);
+    SELECIONAR => SSS,
+    S_CPP => M);
     
     
 BLOCO2 : reg4bit port map(
@@ -86,7 +87,7 @@ BLOCO2 : reg4bit port map(
   Qs => F);
   
 
-  
+  S <= F;
 
       
 end ckt;
