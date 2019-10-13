@@ -47,8 +47,9 @@ Projetar um circuito que realize 6 (seis) funções em ordem de prioridade.
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/66718828-c0756900-edbe-11e9-94b6-1b6de5d1888f.png" width="800" heigth="600"> 
  </p>
- 
- Equações resultantes do mapa K de cada saída: <br/> <br/>
+ <br/> <br/>
+ Equações resultantes do mapa K de cada saída:
+ <br/> <br/>
  
  * **s0 =** shr + ld * set + shl' * set' * clr;
  * **s1 =** ld + shr' * shl' * set;
