@@ -24,6 +24,11 @@ todos os bits da sa´ıda do registrador, ap´os o pulso de clock, devem ir para
 <img src="https://user-images.githubusercontent.com/42541528/66717974-ff9ebc80-edb4-11e9-9c60-4ef3054604b2.png" width="600" heigth="600"> 
  </p>
 
+### 2. OBJETIVO <br/> <br/>
+
+### 3. DESENVOLVIMENTO <br/> <br/>
+
+### 4. RESULTADOS <br/> <br/>
 
 <p  align="center">
   <b>Figura 2.</b>
@@ -31,3 +36,5 @@ todos os bits da sa´ıda do registrador, ap´os o pulso de clock, devem ir para
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/66717938-8c954600-edb4-11e9-8c8b-94c3bfe68717.png" width="800" heigth="600"> 
  </p>
+ 
+### 5. CONCLUSÃO <br/> <br/>
