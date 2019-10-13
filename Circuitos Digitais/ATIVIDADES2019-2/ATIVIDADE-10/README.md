@@ -26,12 +26,33 @@ todos os bits da sa´ıda do registrador, ap´os o pulso de clock, devem ir para
 
 ### 2. OBJETIVO <br/> <br/>
 
+Projetar um circuito que realize 6 (seis) funções em ordem de prioridade. 
+
 ### 3. DESENVOLVIMENTO <br/> <br/>
 
-### 4. RESULTADOS <br/> <br/>
+
+
 
 <p  align="center">
   <b>Figura 2.</b>
+ <a href="#">Tabela 1. Codificação de entradas</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/66718807-860bcc00-edbe-11e9-9985-dd5e24bf1d1c.png" width="800" heigth="600"> 
+ </p>
+
+
+<p  align="center">
+  <b>Figura 3.</b>
+ <a href="#">Tabela 2. Relação das codificações</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/66718828-c0756900-edbe-11e9-94b6-1b6de5d1888f.png" width="800" heigth="600"> 
+ </p>
+ 
+ 
+### 4. RESULTADOS <br/> <br/>
+
+<p  align="center">
+  <b>Figura 4.</b>
  <a href="#">Bloco Solução</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/66717938-8c954600-edb4-11e9-8c8b-94c3bfe68717.png" width="800" heigth="600"> 
