@@ -7,13 +7,13 @@
 
 > 1 - Projete e implemente um circuito lógico, em VHDL, para implementar um registrador
 de múltiplas funções. O registrador possuirá seis funções distintas (por ordem de prioridade:
-manter, carregar, deslocar a direita, deslocar a esquerda, set s´ıncrono, clear s´ıncrono). Se
-load=1, o registrador dever´a fazer com que a saída S, ap´os o pulso de clock, receba o valor da
-entrada I. Se shr=1, o registrador dever´a deslocar, ap´os o pulso de clock, os bits da sa´ıda para
-a direita com o bit de entrada dado por shr in. Se shl=1, o registrador dever´a deslocar, ap´os o
+manter, carregar, deslocar a direita, deslocar a esquerda, set síncrono, clear síncrono). Se
+load=1, o registrador deverá fazer com que a saída S, após o pulso de clock, receba o valor da
+entrada I. Se shr=1, o registrador deverá deslocar, após o pulso de clock, os bits da saída para
+a direita com o bit de entrada dado por shr_in. Se shl=1, o registrador deverá deslocar, após o
 pulso de clock, os bits da sa´ıda para a esquerda com o bit de entrada dado por shl in. Se set=1,
-todos os bits da sa´ıda do registrador, ap´os o pulso de clock, devem ir para 1. Por fim, se clr=1,
-todos os bits da sa´ıda do registrador, ap´os o pulso de clock, devem ir para 0.
+todos os bits da saída do registrador, após o pulso de clock, devem ir para 1. Por fim, se clr=1,
+todos os bits da saída do registrador, após o pulso de clock, devem ir para 0.
 
 
 
@@ -48,7 +48,14 @@ Projetar um circuito que realize 6 (seis) funções em ordem de prioridade.
 <img src="https://user-images.githubusercontent.com/42541528/66718828-c0756900-edbe-11e9-94b6-1b6de5d1888f.png" width="800" heigth="600"> 
  </p>
  
+ Equações resultantes do mapa K de cada saída: <br/> <br/>
  
+ * **s0 =** shr + ld * set + shl' * set' * clr;
+ * **s1 =** ld + shr' * shl' * set;
+ * **s2 =** shl + shr + ld;
+ 
+ 
+ <br/> <br/>
 ### 4. RESULTADOS <br/> <br/>
 
 <p  align="center">
