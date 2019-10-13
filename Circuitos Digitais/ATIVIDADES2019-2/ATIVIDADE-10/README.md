@@ -19,7 +19,15 @@ todos os bits da sa´ıda do registrador, ap´os o pulso de clock, devem ir para
 
 <p  align="center">
   <b>Figura 1.</b>
+ <a href="#">Bloco Problema</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/66717974-ff9ebc80-edb4-11e9-9c60-4ef3054604b2.png" width="600" heigth="600"> 
+ </p>
+
+
+<p  align="center">
+  <b>Figura 2.</b>
  <a href="#">Bloco Solução</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/66717938-8c954600-edb4-11e9-8c8b-94c3bfe68717.png" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/66717938-8c954600-edb4-11e9-8c8b-94c3bfe68717.png" width="800" heigth="600"> 
  </p>
