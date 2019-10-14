@@ -101,6 +101,6 @@ A realização desse trabalho permitiu um entendimento melhor sobre shift bit e 
   <b>Figura 5.</b>
  <a href="#">Diagrama de bloco</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/66775472-6d70e400-ee9a-11e9-8413-0b6a7c1cadf1.JPG" width="800" heigth="600"> 
+<img src="https://user-images.githubusercontent.com/42541528/66775472-6d70e400-ee9a-11e9-8413-0b6a7c1cadf1.JPG" width="600" heigth="600"> 
  </p>
 
