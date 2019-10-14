@@ -31,15 +31,26 @@ Projetar um circuito que realize 6 (seis) funções em ordem de prioridade.
 ### 3. DESENVOLVIMENTO <br/> <br/>
 
 
-
-
-<p  align="center">
+ 
+ #### 3. 1 DEFINIR O  TAMANHO DO MULTIPLEXADOR <br/> <br/>
+ 
+ Há seis funções: manter, carregar, deslocar à direita, deslocar à esquerda, set síncrono, clear síncrono. Portanto, o multiplexador a ser definido deve possui em múltiplo de 2 pelo menos 8 entradas para uma saída.
+ 
+ <br/> <br/>
+ 
+  #### 3. 2 TABELA DE FUNÇÕES DO MULTIPLEXADOR  <br/> <br/>
+  
+  As oitos entradas foram combinada para todas serem utilizado devido ao processo de prioridade as tabela 1 e 2 mostra como foi posicionado as funções.
+  
+  <br/> <br/>
+ <p  align="center">
   <b>Figura 2.</b>
  <a href="#">Tabela 1. Codificação de entradas</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/66718807-860bcc00-edbe-11e9-9985-dd5e24bf1d1c.png" width="800" heigth="600"> 
  </p>
 
+<br/> <br/>
 
 <p  align="center">
   <b>Figura 3.</b>
@@ -47,7 +58,21 @@ Projetar um circuito que realize 6 (seis) funções em ordem de prioridade.
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/66718828-c0756900-edbe-11e9-94b6-1b6de5d1888f.png" width="800" heigth="600"> 
  </p>
+ 
+ 
  <br/> <br/>
+ 
+  #### 3. 3 CONEXÃO DAS ENTRADAS DOS MULTIPLEXADOR  <br/> <br/>
+  
+  
+  A figura 4 mostra as ligações realizadas para compor as entradas do multiplexador seguindo a entrutura de descolamento a direita e a esquerda posicioado para o bom funcionamento.
+  
+  
+  #### 3. 4 MAPEAMENTO DAS LINHAS DE CONTROLE <br/> <br/>
+  
+  As entradas de controle do registrador serão mapeadas nas linhas de seleção do multiplexador 8x1 conforme a tabela 2.
+  
+  <br/> <br/>
  Equações resultantes do mapa K de cada saída:
  <br/> <br/>
  
@@ -59,6 +84,8 @@ Projetar um circuito que realize 6 (seis) funções em ordem de prioridade.
  <br/> <br/>
 ### 4. RESULTADOS <br/> <br/>
 
+Após realizado o diagrama de blocos, foi possível ter uma visão mais detalhada do problema. A figura 4 é o resultado do circuito que resolve o problema proposto.
+
 <p  align="center">
   <b>Figura 4.</b>
  <a href="#">Bloco Solução</a> 
@@ -67,3 +94,13 @@ Projetar um circuito que realize 6 (seis) funções em ordem de prioridade.
  </p>
  
 ### 5. CONCLUSÃO <br/> <br/>
+
+
+
+<p  align="center">
+  <b>Figura 5.</b>
+ <a href="#">Diagrama de bloco</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/66775472-6d70e400-ee9a-11e9-8413-0b6a7c1cadf1.JPG" width="800" heigth="600"> 
+ </p>
+
