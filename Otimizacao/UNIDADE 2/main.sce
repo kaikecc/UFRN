@@ -24,11 +24,13 @@ function metodo = main(matriz_aumentada)
     select opc
 
     case 1 then 
-         maximizacao(matriz_aumentada);
-        disp("ENTROU EM MAX")
+        //    [Zo, A, b] = maximizacao(matriz_aumentada);
+        disp("ENTROU EM MAX");
     case 2 then
-        minimizacao(matriz_aumentada);   
-        disp("ENTROU EM MIN")    
+        //  [Zo, A, b] = minimizacao(matriz_aumentada);   
+        disp("ENTROU EM MIN");
+    case 3 then
+            
     else
         break;
     end
@@ -38,6 +40,7 @@ function metodo = main(matriz_aumentada)
     disp(A);
     disp('Vetor solução: ');
     disp(b);
+
     salvar(A,b);
 
     metodo = 0; 
