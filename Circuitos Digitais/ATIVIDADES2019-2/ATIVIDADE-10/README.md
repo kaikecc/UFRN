@@ -95,8 +95,8 @@ Após realizado o diagrama de blocos, foi possível ter uma visão mais detalhad
  
 ### 5. CONCLUSÃO <br/> <br/>
 
-
-
+A realização desse trabalho permitiu um entendimento melhor sobre shift bit e a implementação em VHD. A figura 5 é bloco organizacional do problema. 
+<br/> <br/>
 <p  align="center">
   <b>Figura 5.</b>
  <a href="#">Diagrama de bloco</a> 
