@@ -93,6 +93,8 @@ Após realizado o diagrama de blocos, foi possível ter uma visão mais detalhad
 <img src="https://user-images.githubusercontent.com/42541528/66717938-8c954600-edb4-11e9-8c8b-94c3bfe68717.png" width="800" heigth="600"> 
  </p>
  
+ #### 4. 1 LINGUAGEM DE DESCRIÇÃO DE HARDWARE <br/> <br/>
+ 
  * Entidade do problema.
  <br/> <br/>
  ``` vhdl
