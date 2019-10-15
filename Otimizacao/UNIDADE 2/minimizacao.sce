@@ -19,7 +19,7 @@ function [Zo, A, b] = minimizacao(matriz_aumentada)
 
         a = min(linha1); // menor valor da primeira linha  (variavel nao basica)
         
-        simplex(a, A, b, q);
+         metodo = simplex(a, A, b, q);
 
 
         // ****** PRA DECIDIR A HORA DE ACABAR ******       

@@ -1,14 +1,8 @@
-C:/Users/kaike/Desktop/A10/main.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/main.vhd
+C:/Users/kaike/Desktop/A10/cp4bits.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/cp4bits.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package STANDARD
--- Compiling entity main
--- Compiling architecture ckt of main
-
-} {} {}} C:/Users/kaike/Desktop/A10/mux2x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/mux2x1.vhd
-Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
--- Loading package STANDARD
--- Compiling entity mux2x1
--- Compiling architecture ckt_mux2x1 of mux2x1
+-- Compiling entity cp4bits
+-- Compiling architecture cktto of cp4bits
 
 } {} {}} C:/Users/kaike/Desktop/A10/reg4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/reg4bit.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
@@ -16,23 +10,29 @@ Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Compiling entity reg4bit
 -- Compiling architecture ckto of reg4bit
 
-} {} {}} C:/Users/kaike/Desktop/A10/cp4bits.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/cp4bits.vhd
+} {} {}} C:/Users/kaike/Desktop/A10/mux2x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/mux2x1.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package STANDARD
--- Compiling entity cp4bits
--- Compiling architecture cktto of cp4bits
+-- Compiling entity mux2x1
+-- Compiling architecture ckt_mux2x1 of mux2x1
 
-} {} {}} C:/Users/kaike/Desktop/A10/mux4x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/mux4x1.vhd
+} {} {}} C:/Users/kaike/Desktop/A10/main.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/main.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package STANDARD
--- Compiling entity mux4x1
--- Compiling architecture ckt_mux4x1 of mux4x1
+-- Compiling entity main
+-- Compiling architecture ckt of main
 
 } {} {}} C:/Users/kaike/Desktop/A10/mux8x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/mux8x1.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package STANDARD
 -- Compiling entity mux8x1
 -- Compiling architecture circuito of mux8x1
+
+} {} {}} C:/Users/kaike/Desktop/A10/mux4x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/mux4x1.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity mux4x1
+-- Compiling architecture ckt_mux4x1 of mux4x1
 
 } {} {}} C:/Users/kaike/Desktop/A10/ffd.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A10/ffd.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
