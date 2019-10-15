@@ -1,10 +1,14 @@
 // METODO SIMPLEX 
 
 
-function metodo = simplex(a, A, b, q)
+function [A , b] = simplex(A, b)
 
+    q = zeros(1,length(b)-1); // vetor do Fator Limitante
+    linha1 = A(1,:);
+    a = min(linha1); // menor valor da primeira linha  (variavel nao basica)
     index = find(linha1 == a);  //SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
-
+    //vb = length(q)-1:1:length(linha1)-1;
+    vb = zeros(1,length(b)-1);
     //******** CASO TENHA MAIS DE UM VALOR 
     if length(index) > 1 then
         index = index(1);
@@ -27,7 +31,8 @@ function metodo = simplex(a, A, b, q)
     l = find(q == ql); // indice  que identifica a posicao no conjunto B que deve deixar a base
 
 
-    vb(l) = index - 1;
+        // index --- controla quem entra base
+        // l --- controla qm sai da base
 
     //************** ROLE PRA ZERAR ELEMENTOS ******************
     for j = 1: length(A(:,1))
@@ -43,7 +48,7 @@ function metodo = simplex(a, A, b, q)
 
             b(j) = b(j) - pivo*b(l+1);
 
-            for k = 1:length(linha1)
+            for k = 1:length(A(1,:))
 
                 A(j ,k) =  A(j,k) - pivo * A(l+1,k);
 
@@ -59,7 +64,6 @@ function metodo = simplex(a, A, b, q)
     //*********************
 
 
-metodo = 0;
 
 endfunction
 

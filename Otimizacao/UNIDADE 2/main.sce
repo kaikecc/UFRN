@@ -14,13 +14,7 @@ matriz_aumentada = fscanfMat(arq);// pega o arquivo de formato especificado
 
 function metodo = main(matriz_aumentada)
 
-    dim = size(matriz_aumentada);// vetor que tem a qnt de linhas por qnt de colunas
-
-
-    A = zeros(dim(1), dim(2)-1);
-    b = zeros(dim(1), 1);
-    Zo = 0;
-
+   
     select opc
 
     case 1 then 
@@ -35,14 +29,7 @@ function metodo = main(matriz_aumentada)
         break;
     end
 
-    printf('O valor otimo de z = %5.2f',Zo); 
-    disp('Matriz de coeficientes: ');
-    disp(A);
-    disp('Vetor solução: ');
-    disp(b);
-
-    salvar(A,b);
-
+    
     metodo = 0; 
 endfunction
 
