@@ -1,8 +1,8 @@
-// MÉTODO DO PROCESSO DO CUSTO MINIMO
+clc// MÉTODO DO PROCESSO DO CUSTO MINIMO
 
 clc
 clear all
-matriz_aumentada = [20,15,10,50;12,8,16,70;20,40,60,0];
+//matriz_aumentada = [20,15,10,50;12,8,16,70;20,40,60,0];
 
 
 function SI = customin(matriz_aumentada)
@@ -31,8 +31,8 @@ function SI = customin(matriz_aumentada)
             end
         end
 
-        
-        if ((oferta(index(1))) == 0 & (demanda(index(2))) == 0) then
+        //***************************************************
+        if ((oferta(index(1))) == 0 | (demanda(index(2))) == 0) then
 
             A(index(1), index(2)) = 10000;
             menor_valor = 10000;
@@ -58,7 +58,10 @@ function SI = customin(matriz_aumentada)
         if (length(find(oferta == 0)) == length(oferta)) then
             m = 1;
         end
-    end
+        
+        //***************************************
+        
+    end // fim do while
 
    
     disp("Matriz de solução inicial: ");

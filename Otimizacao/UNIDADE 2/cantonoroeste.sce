@@ -2,11 +2,10 @@
 
 clc
 clear all
-matriz_aumentada = [20,15,10,50;12,8,16,70;20,40,60,0];
+//matriz_aumentada = [20,15,10,50;12,8,16,70;20,40,60,0];
 
 
 function SI = noroeste(matriz_aumentada)
-
     dim = size(matriz_aumentada);
 
     A = matriz_aumentada(1:dim(1)-1,1:dim(2)-1);// Matriz de coeficientes
