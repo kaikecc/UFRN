@@ -15,10 +15,11 @@ function [Zo, A, b] = minimizacao(matriz_aumentada)
     m = -1;// para iniciar o while
 
     while m < length(linha1)
+        
+        p = min(linha1); // menor valor da primeira linha  (variavel nao basica)
 
 
-
-        [A , b] = simplex(A, b)
+        [A , b] = simplex(A, b, p)
 
 
         // ****** PRA DECIDIR A HORA DE ACABAR ******       

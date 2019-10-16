@@ -16,9 +16,9 @@ function [Zo, A, b] = maximizacao(matriz_aumentada)
 
     while m < length(linha1)
 
-      
+      p = max(linha1); // menor valor da primeira linha  (variavel nao basica)
         
-      [A , b] = simplex(A, b)
+      [A , b] = simplex(A, b, p)
 
 
         // ****** PRA DECIDIR A HORA DE ACABAR ******       

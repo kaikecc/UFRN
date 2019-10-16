@@ -1,12 +1,14 @@
 // METODO SIMPLEX 
 
 
-function [A , b] = simplex(A, b)
+function [A , b] = simplex(A, b, p)
 
     q = zeros(1,length(b)-1); // vetor do Fator Limitante
-    linha1 = A(1,:);
-    a = min(linha1); // menor valor da primeira linha  (variavel nao basica)
-    index = find(linha1 == a);  //SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
+    
+    linha1 = A(1,2:dim(2)-1); //    linha1 = A(1,:);
+   
+    index = find(linha1 == p);  //SÓ PRA SABER O INDICE DE UMA LINHA DE MATRIX
+    index = index + 1;
     //vb = length(q)-1:1:length(linha1)-1;
     vb = zeros(1,length(b)-1);
     //******** CASO TENHA MAIS DE UM VALOR 
