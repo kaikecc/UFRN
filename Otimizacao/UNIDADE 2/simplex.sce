@@ -1,4 +1,4 @@
-// METODO SIMPLEX 
+GIT// METODO SIMPLEX 
 
 
 function [A , b] = simplex(A, b, p)
