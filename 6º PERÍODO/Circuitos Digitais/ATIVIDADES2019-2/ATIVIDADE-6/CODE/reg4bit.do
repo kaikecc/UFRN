@@ -1,0 +1,12 @@
+vsim reg4bit
+
+add wave *
+
+force clock2 0 0, 1 1 -repeat 2
+force RESET 0 8, 1 16 -repeat 32 
+force ENT(0) 0 0, 1 1 -repeat 2
+force ENT(1) 0 0, 1 2 -repeat 4
+force ENT(2) 0 0, 1 4 -repeat 8
+force ENT(3) 0 0, 1 8 -repeat 16
+
+run 64
