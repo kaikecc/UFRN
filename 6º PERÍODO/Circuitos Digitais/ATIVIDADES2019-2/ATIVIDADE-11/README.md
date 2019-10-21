@@ -36,6 +36,13 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
 <img src="https://user-images.githubusercontent.com/42541528/67233935-876e7180-f41a-11e9-9bc6-c2e95ef7d3f3.JPG" width="400" heigth="400"> 
  </p>
 
+*Equações das saídas resultante da tabela 1:
+
+* **d =** s1*s0;
+* **tot_ld=** s1' * s0';
+* **tot_clr=** s1' * s0';
+* **n1=** s1'*s0*c'*tot_lt_s'* + s1'*s0*c;
+* **n0=** s0' + s1'*s0*c';
 
 <p  align="center">
   <b>Tabela 1.</b>
