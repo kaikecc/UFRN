@@ -33,7 +33,7 @@ O projeto obedeceu o passo a passo em Nível de Transferência entre Registrador
 <br/> <br/>
 #### 3.1 CRIAR UMA MÁQUINA DE ESTADOS DE ALTO NÍVEL <br/> <br/>
 
-A máquina de estados foi desenvolvida pensando no processo que seria: **início**, **esperar**, **somar** e **fornecer**. As entradas c (bit), a (8 bits) e s (8bits). As saída é: d (bit).
+A máquina de estados foi desenvolvida pensando no processo que seria: **início**, **esperar**, **somar** e **fornecer**. As entradas **c** (bit), **a** (8 bits) e **s** (8bits). As saída é: **d** (bit).
 
 <p  align="center">
   <b>Figura 2.</b>
