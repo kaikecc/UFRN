@@ -22,10 +22,15 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
 
 ### 2. OBJETIVO <br/> <br/>
 
+Desenvolver um VHD que compara o valor de entrada com o preço do produto e libera ou não a compra.
 
-### 3. DESENVOLVIMENTO
+<br/> <br/>
 
+### 3. DESENVOLVIMENTO <br/> <br/>
 
+O projeto obedeceu o passo a passo em Nível de Transferência entre Registradores (RTL) que organizar a forma do bloco de controle se comunicar com o bloco operacional. As seções a seguir são as fases de extrair a solução de acordo com o enuciado do problema.
+
+<br/> <br/>
 #### 3.1 CRIAR UMA MÁQUINA DE ESTADOS DE ALTO NÍVEL <br/> <br/>
 
 
