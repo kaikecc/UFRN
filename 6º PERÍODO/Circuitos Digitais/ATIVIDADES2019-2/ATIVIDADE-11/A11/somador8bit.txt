@@ -1,0 +1,11 @@
+vsim somador8bit
+
+
+add wave *
+
+force X "00000101" 0, "00000010" 1 -repeat 2
+force Y "00000010" 0, "00000101" 4 -repeat 8
+force Ce 0 0
+
+
+run 16

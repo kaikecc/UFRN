@@ -1,0 +1,42 @@
+entity reg8bit is
+  port( 
+  clk: in bit;
+  CLR: in bit;
+  ENTRADAS: in bit_vector(7 downto 0);
+  Qsaidas: out bit_vector(7 downto 0));
+  
+end;
+
+architecture ckto of reg8bits is
+
+component reg4bit is
+  port( 
+  clock2: in bit;
+  RESET: in bit;
+  ENT: in bit_vector(3 downto 0);
+  Qs: out bit_vector(3 downto 0));
+  
+end component;  
+
+signal AUX: bit_vector(7 downto 0); 
+
+begin
+  
+  
+REG1: reg4bit port map(
+  
+      clock2 => clk,
+      RESET => CLR,
+      ENT => ENTRADAS(3 downto 0),
+      Qs => AUX(3 downto 0));
+
+REG2: reg4bit port map(
+  
+      clock2 => clk,
+      RESET => CLR,
+      ENT => ENTRADAS(7 downto 4),
+      Qs => AUX(7 downto 4));
+    
+  Qsaidas <= AUX;  
+  
+end ckto;

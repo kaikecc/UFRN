@@ -1,0 +1,33 @@
+entity combinational_logic is
+  
+  port(e0, e1, s0, s1: in bit;  -- e0 == c
+                                -- e1 == tot_It_s
+                                   
+        ss1, ss2, ss3, n1, n0: out bit);
+        
+end;
+
+architecture ckto of combinational_logic is
+  
+signal oout: bit_vector(4 downto 0);
+  
+begin
+    
+ oout(0) <= (s1 and s0);                                                   -- d
+ 
+ oout(1) <= s1 and not(s0);                                                -- tot_ld
+ 
+ oout(2) <= not(s1) and not(s0);                                           -- tot_clr
+ 
+ oout(3) <= (not(s1) and s0 and not(e0) and not(e1)) or (not(s1) and s0 and e0); -- n1
+ 
+ oout(4) <= not(s0) or (not(s1) and s0 and not(e0));                        -- n0
+   
+ss1 <= oout(0);  
+ss2 <= oout(1);
+ss3 <= oout(2);
+
+n0 <= oout(3);
+n1 <= oout(4);
+
+end ckto;

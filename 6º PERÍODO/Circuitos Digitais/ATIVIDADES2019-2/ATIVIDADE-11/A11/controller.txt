@@ -1,0 +1,14 @@
+vsim controller
+
+
+add wave *
+
+force clocck 0 0, 1 1 -repeat 2
+
+force cc 0 0, 1 2, 0 4
+force mme 0 0, 1 1, 0 2
+
+
+
+
+run 8

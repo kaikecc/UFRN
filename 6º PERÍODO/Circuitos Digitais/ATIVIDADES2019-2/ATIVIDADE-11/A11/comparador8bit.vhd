@@ -1,0 +1,42 @@
+entity comparador8bit is
+  
+  port(Xx, Yy : in bit_vector(7 downto 0);
+      A_igual_B, AA_maior_BB, AA_menor_BB: out bit);
+end;
+    
+architecture ckt_comparador8bits of comparador8bit is
+  
+component comparador4bit is
+  
+  port(X, Y : in bit_vector(3 downto 0);
+      AeqB, A_maior_B, A_menor_B: out bit);
+      
+end component;
+    
+signal AiB, AMB, AmmB: bit_vector(1 downto 0);
+
+begin
+  
+  C0: comparador4bit port map(
+    
+      X => Xx(3 downto 0),
+      Y => Yy(3 downto 0),
+      AeqB => AiB(0),
+      A_maior_B => AMB(0),
+      A_menor_B => AmmB(0));
+      
+   C1: comparador4bit port map(
+    
+      X => Xx(7 downto 4),
+      Y => Yy(7 downto 4),
+      AeqB => AiB(1),
+      A_maior_B => AMB(1),
+      A_menor_B => AmmB(1));
+      
+  A_igual_B <= AiB(0) and AiB(1);
+  
+  AA_maior_BB <= AMB(0) or AMB(1); 
+  
+  AA_menor_BB <= AmmB(0) xor AmmB(1);
+     
+end ckt_comparador8bits; 

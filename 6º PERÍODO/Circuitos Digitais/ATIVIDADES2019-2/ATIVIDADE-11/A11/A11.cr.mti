@@ -1,0 +1,79 @@
+C:/Users/kaike/Desktop/A11/somador8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/somador8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity somador8bit
+-- Compiling architecture ckt of somador8bit
+
+} {} {}} C:/Users/kaike/Desktop/A11/combinational_logic.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/combinational_logic.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity combinational_logic
+-- Compiling architecture ckto of combinational_logic
+
+} {} {}} C:/Users/kaike/Desktop/A11/somador1bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/somador1bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity somador1bit
+-- Compiling architecture ckt of somador1bit
+
+} {} {}} C:/Users/kaike/Desktop/A11/mux2x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/mux2x1.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity mux2x1
+-- Compiling architecture ckt_mux2x1 of mux2x1
+
+} {} {}} C:/Users/kaike/Desktop/A11/comparador8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/comparador8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity comparador8bit
+-- Compiling architecture ckt_comparador8bits of comparador8bit
+
+} {} {}} C:/Users/kaike/Desktop/A11/ffd.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/ffd.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity ffd
+-- Compiling architecture ckt_ffd of ffd
+
+} {} {}} C:/Users/kaike/Desktop/A11/mux16x8.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/mux16x8.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity mux16x8
+-- Compiling architecture ckt_mux16x8 of mux16x8
+
+} {} {}} C:/Users/kaike/Desktop/A11/reg4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/reg4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity reg4bit
+-- Compiling architecture ckto of reg4bit
+
+} {} {}} C:/Users/kaike/Desktop/A11/controller.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/controller.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity controller
+-- Compiling architecture ckkto of controller
+
+} {} {}} C:/Users/kaike/Desktop/A11/main.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/main.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity main
+-- Compiling architecture circuito of main
+
+} {} {}} C:/Users/kaike/Desktop/A11/reg8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/reg8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity reg8bit
+-- Compiling architecture ckto of reg8bit
+
+} {} {}} C:/Users/kaike/Desktop/A11/datapath.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/datapath.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity datapath
+-- Compiling architecture ckt of datapath
+
+} {} {}} C:/Users/kaike/Desktop/A11/comparador4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/A11/comparador4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Compiling entity comparador4bit
+-- Compiling architecture ckt_comparador4bits of comparador4bit
+
+} {} {}}

@@ -1,0 +1,7 @@
+vsim comparador8bit
+
+add wave *
+
+force Xx "00000000" 0, "00000001" 1, "00001010" 2, "00001111" 4 -repeat 8
+force Yy "00000001" 0, "00000000" 1, "00001010" 2, "00001101" 4 -repeat 8
+run 16
