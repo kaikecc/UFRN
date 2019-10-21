@@ -33,6 +33,7 @@ O projeto obedeceu o passo a passo em Nível de Transferência entre Registrador
 <br/> <br/>
 #### 3.1 CRIAR UMA MÁQUINA DE ESTADOS DE ALTO NÍVEL <br/> <br/>
 
+A máquina de estados foi desenvolvida pensando no processo que seria: **início**, **esperar**, **somar** e **fornecer**. As entradas c (bit), a (8 bits) e s (8bits). As saída é: d (bit).
 
 <p  align="center">
   <b>Figura 2.</b>
@@ -63,7 +64,7 @@ O projeto obedeceu o passo a passo em Nível de Transferência entre Registrador
 
 #### 3.2 CRIAR UM BLOCO OPERACIONAL
 
-
+As entradas **s** e **a** são de 8 bits e representar o valor do produto e a quantia que será inserido na máquina de refrigerante, respectivamente. As outras entradas tot_ld, tot_clr, tot_It_s são **LD**, **LC** e **ME**, respectivamente.
 
 <p  align="center">
   <b>Figura 3.</b>
@@ -75,6 +76,7 @@ O projeto obedeceu o passo a passo em Nível de Transferência entre Registrador
  
  #### 3.3 CONECTAR O BLOCO OPERACIONAL AO BLOCO DE CONTROLE <br/> <br/>
  
+ A construção do bloco de controle possui um bloco lógico e um registrador de 2 bits que **c** representa quando uma moeda é inserida.
  <p  align="center">
   <b>Figura 3.</b>
  <a href="#">Visão completada dos blocos </a> 
