@@ -31,15 +31,15 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
   <b>Figura 2.</b>
  <a href="#">Máquina de Estados </a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/67233935-876e7180-f41a-11e9-9bc6-c2e95ef7d3f3.JPG" width="600" heigth="800"> 
+<img src="https://user-images.githubusercontent.com/42541528/67233935-876e7180-f41a-11e9-9bc6-c2e95ef7d3f3.JPG" width="800" heigth="600"> 
  </p>
 
 
 <p  align="center">
-  <b>Figura 3.</b>
- <a href="#">Tabela 1. Relação entre entradas e saídas</a> 
+  <b>Tabela 1.</b>
+ <a href="#"> Relação entre entradas e saídas</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/67233685-1af37280-f41a-11e9-8e1f-325b5c0f89ab.JPG" width="600" heigth="800"> 
+<img src="https://user-images.githubusercontent.com/42541528/67233685-1af37280-f41a-11e9-8e1f-325b5c0f89ab.JPG" width="600" heigth="600"> 
  </p>
 
 *
