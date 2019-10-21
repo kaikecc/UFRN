@@ -17,7 +17,7 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
   <b>Figura 1.</b>
  <a href="#">Bloco Problema</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/67227027-c0074e80-f40c-11e9-907e-620acfc1ac37.png" width="600" heigth="600"> 
+<img src="https://user-images.githubusercontent.com/42541528/67227027-c0074e80-f40c-11e9-907e-620acfc1ac37.png" width="600" heigth="400"> 
  </p>
 
 ### 2. OBJETIVO <br/> <br/>
@@ -31,7 +31,7 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
   <b>Figura 2.</b>
  <a href="#">Máquina de Estados </a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/67233935-876e7180-f41a-11e9-9bc6-c2e95ef7d3f3.JPG" width="800" heigth="600"> 
+<img src="https://user-images.githubusercontent.com/42541528/67233935-876e7180-f41a-11e9-9bc6-c2e95ef7d3f3.JPG" width="800" heigth="800"> 
  </p>
 
 
