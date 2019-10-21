@@ -26,6 +26,8 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
 ### 3. DESENVOLVIMENTO
 
 
+#### 3.1 CRIAR UMA MÁQUINA DE ESTADOS DE ALTO NÍVEL <br/> <br/>
+
 
 <p  align="center">
   <b>Figura 2.</b>
@@ -42,4 +44,13 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
 <img src="https://user-images.githubusercontent.com/42541528/67233685-1af37280-f41a-11e9-8e1f-325b5c0f89ab.JPG" width="800" heigth="600"> 
  </p>
 
-*
+#### 3.2 CRIAR UM BLOCO OPERACIONAL
+
+
+
+<p  align="center">
+  <b>Figura 3.</b>
+ <a href="#">Bloco Operacional </a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/67234345-56427100-f41b-11e9-9aa0-19eeac4ef24b.JPG" width="400" heigth="400"> 
+ </p>
