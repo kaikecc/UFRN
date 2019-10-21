@@ -54,3 +54,13 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/67234345-56427100-f41b-11e9-9aa0-19eeac4ef24b.JPG" width="400" heigth="400"> 
  </p>
+ 
+ 
+ #### 3.3 CONECTAR O BLOCO OPERACIONAL AO BLOCO DE CONTROLE
+ 
+ <p  align="center">
+  <b>Figura 3.</b>
+ <a href="#">Visão completada dos blocos </a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/67234486-a3264780-f41b-11e9-814d-6d9e8b992359.JPG" width="400" heigth="400"> 
+ </p>
