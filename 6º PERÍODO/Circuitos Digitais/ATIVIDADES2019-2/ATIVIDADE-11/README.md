@@ -21,3 +21,16 @@ depositada (c=1) e uma sa´ıda (d=1) para liberar o produto.
  </p>
 
 ### 2. OBJETIVO <br/> <br/>
+
+
+### 3. DESENVOLVIMENTO
+
+
+
+
+<p  align="center">
+  <b>Figura 2.</b>
+ <a href="#">Tabela 1. Relação entre entradas e saídas</a> 
+ <br><br>
+<img src="https://user-images.githubusercontent.com/42541528/67233685-1af37280-f41a-11e9-8e1f-325b5c0f89ab.JPG" width="600" heigth="600"> 
+ </p>
