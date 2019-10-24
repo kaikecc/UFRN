@@ -5,7 +5,7 @@ add wave *
 
 force clkk 0 0, 1 1 -repeat 2
 
-force tot_ld 0 0, 1 1, 0 3
+force tot_ld 0 0, 1 1
 force tot_clr 1 0
 
 force aa "00010001" 0
