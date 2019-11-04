@@ -79,14 +79,12 @@ As entradas **s** e **a** são de 8 bits e representar o valor do produto e a qu
   <b>Figura 3.</b>
  <a href="#">Visão completada dos blocos </a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/68160575-e4961700-ff32-11e9-9773-0b0ee8e7efa7.JPG" width="400" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/68160575-e4961700-ff32-11e9-9773-0b0ee8e7efa7.JPG" width="600" heigth="600"> 
  </p>
  
- ### 4. RESULTADOS <br/> <br/>
+
  
- 
- 
- ### 5. CONCLUSÃO <br/> <br/>
+ ### 4. CONCLUSÃO <br/> <br/>
  
  O circuito foi desenvolvido de acordo com o proposto pelo enuciado do problema.
  
