@@ -41,7 +41,7 @@ signal n: bit_vector(1 downto 0);
         ss2 => x(1), -- tot_ld
         ss3 => x(2), -- tot_clr
         
-        n0 => n(0),
+        n0 => n(0), -- mexi aqui
         n1 => n(1));
     
     -- Registrador de 2 bits
