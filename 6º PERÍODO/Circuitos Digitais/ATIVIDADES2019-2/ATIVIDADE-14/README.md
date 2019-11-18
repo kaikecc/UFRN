@@ -50,7 +50,7 @@ A Figura 2 mostra a máquina de estados de alto nível em pode-se entender o fun
  ### 4. RESULTADOS <br/> <br/>
  
 
- O controlador não foi possível de desenvolver por dificuldades na parte de sinal de referência, porém na Figura 4 mostra o esquemático do fluxo do projeto.
+ O controlador não foi possível de desenvolver por dificuldades na parte de sinal de referência, porém na Figura 4 mostra o esquemático do fluxo do projeto em que o bloco datapath está constrúido.
  <br/> <br/>
  <p  align="center">
   <b>Figura 4.</b>
@@ -71,3 +71,5 @@ A Figura 2 mostra a máquina de estados de alto nível em pode-se entender o fun
   <br/> <br/>
   
   ### 5. CONCLUSÃO <br/> <br/>
+  
+  Esse trabalhou mostrou-se bastante trabalhoso, porém rico em informações de como um computador processa imagens e videos e como a compactação é feita para otimizar memória. Infelizmente não foi possível construir uma solução completa para o projeto, mas deixa o aprendizado do funcionamento de uma SAD.
