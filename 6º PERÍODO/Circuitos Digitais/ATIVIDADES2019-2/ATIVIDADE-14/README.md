@@ -50,16 +50,17 @@ A Figura 2 mostra a máquina de estados de alto nível em pode-se entender o fun
  ### 4. RESULTADOS <br/> <br/>
  
 
- 
+ O controlador não foi possível de desenvolver por dificuldades na parte de sinal de referência, porém na Figura 4 mostra o esquemático do fluxo do projeto.
+ <br/> <br/>
  <p  align="center">
   <b>Figura 4.</b>
  <a href="#">Visão geral da solução</a> 
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/69079195-4026d100-0a18-11ea-8d4c-479e22bbca6f.JPG" width="600" heigth="400"> 
  </p>
- 
+ <br/> <br/>
   A solução para o datapath baseou-se no CI 74181 que opera uma unidade lógica aritmética de 4 bitso o qual pode operar 16 operações. A Figura 5 mostra os componentes utilizados em que 7485 é um comparador que as suas saídas atuam na seletor e o strobe do 74157 que é um mux 8x4 e dessa forma o somatório é realizado.
-
+<br/> <br/>
 
   <p  align="center">
   <b>Figura 5.</b>
@@ -67,5 +68,5 @@ A Figura 2 mostra a máquina de estados de alto nível em pode-se entender o fun
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/69079692-52edd580-0a19-11ea-9345-268d7eb1d2c9.JPG" width="600" heigth="400"> 
  </p>
-  
+  <br/> <br/>
   ### 5. CONCLUSÃO <br/> <br/>
