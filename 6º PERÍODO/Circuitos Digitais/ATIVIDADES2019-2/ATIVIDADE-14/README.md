@@ -69,4 +69,5 @@ A Figura 2 mostra a máquina de estados de alto nível em pode-se entender o fun
 <img src="https://user-images.githubusercontent.com/42541528/69079692-52edd580-0a19-11ea-9345-268d7eb1d2c9.JPG" width="600" heigth="400"> 
  </p>
   <br/> <br/>
+  
   ### 5. CONCLUSÃO <br/> <br/>
