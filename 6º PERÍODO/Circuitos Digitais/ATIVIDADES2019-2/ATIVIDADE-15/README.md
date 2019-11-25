@@ -44,6 +44,8 @@ Construir um circuito que funcione como marcapasso respeitando a operação desc
 <img src="https://user-images.githubusercontent.com/42541528/69585403-63c0bd00-0fbe-11ea-84a0-257ef81c4ceb.png" width="600" heigth="600"> 
  </p>
  
+* Datapath:  <br/> <br/>
+
  ``` vhdl
 entity datapath is
   
@@ -118,6 +120,9 @@ z_a <= AUX2 and not(SSA);
 
 end ckt;
  ```
+  <br/> <br/>
+ * Controlador: 
+  <br/> <br/>
  ``` vhdl 
  library ieee;
 use ieee.std_logic_1164.all;
@@ -185,5 +190,5 @@ end if ;
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/69586107-4ab90b80-0fc0-11ea-8527-cbc50c963403.JPG" width="800" heigth="600"> 
  </p>
-
+ <br/> <br/>
 ### 4. CONCLUSÃO <br/> <br/>
