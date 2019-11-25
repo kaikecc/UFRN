@@ -6,9 +6,9 @@
 ### 1. INTRODUÇÃO <br/> <br/>
 
 > Projete um circuito digital para um marcapasso (ver Figura 1). O marcapasso é um dispositivo de aplicação médica que tem o objetivo de regular os batimentos cardíacos. Isto é
-conseguido atrav´es de um est´ımulo el´etrico emitido pelo dispositivo quando o n´umero de batimentos, em um certo intervalo de tempo, está abaixo do normal por algum problema na
+conseguido através de um estímulo elétrico emitido pelo dispositivo quando o número de batimentos, em um certo intervalo de tempo, está abaixo do normal por algum problema na
 condução do estímulo natural. O clock do circuito será fornecido por uma entrada chamada clk e o circuito deverá apresentar comportamento semelhante ao especificado pela Figura 2, ou seja,
-sempre que o circuito perceber a ausˆencia do batimento do átrio (Sa) ou ventrículo (Sv) dever´a produzir um sinal paou pv, respectivamente, para estimular o músculo cardíaco. O marcapasso
+sempre que o circuito perceber a ausˆencia do batimento do átrio (Sa) ou ventrículo (Sv) deverá produzir um sinal paou pv, respectivamente, para estimular o músculo cardíaco. O marcapasso
 deverá garantir o estímulo de acordo com os tempos pré-determinados (ver Figura 2), assim,mesmo que não ocorra nenhum batimento pelo átrio ou ventrículo, os estímulos deverão ser aplicados respeitando estes tempos.
 
 
@@ -28,3 +28,9 @@ deverá garantir o estímulo de acordo com os tempos pré-determinados (ver Figu
  <br><br>
 <img src="https://user-images.githubusercontent.com/42541528/69567884-331a5c80-0f99-11ea-9fd1-af5c55a15f1f.png" width="600" heigth="400"> 
  </p>
+
+### 2. OBJETIVO <br/> <br/>
+
+Construir um circuito que funcione como marcapasso respeitando a operação descrito na Figura 2.
+
+### 3. LINGUAGEM DE DESCRIÇÃO DE HARDWARE <br/> <br/>
