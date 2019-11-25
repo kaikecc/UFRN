@@ -35,7 +35,7 @@ Construir um circuito que funcione como marcapasso respeitando a operação desc
 
 ### 3. LINGUAGEM DE DESCRIÇÃO DE HARDWARE <br/> <br/>
 
-
+O circuito da Figura 3 mostra o projeto do acionamento do marcapasso. O comparador com 5 é o tempo entre o nível de Sa e Sv conforme o diagrama de funcionamento proposto pelo exercício.
 
 <p  align="center">
   <b>Figura 3.</b>
