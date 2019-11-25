@@ -26,5 +26,5 @@ deverá garantir o estímulo de acordo com os tempos pré-determinados (ver Figu
   <b>Figura 2.</b>
  <a href="#">Comportamento esperado</a> 
  <br><br>
-<img src="https://user-images.githubusercontent.com/42541528/69567806-023a2780-0f99-11ea-8c6c-33e60fa7477b.png" width="600" heigth="400"> 
+<img src="https://user-images.githubusercontent.com/42541528/69567884-331a5c80-0f99-11ea-9fd1-af5c55a15f1f.png" width="600" heigth="400"> 
  </p>
