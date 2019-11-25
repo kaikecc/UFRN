@@ -120,9 +120,11 @@ z_a <= AUX2 and not(SSA);
 
 end ckt;
  ```
+ 
   <br/> <br/>
  * Controlador: 
   <br/> <br/>
+  
  ``` vhdl 
  library ieee;
 use ieee.std_logic_1164.all;
@@ -194,3 +196,5 @@ end if ;
  <br/> <br/>
  
 ### 4. CONCLUSÃO <br/> <br/>
+
+O estudo sobre marcapasso mostrou-se bastante interessante para o entendimento desses aparelhos.
