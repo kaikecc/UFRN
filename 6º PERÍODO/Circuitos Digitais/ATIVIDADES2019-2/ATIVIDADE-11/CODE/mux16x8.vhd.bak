@@ -1,3 +1,15 @@
+-- Mux 16 para 8 em VHDL
+-- Entradads: ENTA, ENTB, SELECIONAR
+-- Saídas: SS
+--
+-- SELECIONAR SS
+-- --------------
+-- 0    ENTA
+-- 1    ENTB
+--
+-- Estudante: Kaike C. 
+-- 24/02/2020
+
 entity mux16x8 is
   
   port( ENTA, ENTB: in bit_vector(7 downto 0);
@@ -74,6 +86,7 @@ signal Saidas: bit_vector(7 downto 0);
     Eb => ENTB(7),
     SEL => SELECIONAR,
     Saida => Saidas(7));
-    
+   
+  SS <= Saidas; 
   
 end ckt_mux16x8;

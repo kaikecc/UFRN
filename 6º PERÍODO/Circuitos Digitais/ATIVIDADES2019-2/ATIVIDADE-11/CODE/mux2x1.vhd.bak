@@ -1,5 +1,5 @@
 -- Mux 2 para 1 em VHDL
--- Entradas: Ea, Eb, SEL
+-- Entradads: Ea, Eb, SEL
 -- Saídas: Saida
 --
 -- SEL Saida

@@ -1,3 +1,15 @@
+-- Comparador de 8 bits em VHDL
+-- Entradas: Xx, Yy
+-- Saídas: A_igual_B, AA_maior_BB, AA_menor_BB
+--
+-- 
+-- 
+-- 
+-- 
+--
+-- Estudante: Kaike C. 
+-- 24/02/2020
+ 
 entity comparador8bit is
   
   port(Xx, Yy : in bit_vector(7 downto 0);

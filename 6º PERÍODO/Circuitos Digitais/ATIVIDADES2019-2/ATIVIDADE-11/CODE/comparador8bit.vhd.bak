@@ -1,3 +1,18 @@
+-- Comparador de 8 bits em VHDL
+-- Entradas: Xx, Yy
+-- Saídas: A_igual_B, AA_maior_BB, AA_menor_BB
+--
+-- 
+-- 
+-- 
+-- 
+--
+-- Estudante: Kaike C. 
+-- 24/02/2020
+
+ library IEEE;
+ use IEEE.std_logic_1164.all;
+ 
 entity comparador8bit is
   
   port(Xx, Yy : in bit_vector(7 downto 0);
@@ -34,7 +49,9 @@ begin
       A_menor_B => AmmB(1));
       
   A_igual_B <= AiB(0) and AiB(1);
-  AA_maior_BB <= AMB(0) and AMB(1); 
-  AA_menor_BB <= AmmB(0) and AmmB(1);
+  
+  AA_maior_BB <= AMB(0) or AMB(1); 
+  
+  AA_menor_BB <= AmmB(0) xor AmmB(1);
      
 end ckt_comparador8bits; 

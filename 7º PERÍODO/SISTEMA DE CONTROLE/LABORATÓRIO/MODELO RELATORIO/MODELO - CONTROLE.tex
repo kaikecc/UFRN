@@ -1,0 +1,361 @@
+% Relatório da versão 1 do software ipump para o curso
+% Sistemas de Controle - DCA0206 - UFRN
+% Autores:
+%   AUGUSTO MATHEUS PINHEIRO DAMASCENO
+%   MARCEL DA CÂMARA RIBEIRO DANTAS
+%   PABLO HOLANDA CARDOSO
+%   PEDRO DE CASTRO GURGEL LIMA
+%   RODRIGO DANTAS DA SILVA
+% Modificado por: Ícaro Bezerra Queiroz de Araújo
+%
+
+%%%%%%%%%%%% STRUCTURE %%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%% PAGES STYLE %%%%%%%%%
+\usepackage{fancyhdr}
+\fancypagestyle{main}{
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[RO]{\thepage}
+\fancyfoot[CO]{}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfig}
+\usepackage{mathptmx}
+\usepackage{changepage}
+%\usepackage[alf]{abntex2cite}
+
+%%%%%%%%%%% PDF METADATA %%%%%%%%%%%%%
+\usepackage[ pdftitle={MODELO RELATÓRIO},
+pdfsubject={INTRODUÇÃO AO LABORATÓRIO DE CONTROLE - Grupo 3},
+pdfkeywords={Controle,Automação,UFRN,DCA,ipump},
+hidelinks]{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\onehalfspacing
+
+\thispagestyle{empty}
+
+\setcounter{page}{1}
+
+%%%%%%%%%%%% LOGOS %%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[!ht]
+
+\centering
+
+\subfloat{
+\includegraphics[width=2.7cm]{UFRN.eps}
+\label{UFRN Logo}
+}
+\hspace{11.09cm}
+\subfloat{
+\includegraphics[width=2.4cm]{DCA.eps}
+\label{DCA Logo}
+}
+
+%\caption{}
+\label{Logos}
+
+\end{figure}
+
+%%%%%%%%%%%%%%% CAPA %%%%%%%%%%%%%%%%%
+
+\vspace{-1cm}
+
+\begin{center}
+{\bf{\normalsize UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE\\
+CENTRO DE TECNOLOGIA\\
+DEPARTAMENTO DE ENGENHARIA DE COMPUTAÇÃO E AUTOMAÇÃO\\
+CURSO DE ENGENHARIA DE COMPUTAÇÃO
+}}
+
+
+\vspace{3.6cm}
+
+{\bf{\large RELATÓRIO DA Nº EXPERIÊNCIA\\
+TÍTULO DA EXPERIÊNCIA\\
+}}
+\vspace{1.5cm}
+{\large TURMA: \\
+	GRUPO Nº}
+
+\vspace{3.6cm}
+
+
+
+\begin{flushright}
+\begin{normalsize}
+NOME COMPLETO 1º ALUNO: Nº MATRÍCULA\\
+\vspace{0.8cm}
+NOME COMPLETO 2º ALUNO: Nº MATRÍCULA\\
+\vspace{0.8cm}
+NOME COMPLETO 3º ALUNO: Nº MATRÍCULA\\
+\vspace{0.8cm}
+NOME COMPLETO 4º ALUNO: Nº MATRÍCULA\\
+\end{normalsize}
+\end{flushright}
+
+
+\vspace{2.5cm}
+
+{\large Natal-RN\\
+2016}
+
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%  CONTRA-CAPA %%%%%%%%%
+
+\thispagestyle{empty}
+
+\begin{center}
+\begin{normalsize}
+NOME COMPLETO 1º ALUNO: Nº MATRÍCULA\\
+\vspace{0.8cm}
+NOME COMPLETO 2º ALUNO: Nº MATRÍCULA\\
+\vspace{0.8cm}
+NOME COMPLETO 3º ALUNO: Nº MATRÍCULA\\
+\vspace{0.8cm}
+NOME COMPLETO 4º ALUNO: Nº MATRÍCULA\\
+
+\end{normalsize}
+\end{center}
+\vspace{3cm}
+
+{\bf{\large {\centering TÍTULO DA EXPERIÊNCIA\\}}}
+
+\vspace{4cm}
+
+\begin{adjustwidth}{7.5cm}{0cm}
+
+{\normalsize
+
+Primeiro Relatório Parcial apresentado à disciplina de
+Laboratório de Sistemas de Controle, correspondente à
+avaliação da 1º unidade do semestre 2016.1 do 7º período
+do curso de Engenharia de Computação e Automação da
+Universidade Federal do Rio Grande do Norte, sob
+orientação do {\bf Prof. Fábio Meneghetti Ugulino de
+Araújo.}
+
+}
+
+\end{adjustwidth}
+
+\vspace{2cm}
+
+\begin{center}
+
+Professor:  Fábio Meneghetti Ugulino de Araújo.
+
+\vspace{2.5cm}
+
+{\large Natal-RN\\
+2016}
+
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%  RESUMO %%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+
+\begin{center}
+{\large \textbf{RESUMO}}
+\end{center}
+
+\vspace{3cm}
+
+\begin{flushleft}
+
+\hspace{4ex}Trata-se da apresentação fiel, breve e concisa dos aspectos mais relevantes do
+trabalho, apresentando as ideias essenciais, na mesma progressão e no mesmo
+encadeamento que aparecem no texto. O resumo deve apresentar os objetivos, uma
+visão geral, ampla e, ao mesmo tempo, clara e objetiva do conteúdo do trabalho.\\
+\hspace{4ex}A norma da ABNT recomenda que se use de 150 a 500 palavras, em espaço
+simples, e deve-se usar o verbo na voz ativa e na terceira pessoa singular. Logo abaixo,
+devem ser colocadas as palavras-chave.\\
+
+\end{flushleft}
+
+\vspace{1.5cm}
+
+\textbf{Palavras-chave:}
+
+\newpage
+
+%%%%%%%%%%%%%%%  LISTA DE SÍMBOLOS %%%
+
+\thispagestyle{empty}
+
+\begin{center}
+{\large \textbf{LISTA DE SÍMBOLOS}}
+\end{center}
+
+\vspace{3cm}
+
+\begin{tabular}{ l l }
+A\hspace{1.5cm} & Matriz triangular superior com diagonal unitária.\\
+\phantom{a} & \phantom{a}\\
+D\hspace{1.5cm} & Matriz diagonal obtida a partir de $W^{T}W$\\
+\phantom{a} & \phantom{a}\\
+$\theta$\hspace{1.5cm} & Vetor de parâmetros.\\
+\phantom{a} & \phantom{a}\\
+$\Xi$\hspace{1.5cm} & Vetor de resíduos de modelagem.\\
+\phantom{a} & \phantom{a}\\
+d\hspace{1.5cm} & Tempo de retardo de um sistema ou tempo morto.\\
+\phantom{a} & \phantom{a}\\
+e(k)\hspace{1.5cm} & Resíduo (Erro de Estimação mais o Ruído).\\
+\end{tabular}
+
+\newpage
+
+%%%% LISTA DE ABREVIATURAS E SIGLAS %%
+
+\thispagestyle{empty}
+
+\begin{center}
+{\large \textbf{LISTA DE ABREVIATURAS E SIGLAS}}
+\end{center}
+
+\vspace{3cm}
+
+\begin{tabular}{ l l }
+ARX\hspace{1.5cm} & Matriz triangular superior com diagonal unitária.\\
+ARMAX\hspace{1.5cm} & Matriz diagonal obtida a partir de $W^{T}W$\\
+NARX\hspace{1.5cm}&Vetor de parâmetros.\\
+NARMAX\hspace{1.5cm}&Vetor de resíduos de modelagem.\\
+MQ\hspace{1.5cm}&Tempo de retardo de um sistema ou tempo morto.\\
+\end{tabular}
+
+\newpage
+
+%%%%%%%%% LISTA DE FIGURAS %%%%%%%%%%%
+
+\thispagestyle{empty}
+
+\begin{center}
+\listoffigures
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%% SUMÁRIO %%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+
+\begin{center}
+\tableofcontents
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%% INTRODUÇÃO %%%%%%%%%%%
+
+\thispagestyle{main}
+
+\section{INTRODUÇÃO}
+
+\begin{flushleft}
+\hspace{4ex}A introdução serve para o leitor ter uma noção genérica do tema que será
+abordado. Uma boa introdução deve criar uma expectativa positiva no leitor e despertar
+seu interesse pela leitura do restante do trabalho. Deve apresentar, basicamente, a
+delimitação do assunto o(s) objetivo(s) do estudo e sua finalidade, o ponto-de-vista sob
+qual o assunto será tratado, enfim, os elementos necessários para situar o tema do
+trabalho.
+\end{flushleft}
+
+\newpage
+
+%%%%%%%%%% REFERENCIAL TEÓRICO %%%%%%%
+
+\thispagestyle{main}
+
+\section{REFERENCIAL TEÓRICO}
+
+
+
+Trata-se da apresentação do embasamento teórico sobre o qual se fundamentará
+o trabalho, ou seja, são os pressupostos que darão suporte à abordagem do trabalho.
+Lembrar de sempre que utilizar texto de outros lugares, utilizar citação da fonte, como por exemplo, \cite{LATEX04}.
+
+\subsection{Seções}
+
+\subsubsection{Subseções}
+
+\newpage
+
+%%%%%%%%%% METODOLOGIA %%%%%%%%%%%%%%%
+
+\thispagestyle{main}
+
+\section{METODOLOGIA}
+
+
+\hspace{4ex}A metodologia é caracterizada pela explicação minuciosa dos procedimentos
+técnicos realizados durante todo o trabalho.
+
+\subsection{Seções}
+
+\subsubsection{Subseções}
+
+\newpage
+
+%%%%%%%%%% RESULTADOS %%%%%%%%%%%%%%%
+
+\thispagestyle{main}
+
+\section{RESULTADOS}
+
+
+\hspace{4ex}Neste capítulo, são apresentados e descritos os resultados obtidos dos experimentos feitos em laboratório. É importante que todos os gráficos e figuras apresentados neste capítulo estejam bem visíveis e com qualidade boa. Este é o capítulo mais importante do trabalho, pois é nele que o aluno irá descrever todos os resultados e observações obtidos no experimento.
+
+\subsection{Seções}
+
+\subsubsection{Subseções}
+
+\newpage
+
+%%%%%%%%%% CONCLUSÃO %%%%%%%%%%%%%%%
+
+\thispagestyle{main}
+
+\section{CONCLUSÃO}
+
+
+\hspace{4ex}A conclusão, além de guardar uma proporção relativa ao tamanho do trabalho,
+deve guardar uma proporcionalidade também quanto ao conteúdo. Não deve conter
+assuntos desnecessários, nem exageros numa linguagem excessivamente técnica e
+rebuscada. A conclusão deve dar respostas às questões do trabalho, correspondente aos
+objetivos propostos. Deve ser breve, podendo, se necessário, apresentar sugestões para
+pesquisas futuras.
+
+\newpage
+
+%%%%%%%% REFERÊNCIAS %%%%%%%%%%%%%%%%%
+
+% Referências bibliogáficas (geradas automaticamente)
+\addcontentsline{toc}{chapter}{Referências bibliográficas}
+\bibliography{bib/bibliografia}
+
+\appendix
+
+%Apêndice A
+\include{apendice}
+
+\end{document}

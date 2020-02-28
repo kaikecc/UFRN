@@ -1,0 +1,13 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.3 }
+
+\bibitem[Mittelbach e Goossens 2004]{LATEX04}
+\abntrefinfo{Mittelbach e Goossens}{MITTELBACH; GOOSSENS}{2004}
+{MITTELBACH, F.; GOOSSENS, M. \emph{The {\LaTeX} Companion}. 2. ed. San
+  Francisco, EUA: Addison-Wesley, 2004.}
+
+\end{thebibliography}
