@@ -3,8 +3,8 @@
 -- IMPORTAR O COMPONENTE FFD PARA QUE POSSA FUNCIONAR ESSE SCRIPT
 --
 --
--- KAIKE CASTRO
--- 01-03-2020
+-- 
+-- 
 
 entity reg4bit is -- esse nome tem q ser o mesmo do arq.vhd
   port( 
