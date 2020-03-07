@@ -1,0 +1,13 @@
+vsim main
+
+
+add wave *
+
+force clk_main 0 0, 1 1 -repeat 2
+
+force c_main 0 0, 1 4, 0 5
+force A_main "00000010" 0
+force S_main "00001000" 0
+force clr_main 0 0, 1 1
+
+run 64

@@ -1,0 +1,9 @@
+vsim reg4bit
+
+add wave *
+
+force clk_reg4bit 0 0, 1 1 -repeat 2
+force clr_reg4bit 1 0
+force I_reg4bit "0001" 0, "0011" 4, "1100" 8
+
+run 32

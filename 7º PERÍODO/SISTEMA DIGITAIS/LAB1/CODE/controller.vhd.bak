@@ -1,0 +1,70 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity controller is
+  
+  port(c_controller, tot_It_s_controller, clk_controller, clr_controller: in std_logic;                               
+   tot_ld_controller, tot_clr_controller, d_controller: out std_logic);
+   
+ end;  
+ 
+ 
+architecture ckkto of controller is
+
+signal s: std_logic_vector(1 downto 0);
+signal x: std_logic_vector(2 downto 0);
+signal n: std_logic_vector(1 downto 0);
+
+component combinational_logic is
+  
+  port(c_comb_logic, tot_It_s_comb_logic, s0, s1: in std_logic;                                                                
+                                   
+      d_comb_logic, tot_ld_comb_logic, tot_clr_comb_logic, n1, n0: out std_logic);
+        
+end component;
+
+component reg2bit is
+  port( 
+  clk_reg2bit: in std_logic;
+  clr_reg2bit: in std_logic;
+  pre_reg2bit: in std_logic;
+  I_reg2bit: in std_logic_vector(1 downto 0);
+  Qs_reg2bit: out std_logic_vector(1 downto 0));
+  
+end component;
+  
+  begin
+   
+   COMBL: combinational_logic port map(
+      -- ins
+        c_comb_logic => c_controller,
+        tot_It_s_comb_logic => tot_It_s_controller,        
+        s0 => s(0),
+        s1 => s(1),
+        
+        -- outs
+        d_comb_logic => x(0), -- d
+        tot_ld_comb_logic => x(1), -- tot_ld
+        tot_clr_comb_logic => x(2), -- tot_clr
+        
+        n0 => n(0), -- mexi aqui
+        n1 => n(1));
+    
+  -- Registrador de 2 bits
+  REG2: reg2bit port map(
+  
+  clk_reg2bit =>  clk_controller,
+  clr_reg2bit => '1',
+  pre_reg2bit => '1',
+  I_reg2bit => n,
+  Qs_reg2bit => s);
+      
+  -- Fim do Registrador de 2 bits
+  
+ d_controller <= x(0); 
+ tot_ld_controller <= x(1);
+ tot_clr_controller <= x(2); 
+ 
+  
+end ckkto;
+    

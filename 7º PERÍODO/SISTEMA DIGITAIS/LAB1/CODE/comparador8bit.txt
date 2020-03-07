@@ -1,0 +1,8 @@
+vsim comparador8bit
+
+add wave *
+
+force X "00000010" 0
+force Y "00010000" 0
+
+run 16

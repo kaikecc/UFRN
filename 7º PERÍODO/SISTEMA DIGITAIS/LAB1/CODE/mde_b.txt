@@ -1,0 +1,12 @@
+vsim mde_b
+
+
+add wave *
+
+force clk 0 0, 1 1 -repeat 2
+force r 0 0, 1 1
+
+force tot_It_s 1 0, 0 1
+force c 0 0, 1 2, 0 4
+
+run 16

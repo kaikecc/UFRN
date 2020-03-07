@@ -1,0 +1,582 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\kaike\Desktop
+Eclk_div
+Z0 w1583371196
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\kaike\Desktop\CODE1
+Z4 8C:/Users/kaike/Desktop/CODE1/CLK_Div.vhd
+Z5 FC:/Users/kaike/Desktop/CODE1/CLK_Div.vhd
+l0
+L4
+VGN2R6m1Om47W[kI`:HKj]1
+Z6 OV;C;10.1b;51
+32
+Z7 !s108 1583621460.247000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/CLK_Div.vhd|
+Z9 !s107 C:/Users/kaike/Desktop/CODE1/CLK_Div.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 L9`die3<K6nQGX<K_2@gS3
+!i10b 1
+Ackt
+R1
+R2
+DEx4 work 7 clk_div 0 22 GN2R6m1Om47W[kI`:HKj]1
+l13
+L9
+VMMXI28Jg_gF6YJf<g^a;R0
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 In^=;Nh0M?4UGieWd]KXD0
+!i10b 1
+Ecombinational_logic
+Z12 w1583551599
+R1
+R2
+R3
+Z13 8C:/Users/kaike/Desktop/CODE1/combinational_logic.vhd
+Z14 FC:/Users/kaike/Desktop/CODE1/combinational_logic.vhd
+l0
+L4
+VU9Bd;oF6U064JoPC<]aVj1
+R6
+32
+Z15 !s108 1583621460.825000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/combinational_logic.vhd|
+Z17 !s107 C:/Users/kaike/Desktop/CODE1/combinational_logic.vhd|
+R10
+R11
+!s100 nKa]`cMfcIeo>=SheZ;TO0
+!i10b 1
+Ackto
+R1
+R2
+DEx4 work 19 combinational_logic 0 22 U9Bd;oF6U064JoPC<]aVj1
+l17
+L13
+Vh_dhWP]SX;X9nI7n^VX9<2
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 EVdQoI?j6=;:P[:aHPTm12
+!i10b 1
+Ecomparador4bit
+Z18 w1583370413
+R1
+R2
+R3
+Z19 8C:/Users/kaike/Desktop/CODE1/comparador4bit.vhd
+Z20 FC:/Users/kaike/Desktop/CODE1/comparador4bit.vhd
+l0
+L9
+V=0Td=mhCaOgoe<Yg?DW=T2
+R6
+32
+Z21 !s108 1583621461.178000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/comparador4bit.vhd|
+Z23 !s107 C:/Users/kaike/Desktop/CODE1/comparador4bit.vhd|
+R10
+R11
+!s100 c?89=SHI<?c<XE8M4GoIT1
+!i10b 1
+Ackt_comparador4bits
+R1
+R2
+DEx4 work 14 comparador4bit 0 22 =0Td=mhCaOgoe<Yg?DW=T2
+l22
+L15
+V<S]c=LeDAza6@>^[RNif@0
+R6
+32
+R21
+R22
+R23
+R10
+R11
+!s100 c;Ld=[K]5HGAVZ3:8nDW:1
+!i10b 1
+Ecomparador8bit
+Z24 w1583537008
+R1
+R2
+R3
+Z25 8C:/Users/kaike/Desktop/CODE1/comparador8bit.vhd
+Z26 FC:/Users/kaike/Desktop/CODE1/comparador8bit.vhd
+l0
+L16
+V0N;fOGLi`5:7>Il>^93d61
+R6
+32
+Z27 !s108 1583621461.710000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/comparador8bit.vhd|
+Z29 !s107 C:/Users/kaike/Desktop/CODE1/comparador8bit.vhd|
+R10
+R11
+!s100 ZMi;z4h>iXi57[A=heSnW0
+!i10b 1
+Ackt_comparador8bits
+R1
+R2
+DEx4 work 14 comparador8bit 0 22 0N;fOGLi`5:7>Il>^93d61
+l26
+L22
+Vl5Xo8X:BPTCYYTgSdH:am2
+R6
+32
+R27
+R28
+R29
+R10
+R11
+!s100 hz]PjQmdHBRJT9Y^N=Yh11
+!i10b 1
+Econtroller
+Z30 w1583607763
+R1
+R2
+R3
+Z31 8C:/Users/kaike/Desktop/CODE1/controller.vhd
+Z32 FC:/Users/kaike/Desktop/CODE1/controller.vhd
+l0
+L4
+V=MA3deE25KcON:jX_kGlY1
+R6
+32
+Z33 !s108 1583621462.082000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/controller.vhd|
+Z35 !s107 C:/Users/kaike/Desktop/CODE1/controller.vhd|
+R10
+R11
+!s100 8V<BBbf4^ThgEjYJGHIMH3
+!i10b 1
+Ackkto
+R1
+R2
+DEx4 work 10 controller 0 22 =MA3deE25KcON:jX_kGlY1
+l36
+L12
+Vi?5`Z2kJi8XiT3nbXa2lA1
+R6
+32
+R33
+R34
+R35
+R10
+R11
+!s100 6NiS[`1l8z4INnf^1U8ME1
+!i10b 1
+Edatapath
+Z36 w1583618522
+R1
+R2
+R3
+Z37 8C:/Users/kaike/Desktop/CODE1/datapath.vhd
+Z38 FC:/Users/kaike/Desktop/CODE1/datapath.vhd
+l0
+L4
+VW0a>45_9Wf329aEng5JB41
+R6
+32
+Z39 !s108 1583621462.418000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/datapath.vhd|
+Z41 !s107 C:/Users/kaike/Desktop/CODE1/datapath.vhd|
+R10
+R11
+!s100 :XOPHXhRJQDVk08UkK`jN2
+!i10b 1
+Ackt_dat
+R1
+R2
+DEx4 work 8 datapath 0 22 W0a>45_9Wf329aEng5JB41
+l52
+L13
+VlHb<K5bz;?dD]E33m7O6n2
+R6
+32
+R39
+R40
+R41
+R10
+R11
+!s100 `Nb4RB@mcYf`N]LZ[gED30
+!i10b 1
+Ackt
+R1
+R2
+DEx4 work 8 datapath 0 22 gXWaIVagd:B1HD4L0F25A2
+l48
+L12
+VQ2>Azo8dTSd7=JY[j]N1@0
+R6
+32
+R40
+R10
+R11
+w1583524706
+R41
+!s100 McniJ;kNU@Kdm]LN4Zl843
+!s108 1583525224.848000
+!i10b 1
+Effd
+Z42 w1583370717
+R1
+R2
+R3
+Z43 8C:/Users/kaike/Desktop/CODE1/ffd.vhd
+Z44 FC:/Users/kaike/Desktop/CODE1/ffd.vhd
+l0
+L4
+VP>aPM[P=6[L8=WDU9CQ@K0
+R6
+32
+Z45 !s108 1583621462.876000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/ffd.vhd|
+Z47 !s107 C:/Users/kaike/Desktop/CODE1/ffd.vhd|
+R10
+R11
+!s100 EF>M8VaCBdYNGSDOUAHOJ0
+!i10b 1
+Ackt_ffd
+R1
+R2
+DEx4 work 3 ffd 0 22 P>aPM[P=6[L8=WDU9CQ@K0
+l10
+L8
+V9@z_M?`=G0SMiAkP?7Y1i1
+R6
+32
+R45
+R46
+R47
+R10
+R11
+!s100 gF8Cld:G5^WUUbnYK<Vce1
+!i10b 1
+Emain
+Z48 w1583618238
+R1
+R2
+R3
+Z49 8C:/Users/kaike/Desktop/CODE1/main.vhd
+Z50 FC:/Users/kaike/Desktop/CODE1/main.vhd
+l0
+L4
+Vi=_1nPJOP^I]e6z=QZWNB0
+!s100 k2?NkbnZzneQPbje@3g_]3
+R6
+32
+!i10b 1
+Z51 !s108 1583621466.914000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/main.vhd|
+Z53 !s107 C:/Users/kaike/Desktop/CODE1/main.vhd|
+R10
+R11
+Ackt
+R1
+R2
+Z54 DEx4 work 4 main 0 22 i=_1nPJOP^I]e6z=QZWNB0
+l39
+L13
+Z55 VXR:hPdD?NoLF?4ZgAV;0>2
+Z56 !s100 ck7@6@NdOJfe5AESOMTZf0
+R6
+32
+!i10b 1
+R51
+R52
+R53
+R10
+R11
+Emde_b
+Z57 w1583621415
+R1
+R2
+R3
+Z58 8C:/Users/kaike/Desktop/CODE1/mde_b.vhd
+Z59 FC:/Users/kaike/Desktop/CODE1/mde_b.vhd
+l0
+L4
+V]Oc9;EhEFziO9lVRQA8UL1
+R6
+32
+Z60 !s108 1583621463.508000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/mde_b.vhd|
+Z62 !s107 C:/Users/kaike/Desktop/CODE1/mde_b.vhd|
+R10
+R11
+!s100 GXLHEC0]ZXkg_S7J1HRCF2
+!i10b 1
+Ackt
+R1
+R2
+DEx4 work 5 mde_b 0 22 ]Oc9;EhEFziO9lVRQA8UL1
+l17
+L9
+V5h`YJPR=3ZVz7bgF>SH=B2
+R6
+32
+R60
+R61
+R62
+R10
+R11
+!s100 <4;MYo`:H9MT4I;bh2SPA2
+!i10b 1
+Emux16x8
+Z63 w1583370789
+R1
+R2
+R3
+Z64 8C:/Users/kaike/Desktop/CODE1/mux16x8.vhd
+Z65 FC:/Users/kaike/Desktop/CODE1/mux16x8.vhd
+l0
+L16
+V[B<:0Zei_UG<;X[hPQkiV1
+R6
+32
+Z66 !s108 1583621464.478000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/mux16x8.vhd|
+Z68 !s107 C:/Users/kaike/Desktop/CODE1/mux16x8.vhd|
+R10
+R11
+!s100 ^<KOiJ:On0HA?X0cnP^@W0
+!i10b 1
+Ackt_mux16x8
+R1
+R2
+DEx4 work 7 mux16x8 0 22 [B<:0Zei_UG<;X[hPQkiV1
+l35
+L24
+V_6YIZ;VVQJhee2^:a9Lo40
+R6
+32
+R66
+R67
+R68
+R10
+R11
+!s100 e3>]8?YnPcYcfB@U[:PIX2
+!i10b 1
+Emux2x1
+Z69 w1583371078
+R1
+R2
+R3
+Z70 8C:/Users/kaike/Desktop/CODE1/mux2x1.vhd
+Z71 FC:/Users/kaike/Desktop/CODE1/mux2x1.vhd
+l0
+L16
+V_ACAfRg:n0OKmM[D;FagO0
+R6
+32
+Z72 !s108 1583621463.964000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/mux2x1.vhd|
+Z74 !s107 C:/Users/kaike/Desktop/CODE1/mux2x1.vhd|
+R10
+R11
+!s100 Zjk1FnK@cBbFeC<L`ABXh1
+!i10b 1
+Ackt_mux2x1
+R1
+R2
+DEx4 work 6 mux2x1 0 22 _ACAfRg:n0OKmM[D;FagO0
+l25
+L23
+VWD@13_^UalIf7alD>0i=o1
+R6
+32
+R72
+R73
+R74
+R10
+R11
+!s100 ;1hPnj]2H@F^KHb^kzngB3
+!i10b 1
+Ereg2bit
+Z75 w1583598799
+R1
+R2
+R3
+Z76 8C:/Users/kaike/Desktop/CODE1/reg2bit.vhd
+Z77 FC:/Users/kaike/Desktop/CODE1/reg2bit.vhd
+l0
+L4
+V[ScCzGiE[PS`Ek67ZC?170
+R6
+32
+Z78 !s108 1583621466.496000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/reg2bit.vhd|
+Z80 !s107 C:/Users/kaike/Desktop/CODE1/reg2bit.vhd|
+R10
+R11
+!s100 dlT4<>UilMTKYVF:nf<ia2
+!i10b 1
+Ackto
+R1
+R2
+DEx4 work 7 reg2bit 0 22 [ScCzGiE[PS`Ek67ZC?170
+l24
+L14
+VIoJZW;@iZz<h<jQ0k>VzG3
+!s100 b>eWY>1UTnVO94QD7<cS10
+R6
+32
+R78
+R79
+R80
+R10
+R11
+!i10b 1
+Ereg4bit
+Z81 w1583522876
+R1
+R2
+R3
+Z82 8C:/Users/kaike/Desktop/CODE1/reg4bit.vhd
+Z83 FC:/Users/kaike/Desktop/CODE1/reg4bit.vhd
+l0
+L4
+VVLS<a:PFQ]K:o5LlHl50X1
+R6
+32
+Z84 !s108 1583621464.892000
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/reg4bit.vhd|
+Z86 !s107 C:/Users/kaike/Desktop/CODE1/reg4bit.vhd|
+R10
+R11
+!s100 A7Ofh]U`Z3:_l8jSl^TL10
+!i10b 1
+Ackto
+R1
+R2
+DEx4 work 7 reg4bit 0 22 VLS<a:PFQ]K:o5LlHl50X1
+l23
+L13
+VnUfJ_3QQ0TLGFJcgWfgUc0
+R6
+32
+R84
+R85
+R86
+R10
+R11
+!s100 4i`:KZHe[WFOGYcUmD=1W1
+!i10b 1
+Ereg8bit
+Z87 w1583523646
+R1
+R2
+R3
+Z88 8C:/Users/kaike/Desktop/CODE1/reg8bit.vhd
+Z89 FC:/Users/kaike/Desktop/CODE1/reg8bit.vhd
+l0
+L4
+V0=LW=b6FIcK]F@PJIg?zo1
+R6
+32
+Z90 !s108 1583621465.329000
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/reg8bit.vhd|
+Z92 !s107 C:/Users/kaike/Desktop/CODE1/reg8bit.vhd|
+R10
+R11
+!s100 ]z[dIAUca5La2ZJfK3daj1
+!i10b 1
+Ackto
+R1
+R2
+DEx4 work 7 reg8bit 0 22 0=LW=b6FIcK]F@PJIg?zo1
+l26
+L13
+VIgd8VPXHV<WSQ:?<GWl9G0
+R6
+32
+R90
+R91
+R92
+R10
+R11
+!s100 ^K7oh:VGD=j=gU5PHkRmc0
+!i10b 1
+Esomador1bit
+Z93 w1583442393
+R1
+R2
+R3
+Z94 8C:/Users/kaike/Desktop/CODE1/somador1bit.vhd
+Z95 FC:/Users/kaike/Desktop/CODE1/somador1bit.vhd
+l0
+L4
+VU=FzFf;WJ?4`_`Ib3ziLj3
+R6
+32
+Z96 !s108 1583621465.843000
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/somador1bit.vhd|
+Z98 !s107 C:/Users/kaike/Desktop/CODE1/somador1bit.vhd|
+R10
+R11
+!s100 nj?nkLzg^^:9k4aTBOgU33
+!i10b 1
+Ackt
+R1
+R2
+DEx4 work 11 somador1bit 0 22 U=FzFf;WJ?4`_`Ib3ziLj3
+l13
+L11
+VYPOE0aYV96UWgne?TBo531
+R6
+32
+R96
+R97
+R98
+R10
+R11
+!s100 Q`GJnOZ61b7:314;ehCIF3
+!i10b 1
+Esomador8bit
+Z99 w1583442482
+R1
+R2
+R3
+Z100 8C:/Users/kaike/Desktop/CODE1/somador8bit.vhd
+Z101 FC:/Users/kaike/Desktop/CODE1/somador8bit.vhd
+l0
+L4
+V<LOdM4VoBIJ]Fd[K;`lim3
+R6
+32
+Z102 !s108 1583621466.128000
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/somador8bit.vhd|
+Z104 !s107 C:/Users/kaike/Desktop/CODE1/somador8bit.vhd|
+R10
+R11
+!s100 MWzU^J3<ITd28ci8U1?>`1
+!i10b 1
+Ackt
+R1
+R2
+DEx4 work 11 somador8bit 0 22 <LOdM4VoBIJ]Fd[K;`lim3
+l25
+L12
+VDeBBmANY7OOWGkXLhi7LJ3
+R6
+32
+R102
+R103
+R104
+R10
+R11
+!s100 fh8I[TP755`?[6fI4am<;0
+!i10b 1

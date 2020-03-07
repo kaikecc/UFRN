@@ -1,0 +1,10 @@
+vsim reg8bit
+
+add wave *
+
+
+force clk_reg8bit 0 0, 1 1 -repeat 2
+force clr_reg8bit  0 0, 1 1
+force E_reg8bit "00000010" 0, "00000111" 4 -repeat 8
+
+run 16

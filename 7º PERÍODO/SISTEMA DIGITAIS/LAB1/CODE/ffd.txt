@@ -1,0 +1,11 @@
+vsim ffd
+
+add wave *
+
+force clk 0 0, 1 1 -repeat 2
+
+force D 0 0, 1 2 -repeat 4
+
+force P 0 0, 1 8
+force C 1 0, 1 16
+run 32

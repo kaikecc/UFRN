@@ -1,0 +1,10 @@
+vsim combinational_logic
+
+add wave *
+
+force tot_It_s_comb_logic 0 0, 1 1 -repeat 2
+force c_comb_logic 0 0, 1 2 -repeat 4 
+force s0 0 0, 1 4 -repeat 8
+force s1 0 0, 1 8 -repeat 16
+
+run 32

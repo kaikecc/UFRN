@@ -3,8 +3,8 @@ vsim reg8bit
 add wave *
 
 
-force clk 0 0, 1 1 -repeat 2
-force CLR  0 0, 1 1
-force ENTRADAS "00000010" 0, "00000111" 4 -repeat 8
+force clk_reg8bit 0 0, 1 1 -repeat 2
+force clr_reg8bit  0 0, 1 1, 0 4
+force E "00000010" 0, "00000111" 4 -repeat 8
 
 run 8
