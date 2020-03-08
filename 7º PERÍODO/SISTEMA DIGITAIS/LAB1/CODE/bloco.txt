@@ -1,0 +1,7 @@
+vsim bloco
+
+add wave *
+
+force A "1001" 0
+
+run 8

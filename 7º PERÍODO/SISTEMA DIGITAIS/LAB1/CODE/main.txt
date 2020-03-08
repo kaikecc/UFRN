@@ -5,9 +5,9 @@ add wave *
 
 force clk_main 0 0, 1 1 -repeat 2
 
-force c_main 0 0, 1 4, 0 5
-force A_main "00000010" 0
-force S_main "00001000" 0
+force c_main 0 0, 1 2, 0 3, 1 14, 0 15, 1 30, 0 31
+force A_main "00010000" 0, "00001100" 16, "00000010" 32 
+force S_main "00000100" 0, "00010000" 16, "00010000" 32
 force clr_main 0 0, 1 1
 
-run 64
+run 128

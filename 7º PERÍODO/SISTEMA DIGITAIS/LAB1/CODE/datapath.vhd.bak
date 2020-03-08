@@ -6,7 +6,7 @@ entity datapath is
   port(a_dat,s_dat: in std_logic_vector(7 downto 0);
   tot_ld_dat, tot_clr_dat, clk_dat: in std_logic;
   tot_It_s_dat: out std_logic;
-  teste: out std_logic_vector(7 downto 0));
+  out_reg8bit: out std_logic_vector(7 downto 0));
   
 end;
 
@@ -87,6 +87,6 @@ ADDER: somador8bit port map(
     
     
 tot_It_s_dat <= s0;
-teste <= s_dat;
+teste <= out_mux;
 
 end ckt_dat;

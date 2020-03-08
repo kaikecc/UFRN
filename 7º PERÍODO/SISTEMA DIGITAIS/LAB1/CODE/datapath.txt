@@ -3,10 +3,10 @@ vsim datapath
 
 add wave *
 
-force a_dat "00001000" 0
-force s_dat "00000010" 0
+force a_dat "00000010" 0
+force s_dat "00010000" 0
 force tot_ld_dat 1 0
-force tot_clr_dat 0 0, 1 5
+force tot_clr_dat 0 0, 1 4
 force clk_dat 0 0, 1 1 -repeat 2
 
 
