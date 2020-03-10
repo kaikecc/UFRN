@@ -1,5 +1,5 @@
 Assembler report for main
-Mon Mar 09 22:09:51 2020
+Tue Mar 10 14:22:28 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Mar 09 22:09:51 2020 ;
+; Assembler Status      ; Successful - Tue Mar 10 14:22:28 2020 ;
 ; Revision Name         ; main                                  ;
 ; Top-level Entity Name ; main                                  ;
 ; Family                ; Cyclone II                            ;
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Mar 09 22:09:48 2020
+    Info: Processing started: Tue Mar 10 14:22:24 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off maquinadevedas -c main
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4571 megabytes
-    Info: Processing ended: Mon Mar 09 22:09:51 2020
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Tue Mar 10 14:22:28 2020
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

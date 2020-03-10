@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Mon Mar 09 22:09:35 2020
+Tue Mar 10 14:22:12 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 09 22:09:35 2020      ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 10 14:22:12 2020      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; main                                       ;
@@ -560,7 +560,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Mar 09 22:09:30 2020
+    Info: Processing started: Tue Mar 10 14:22:07 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off maquinadevedas -c main
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file mainrom.vhd
@@ -695,7 +695,7 @@ Info (21057): Implemented 143 device resources after synthesis - the final resou
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 4658 megabytes
-    Info: Processing ended: Mon Mar 09 22:09:35 2020
+    Info: Processing ended: Tue Mar 10 14:22:12 2020
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
