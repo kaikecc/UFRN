@@ -1,0 +1,9 @@
+vsim contador8bit
+
+add wave *
+
+force clk_contador8bit 0 0, 1 1 -repeat 2
+force clr_contador8bit 0 0, 1 1
+force SEL_contador8bit 0 0
+
+run 64

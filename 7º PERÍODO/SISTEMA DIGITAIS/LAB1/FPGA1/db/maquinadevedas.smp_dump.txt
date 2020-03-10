@@ -1,0 +1,7 @@
+
+State Machine - |main|mde_b:MOORE|y_present
+Name y_present.fornecer y_present.somar y_present.esperar y_present.inicio 
+y_present.inicio 0 0 0 0 
+y_present.esperar 0 0 1 1 
+y_present.somar 0 1 0 1 
+y_present.fornecer 1 0 0 1 
