@@ -15,7 +15,7 @@ L4
 V0L0]^<V^S<doUNQOW]l?<0
 Z6 OV;C;10.1b;51
 32
-Z7 !s108 1583696671.401000
+Z7 !s108 1583942133.279000
 Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/bin_bcd.vhd|
 Z9 !s107 C:/Users/kaike/Desktop/CODE1/bin_bcd.vhd|
 Z10 o-work work -2002 -explicit -O0
@@ -50,7 +50,7 @@ L4
 V9K^eNWW2l:6cI_2aeZ4@23
 R6
 32
-Z15 !s108 1583696671.927000
+Z15 !s108 1583942133.998000
 Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/bloco.vhd|
 Z17 !s107 C:/Users/kaike/Desktop/CODE1/bloco.vhd|
 R10
@@ -64,6 +64,7 @@ DEx4 work 5 bloco 0 22 9K^eNWW2l:6cI_2aeZ4@23
 l12
 L11
 V41F@9lhGceO0G9:<fBm6=2
+!s100 <cO_ahjdK:fb6acaeUfUR2
 R6
 32
 R15
@@ -71,7 +72,6 @@ R16
 R17
 R10
 R11
-!s100 <cO_ahjdK:fb6acaeUfUR2
 !i10b 1
 Eclk_div
 Z18 w1583371196
@@ -85,7 +85,7 @@ L4
 VGN2R6m1Om47W[kI`:HKj]1
 R6
 32
-Z21 !s108 1583696663.912000
+Z21 !s108 1583942119.374000
 Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/CLK_Div.vhd|
 Z23 !s107 C:/Users/kaike/Desktop/CODE1/CLK_Div.vhd|
 R10
@@ -120,7 +120,7 @@ L4
 VU9Bd;oF6U064JoPC<]aVj1
 R6
 32
-Z27 !s108 1583696664.371000
+Z27 !s108 1583942120.342000
 Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/combinational_logic.vhd|
 Z29 !s107 C:/Users/kaike/Desktop/CODE1/combinational_logic.vhd|
 R10
@@ -155,7 +155,7 @@ L9
 V=0Td=mhCaOgoe<Yg?DW=T2
 R6
 32
-Z33 !s108 1583696664.756000
+Z33 !s108 1583942120.858000
 Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/comparador4bit.vhd|
 Z35 !s107 C:/Users/kaike/Desktop/CODE1/comparador4bit.vhd|
 R10
@@ -190,7 +190,7 @@ L16
 V0N;fOGLi`5:7>Il>^93d61
 R6
 32
-Z39 !s108 1583696665.324000
+Z39 !s108 1583942121.717000
 Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/comparador8bit.vhd|
 Z41 !s107 C:/Users/kaike/Desktop/CODE1/comparador8bit.vhd|
 R10
@@ -223,46 +223,46 @@ Z44 FC:/Users/kaike/Desktop/CODE1/contador8bit.vhd
 l0
 L4
 VHTh;XLQ?6BZhQYkZAjT@^1
+!s100 kUh_ofDf54]VcnF_FPA_62
 R6
 32
-Z45 !s108 1583795995.127000
+!i10b 1
+Z45 !s108 1583942134.982000
 Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/contador8bit.vhd|
 Z47 !s107 C:/Users/kaike/Desktop/CODE1/contador8bit.vhd|
 R10
 R11
-!s100 kUh_ofDf54]VcnF_FPA_62
-!i10b 1
 Ackto
 R1
 R2
-DEx4 work 12 contador8bit 0 22 HTh;XLQ?6BZhQYkZAjT@^1
+Z48 DEx4 work 12 contador8bit 0 22 HTh;XLQ?6BZhQYkZAjT@^1
 l44
 L13
-VWMn3ld8@=hEn?TP1fg2470
+Z49 VWMn3ld8@=hEn?TP1fg2470
+Z50 !s100 =g=5e0dLL@iZ4_`XLn2191
 R6
 32
+!i10b 1
 R45
 R46
 R47
 R10
 R11
-!s100 =g=5e0dLL@iZ4_`XLn2191
-!i10b 1
 Econtroller
-Z48 w1583607763
+Z51 w1583607763
 R1
 R2
 R3
-Z49 8C:/Users/kaike/Desktop/CODE1/controller.vhd
-Z50 FC:/Users/kaike/Desktop/CODE1/controller.vhd
+Z52 8C:/Users/kaike/Desktop/CODE1/controller.vhd
+Z53 FC:/Users/kaike/Desktop/CODE1/controller.vhd
 l0
 L4
 V=MA3deE25KcON:jX_kGlY1
 R6
 32
-Z51 !s108 1583696665.774000
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/controller.vhd|
-Z53 !s107 C:/Users/kaike/Desktop/CODE1/controller.vhd|
+Z54 !s108 1583942122.342000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/controller.vhd|
+Z56 !s107 C:/Users/kaike/Desktop/CODE1/controller.vhd|
 R10
 R11
 !s100 8V<BBbf4^ThgEjYJGHIMH3
@@ -276,28 +276,28 @@ L12
 Vi?5`Z2kJi8XiT3nbXa2lA1
 R6
 32
-R51
-R52
-R53
+R54
+R55
+R56
 R10
 R11
 !s100 6NiS[`1l8z4INnf^1U8ME1
 !i10b 1
 Edatapath
-Z54 w1583642922
+Z57 w1583642922
 R1
 R2
 R3
-Z55 8C:/Users/kaike/Desktop/CODE1/datapath.vhd
-Z56 FC:/Users/kaike/Desktop/CODE1/datapath.vhd
+Z58 8C:/Users/kaike/Desktop/CODE1/datapath.vhd
+Z59 FC:/Users/kaike/Desktop/CODE1/datapath.vhd
 l0
 L4
 Voj7aP;c@I19Wb@2M@]U6=2
 R6
 32
-Z57 !s108 1583696666.350000
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/datapath.vhd|
-Z59 !s107 C:/Users/kaike/Desktop/CODE1/datapath.vhd|
+Z60 !s108 1583942123.076000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/datapath.vhd|
+Z62 !s107 C:/Users/kaike/Desktop/CODE1/datapath.vhd|
 R10
 R11
 !s100 ^>a]cC]X4Y;o5?HQd=bR61
@@ -311,9 +311,9 @@ L13
 V]3RhcJgDjJOFTIKjiUUa@1
 R6
 32
-R57
-R58
-R59
+R60
+R61
+R62
 R10
 R11
 !s100 fkETXhQG0N2TLU?^2C5^01
@@ -327,29 +327,29 @@ L12
 VQ2>Azo8dTSd7=JY[j]N1@0
 R6
 32
-R58
+R61
 R10
 R11
 w1583524706
-R59
+R62
 !s100 McniJ;kNU@Kdm]LN4Zl843
 !s108 1583525224.848000
 !i10b 1
 Effd
-Z60 w1583370717
+Z63 w1583370717
 R1
 R2
 R3
-Z61 8C:/Users/kaike/Desktop/CODE1/ffd.vhd
-Z62 FC:/Users/kaike/Desktop/CODE1/ffd.vhd
+Z64 8C:/Users/kaike/Desktop/CODE1/ffd.vhd
+Z65 FC:/Users/kaike/Desktop/CODE1/ffd.vhd
 l0
 L4
 VP>aPM[P=6[L8=WDU9CQ@K0
 R6
 32
-Z63 !s108 1583696666.716000
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/ffd.vhd|
-Z65 !s107 C:/Users/kaike/Desktop/CODE1/ffd.vhd|
+Z66 !s108 1583942123.701000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/ffd.vhd|
+Z68 !s107 C:/Users/kaike/Desktop/CODE1/ffd.vhd|
 R10
 R11
 !s100 EF>M8VaCBdYNGSDOUAHOJ0
@@ -363,48 +363,48 @@ L8
 V9@z_M?`=G0SMiAkP?7Y1i1
 R6
 32
-R63
-R64
-R65
+R66
+R67
+R68
 R10
 R11
 !s100 gF8Cld:G5^WUUbnYK<Vce1
 !i10b 1
 Emain
-Z66 w1583800066
+Z69 w1583800066
 R1
 R2
 R3
-Z67 8C:/Users/kaike/Desktop/CODE1/main.vhd
-Z68 FC:/Users/kaike/Desktop/CODE1/main.vhd
+Z70 8C:/Users/kaike/Desktop/CODE1/main.vhd
+Z71 FC:/Users/kaike/Desktop/CODE1/main.vhd
 l0
 L13
 VU6@h^[094WPKDWKnbmfLL3
-!s100 8`:@oCfB_N`OEILJ<;zkA2
 R6
 32
-!i10b 1
-Z69 !s108 1583800074.757000
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/main.vhd|
-Z71 !s107 C:/Users/kaike/Desktop/CODE1/main.vhd|
+Z72 !s108 1583942132.310000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/main.vhd|
+Z74 !s107 C:/Users/kaike/Desktop/CODE1/main.vhd|
 R10
 R11
+!s100 8`:@oCfB_N`OEILJ<;zkA2
+!i10b 1
 Ackt
 R1
 R2
-Z72 DEx4 work 4 main 0 22 U6@h^[094WPKDWKnbmfLL3
+DEx4 work 4 main 0 22 U6@h^[094WPKDWKnbmfLL3
 l76
 L24
-Z73 VCQod@jhP?ZQi:@:kQUCGB2
-Z74 !s100 Th98Zn36IlH;U3<6k4FK`3
+VCQod@jhP?ZQi:@:kQUCGB2
 R6
 32
-!i10b 1
-R69
-R70
-R71
+R72
+R73
+R74
 R10
 R11
+!s100 Th98Zn36IlH;U3<6k4FK`3
+!i10b 1
 Ackto
 R1
 R2
@@ -436,7 +436,7 @@ L4
 V]Oc9;EhEFziO9lVRQA8UL1
 R6
 32
-Z78 !s108 1583696667.092000
+Z78 !s108 1583942124.326000
 Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/mde_b.vhd|
 Z80 !s107 C:/Users/kaike/Desktop/CODE1/mde_b.vhd|
 R10
@@ -471,7 +471,7 @@ L16
 V[B<:0Zei_UG<;X[hPQkiV1
 R6
 32
-Z84 !s108 1583696668.126000
+Z84 !s108 1583942126.576000
 Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/mux16x8.vhd|
 Z86 !s107 C:/Users/kaike/Desktop/CODE1/mux16x8.vhd|
 R10
@@ -506,7 +506,7 @@ L16
 V_ACAfRg:n0OKmM[D;FagO0
 R6
 32
-Z90 !s108 1583696667.532000
+Z90 !s108 1583942125.311000
 Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/mux2x1.vhd|
 Z92 !s107 C:/Users/kaike/Desktop/CODE1/mux2x1.vhd|
 R10
@@ -541,7 +541,7 @@ L4
 V[ScCzGiE[PS`Ek67ZC?170
 R6
 32
-Z96 !s108 1583696670.553000
+Z96 !s108 1583942131.404000
 Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/reg2bit.vhd|
 Z98 !s107 C:/Users/kaike/Desktop/CODE1/reg2bit.vhd|
 R10
@@ -576,7 +576,7 @@ L4
 VVLS<a:PFQ]K:o5LlHl50X1
 R6
 32
-Z102 !s108 1583696668.598000
+Z102 !s108 1583942127.560000
 Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/reg4bit.vhd|
 Z104 !s107 C:/Users/kaike/Desktop/CODE1/reg4bit.vhd|
 R10
@@ -600,7 +600,7 @@ R11
 !s100 4i`:KZHe[WFOGYcUmD=1W1
 !i10b 1
 Ereg8bit
-Z105 w1583523646
+Z105 w1583801350
 R1
 R2
 R3
@@ -611,7 +611,7 @@ L4
 V0=LW=b6FIcK]F@PJIg?zo1
 R6
 32
-Z108 !s108 1583696669.063000
+Z108 !s108 1583942128.873000
 Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/reg8bit.vhd|
 Z110 !s107 C:/Users/kaike/Desktop/CODE1/reg8bit.vhd|
 R10
@@ -646,7 +646,7 @@ L4
 VU=FzFf;WJ?4`_`Ib3ziLj3
 R6
 32
-Z114 !s108 1583696669.528000
+Z114 !s108 1583942129.435000
 Z115 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/somador1bit.vhd|
 Z116 !s107 C:/Users/kaike/Desktop/CODE1/somador1bit.vhd|
 R10
@@ -681,7 +681,7 @@ L4
 V<LOdM4VoBIJ]Fd[K;`lim3
 R6
 32
-Z120 !s108 1583795990.354000
+Z120 !s108 1583942130.592000
 Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/kaike/Desktop/CODE1/somador8bit.vhd|
 Z122 !s107 C:/Users/kaike/Desktop/CODE1/somador8bit.vhd|
 R10
