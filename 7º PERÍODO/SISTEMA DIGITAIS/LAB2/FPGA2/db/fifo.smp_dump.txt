@@ -1,0 +1,13 @@
+
+State Machine - |mde_b|y_present
+Name y_present.readFull y_present.waitFull y_present.reead2 y_present.reead y_present.wriite2 y_present.wriite y_present.waiit y_present.writeMT y_present.waitMT y_present.init 
+y_present.init 0 0 0 0 0 0 0 0 0 0 
+y_present.waitMT 0 0 0 0 0 0 0 0 1 1 
+y_present.writeMT 0 0 0 0 0 0 0 1 0 1 
+y_present.waiit 0 0 0 0 0 0 1 0 0 1 
+y_present.wriite 0 0 0 0 0 1 0 0 0 1 
+y_present.wriite2 0 0 0 0 1 0 0 0 0 1 
+y_present.reead 0 0 0 1 0 0 0 0 0 1 
+y_present.reead2 0 0 1 0 0 0 0 0 0 1 
+y_present.waitFull 0 1 0 0 0 0 0 0 0 1 
+y_present.readFull 1 0 0 0 0 0 0 0 0 1 

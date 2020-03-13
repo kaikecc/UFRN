@@ -1,0 +1,903 @@
+Simulator report for main
+Thu Mar 12 18:46:33 2020
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 477 nodes    ;
+; Simulation Coverage         ;      39.41 % ;
+; Total Number of Transitions ; 1559         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                                     ; Setting                               ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                   ;               ;
+; Vector input source                                                                        ; C:/Users/kaike/Desktop/FPGA1/main.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                    ; On            ;
+; Check outputs                                                                              ; Off                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++-------------------------------------------------------------------------------------------------+
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      39.41 % ;
+; Total nodes checked                                 ; 477          ;
+; Total output ports checked                          ; 477          ;
+; Total output ports with complete 1/0-value coverage ; 188          ;
+; Total output ports with no 1/0-value coverage       ; 257          ;
+; Total output ports with no 1-value coverage         ; 260          ;
+; Total output ports with no 0-value coverage         ; 286          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                        ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                         ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |main|c_main                                                                                      ; |main|c_main                                                                                ; out              ;
+; |main|clk_main                                                                                    ; |main|clk_main                                                                              ; out              ;
+; |main|d_main                                                                                      ; |main|d_main                                                                                ; pin_out          ;
+; |main|cont[0]                                                                                     ; |main|cont[0]                                                                               ; pin_out          ;
+; |main|A_0[1]                                                                                      ; |main|A_0[1]                                                                                ; pin_out          ;
+; |main|A_1[0]                                                                                      ; |main|A_1[0]                                                                                ; pin_out          ;
+; |main|tot_0[1]                                                                                    ; |main|tot_0[1]                                                                              ; pin_out          ;
+; |main|tot_0[2]                                                                                    ; |main|tot_0[2]                                                                              ; pin_out          ;
+; |main|tot_0[3]                                                                                    ; |main|tot_0[3]                                                                              ; pin_out          ;
+; |main|tot_1[0]                                                                                    ; |main|tot_1[0]                                                                              ; pin_out          ;
+; |main|tot_1[1]                                                                                    ; |main|tot_1[1]                                                                              ; pin_out          ;
+; |main|tot_1[2]                                                                                    ; |main|tot_1[2]                                                                              ; pin_out          ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a1 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[1] ; portadataout0    ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D0|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D0|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M1|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M1|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M1|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M1|Saida                                      ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M0|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M0|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M0|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M0|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M0|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M0|Saida                                      ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~1                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~1                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S[3]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S[3]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~13                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~13                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~15                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~15                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~1                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~1                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S[2]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S[2]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~11                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~11                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S[1]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S[1]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~13                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~13                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~14                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~14                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~15                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~15                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S[0]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B7|S[0]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[1]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[1]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~14                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~14                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~15                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~15                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[0]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[0]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~1                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~1                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S[2]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S[2]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~11                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~11                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S[1]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S[1]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~13                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~13                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~14                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~14                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~15                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~15                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S[0]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S[0]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~14                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~14                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S[0]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S[0]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~1                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~1                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[2]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[2]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[1]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[1]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~13                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~13                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[1]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[1]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~14                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~14                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~15                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~15                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[0]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[0]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~14                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~14                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S[0]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S[0]                                                  ; out0             ;
+; |main|mde_b:MOORE|y_next.fornecer~0                                                               ; |main|mde_b:MOORE|y_next.fornecer~0                                                         ; out              ;
+; |main|mde_b:MOORE|process_0~0                                                                     ; |main|mde_b:MOORE|process_0~0                                                               ; out0             ;
+; |main|mde_b:MOORE|process_0~1                                                                     ; |main|mde_b:MOORE|process_0~1                                                               ; out0             ;
+; |main|mde_b:MOORE|process_0~2                                                                     ; |main|mde_b:MOORE|process_0~2                                                               ; out0             ;
+; |main|mde_b:MOORE|y_next.fornecer~1                                                               ; |main|mde_b:MOORE|y_next.fornecer~1                                                         ; out0             ;
+; |main|mde_b:MOORE|y_next.fornecer~2                                                               ; |main|mde_b:MOORE|y_next.fornecer~2                                                         ; out              ;
+; |main|mde_b:MOORE|y_next.fornecer~3                                                               ; |main|mde_b:MOORE|y_next.fornecer~3                                                         ; out0             ;
+; |main|mde_b:MOORE|y_next.fornecer_104                                                             ; |main|mde_b:MOORE|y_next.fornecer_104                                                       ; out              ;
+; |main|mde_b:MOORE|comb~0                                                                          ; |main|mde_b:MOORE|comb~0                                                                    ; out0             ;
+; |main|mde_b:MOORE|comb~1                                                                          ; |main|mde_b:MOORE|comb~1                                                                    ; out0             ;
+; |main|mde_b:MOORE|y_next.fornecer~4                                                               ; |main|mde_b:MOORE|y_next.fornecer~4                                                         ; out0             ;
+; |main|mde_b:MOORE|y_next.fornecer~5                                                               ; |main|mde_b:MOORE|y_next.fornecer~5                                                         ; out0             ;
+; |main|mde_b:MOORE|y_present.inicio                                                                ; |main|mde_b:MOORE|y_present.inicio                                                          ; regout           ;
+; |main|mde_b:MOORE|y_present.esperar                                                               ; |main|mde_b:MOORE|y_present.esperar                                                         ; regout           ;
+; |main|mde_b:MOORE|y_present.somar                                                                 ; |main|mde_b:MOORE|y_present.somar                                                           ; regout           ;
+; |main|mde_b:MOORE|y_present.fornecer                                                              ; |main|mde_b:MOORE|y_present.fornecer                                                        ; regout           ;
+; |main|mde_b:MOORE|y_next.somar_119                                                                ; |main|mde_b:MOORE|y_next.somar_119                                                          ; out              ;
+; |main|mde_b:MOORE|y_next.somar~0                                                                  ; |main|mde_b:MOORE|y_next.somar~0                                                            ; out              ;
+; |main|mde_b:MOORE|y_next.esperar_134                                                              ; |main|mde_b:MOORE|y_next.esperar_134                                                        ; out              ;
+; |main|mde_b:MOORE|y_next.inicio_149                                                               ; |main|mde_b:MOORE|y_next.inicio_149                                                         ; out              ;
+; |main|mde_b:MOORE|y_present~0                                                                     ; |main|mde_b:MOORE|y_present~0                                                               ; out0             ;
+; |main|mde_b:MOORE|y_present.inicio~0                                                              ; |main|mde_b:MOORE|y_present.inicio~0                                                        ; out0             ;
+; |main|mde_b:MOORE|tot_clr~0                                                                       ; |main|mde_b:MOORE|tot_clr~0                                                                 ; out0             ;
+; |main|mde_b:MOORE|y_present.esperar~0                                                             ; |main|mde_b:MOORE|y_present.esperar~0                                                       ; out0             ;
+; |main|mde_b:MOORE|Selector0~0                                                                     ; |main|mde_b:MOORE|Selector0~0                                                               ; out0             ;
+; |main|mde_b:MOORE|y_present.somar~0                                                               ; |main|mde_b:MOORE|y_present.somar~0                                                         ; out0             ;
+; |main|mde_b:MOORE|tot_ld                                                                          ; |main|mde_b:MOORE|tot_ld                                                                    ; out0             ;
+; |main|mde_b:MOORE|y_present.fornecer~0                                                            ; |main|mde_b:MOORE|y_present.fornecer~0                                                      ; out0             ;
+; |main|mde_b:MOORE|d_mde                                                                           ; |main|mde_b:MOORE|d_mde                                                                     ; out0             ;
+; |main|mde_b:MOORE|y_present~5                                                                     ; |main|mde_b:MOORE|y_present~5                                                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|S                                     ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|S                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|S                                     ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|S                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|Cout                                  ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|Cout                            ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|S                                     ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|S                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|Cout                                  ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S4|Cout                            ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|S                                     ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|S                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|Cout                                  ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|Cout                            ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|S                                     ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|S                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|S                                     ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|S                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|Cout                                  ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|Cout                            ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[3]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[3]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[4]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[4]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[5]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[5]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~1                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~2                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~2                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[2]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[2]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~6                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~6                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~7                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~7                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~8                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~8                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~9                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~9                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~15                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~15                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~16                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~16                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~17                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~17                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~18                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~18                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~19                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~19                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~20                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~20                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[6]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[6]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~1                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~1                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~2                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~2                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~3                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~3                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~4                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~4                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~5                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~5                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|X_maior_Y                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|X_maior_Y                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~1                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~1                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~2                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~2                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~3                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~3                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~4                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~4                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|X_igual_Y                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|X_igual_Y                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XmmY~0                                             ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XmmY~0                                       ; out0             ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D1|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D1|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D0|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D0|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D3|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D3|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D1|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D1|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M5|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M5|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M5|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M5|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M5|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M5|Saida                                      ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M4|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M4|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M4|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M4|Saida                                      ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M3|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M3|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M3|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M3|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M3|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M3|Saida                                      ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M2|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M2|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M2|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M2|Saida                                      ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M1|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M1|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M1|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M1|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M1|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M1|Saida                                      ; out0             ;
+; |main|mde_b:MOORE|Selector0~1                                                                     ; |main|mde_b:MOORE|Selector0~1                                                               ; out0             ;
+; |main|mde_b:MOORE|Selector0~2                                                                     ; |main|mde_b:MOORE|Selector0~2                                                               ; out0             ;
+; |main|mde_b:MOORE|Selector0~3                                                                     ; |main|mde_b:MOORE|Selector0~3                                                               ; out0             ;
+; |main|mde_b:MOORE|Selector1~0                                                                     ; |main|mde_b:MOORE|Selector1~0                                                               ; out0             ;
+; |main|mde_b:MOORE|Selector2~0                                                                     ; |main|mde_b:MOORE|Selector2~0                                                               ; out0             ;
+; |main|mde_b:MOORE|Selector2~1                                                                     ; |main|mde_b:MOORE|Selector2~1                                                               ; out0             ;
+; |main|mde_b:MOORE|Selector2~2                                                                     ; |main|mde_b:MOORE|Selector2~2                                                               ; out0             ;
+; |main|mde_b:MOORE|Selector3~0                                                                     ; |main|mde_b:MOORE|Selector3~0                                                               ; out0             ;
+; |main|mde_b:MOORE|Selector5~0                                                                     ; |main|mde_b:MOORE|Selector5~0                                                               ; out0             ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                         ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |main|S_main[0]                                                                                   ; |main|S_main[0]                                                                             ; out              ;
+; |main|S_main[1]                                                                                   ; |main|S_main[1]                                                                             ; out              ;
+; |main|S_main[2]                                                                                   ; |main|S_main[2]                                                                             ; out              ;
+; |main|S_main[3]                                                                                   ; |main|S_main[3]                                                                             ; out              ;
+; |main|S_main[4]                                                                                   ; |main|S_main[4]                                                                             ; out              ;
+; |main|S_main[5]                                                                                   ; |main|S_main[5]                                                                             ; out              ;
+; |main|S_main[6]                                                                                   ; |main|S_main[6]                                                                             ; out              ;
+; |main|S_main[7]                                                                                   ; |main|S_main[7]                                                                             ; out              ;
+; |main|cont[2]                                                                                     ; |main|cont[2]                                                                               ; pin_out          ;
+; |main|cont[3]                                                                                     ; |main|cont[3]                                                                               ; pin_out          ;
+; |main|cont[4]                                                                                     ; |main|cont[4]                                                                               ; pin_out          ;
+; |main|cont[5]                                                                                     ; |main|cont[5]                                                                               ; pin_out          ;
+; |main|A_0[0]                                                                                      ; |main|A_0[0]                                                                                ; pin_out          ;
+; |main|A_0[3]                                                                                      ; |main|A_0[3]                                                                                ; pin_out          ;
+; |main|A_0[4]                                                                                      ; |main|A_0[4]                                                                                ; pin_out          ;
+; |main|A_0[5]                                                                                      ; |main|A_0[5]                                                                                ; pin_out          ;
+; |main|A_0[6]                                                                                      ; |main|A_0[6]                                                                                ; pin_out          ;
+; |main|A_1[2]                                                                                      ; |main|A_1[2]                                                                                ; pin_out          ;
+; |main|A_1[3]                                                                                      ; |main|A_1[3]                                                                                ; pin_out          ;
+; |main|A_1[4]                                                                                      ; |main|A_1[4]                                                                                ; pin_out          ;
+; |main|A_1[5]                                                                                      ; |main|A_1[5]                                                                                ; pin_out          ;
+; |main|A_1[6]                                                                                      ; |main|A_1[6]                                                                                ; pin_out          ;
+; |main|tot_0[0]                                                                                    ; |main|tot_0[0]                                                                              ; pin_out          ;
+; |main|tot_0[4]                                                                                    ; |main|tot_0[4]                                                                              ; pin_out          ;
+; |main|tot_0[5]                                                                                    ; |main|tot_0[5]                                                                              ; pin_out          ;
+; |main|tot_0[6]                                                                                    ; |main|tot_0[6]                                                                              ; pin_out          ;
+; |main|tot_1[3]                                                                                    ; |main|tot_1[3]                                                                              ; pin_out          ;
+; |main|tot_1[4]                                                                                    ; |main|tot_1[4]                                                                              ; pin_out          ;
+; |main|tot_1[5]                                                                                    ; |main|tot_1[5]                                                                              ; pin_out          ;
+; |main|tot_1[6]                                                                                    ; |main|tot_1[6]                                                                              ; pin_out          ;
+; |main|tot_2[0]                                                                                    ; |main|tot_2[0]                                                                              ; pin_out          ;
+; |main|tot_2[1]                                                                                    ; |main|tot_2[1]                                                                              ; pin_out          ;
+; |main|tot_2[2]                                                                                    ; |main|tot_2[2]                                                                              ; pin_out          ;
+; |main|tot_2[3]                                                                                    ; |main|tot_2[3]                                                                              ; pin_out          ;
+; |main|tot_2[4]                                                                                    ; |main|tot_2[4]                                                                              ; pin_out          ;
+; |main|tot_2[5]                                                                                    ; |main|tot_2[5]                                                                              ; pin_out          ;
+; |main|tot_2[6]                                                                                    ; |main|tot_2[6]                                                                              ; pin_out          ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a0 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[0] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a2 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[2] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a5 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[5] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a6 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[6] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a7 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[7] ; portadataout0    ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S5|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S5|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S4|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S4|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S4|Cout~0                                  ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S4|Cout~0                            ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S3|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S3|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S3|Cout~0                                  ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S3|Cout~0                            ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S2|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S2|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S2|Cout~0                                  ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S2|Cout~0                            ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S1|Cout~0                                  ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S1|Cout~0                            ; out0             ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG2|ffd:D1|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG2|ffd:D1|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG2|ffd:D0|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG2|ffd:D0|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D3|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D3|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D2|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D2|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida                                      ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida                                      ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida                                      ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida                                      ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S[1]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S[1]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~13                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~13                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~1                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~1                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S[1]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S[1]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~13                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~13                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~15                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~15                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B4|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~1                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~1                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S[3]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S[3]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~13                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~13                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~1                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~1                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S[3]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S[3]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S[1]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S[1]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~13                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~13                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S[3]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S[3]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~1                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~1                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[2]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[2]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~11                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~11                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~13                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~13                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~11                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~11                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~14                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~14                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~15                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~15                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[0]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[0]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~1                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~1                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[2]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[2]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~11                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~11                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~13                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~13                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~16                                                  ; out0             ;
+; |main|mde_b:MOORE|process_0~3                                                                     ; |main|mde_b:MOORE|process_0~3                                                               ; out0             ;
+; |main|mde_b:MOORE|y_present~1                                                                     ; |main|mde_b:MOORE|y_present~1                                                               ; out0             ;
+; |main|mde_b:MOORE|y_present~9                                                                     ; |main|mde_b:MOORE|y_present~9                                                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S7|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S7|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S7|S                                     ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S7|S                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout                                  ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout                            ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout                                  ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout                            ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S0|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S0|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S0|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S0|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[0]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[0]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[2]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[2]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[6]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[6]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[7]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[7]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[0]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[0]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~0                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[1]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[1]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~3                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~3                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~4                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~4                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~5                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~5                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[3]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[3]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[4]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[4]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~10                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~10                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~11                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~11                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~12                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~12                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~13                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~13                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~14                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~14                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[5]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[5]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~21                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~21                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~22                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~22                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~23                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~23                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~24                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~24                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~25                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~25                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~26                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~26                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~27                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~27                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~0                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~0                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~0                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~0                                        ; out0             ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D3|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D3|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D2|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D2|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D2|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D2|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D0|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D0|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida                                      ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida                                      ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M4|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M4|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M2|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M2|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida                                      ; out0             ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                         ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |main|clr_main                                                                                    ; |main|clr_main                                                                              ; out              ;
+; |main|S_main[0]                                                                                   ; |main|S_main[0]                                                                             ; out              ;
+; |main|S_main[1]                                                                                   ; |main|S_main[1]                                                                             ; out              ;
+; |main|S_main[2]                                                                                   ; |main|S_main[2]                                                                             ; out              ;
+; |main|S_main[3]                                                                                   ; |main|S_main[3]                                                                             ; out              ;
+; |main|S_main[4]                                                                                   ; |main|S_main[4]                                                                             ; out              ;
+; |main|S_main[5]                                                                                   ; |main|S_main[5]                                                                             ; out              ;
+; |main|S_main[6]                                                                                   ; |main|S_main[6]                                                                             ; out              ;
+; |main|S_main[7]                                                                                   ; |main|S_main[7]                                                                             ; out              ;
+; |main|cont[1]                                                                                     ; |main|cont[1]                                                                               ; pin_out          ;
+; |main|cont[2]                                                                                     ; |main|cont[2]                                                                               ; pin_out          ;
+; |main|cont[3]                                                                                     ; |main|cont[3]                                                                               ; pin_out          ;
+; |main|cont[4]                                                                                     ; |main|cont[4]                                                                               ; pin_out          ;
+; |main|cont[5]                                                                                     ; |main|cont[5]                                                                               ; pin_out          ;
+; |main|A_0[0]                                                                                      ; |main|A_0[0]                                                                                ; pin_out          ;
+; |main|A_0[2]                                                                                      ; |main|A_0[2]                                                                                ; pin_out          ;
+; |main|A_0[3]                                                                                      ; |main|A_0[3]                                                                                ; pin_out          ;
+; |main|A_0[4]                                                                                      ; |main|A_0[4]                                                                                ; pin_out          ;
+; |main|A_0[5]                                                                                      ; |main|A_0[5]                                                                                ; pin_out          ;
+; |main|A_0[6]                                                                                      ; |main|A_0[6]                                                                                ; pin_out          ;
+; |main|A_1[1]                                                                                      ; |main|A_1[1]                                                                                ; pin_out          ;
+; |main|A_1[2]                                                                                      ; |main|A_1[2]                                                                                ; pin_out          ;
+; |main|A_1[3]                                                                                      ; |main|A_1[3]                                                                                ; pin_out          ;
+; |main|A_1[4]                                                                                      ; |main|A_1[4]                                                                                ; pin_out          ;
+; |main|A_1[5]                                                                                      ; |main|A_1[5]                                                                                ; pin_out          ;
+; |main|A_1[6]                                                                                      ; |main|A_1[6]                                                                                ; pin_out          ;
+; |main|tot_0[0]                                                                                    ; |main|tot_0[0]                                                                              ; pin_out          ;
+; |main|tot_0[4]                                                                                    ; |main|tot_0[4]                                                                              ; pin_out          ;
+; |main|tot_0[5]                                                                                    ; |main|tot_0[5]                                                                              ; pin_out          ;
+; |main|tot_0[6]                                                                                    ; |main|tot_0[6]                                                                              ; pin_out          ;
+; |main|tot_1[3]                                                                                    ; |main|tot_1[3]                                                                              ; pin_out          ;
+; |main|tot_1[4]                                                                                    ; |main|tot_1[4]                                                                              ; pin_out          ;
+; |main|tot_1[5]                                                                                    ; |main|tot_1[5]                                                                              ; pin_out          ;
+; |main|tot_1[6]                                                                                    ; |main|tot_1[6]                                                                              ; pin_out          ;
+; |main|tot_2[0]                                                                                    ; |main|tot_2[0]                                                                              ; pin_out          ;
+; |main|tot_2[1]                                                                                    ; |main|tot_2[1]                                                                              ; pin_out          ;
+; |main|tot_2[2]                                                                                    ; |main|tot_2[2]                                                                              ; pin_out          ;
+; |main|tot_2[3]                                                                                    ; |main|tot_2[3]                                                                              ; pin_out          ;
+; |main|tot_2[4]                                                                                    ; |main|tot_2[4]                                                                              ; pin_out          ;
+; |main|tot_2[5]                                                                                    ; |main|tot_2[5]                                                                              ; pin_out          ;
+; |main|tot_2[6]                                                                                    ; |main|tot_2[6]                                                                              ; pin_out          ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a0 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[0] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a2 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[2] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a3 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[3] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a4 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[4] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a5 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[5] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a6 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[6] ; portadataout0    ;
+; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|ram_block1a7 ; |main|mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated|q_a[7] ; portadataout0    ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S5|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S5|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S4|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S4|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S4|Cout~0                                  ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S4|Cout~0                            ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S3|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S3|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S3|Cout~0                                  ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S3|Cout~0                            ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S2|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S2|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S2|Cout~0                                  ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S2|Cout~0                            ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S1|S                                       ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S1|S                                 ; out0             ;
+; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S1|Cout~0                                  ; |main|contador8bit:COUNTER|somador8bit:SUM|somador1bit:S1|Cout~0                            ; out0             ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG2|ffd:D1|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG2|ffd:D1|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG2|ffd:D0|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG2|ffd:D0|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D3|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D3|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D2|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D2|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D1|qS                                     ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1|ffd:D1|qS                               ; regout           ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M5|Saida                                      ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M4|Saida                                      ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M3|Saida                                      ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida~0                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida~0                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida~1                                    ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida                                            ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M2|Saida                                      ; out0             ;
+; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M1|Saida~1                                          ; |main|contador8bit:COUNTER|mux16x8:MUX|mux2x1:M1|Saida~1                                    ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S[1]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S[1]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B7|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B7|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S[1]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S[1]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~13                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~13                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~15                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~15                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B6|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B6|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~1                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~1                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S[3]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S[3]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S[1]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S[1]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~15                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~15                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B5|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B5|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B4|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B4|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B4|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~1                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~1                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S[3]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S[3]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S[1]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S[1]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~13                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~13                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~15                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~15                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B3|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B3|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~1                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~1                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S[3]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S[3]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~4                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~4                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S[2]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S[2]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~11                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~11                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S[1]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S[1]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~13                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~13                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~15                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~15                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B2|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B2|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~0                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~0                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~2                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~2                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S[3]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S[3]                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~5                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~5                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~6                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~6                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~8                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~8                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~9                                                              ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~9                                                        ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~10                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~10                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~14                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~14                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S~16                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S~16                                                       ; out0             ;
+; |main|bin_bcd:ENTRADA_A|bloco:B1|S[0]                                                             ; |main|bin_bcd:ENTRADA_A|bloco:B1|S[0]                                                       ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~1                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~1                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[2]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S[2]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~11                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~11                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~13                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~13                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B6|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B5|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B4|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~11                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~11                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~14                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~14                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~15                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~15                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[0]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B3|S[0]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~1                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~1                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~4                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~4                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[2]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S[2]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~11                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~11                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~13                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~13                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2|S~16                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~0                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~0                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~2                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~2                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S[3]                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S[3]                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~5                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~5                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~6                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~6                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~8                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~8                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~9                                                         ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~9                                                   ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~10                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~10                                                  ; out0             ;
+; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~16                                                        ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1|S~16                                                  ; out0             ;
+; |main|mde_b:MOORE|process_0~3                                                                     ; |main|mde_b:MOORE|process_0~3                                                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S7|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S7|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S7|S                                     ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S7|S                               ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout                                  ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S6|Cout                            ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S5|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S3|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout                                  ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S2|Cout                            ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|Cout~0                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S1|Cout~0                          ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S0|S~0                                   ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S0|S~0                             ; out0             ;
+; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S0|Cout~1                                ; |main|datapath:OPERACIONAL|somador8bit:ADDER|somador1bit:S0|Cout~1                          ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[0]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[0]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[2]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[2]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[6]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[6]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[7]                                        ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_xnor[7]                                  ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[0]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[0]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~0                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[1]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[1]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~3                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~3                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~4                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~4                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~5                                          ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~5                                    ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[3]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[3]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[4]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[4]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~10                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~10                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~11                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~11                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~12                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~12                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~13                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~13                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~14                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~14                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[5]                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and[5]                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~21                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~21                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~22                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~22                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~23                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~23                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~24                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~24                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~25                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~25                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~26                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~26                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~27                                         ; |main|datapath:OPERACIONAL|comparador8bit:COMP|out_and~27                                   ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~0                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XMY~0                                        ; out0             ;
+; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~0                                              ; |main|datapath:OPERACIONAL|comparador8bit:COMP|XiY~0                                        ; out0             ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D3|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D3|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D2|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG2|ffd:D2|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D2|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D2|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D0|qS                                    ; |main|datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D0|qS                              ; regout           ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M7|Saida                                      ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M6|Saida                                      ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M4|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M4|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M2|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M2|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida~0                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida~0                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida~1                                          ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida~1                                    ; out0             ;
+; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida                                            ; |main|datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0|Saida                                      ; out0             ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Mar 12 18:46:33 2020
+Info: Command: quartus_sim --simulation_results_format=VWF maquinadevedas -c main
+Info (324025): Using vector source file "C:/Users/kaike/Desktop/FPGA1/main.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      39.41 %
+Info (328052): Number of transitions in simulation is 1559
+Info (324045): Vector file main.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4451 megabytes
+    Info: Processing ended: Thu Mar 12 18:46:34 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -32,8 +32,8 @@ elsif (c = '1' and tot_It_s = '1') then y_next <= somar;
 elsif (c = '1' and tot_It_s = '0') then y_next <= somar; end if;
   
 when somar => 
- if (tot_It_s = '1') then y_next <= somar;
- else y_next <= esperar; end if;
+if (tot_It_s = '1') then y_next <= somar;
+else y_next <= esperar; end if;
 
 when fornecer =>
   y_next <= inicio;
