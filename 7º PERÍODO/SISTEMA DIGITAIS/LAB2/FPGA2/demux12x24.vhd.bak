@@ -1,0 +1,21 @@
+
+library ieee ;
+use ieee.std_logic_1164.all;
+
+entity demux12x24 is
+
+port (E_demux12x24: in std_logic_vector(12 downto 0);
+      A_demux12x24: in std_logic;
+		S0_demux, S1_demux: out std_logic_vector(12 downto 0));
+end;
+
+
+architecture ckt of demux1x2 is
+
+
+begin
+
+S0_demux <= E_demux1x2 and not A_demux1x2;
+S1_demux <= E_demux1x2 and A_demux1x2;
+
+end ckt;

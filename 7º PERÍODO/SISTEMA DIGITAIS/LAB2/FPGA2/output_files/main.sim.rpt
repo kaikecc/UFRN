@@ -1,5 +1,5 @@
 Simulator report for main
-Thu Mar 12 22:06:34 2020
+Sun Mar 15 14:38:02 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   2. Simulator Summary
   3. Simulator Settings
   4. Simulation Waveforms
-  5. |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ALTSYNCRAM
+  5. |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ALTSYNCRAM
   6. Coverage Summary
   7. Complete 1/0-Value Coverage
   8. Missing 1-Value Coverage
@@ -46,41 +46,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 45 nodes     ;
-; Simulation Coverage         ;      42.22 % ;
-; Total Number of Transitions ; 446          ;
+; Simulation Netlist Size     ; 226 nodes    ;
+; Simulation Coverage         ;      84.07 % ;
+; Total Number of Transitions ; 5102         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                ;
-+--------------------------------------------------------------------------------------------+--------------------------------------+---------------+
-; Option                                                                                     ; Setting                              ; Default Value ;
-+--------------------------------------------------------------------------------------------+--------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                           ; Timing        ;
-; Start time                                                                                 ; 0 ns                                 ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                  ;               ;
-; Vector input source                                                                        ; C:/Users/kaike/Desktop/FPGA2/ram.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                   ; On            ;
-; Check outputs                                                                              ; Off                                  ; Off           ;
-; Report simulation coverage                                                                 ; On                                   ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                   ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                   ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                   ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                  ; Off           ;
-; Detect glitches                                                                            ; Off                                  ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                  ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                  ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                  ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                  ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                   ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                           ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                  ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                  ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                 ; Auto          ;
-+--------------------------------------------------------------------------------------------+--------------------------------------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                                     ; Setting                               ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                   ;               ;
+; Vector input source                                                                        ; C:/Users/kaike/Desktop/FPGA2/fifo.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                    ; On            ;
+; Check outputs                                                                              ; Off                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
 
 
 +----------------------+
@@ -90,9 +90,9 @@ Waveform report data cannot be output to ASCII.
 Please use Quartus II 64-Bit to view the waveform report data.
 
 
-+------------------------------------------------------------------------------------+
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ALTSYNCRAM ;
-+------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------------------------+
 Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
 
 
@@ -101,111 +101,291 @@ Please refer to fitter text-based report (*.fit.rpt) to view logical memory repo
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      42.22 % ;
-; Total nodes checked                                 ; 45           ;
-; Total output ports checked                          ; 45           ;
-; Total output ports with complete 1/0-value coverage ; 19           ;
-; Total output ports with no 1/0-value coverage       ; 25           ;
-; Total output ports with no 1-value coverage         ; 25           ;
-; Total output ports with no 0-value coverage         ; 26           ;
+; Total coverage as a percentage                      ;      84.07 % ;
+; Total nodes checked                                 ; 226          ;
+; Total output ports checked                          ; 226          ;
+; Total output ports with complete 1/0-value coverage ; 190          ;
+; Total output ports with no 1/0-value coverage       ; 24           ;
+; Total output ports with no 1-value coverage         ; 31           ;
+; Total output ports with no 0-value coverage         ; 29           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
-; Node Name                                                                            ; Output Port Name                                                               ; Output Port Type ;
-+--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
-; |mainram|address[0]                                                                  ; |mainram|address[0]                                                            ; out              ;
-; |mainram|address[1]                                                                  ; |mainram|address[1]                                                            ; out              ;
-; |mainram|address[2]                                                                  ; |mainram|address[2]                                                            ; out              ;
-; |mainram|address[3]                                                                  ; |mainram|address[3]                                                            ; out              ;
-; |mainram|clock                                                                       ; |mainram|clock                                                                 ; out              ;
-; |mainram|data[0]                                                                     ; |mainram|data[0]                                                               ; out              ;
-; |mainram|data[1]                                                                     ; |mainram|data[1]                                                               ; out              ;
-; |mainram|data[2]                                                                     ; |mainram|data[2]                                                               ; out              ;
-; |mainram|data[3]                                                                     ; |mainram|data[3]                                                               ; out              ;
-; |mainram|data[4]                                                                     ; |mainram|data[4]                                                               ; out              ;
-; |mainram|wren                                                                        ; |mainram|wren                                                                  ; out              ;
-; |mainram|q[0]                                                                        ; |mainram|q[0]                                                                  ; pin_out          ;
-; |mainram|q[1]                                                                        ; |mainram|q[1]                                                                  ; pin_out          ;
-; |mainram|q[2]                                                                        ; |mainram|q[2]                                                                  ; pin_out          ;
-; |mainram|q[3]                                                                        ; |mainram|q[3]                                                                  ; pin_out          ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a0 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[0] ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a1 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[1] ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a2 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[2] ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a3 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[3] ; portadataout0    ;
-+--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                              ; Output Port Name                                                                                 ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
+; |fifo|clk_fifo                                                                                         ; |fifo|clk_fifo                                                                                   ; out              ;
+; |fifo|wr_fifo                                                                                          ; |fifo|wr_fifo                                                                                    ; out              ;
+; |fifo|rd_fifo                                                                                          ; |fifo|rd_fifo                                                                                    ; out              ;
+; |fifo|em                                                                                               ; |fifo|em                                                                                         ; pin_out          ;
+; |fifo|ss                                                                                               ; |fifo|ss                                                                                         ; pin_out          ;
+; |fifo|CF[0]                                                                                            ; |fifo|CF[0]                                                                                      ; pin_out          ;
+; |fifo|CF[1]                                                                                            ; |fifo|CF[1]                                                                                      ; pin_out          ;
+; |fifo|CF[2]                                                                                            ; |fifo|CF[2]                                                                                      ; pin_out          ;
+; |fifo|CT[0]                                                                                            ; |fifo|CT[0]                                                                                      ; pin_out          ;
+; |fifo|CT[1]                                                                                            ; |fifo|CT[1]                                                                                      ; pin_out          ;
+; |fifo|CT[2]                                                                                            ; |fifo|CT[2]                                                                                      ; pin_out          ;
+; |fifo|wr_data_fifo[0]                                                                                  ; |fifo|wr_data_fifo[0]                                                                            ; out              ;
+; |fifo|wr_data_fifo[1]                                                                                  ; |fifo|wr_data_fifo[1]                                                                            ; out              ;
+; |fifo|wr_data_fifo[2]                                                                                  ; |fifo|wr_data_fifo[2]                                                                            ; out              ;
+; |fifo|wr_data_fifo[3]                                                                                  ; |fifo|wr_data_fifo[3]                                                                            ; out              ;
+; |fifo|wr_data_fifo[4]                                                                                  ; |fifo|wr_data_fifo[4]                                                                            ; out              ;
+; |fifo|wr_data_fifo[5]                                                                                  ; |fifo|wr_data_fifo[5]                                                                            ; out              ;
+; |fifo|wr_data_fifo[6]                                                                                  ; |fifo|wr_data_fifo[6]                                                                            ; out              ;
+; |fifo|wr_data_fifo[7]                                                                                  ; |fifo|wr_data_fifo[7]                                                                            ; out              ;
+; |fifo|wr_data_fifo[8]                                                                                  ; |fifo|wr_data_fifo[8]                                                                            ; out              ;
+; |fifo|wr_data_fifo[9]                                                                                  ; |fifo|wr_data_fifo[9]                                                                            ; out              ;
+; |fifo|wr_data_fifo[10]                                                                                 ; |fifo|wr_data_fifo[10]                                                                           ; out              ;
+; |fifo|wr_data_fifo[11]                                                                                 ; |fifo|wr_data_fifo[11]                                                                           ; out              ;
+; |fifo|wr_data_fifo[12]                                                                                 ; |fifo|wr_data_fifo[12]                                                                           ; out              ;
+; |fifo|rd_data_fifo[0]                                                                                  ; |fifo|rd_data_fifo[0]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[1]                                                                                  ; |fifo|rd_data_fifo[1]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[2]                                                                                  ; |fifo|rd_data_fifo[2]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[3]                                                                                  ; |fifo|rd_data_fifo[3]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[4]                                                                                  ; |fifo|rd_data_fifo[4]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[5]                                                                                  ; |fifo|rd_data_fifo[5]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[6]                                                                                  ; |fifo|rd_data_fifo[6]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[7]                                                                                  ; |fifo|rd_data_fifo[7]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[8]                                                                                  ; |fifo|rd_data_fifo[8]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[9]                                                                                  ; |fifo|rd_data_fifo[9]                                                                            ; pin_out          ;
+; |fifo|rd_data_fifo[10]                                                                                 ; |fifo|rd_data_fifo[10]                                                                           ; pin_out          ;
+; |fifo|rd_data_fifo[11]                                                                                 ; |fifo|rd_data_fifo[11]                                                                           ; pin_out          ;
+; |fifo|rd_data_fifo[12]                                                                                 ; |fifo|rd_data_fifo[12]                                                                           ; pin_out          ;
+; |fifo|mux8x4:MUX|mux2x1:M3|Saida~1                                                                     ; |fifo|mux8x4:MUX|mux2x1:M3|Saida~1                                                               ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M3|Saida                                                                       ; |fifo|mux8x4:MUX|mux2x1:M3|Saida                                                                 ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M2|Saida~0                                                                     ; |fifo|mux8x4:MUX|mux2x1:M2|Saida~0                                                               ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M2|Saida~1                                                                     ; |fifo|mux8x4:MUX|mux2x1:M2|Saida~1                                                               ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M2|Saida                                                                       ; |fifo|mux8x4:MUX|mux2x1:M2|Saida                                                                 ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M1|Saida~0                                                                     ; |fifo|mux8x4:MUX|mux2x1:M1|Saida~0                                                               ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M1|Saida~1                                                                     ; |fifo|mux8x4:MUX|mux2x1:M1|Saida~1                                                               ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M1|Saida                                                                       ; |fifo|mux8x4:MUX|mux2x1:M1|Saida                                                                 ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M0|Saida~0                                                                     ; |fifo|mux8x4:MUX|mux2x1:M0|Saida~0                                                               ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M0|Saida~1                                                                     ; |fifo|mux8x4:MUX|mux2x1:M0|Saida~1                                                               ; out0             ;
+; |fifo|mux8x4:MUX|mux2x1:M0|Saida                                                                       ; |fifo|mux8x4:MUX|mux2x1:M0|Saida                                                                 ; out0             ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a0  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[0]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a1  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[1]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a2  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[2]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a3  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[3]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a4  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[4]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a5  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[5]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a6  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[6]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a7  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[7]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a8  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[8]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a9  ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[9]  ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a10 ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[10] ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a11 ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[11] ; portadataout0    ;
+; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a12 ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[12] ; portadataout0    ;
+; |fifo|ffd:FLIPFLOPD|qS                                                                                 ; |fifo|ffd:FLIPFLOPD|qS                                                                           ; regout           ;
+; |fifo|ffd:FLIPFLOPD|qS~0                                                                               ; |fifo|ffd:FLIPFLOPD|qS~0                                                                         ; out0             ;
+; |fifo|comparador4bit:IGUALDADE|AUX0[0]                                                                 ; |fifo|comparador4bit:IGUALDADE|AUX0[0]                                                           ; out0             ;
+; |fifo|comparador4bit:IGUALDADE|AUX0[1]                                                                 ; |fifo|comparador4bit:IGUALDADE|AUX0[1]                                                           ; out0             ;
+; |fifo|comparador4bit:IGUALDADE|AUX0[2]                                                                 ; |fifo|comparador4bit:IGUALDADE|AUX0[2]                                                           ; out0             ;
+; |fifo|comparador4bit:IGUALDADE|AUX0[3]                                                                 ; |fifo|comparador4bit:IGUALDADE|AUX0[3]                                                           ; out0             ;
+; |fifo|comparador4bit:IGUALDADE|AeqB~0                                                                  ; |fifo|comparador4bit:IGUALDADE|AeqB~0                                                            ; out0             ;
+; |fifo|comparador4bit:IGUALDADE|AeqB~1                                                                  ; |fifo|comparador4bit:IGUALDADE|AeqB~1                                                            ; out0             ;
+; |fifo|comparador4bit:IGUALDADE|AeqB                                                                    ; |fifo|comparador4bit:IGUALDADE|AeqB                                                              ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S3|S                                           ; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S3|S                                     ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S2|S                                           ; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S2|S                                     ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S2|Cout~0                                      ; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S2|Cout~0                                ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S1|S                                           ; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S1|S                                     ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S1|Cout~0                                      ; |fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S1|Cout~0                                ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D2|qS                                         ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D2|qS                                   ; regout           ;
+; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D1|qS                                         ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D1|qS                                   ; regout           ;
+; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D0|qS                                         ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D0|qS                                   ; regout           ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M3|Saida~0                                              ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M3|Saida~0                                        ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M3|Saida~1                                              ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M3|Saida~1                                        ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M3|Saida                                                ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M3|Saida                                          ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M2|Saida~0                                              ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M2|Saida~0                                        ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M2|Saida~1                                              ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M2|Saida~1                                        ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M2|Saida                                                ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M2|Saida                                          ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M1|Saida~0                                              ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M1|Saida~0                                        ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M1|Saida~1                                              ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M1|Saida~1                                        ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M1|Saida                                                ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M1|Saida                                          ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M0|Saida~0                                              ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M0|Saida~0                                        ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M0|Saida~1                                              ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M0|Saida~1                                        ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M0|Saida                                                ; |fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M0|Saida                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S3|S                                             ; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S3|S                                       ; out0             ;
+; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S2|S                                             ; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S2|S                                       ; out0             ;
+; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S2|Cout~0                                        ; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S2|Cout~0                                  ; out0             ;
+; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S1|S                                             ; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S1|S                                       ; out0             ;
+; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S1|Cout~0                                        ; |fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S1|Cout~0                                  ; out0             ;
+; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2|qS                                           ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2|qS                                     ; regout           ;
+; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1|qS                                           ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1|qS                                     ; regout           ;
+; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0|qS                                           ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0|qS                                     ; regout           ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M3|Saida~0                                                ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M3|Saida~0                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M3|Saida~1                                                ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M3|Saida~1                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M3|Saida                                                  ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M3|Saida                                            ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M2|Saida~0                                                ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M2|Saida~0                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M2|Saida~1                                                ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M2|Saida~1                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M2|Saida                                                  ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M2|Saida                                            ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M1|Saida~0                                                ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M1|Saida~0                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M1|Saida~1                                                ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M1|Saida~1                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M1|Saida                                                  ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M1|Saida                                            ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0|Saida~0                                                ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0|Saida~0                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0|Saida~1                                                ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0|Saida~1                                          ; out0             ;
+; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0|Saida                                                  ; |fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0|Saida                                            ; out0             ;
+; |fifo|mde_b:MOORE|process_0~0                                                                          ; |fifo|mde_b:MOORE|process_0~0                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|process_0~1                                                                          ; |fifo|mde_b:MOORE|process_0~1                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|process_0~2                                                                          ; |fifo|mde_b:MOORE|process_0~2                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|process_0~3                                                                          ; |fifo|mde_b:MOORE|process_0~3                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|process_0~4                                                                          ; |fifo|mde_b:MOORE|process_0~4                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|process_0~5                                                                          ; |fifo|mde_b:MOORE|process_0~5                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|y_next.waitFull~0                                                                    ; |fifo|mde_b:MOORE|y_next.waitFull~0                                                              ; out0             ;
+; |fifo|mde_b:MOORE|y_next.writeMT~0                                                                     ; |fifo|mde_b:MOORE|y_next.writeMT~0                                                               ; out              ;
+; |fifo|mde_b:MOORE|y_next.waitFull~1                                                                    ; |fifo|mde_b:MOORE|y_next.waitFull~1                                                              ; out0             ;
+; |fifo|mde_b:MOORE|y_next~0                                                                             ; |fifo|mde_b:MOORE|y_next~0                                                                       ; out0             ;
+; |fifo|mde_b:MOORE|y_present.waitMT                                                                     ; |fifo|mde_b:MOORE|y_present.waitMT                                                               ; regout           ;
+; |fifo|mde_b:MOORE|y_present.writeMT                                                                    ; |fifo|mde_b:MOORE|y_present.writeMT                                                              ; regout           ;
+; |fifo|mde_b:MOORE|y_present.waiit                                                                      ; |fifo|mde_b:MOORE|y_present.waiit                                                                ; regout           ;
+; |fifo|mde_b:MOORE|y_present.wriite                                                                     ; |fifo|mde_b:MOORE|y_present.wriite                                                               ; regout           ;
+; |fifo|mde_b:MOORE|y_present.wriite2                                                                    ; |fifo|mde_b:MOORE|y_present.wriite2                                                              ; regout           ;
+; |fifo|mde_b:MOORE|y_present.reead                                                                      ; |fifo|mde_b:MOORE|y_present.reead                                                                ; regout           ;
+; |fifo|mde_b:MOORE|y_present.reead2                                                                     ; |fifo|mde_b:MOORE|y_present.reead2                                                               ; regout           ;
+; |fifo|mde_b:MOORE|rf_rd                                                                                ; |fifo|mde_b:MOORE|rf_rd                                                                          ; out0             ;
+; |fifo|mde_b:MOORE|rf_wr                                                                                ; |fifo|mde_b:MOORE|rf_wr                                                                          ; out0             ;
+; |fifo|mde_b:MOORE|empty                                                                                ; |fifo|mde_b:MOORE|empty                                                                          ; out0             ;
+; |fifo|mde_b:MOORE|front_inc                                                                            ; |fifo|mde_b:MOORE|front_inc                                                                      ; out0             ;
+; |fifo|mde_b:MOORE|rear_inc                                                                             ; |fifo|mde_b:MOORE|rear_inc                                                                       ; out0             ;
+; |fifo|mde_b:MOORE|y_next.readFull~0                                                                    ; |fifo|mde_b:MOORE|y_next.readFull~0                                                              ; out              ;
+; |fifo|mde_b:MOORE|y_next.waitFull~2                                                                    ; |fifo|mde_b:MOORE|y_next.waitFull~2                                                              ; out0             ;
+; |fifo|mde_b:MOORE|y_next.waitFull~3                                                                    ; |fifo|mde_b:MOORE|y_next.waitFull~3                                                              ; out0             ;
+; |fifo|mde_b:MOORE|y_next.waitFull~4                                                                    ; |fifo|mde_b:MOORE|y_next.waitFull~4                                                              ; out0             ;
+; |fifo|mde_b:MOORE|y_next.waitFull~5                                                                    ; |fifo|mde_b:MOORE|y_next.waitFull~5                                                              ; out0             ;
+; |fifo|mde_b:MOORE|y_next.reead2_353                                                                    ; |fifo|mde_b:MOORE|y_next.reead2_353                                                              ; out              ;
+; |fifo|mde_b:MOORE|y_next.reead_376                                                                     ; |fifo|mde_b:MOORE|y_next.reead_376                                                               ; out              ;
+; |fifo|mde_b:MOORE|y_next.reead~0                                                                       ; |fifo|mde_b:MOORE|y_next.reead~0                                                                 ; out              ;
+; |fifo|mde_b:MOORE|y_next.wriite2_399                                                                   ; |fifo|mde_b:MOORE|y_next.wriite2_399                                                             ; out              ;
+; |fifo|mde_b:MOORE|y_next.wriite_422                                                                    ; |fifo|mde_b:MOORE|y_next.wriite_422                                                              ; out              ;
+; |fifo|mde_b:MOORE|y_next.wriite~0                                                                      ; |fifo|mde_b:MOORE|y_next.wriite~0                                                                ; out              ;
+; |fifo|mde_b:MOORE|y_next.waiit_445                                                                     ; |fifo|mde_b:MOORE|y_next.waiit_445                                                               ; out              ;
+; |fifo|mde_b:MOORE|y_next.writeMT_468                                                                   ; |fifo|mde_b:MOORE|y_next.writeMT_468                                                             ; out              ;
+; |fifo|mde_b:MOORE|y_next.waitMT_491                                                                    ; |fifo|mde_b:MOORE|y_next.waitMT_491                                                              ; out              ;
+; |fifo|mde_b:MOORE|y_present~0                                                                          ; |fifo|mde_b:MOORE|y_present~0                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|y_present.waitMT~0                                                                   ; |fifo|mde_b:MOORE|y_present.waitMT~0                                                             ; out0             ;
+; |fifo|mde_b:MOORE|empty~2                                                                              ; |fifo|mde_b:MOORE|empty~2                                                                        ; out0             ;
+; |fifo|mde_b:MOORE|y_present.writeMT~0                                                                  ; |fifo|mde_b:MOORE|y_present.writeMT~0                                                            ; out0             ;
+; |fifo|mde_b:MOORE|WideOr0~0                                                                            ; |fifo|mde_b:MOORE|WideOr0~0                                                                      ; out0             ;
+; |fifo|mde_b:MOORE|y_present.waiit~0                                                                    ; |fifo|mde_b:MOORE|y_present.waiit~0                                                              ; out0             ;
+; |fifo|mde_b:MOORE|Selector9~0                                                                          ; |fifo|mde_b:MOORE|Selector9~0                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|y_present.wriite~0                                                                   ; |fifo|mde_b:MOORE|y_present.wriite~0                                                             ; out0             ;
+; |fifo|mde_b:MOORE|WideOr0~1                                                                            ; |fifo|mde_b:MOORE|WideOr0~1                                                                      ; out0             ;
+; |fifo|mde_b:MOORE|y_present.wriite2~0                                                                  ; |fifo|mde_b:MOORE|y_present.wriite2~0                                                            ; out0             ;
+; |fifo|mde_b:MOORE|WideOr0~2                                                                            ; |fifo|mde_b:MOORE|WideOr0~2                                                                      ; out0             ;
+; |fifo|mde_b:MOORE|y_present.reead~0                                                                    ; |fifo|mde_b:MOORE|y_present.reead~0                                                              ; out0             ;
+; |fifo|mde_b:MOORE|WideOr0~3                                                                            ; |fifo|mde_b:MOORE|WideOr0~3                                                                      ; out0             ;
+; |fifo|mde_b:MOORE|y_present.reead2~0                                                                   ; |fifo|mde_b:MOORE|y_present.reead2~0                                                             ; out0             ;
+; |fifo|mde_b:MOORE|WideOr2~0                                                                            ; |fifo|mde_b:MOORE|WideOr2~0                                                                      ; out0             ;
+; |fifo|mde_b:MOORE|y_present~5                                                                          ; |fifo|mde_b:MOORE|y_present~5                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector2~0                                                                          ; |fifo|mde_b:MOORE|Selector2~0                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector2~1                                                                          ; |fifo|mde_b:MOORE|Selector2~1                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector2~2                                                                          ; |fifo|mde_b:MOORE|Selector2~2                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector3~0                                                                          ; |fifo|mde_b:MOORE|Selector3~0                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector4~0                                                                          ; |fifo|mde_b:MOORE|Selector4~0                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector4~1                                                                          ; |fifo|mde_b:MOORE|Selector4~1                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector4~2                                                                          ; |fifo|mde_b:MOORE|Selector4~2                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector4~3                                                                          ; |fifo|mde_b:MOORE|Selector4~3                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector5~0                                                                          ; |fifo|mde_b:MOORE|Selector5~0                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector7~0                                                                          ; |fifo|mde_b:MOORE|Selector7~0                                                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector10~0                                                                         ; |fifo|mde_b:MOORE|Selector10~0                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector10~2                                                                         ; |fifo|mde_b:MOORE|Selector10~2                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector10~3                                                                         ; |fifo|mde_b:MOORE|Selector10~3                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector11~0                                                                         ; |fifo|mde_b:MOORE|Selector11~0                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector11~2                                                                         ; |fifo|mde_b:MOORE|Selector11~2                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector11~3                                                                         ; |fifo|mde_b:MOORE|Selector11~3                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector12~0                                                                         ; |fifo|mde_b:MOORE|Selector12~0                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector12~2                                                                         ; |fifo|mde_b:MOORE|Selector12~2                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector12~3                                                                         ; |fifo|mde_b:MOORE|Selector12~3                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector13~0                                                                         ; |fifo|mde_b:MOORE|Selector13~0                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector13~2                                                                         ; |fifo|mde_b:MOORE|Selector13~2                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector13~3                                                                         ; |fifo|mde_b:MOORE|Selector13~3                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector14~0                                                                         ; |fifo|mde_b:MOORE|Selector14~0                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector14~2                                                                         ; |fifo|mde_b:MOORE|Selector14~2                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector14~3                                                                         ; |fifo|mde_b:MOORE|Selector14~3                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector15~0                                                                         ; |fifo|mde_b:MOORE|Selector15~0                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector15~2                                                                         ; |fifo|mde_b:MOORE|Selector15~2                                                                   ; out0             ;
+; |fifo|mde_b:MOORE|Selector15~3                                                                         ; |fifo|mde_b:MOORE|Selector15~3                                                                   ; out0             ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                                                   ;
-+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
-; Node Name                                                                             ; Output Port Name                                                                ; Output Port Type ;
-+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
-; |mainram|data[6]                                                                      ; |mainram|data[6]                                                                ; out              ;
-; |mainram|data[7]                                                                      ; |mainram|data[7]                                                                ; out              ;
-; |mainram|data[8]                                                                      ; |mainram|data[8]                                                                ; out              ;
-; |mainram|data[9]                                                                      ; |mainram|data[9]                                                                ; out              ;
-; |mainram|data[10]                                                                     ; |mainram|data[10]                                                               ; out              ;
-; |mainram|data[11]                                                                     ; |mainram|data[11]                                                               ; out              ;
-; |mainram|data[12]                                                                     ; |mainram|data[12]                                                               ; out              ;
-; |mainram|q[4]                                                                         ; |mainram|q[4]                                                                   ; pin_out          ;
-; |mainram|q[5]                                                                         ; |mainram|q[5]                                                                   ; pin_out          ;
-; |mainram|q[6]                                                                         ; |mainram|q[6]                                                                   ; pin_out          ;
-; |mainram|q[7]                                                                         ; |mainram|q[7]                                                                   ; pin_out          ;
-; |mainram|q[8]                                                                         ; |mainram|q[8]                                                                   ; pin_out          ;
-; |mainram|q[9]                                                                         ; |mainram|q[9]                                                                   ; pin_out          ;
-; |mainram|q[10]                                                                        ; |mainram|q[10]                                                                  ; pin_out          ;
-; |mainram|q[11]                                                                        ; |mainram|q[11]                                                                  ; pin_out          ;
-; |mainram|q[12]                                                                        ; |mainram|q[12]                                                                  ; pin_out          ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a4  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[4]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a5  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[5]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a6  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[6]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a7  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[7]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a8  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[8]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a9  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[9]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a10 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[10] ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a11 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[11] ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a12 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[12] ; portadataout0    ;
-+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |fifo|reset_fifo                       ; |fifo|reset_fifo                       ; out              ;
+; |fifo|fu                               ; |fifo|fu                               ; pin_out          ;
+; |fifo|mde_b:MOORE|y_next.init~0        ; |fifo|mde_b:MOORE|y_next.init~0        ; out              ;
+; |fifo|mde_b:MOORE|y_present.init       ; |fifo|mde_b:MOORE|y_present.init       ; regout           ;
+; |fifo|mde_b:MOORE|y_present.waitFull   ; |fifo|mde_b:MOORE|y_present.waitFull   ; regout           ;
+; |fifo|mde_b:MOORE|y_present.readFull   ; |fifo|mde_b:MOORE|y_present.readFull   ; regout           ;
+; |fifo|mde_b:MOORE|y_next.waitFull_330  ; |fifo|mde_b:MOORE|y_next.waitFull_330  ; out              ;
+; |fifo|mde_b:MOORE|y_next.init_514      ; |fifo|mde_b:MOORE|y_next.init_514      ; out              ;
+; |fifo|mde_b:MOORE|y_next.readFull_307  ; |fifo|mde_b:MOORE|y_next.readFull_307  ; out              ;
+; |fifo|mde_b:MOORE|y_next.init~1        ; |fifo|mde_b:MOORE|y_next.init~1        ; out              ;
+; |fifo|mde_b:MOORE|y_present~1          ; |fifo|mde_b:MOORE|y_present~1          ; out0             ;
+; |fifo|mde_b:MOORE|y_present.init~0     ; |fifo|mde_b:MOORE|y_present.init~0     ; out0             ;
+; |fifo|mde_b:MOORE|front_clr            ; |fifo|mde_b:MOORE|front_clr            ; out0             ;
+; |fifo|mde_b:MOORE|y_present.waitFull~0 ; |fifo|mde_b:MOORE|y_present.waitFull~0 ; out0             ;
+; |fifo|mde_b:MOORE|full                 ; |fifo|mde_b:MOORE|full                 ; out0             ;
+; |fifo|mde_b:MOORE|y_present.readFull~0 ; |fifo|mde_b:MOORE|y_present.readFull~0 ; out0             ;
+; |fifo|mde_b:MOORE|WideOr0~4            ; |fifo|mde_b:MOORE|WideOr0~4            ; out0             ;
+; |fifo|mde_b:MOORE|y_present~9          ; |fifo|mde_b:MOORE|y_present~9          ; out0             ;
+; |fifo|mde_b:MOORE|Selector0~0          ; |fifo|mde_b:MOORE|Selector0~0          ; out0             ;
+; |fifo|mde_b:MOORE|Selector1~0          ; |fifo|mde_b:MOORE|Selector1~0          ; out0             ;
+; |fifo|mde_b:MOORE|Selector1~1          ; |fifo|mde_b:MOORE|Selector1~1          ; out0             ;
+; |fifo|mde_b:MOORE|Selector1~2          ; |fifo|mde_b:MOORE|Selector1~2          ; out0             ;
+; |fifo|mde_b:MOORE|Selector9~1          ; |fifo|mde_b:MOORE|Selector9~1          ; out0             ;
+; |fifo|mde_b:MOORE|Selector9~2          ; |fifo|mde_b:MOORE|Selector9~2          ; out0             ;
+; |fifo|mde_b:MOORE|Selector9~3          ; |fifo|mde_b:MOORE|Selector9~3          ; out0             ;
+; |fifo|mde_b:MOORE|Selector10~1         ; |fifo|mde_b:MOORE|Selector10~1         ; out0             ;
+; |fifo|mde_b:MOORE|Selector11~1         ; |fifo|mde_b:MOORE|Selector11~1         ; out0             ;
+; |fifo|mde_b:MOORE|Selector12~1         ; |fifo|mde_b:MOORE|Selector12~1         ; out0             ;
+; |fifo|mde_b:MOORE|Selector13~1         ; |fifo|mde_b:MOORE|Selector13~1         ; out0             ;
+; |fifo|mde_b:MOORE|Selector14~1         ; |fifo|mde_b:MOORE|Selector14~1         ; out0             ;
+; |fifo|mde_b:MOORE|Selector15~1         ; |fifo|mde_b:MOORE|Selector15~1         ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                                                   ;
-+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
-; Node Name                                                                             ; Output Port Name                                                                ; Output Port Type ;
-+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
-; |mainram|data[5]                                                                      ; |mainram|data[5]                                                                ; out              ;
-; |mainram|data[6]                                                                      ; |mainram|data[6]                                                                ; out              ;
-; |mainram|data[7]                                                                      ; |mainram|data[7]                                                                ; out              ;
-; |mainram|data[8]                                                                      ; |mainram|data[8]                                                                ; out              ;
-; |mainram|data[9]                                                                      ; |mainram|data[9]                                                                ; out              ;
-; |mainram|data[10]                                                                     ; |mainram|data[10]                                                               ; out              ;
-; |mainram|data[11]                                                                     ; |mainram|data[11]                                                               ; out              ;
-; |mainram|data[12]                                                                     ; |mainram|data[12]                                                               ; out              ;
-; |mainram|q[4]                                                                         ; |mainram|q[4]                                                                   ; pin_out          ;
-; |mainram|q[5]                                                                         ; |mainram|q[5]                                                                   ; pin_out          ;
-; |mainram|q[6]                                                                         ; |mainram|q[6]                                                                   ; pin_out          ;
-; |mainram|q[7]                                                                         ; |mainram|q[7]                                                                   ; pin_out          ;
-; |mainram|q[8]                                                                         ; |mainram|q[8]                                                                   ; pin_out          ;
-; |mainram|q[9]                                                                         ; |mainram|q[9]                                                                   ; pin_out          ;
-; |mainram|q[10]                                                                        ; |mainram|q[10]                                                                  ; pin_out          ;
-; |mainram|q[11]                                                                        ; |mainram|q[11]                                                                  ; pin_out          ;
-; |mainram|q[12]                                                                        ; |mainram|q[12]                                                                  ; pin_out          ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a4  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[4]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a5  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[5]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a6  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[6]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a7  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[7]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a8  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[8]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a9  ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[9]  ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a10 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[10] ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a11 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[11] ; portadataout0    ;
-; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ram_block1a12 ; |mainram|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|q_a[12] ; portadataout0    ;
-+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                           ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; Node Name                                                      ; Output Port Name                                               ; Output Port Type ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; |fifo|fu                                                       ; |fifo|fu                                                       ; pin_out          ;
+; |fifo|CF[3]                                                    ; |fifo|CF[3]                                                    ; pin_out          ;
+; |fifo|CT[3]                                                    ; |fifo|CT[3]                                                    ; pin_out          ;
+; |fifo|mux8x4:MUX|mux2x1:M3|Saida~0                             ; |fifo|mux8x4:MUX|mux2x1:M3|Saida~0                             ; out0             ;
+; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D3|qS ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D3|qS ; regout           ;
+; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3|qS   ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3|qS   ; regout           ;
+; |fifo|mde_b:MOORE|y_present.waitFull                           ; |fifo|mde_b:MOORE|y_present.waitFull                           ; regout           ;
+; |fifo|mde_b:MOORE|y_present.readFull                           ; |fifo|mde_b:MOORE|y_present.readFull                           ; regout           ;
+; |fifo|mde_b:MOORE|y_next.waitFull_330                          ; |fifo|mde_b:MOORE|y_next.waitFull_330                          ; out              ;
+; |fifo|mde_b:MOORE|y_next.init_514                              ; |fifo|mde_b:MOORE|y_next.init_514                              ; out              ;
+; |fifo|mde_b:MOORE|y_next.readFull_307                          ; |fifo|mde_b:MOORE|y_next.readFull_307                          ; out              ;
+; |fifo|mde_b:MOORE|y_present.init~0                             ; |fifo|mde_b:MOORE|y_present.init~0                             ; out0             ;
+; |fifo|mde_b:MOORE|y_present.waitFull~0                         ; |fifo|mde_b:MOORE|y_present.waitFull~0                         ; out0             ;
+; |fifo|mde_b:MOORE|full                                         ; |fifo|mde_b:MOORE|full                                         ; out0             ;
+; |fifo|mde_b:MOORE|y_present.readFull~0                         ; |fifo|mde_b:MOORE|y_present.readFull~0                         ; out0             ;
+; |fifo|mde_b:MOORE|WideOr0~4                                    ; |fifo|mde_b:MOORE|WideOr0~4                                    ; out0             ;
+; |fifo|mde_b:MOORE|Selector0~0                                  ; |fifo|mde_b:MOORE|Selector0~0                                  ; out0             ;
+; |fifo|mde_b:MOORE|Selector1~0                                  ; |fifo|mde_b:MOORE|Selector1~0                                  ; out0             ;
+; |fifo|mde_b:MOORE|Selector1~1                                  ; |fifo|mde_b:MOORE|Selector1~1                                  ; out0             ;
+; |fifo|mde_b:MOORE|Selector1~2                                  ; |fifo|mde_b:MOORE|Selector1~2                                  ; out0             ;
+; |fifo|mde_b:MOORE|Selector9~1                                  ; |fifo|mde_b:MOORE|Selector9~1                                  ; out0             ;
+; |fifo|mde_b:MOORE|Selector9~2                                  ; |fifo|mde_b:MOORE|Selector9~2                                  ; out0             ;
+; |fifo|mde_b:MOORE|Selector9~3                                  ; |fifo|mde_b:MOORE|Selector9~3                                  ; out0             ;
+; |fifo|mde_b:MOORE|Selector10~1                                 ; |fifo|mde_b:MOORE|Selector10~1                                 ; out0             ;
+; |fifo|mde_b:MOORE|Selector11~1                                 ; |fifo|mde_b:MOORE|Selector11~1                                 ; out0             ;
+; |fifo|mde_b:MOORE|Selector12~1                                 ; |fifo|mde_b:MOORE|Selector12~1                                 ; out0             ;
+; |fifo|mde_b:MOORE|Selector13~1                                 ; |fifo|mde_b:MOORE|Selector13~1                                 ; out0             ;
+; |fifo|mde_b:MOORE|Selector14~1                                 ; |fifo|mde_b:MOORE|Selector14~1                                 ; out0             ;
+; |fifo|mde_b:MOORE|Selector15~1                                 ; |fifo|mde_b:MOORE|Selector15~1                                 ; out0             ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -221,18 +401,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Thu Mar 12 22:06:33 2020
+    Info: Processing started: Sun Mar 15 14:38:01 2020
 Info: Command: quartus_sim --simulation_results_format=VWF fifo -c main
-Info (324025): Using vector source file "C:/Users/kaike/Desktop/FPGA2/ram.vwf"
+Info (324025): Using vector source file "C:/Users/kaike/Desktop/FPGA2/fifo.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      42.22 %
-Info (328052): Number of transitions in simulation is 446
+Info (328053): Simulation coverage is      84.07 %
+Info (328052): Number of transitions in simulation is 5102
 Info (324045): Vector file main.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4451 megabytes
-    Info: Processing ended: Thu Mar 12 22:06:34 2020
+    Info: Processing ended: Sun Mar 15 14:38:02 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

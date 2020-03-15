@@ -2,28 +2,68 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'clock'
-Slack : -1.914
-TNS   : -24.882
+Type  : Slow Model Setup 'clk_fifo'
+Slack : -1.966
+TNS   : -46.542
 
-Type  : Slow Model Hold 'clock'
-Slack : 2.645
+Type  : Slow Model Setup 'reset_fifo'
+Slack : -1.899
+TNS   : -6.140
+
+Type  : Slow Model Hold 'reset_fifo'
+Slack : -1.234
+TNS   : -9.634
+
+Type  : Slow Model Hold 'clk_fifo'
+Slack : 0.391
 TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'clock'
-Slack : -2.000
-TNS   : -125.380
+Type  : Slow Model Recovery 'clk_fifo'
+Slack : -1.597
+TNS   : -3.996
 
-Type  : Fast Model Setup 'clock'
+Type  : Slow Model Removal 'clk_fifo'
+Slack : -0.810
+TNS   : -0.810
+
+Type  : Slow Model Minimum Pulse Width 'clk_fifo'
+Slack : -2.000
+TNS   : -144.380
+
+Type  : Slow Model Minimum Pulse Width 'reset_fifo'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Fast Model Setup 'clk_fifo'
 Slack : -1.460
-TNS   : -18.980
+TNS   : -19.990
 
-Type  : Fast Model Hold 'clock'
-Slack : 2.321
+Type  : Fast Model Setup 'reset_fifo'
+Slack : -0.347
+TNS   : -0.347
+
+Type  : Fast Model Hold 'reset_fifo'
+Slack : -0.849
+TNS   : -6.150
+
+Type  : Fast Model Hold 'clk_fifo'
+Slack : 0.196
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'clock'
+Type  : Fast Model Recovery 'clk_fifo'
+Slack : -0.271
+TNS   : -0.271
+
+Type  : Fast Model Removal 'clk_fifo'
+Slack : -0.459
+TNS   : -1.604
+
+Type  : Fast Model Minimum Pulse Width 'clk_fifo'
 Slack : -2.000
-TNS   : -125.380
+TNS   : -144.380
+
+Type  : Fast Model Minimum Pulse Width 'reset_fifo'
+Slack : -1.380
+TNS   : -1.380
 
 ------------------------------------------------------------

@@ -1,0 +1,19 @@
+
+library ieee ;
+use ieee.std_logic_1164.all;
+
+entity demux1x2 is
+
+port (E_demux1x2, A_demux1x2: in std_logic;
+		S0_demux, S2_demux: out std_logic);
+end;
+
+
+architecture ckt of demux1x2 is
+
+
+begin
+
+S0 <= 
+
+end ckt;
