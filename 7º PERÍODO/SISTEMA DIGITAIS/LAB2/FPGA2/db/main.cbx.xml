@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="main">
-		<CBX_INST_ENTRY INSTANCE_NAME="|fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_50d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_50d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|mainrom:ROM|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lt71.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

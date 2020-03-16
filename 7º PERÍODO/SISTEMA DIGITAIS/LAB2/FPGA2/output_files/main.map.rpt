@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Sun Mar 15 13:07:40 2020
+Sun Mar 15 23:44:33 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -15,23 +15,31 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. State Machine - |fifo|mde_b:MOORE|y_present
+ 10. State Machine - |main|fifo:FILA|mde_b:MOORE|y_present
  11. User-Specified and Inferred Latches
  12. General Register Statistics
- 13. Source assignments for mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated
- 14. Parameter Settings for User Entity Instance: mainram:MEMORIA_RAM|altsyncram:altsyncram_component
- 15. altsyncram Parameter Settings by Entity Instance
- 16. Port Connectivity Checks: "ffd:FLIPFLOPD"
- 17. Port Connectivity Checks: "comparador4bit:IGUALDADE"
- 18. Port Connectivity Checks: "contador8bit:TRAZEIRA"
- 19. Port Connectivity Checks: "contador8bit:FRENTE|somador8bit:SUM"
- 20. Port Connectivity Checks: "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3"
- 21. Port Connectivity Checks: "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2"
- 22. Port Connectivity Checks: "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1"
- 23. Port Connectivity Checks: "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0"
- 24. Port Connectivity Checks: "contador8bit:FRENTE"
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+ 13. Source assignments for fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated
+ 14. Source assignments for mainrom:ROM|altsyncram:altsyncram_component|altsyncram_lt71:auto_generated
+ 15. Parameter Settings for User Entity Instance: fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: mainrom:ROM|altsyncram:altsyncram_component
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Port Connectivity Checks: "bin_bcd:SEGMENTOS"
+ 19. Port Connectivity Checks: "bin_bcd:H4"
+ 20. Port Connectivity Checks: "bin_bcd:H0123|bloco:B4"
+ 21. Port Connectivity Checks: "bin_bcd:H0123|bloco:B1"
+ 22. Port Connectivity Checks: "contador8bit:CONTADOR"
+ 23. Port Connectivity Checks: "fifo:FILA|ffd:FLIPFLOPD"
+ 24. Port Connectivity Checks: "fifo:FILA|comparador4bit:IGUALDADE"
+ 25. Port Connectivity Checks: "fifo:FILA|contador8bit:TRAZEIRA"
+ 26. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|somador8bit:SUM"
+ 27. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3"
+ 28. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2"
+ 29. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1"
+ 30. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0"
+ 31. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE"
+ 32. Port Connectivity Checks: "fifo:FILA"
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
 
 
 
@@ -57,18 +65,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 15 13:07:40 2020      ;
+; Analysis & Synthesis Status        ; Successful - Sun Mar 15 23:44:32 2020      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
-; Top-level Entity Name              ; fifo                                       ;
+; Top-level Entity Name              ; main                                       ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 46                                         ;
-;     Total combinational functions  ; 46                                         ;
-;     Dedicated logic registers      ; 19                                         ;
-; Total registers                    ; 19                                         ;
-; Total pins                         ; 41                                         ;
+; Total logic elements               ; 88                                         ;
+;     Total combinational functions  ; 88                                         ;
+;     Dedicated logic registers      ; 25                                         ;
+; Total registers                    ; 25                                         ;
+; Total pins                         ; 48                                         ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 208                                        ;
+; Total memory bits                  ; 1,040                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
@@ -80,7 +88,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; fifo               ; main               ;
+; Top-level entity name                                                      ; main               ; main               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -175,6 +183,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------+---------+
+; bloco.vhd                        ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/bloco.vhd                               ;         ;
+; bin_bcd.vhd                      ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/bin_bcd.vhd                             ;         ;
 ; somador8bit.vhd                  ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/somador8bit.vhd                         ;         ;
 ; somador1bit.vhd                  ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/somador1bit.vhd                         ;         ;
 ; mux16x8.vhd                      ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/mux16x8.vhd                             ;         ;
@@ -184,9 +194,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; mde_b.vhd                        ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/mde_b.vhd                               ;         ;
 ; reg8bit.vhd                      ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/reg8bit.vhd                             ;         ;
 ; reg4bit.vhd                      ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/reg4bit.vhd                             ;         ;
+; main.vhd                         ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/main.vhd                                ;         ;
 ; ffd.vhd                          ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/ffd.vhd                                 ;         ;
 ; comparador4bit.vhd               ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/comparador4bit.vhd                      ;         ;
+; mainrom.mif                      ; yes             ; User Memory Initialization File  ; C:/Users/kaike/Desktop/FPGA2/mainrom.mif                             ;         ;
 ; mainram.mif                      ; yes             ; User Memory Initialization File  ; C:/Users/kaike/Desktop/FPGA2/mainram.mif                             ;         ;
+; mainrom.vhd                      ; yes             ; User Wizard-Generated File       ; C:/Users/kaike/Desktop/FPGA2/mainrom.vhd                             ;         ;
 ; fifo.vhd                         ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/fifo.vhd                                ;         ;
 ; mux8x4.vhd                       ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA2/mux8x4.vhd                              ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
@@ -199,6 +212,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/13.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_50d1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/kaike/Desktop/FPGA2/db/altsyncram_50d1.tdf                  ;         ;
+; db/altsyncram_lt71.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/kaike/Desktop/FPGA2/db/altsyncram_lt71.tdf                  ;         ;
 +----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -207,88 +221,118 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 46       ;
+; Estimated Total logic elements              ; 88       ;
 ;                                             ;          ;
-; Total combinational functions               ; 46       ;
+; Total combinational functions               ; 88       ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 14       ;
-;     -- 3 input functions                    ; 25       ;
-;     -- <=2 input functions                  ; 7        ;
+;     -- 4 input functions                    ; 49       ;
+;     -- 3 input functions                    ; 29       ;
+;     -- <=2 input functions                  ; 10       ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 46       ;
+;     -- normal mode                          ; 88       ;
 ;     -- arithmetic mode                      ; 0        ;
 ;                                             ;          ;
-; Total registers                             ; 19       ;
-;     -- Dedicated logic registers            ; 19       ;
+; Total registers                             ; 25       ;
+;     -- Dedicated logic registers            ; 25       ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 41       ;
-; Total memory bits                           ; 208      ;
+; I/O pins                                    ; 48       ;
+; Total memory bits                           ; 1040     ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; clk_fifo ;
-; Maximum fan-out                             ; 32       ;
-; Total fan-out                               ; 316      ;
-; Average fan-out                             ; 2.66     ;
+; Maximum fan-out node                        ; clk_main ;
+; Maximum fan-out                             ; 51       ;
+; Total fan-out                               ; 582      ;
+; Average fan-out                             ; 3.11     ;
 +---------------------------------------------+----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Library Name ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
-; |fifo                                     ; 46 (0)            ; 19 (0)       ; 208         ; 0            ; 0       ; 0         ; 41   ; 0            ; |fifo                                                                                    ;              ;
-;    |comparador4bit:IGUALDADE|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|comparador4bit:IGUALDADE                                                           ;              ;
-;    |contador8bit:FRENTE|                  ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:FRENTE                                                                ;              ;
-;       |reg8bit:REG|                       ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:FRENTE|reg8bit:REG                                                    ;              ;
-;          |reg4bit:REG1|                   ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1                                       ;              ;
-;             |ffd:D0|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0                                ;              ;
-;             |ffd:D1|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1                                ;              ;
-;             |ffd:D2|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2                                ;              ;
-;             |ffd:D3|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3                                ;              ;
-;    |contador8bit:TRAZEIRA|                ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:TRAZEIRA                                                              ;              ;
-;       |reg8bit:REG|                       ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG                                                  ;              ;
-;          |reg4bit:REG1|                   ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1                                     ;              ;
-;             |ffd:D0|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D0                              ;              ;
-;             |ffd:D1|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D1                              ;              ;
-;             |ffd:D2|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D2                              ;              ;
-;             |ffd:D3|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D3                              ;              ;
-;    |ffd:FLIPFLOPD|                        ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|ffd:FLIPFLOPD                                                                      ;              ;
-;    |mainram:MEMORIA_RAM|                  ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mainram:MEMORIA_RAM                                                                ;              ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component                                ;              ;
-;          |altsyncram_50d1:auto_generated| ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated ;              ;
-;    |mde_b:MOORE|                          ; 26 (26)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mde_b:MOORE                                                                        ;              ;
-;    |mux8x4:MUX|                           ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mux8x4:MUX                                                                         ;              ;
-;       |mux2x1:M0|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mux8x4:MUX|mux2x1:M0                                                               ;              ;
-;       |mux2x1:M1|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mux8x4:MUX|mux2x1:M1                                                               ;              ;
-;       |mux2x1:M2|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mux8x4:MUX|mux2x1:M2                                                               ;              ;
-;       |mux2x1:M3|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo|mux8x4:MUX|mux2x1:M3                                                               ;              ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                          ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
+; |main                                        ; 88 (0)            ; 25 (0)       ; 1040        ; 0            ; 0       ; 0         ; 48   ; 0            ; |main                                                                                              ;              ;
+;    |bin_bcd:H0123|                           ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123                                                                                ;              ;
+;       |bloco:B1|                             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B1                                                                       ;              ;
+;       |bloco:B2|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B2                                                                       ;              ;
+;       |bloco:B3|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B3                                                                       ;              ;
+;       |bloco:B4|                             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B4                                                                       ;              ;
+;       |bloco:B5|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B5                                                                       ;              ;
+;       |bloco:B6|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B6                                                                       ;              ;
+;       |bloco:B7|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B7                                                                       ;              ;
+;    |bin_bcd:H4|                              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H4                                                                                   ;              ;
+;       |bloco:B7|                             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H4|bloco:B7                                                                          ;              ;
+;    |bin_bcd:SEGMENTOS|                       ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:SEGMENTOS                                                                            ;              ;
+;       |bloco:B3|                             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:SEGMENTOS|bloco:B3                                                                   ;              ;
+;       |bloco:B5|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:SEGMENTOS|bloco:B5                                                                   ;              ;
+;       |bloco:B7|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:SEGMENTOS|bloco:B7                                                                   ;              ;
+;    |contador8bit:CONTADOR|                   ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR                                                                        ;              ;
+;       |reg8bit:REG|                          ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG                                                            ;              ;
+;          |reg4bit:REG1|                      ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1                                               ;              ;
+;             |ffd:D0|                         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1|ffd:D0                                        ;              ;
+;             |ffd:D1|                         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1|ffd:D1                                        ;              ;
+;             |ffd:D2|                         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1|ffd:D2                                        ;              ;
+;             |ffd:D3|                         ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1|ffd:D3                                        ;              ;
+;          |reg4bit:REG2|                      ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2                                               ;              ;
+;             |ffd:D0|                         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2|ffd:D0                                        ;              ;
+;             |ffd:D1|                         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2|ffd:D1                                        ;              ;
+;    |fifo:FILA|                               ; 46 (0)            ; 19 (0)       ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA                                                                                    ;              ;
+;       |comparador4bit:IGUALDADE|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|comparador4bit:IGUALDADE                                                           ;              ;
+;       |contador8bit:FRENTE|                  ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE                                                                ;              ;
+;          |reg8bit:REG|                       ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG                                                    ;              ;
+;             |reg4bit:REG1|                   ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1                                       ;              ;
+;                |ffd:D0|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0                                ;              ;
+;                |ffd:D1|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1                                ;              ;
+;                |ffd:D2|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2                                ;              ;
+;                |ffd:D3|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3                                ;              ;
+;       |contador8bit:TRAZEIRA|                ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA                                                              ;              ;
+;          |reg8bit:REG|                       ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG                                                  ;              ;
+;             |reg4bit:REG1|                   ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1                                     ;              ;
+;                |ffd:D0|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D0                              ;              ;
+;                |ffd:D1|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D1                              ;              ;
+;                |ffd:D2|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D2                              ;              ;
+;                |ffd:D3|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D3                              ;              ;
+;       |ffd:FLIPFLOPD|                        ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|ffd:FLIPFLOPD                                                                      ;              ;
+;       |mainram:MEMORIA_RAM|                  ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mainram:MEMORIA_RAM                                                                ;              ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component                                ;              ;
+;             |altsyncram_50d1:auto_generated| ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated ;              ;
+;       |mde_b:MOORE|                          ; 26 (26)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mde_b:MOORE                                                                        ;              ;
+;       |mux8x4:MUX|                           ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mux8x4:MUX                                                                         ;              ;
+;          |mux2x1:M0|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mux8x4:MUX|mux2x1:M0                                                               ;              ;
+;          |mux2x1:M1|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mux8x4:MUX|mux2x1:M1                                                               ;              ;
+;          |mux2x1:M2|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mux8x4:MUX|mux2x1:M2                                                               ;              ;
+;          |mux2x1:M3|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mux8x4:MUX|mux2x1:M3                                                               ;              ;
+;    |mainrom:ROM|                             ; 0 (0)             ; 0 (0)        ; 832         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|mainrom:ROM                                                                                  ;              ;
+;       |altsyncram:altsyncram_component|      ; 0 (0)             ; 0 (0)        ; 832         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|mainrom:ROM|altsyncram:altsyncram_component                                                  ;              ;
+;          |altsyncram_lt71:auto_generated|    ; 0 (0)             ; 0 (0)        ; 832         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|mainrom:ROM|altsyncram:altsyncram_component|altsyncram_lt71:auto_generated                   ;              ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                    ;
-+-----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
-; Name                                                                                          ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF         ;
-+-----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
-; mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 16           ; 13           ; --           ; --           ; 208  ; mainram.mif ;
-+-----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                              ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
+; Name                                                                                                    ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF         ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
+; fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 16           ; 13           ; --           ; --           ; 208  ; mainram.mif ;
+; mainrom:ROM|altsyncram:altsyncram_component|altsyncram_lt71:auto_generated|ALTSYNCRAM                   ; AUTO ; ROM         ; 64           ; 13           ; --           ; --           ; 832  ; mainrom.mif ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                ;
-+--------+--------------+---------+--------------+--------------+---------------------------+------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance           ; IP Include File                          ;
-+--------+--------------+---------+--------------+--------------+---------------------------+------------------------------------------+
-; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |fifo|mainram:MEMORIA_RAM ; C:/Users/kaike/Desktop/FPGA2/mainram.vhd ;
-+--------+--------------+---------+--------------+--------------+---------------------------+------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                          ;
++--------+--------------+---------+--------------+--------------+-------------------------------------+------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                     ; IP Include File                          ;
++--------+--------------+---------+--------------+--------------+-------------------------------------+------------------------------------------+
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |main|fifo:FILA|mainram:MEMORIA_RAM ; C:/Users/kaike/Desktop/FPGA2/mainram.vhd ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |main|mainrom:ROM                   ; C:/Users/kaike/Desktop/FPGA2/mainrom.vhd ;
++--------+--------------+---------+--------------+--------------+-------------------------------------+------------------------------------------+
 
 
 Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |fifo|mde_b:MOORE|y_present                                                                                                                                                                        ;
+; State Machine - |main|fifo:FILA|mde_b:MOORE|y_present                                                                                                                                                              ;
 +--------------------+--------------------+--------------------+------------------+-----------------+-------------------+------------------+-----------------+-------------------+------------------+----------------+
 ; Name               ; y_present.readFull ; y_present.waitFull ; y_present.reead2 ; y_present.reead ; y_present.wriite2 ; y_present.wriite ; y_present.waiit ; y_present.writeMT ; y_present.waitMT ; y_present.init ;
 +--------------------+--------------------+--------------------+------------------+-----------------+-------------------+------------------+-----------------+-------------------+------------------+----------------+
@@ -305,23 +349,23 @@ Encoding Type:  One-Hot
 +--------------------+--------------------+--------------------+------------------+-----------------+-------------------+------------------+-----------------+-------------------+------------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                   ;
-+-----------------------------------------------------+------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal    ; Free of Timing Hazards ;
-+-----------------------------------------------------+------------------------+------------------------+
-; mde_b:MOORE|y_next.init_514                         ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.waitMT_491                       ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.waitFull_330                     ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.reead_376                        ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.readFull_307                     ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.writeMT_468                      ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.wriite_422                       ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.waiit_445                        ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.reead2_353                       ; mde_b:MOORE|Selector12 ; yes                    ;
-; mde_b:MOORE|y_next.wriite2_399                      ; mde_b:MOORE|Selector12 ; yes                    ;
-; Number of user-specified and inferred latches = 10  ;                        ;                        ;
-+-----------------------------------------------------+------------------------+------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                             ;
++-----------------------------------------------------+----------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal              ; Free of Timing Hazards ;
++-----------------------------------------------------+----------------------------------+------------------------+
+; fifo:FILA|mde_b:MOORE|y_next.waitFull_330           ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.init_514               ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.waitMT_491             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.reead_376              ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.readFull_307           ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.writeMT_468            ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.wriite_422             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.wriite2_399            ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.waiit_445              ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.reead2_353             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; Number of user-specified and inferred latches = 10  ;                                  ;                        ;
++-----------------------------------------------------+----------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -330,117 +374,246 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 19    ;
+; Total registers                              ; 25    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Clear ; 25    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Source assignments for mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated ;
-+---------------------------------+--------------------+------+---------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                          ;
-+---------------------------------+--------------------+------+---------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                           ;
-+---------------------------------+--------------------+------+---------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Source assignments for fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                    ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                     ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mainram:MEMORIA_RAM|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+--------------------------------------+
-; Parameter Name                     ; Value                ; Type                                 ;
-+------------------------------------+----------------------+--------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                              ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                           ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                         ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                         ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                       ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                              ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                              ;
-; WIDTH_A                            ; 13                   ; Signed Integer                       ;
-; WIDTHAD_A                          ; 4                    ; Signed Integer                       ;
-; NUMWORDS_A                         ; 16                   ; Signed Integer                       ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                              ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                              ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                              ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                              ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                              ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                              ;
-; WIDTH_B                            ; 1                    ; Untyped                              ;
-; WIDTHAD_B                          ; 1                    ; Untyped                              ;
-; NUMWORDS_B                         ; 1                    ; Untyped                              ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                              ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                              ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                              ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                              ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                              ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                              ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                              ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                              ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                              ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                              ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                              ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                              ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                       ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                              ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                              ;
-; BYTE_SIZE                          ; 8                    ; Untyped                              ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                              ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                              ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                              ;
-; INIT_FILE                          ; mainram.mif          ; Untyped                              ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                              ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                              ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                              ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                              ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                              ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                              ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                              ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                              ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                              ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                              ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                              ;
-; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                              ;
-; CBXI_PARAMETER                     ; altsyncram_50d1      ; Untyped                              ;
-+------------------------------------+----------------------+--------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Source assignments for mainrom:ROM|altsyncram:altsyncram_component|altsyncram_lt71:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------+
+; Assignment                      ; Value              ; From ; To                                  ;
++---------------------------------+--------------------+------+-------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
++---------------------------------+--------------------+------+-------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                           ;
++------------------------------------+----------------------+------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                        ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                 ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                        ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                        ;
+; WIDTH_A                            ; 13                   ; Signed Integer                                 ;
+; WIDTHAD_A                          ; 4                    ; Signed Integer                                 ;
+; NUMWORDS_A                         ; 16                   ; Signed Integer                                 ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                        ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                        ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                        ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; WIDTH_B                            ; 1                    ; Untyped                                        ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                        ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                        ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                        ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                        ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                        ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                        ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                        ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                        ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                        ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                        ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                 ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                        ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                        ;
+; INIT_FILE                          ; mainram.mif          ; Untyped                                        ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                        ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                        ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                        ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                        ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                        ;
+; CBXI_PARAMETER                     ; altsyncram_50d1      ; Untyped                                        ;
++------------------------------------+----------------------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                ;
-+-------------------------------------------+-----------------------------------------------------+
-; Name                                      ; Value                                               ;
-+-------------------------------------------+-----------------------------------------------------+
-; Number of entity instances                ; 1                                                   ;
-; Entity Instance                           ; mainram:MEMORIA_RAM|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                         ;
-;     -- WIDTH_A                            ; 13                                                  ;
-;     -- NUMWORDS_A                         ; 16                                                  ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                        ;
-;     -- WIDTH_B                            ; 1                                                   ;
-;     -- NUMWORDS_B                         ; 1                                                   ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                              ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                        ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                           ;
-+-------------------------------------------+-----------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mainrom:ROM|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------+
+; Parameter Name                     ; Value                ; Type                         ;
++------------------------------------+----------------------+------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                   ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                 ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                 ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE               ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                      ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                      ;
+; WIDTH_A                            ; 13                   ; Signed Integer               ;
+; WIDTHAD_A                          ; 6                    ; Signed Integer               ;
+; NUMWORDS_A                         ; 64                   ; Signed Integer               ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                      ;
+; WIDTH_B                            ; 1                    ; Untyped                      ;
+; WIDTHAD_B                          ; 1                    ; Untyped                      ;
+; NUMWORDS_B                         ; 1                    ; Untyped                      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                      ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer               ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                      ;
+; BYTE_SIZE                          ; 8                    ; Untyped                      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                      ;
+; INIT_FILE                          ; mainrom.mif          ; Untyped                      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                      ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                      ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                      ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                      ;
+; CBXI_PARAMETER                     ; altsyncram_lt71      ; Untyped                      ;
++------------------------------------+----------------------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------+
-; Port Connectivity Checks: "ffd:FLIPFLOPD" ;
-+------+-------+----------+-----------------+
-; Port ; Type  ; Severity ; Details         ;
-+------+-------+----------+-----------------+
-; d    ; Input ; Info     ; Stuck at GND    ;
-+------+-------+----------+-----------------+
++-----------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                          ;
++-------------------------------------------+---------------------------------------------------------------+
+; Name                                      ; Value                                                         ;
++-------------------------------------------+---------------------------------------------------------------+
+; Number of entity instances                ; 2                                                             ;
+; Entity Instance                           ; fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                   ;
+;     -- WIDTH_A                            ; 13                                                            ;
+;     -- NUMWORDS_A                         ; 16                                                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                  ;
+;     -- WIDTH_B                            ; 1                                                             ;
+;     -- NUMWORDS_B                         ; 1                                                             ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                        ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                  ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                          ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                     ;
+; Entity Instance                           ; mainrom:ROM|altsyncram:altsyncram_component                   ;
+;     -- OPERATION_MODE                     ; ROM                                                           ;
+;     -- WIDTH_A                            ; 13                                                            ;
+;     -- NUMWORDS_A                         ; 64                                                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                  ;
+;     -- WIDTH_B                            ; 1                                                             ;
+;     -- NUMWORDS_B                         ; 1                                                             ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                        ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                  ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                          ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                     ;
++-------------------------------------------+---------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bin_bcd:SEGMENTOS"                                                                      ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; sw[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; hex2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bin_bcd:H4"                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; sw[7..5] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; hex1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; hex2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "bin_bcd:H0123|bloco:B4" ;
++------+-------+----------+--------------------------+
+; Port ; Type  ; Severity ; Details                  ;
++------+-------+----------+--------------------------+
+; a[3] ; Input ; Info     ; Stuck at GND             ;
++------+-------+----------+--------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "bin_bcd:H0123|bloco:B1" ;
++------+-------+----------+--------------------------+
+; Port ; Type  ; Severity ; Details                  ;
++------+-------+----------+--------------------------+
+; a[3] ; Input ; Info     ; Stuck at GND             ;
++------+-------+----------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador8bit:CONTADOR"                                                                               ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                  ; Type   ; Severity ; Details                                                                             ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; qs_contador8bit[7..6] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "fifo:FILA|ffd:FLIPFLOPD" ;
++------+-------+----------+---------------------------+
+; Port ; Type  ; Severity ; Details                   ;
++------+-------+----------+---------------------------+
+; d    ; Input ; Info     ; Stuck at GND              ;
++------+-------+----------+---------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "comparador4bit:IGUALDADE"                                                                ;
+; Port Connectivity Checks: "fifo:FILA|comparador4bit:IGUALDADE"                                                      ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -450,7 +623,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador8bit:TRAZEIRA"                                                                               ;
+; Port Connectivity Checks: "fifo:FILA|contador8bit:TRAZEIRA"                                                                     ;
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port                  ; Type   ; Severity ; Details                                                                             ;
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -459,7 +632,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador8bit:FRENTE|somador8bit:SUM"                                                     ;
+; Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|somador8bit:SUM"                                           ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -470,44 +643,44 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3" ;
-+------+-------+----------+-------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                               ;
-+------+-------+----------+-------------------------------------------------------+
-; p    ; Input ; Info     ; Stuck at VCC                                          ;
-+------+-------+----------+-------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; p    ; Input ; Info     ; Stuck at VCC                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2" ;
-+------+-------+----------+-------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                               ;
-+------+-------+----------+-------------------------------------------------------+
-; p    ; Input ; Info     ; Stuck at VCC                                          ;
-+------+-------+----------+-------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; p    ; Input ; Info     ; Stuck at VCC                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1" ;
-+------+-------+----------+-------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                               ;
-+------+-------+----------+-------------------------------------------------------+
-; p    ; Input ; Info     ; Stuck at VCC                                          ;
-+------+-------+----------+-------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; p    ; Input ; Info     ; Stuck at VCC                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0" ;
-+------+-------+----------+-------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                               ;
-+------+-------+----------+-------------------------------------------------------+
-; p    ; Input ; Info     ; Stuck at VCC                                          ;
-+------+-------+----------+-------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0" ;
++------+-------+----------+-----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                         ;
++------+-------+----------+-----------------------------------------------------------------+
+; p    ; Input ; Info     ; Stuck at VCC                                                    ;
++------+-------+----------+-----------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador8bit:FRENTE"                                                                                 ;
+; Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE"                                                                       ;
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port                  ; Type   ; Severity ; Details                                                                             ;
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -515,12 +688,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fifo:FILA"                                                                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ss   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cf   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ct   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -530,9 +714,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Mar 15 13:07:36 2020
+    Info: Processing started: Sun Mar 15 23:44:27 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fifo -c main
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file bloco.vhd
+    Info (12022): Found design unit 1: bloco-CKT
+    Info (12023): Found entity 1: bloco
+Info (12021): Found 2 design units, including 1 entities, in source file bin_bcd.vhd
+    Info (12022): Found design unit 1: bin_bcd-CKTO
+    Info (12023): Found entity 1: bin_bcd
 Info (12021): Found 2 design units, including 1 entities, in source file somador8bit.vhd
     Info (12022): Found design unit 1: somador8bit-ckt
     Info (12023): Found entity 1: somador8bit
@@ -569,7 +759,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file reg4bit
 Info (12021): Found 2 design units, including 1 entities, in source file reg2bit.vhd
     Info (12022): Found design unit 1: reg2bit-ckto
     Info (12023): Found entity 1: reg2bit
-Info (12021): Found 0 design units, including 0 entities, in source file main.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
+    Info (12022): Found design unit 1: main-ckt
+    Info (12023): Found entity 1: main
 Info (12021): Found 2 design units, including 1 entities, in source file ffd.vhd
     Info (12022): Found design unit 1: ffd-ckt_ffd
     Info (12023): Found entity 1: ffd
@@ -594,10 +786,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file fifo.vh
 Info (12021): Found 2 design units, including 1 entities, in source file mux8x4.vhd
     Info (12022): Found design unit 1: mux8x4-ckt_mux8x4
     Info (12023): Found entity 1: mux8x4
-Info (12127): Elaborating entity "fifo" for the top level hierarchy
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Critical Warning (10920): VHDL Incomplete Partial Association warning at main.vhd(63): port or argument "Qs_contador8bit" has 2/8 unassociated elements
+Info (12128): Elaborating entity "fifo" for hierarchy "fifo:FILA"
 Critical Warning (10920): VHDL Incomplete Partial Association warning at fifo.vhd(73): port or argument "Qs_contador8bit" has 4/8 unassociated elements
 Critical Warning (10920): VHDL Incomplete Partial Association warning at fifo.vhd(75): port or argument "Qs_contador8bit" has 4/8 unassociated elements
-Info (12128): Elaborating entity "mde_b" for hierarchy "mde_b:MOORE"
+Info (12128): Elaborating entity "mde_b" for hierarchy "fifo:FILA|mde_b:MOORE"
 Warning (10631): VHDL Process Statement warning at mde_b.vhd(19): inferring latch(es) for signal or variable "y_next", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "y_next.readFull" at mde_b.vhd(19)
 Info (10041): Inferred latch for "y_next.waitFull" at mde_b.vhd(19)
@@ -609,19 +803,19 @@ Info (10041): Inferred latch for "y_next.waiit" at mde_b.vhd(19)
 Info (10041): Inferred latch for "y_next.writeMT" at mde_b.vhd(19)
 Info (10041): Inferred latch for "y_next.waitMT" at mde_b.vhd(19)
 Info (10041): Inferred latch for "y_next.init" at mde_b.vhd(19)
-Info (12128): Elaborating entity "contador8bit" for hierarchy "contador8bit:FRENTE"
-Info (12128): Elaborating entity "mux16x8" for hierarchy "contador8bit:FRENTE|mux16x8:MUX"
-Info (12128): Elaborating entity "mux2x1" for hierarchy "contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0"
-Info (12128): Elaborating entity "reg8bit" for hierarchy "contador8bit:FRENTE|reg8bit:REG"
-Info (12128): Elaborating entity "reg4bit" for hierarchy "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1"
-Info (12128): Elaborating entity "ffd" for hierarchy "contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0"
-Info (12128): Elaborating entity "somador8bit" for hierarchy "contador8bit:FRENTE|somador8bit:SUM"
-Info (12128): Elaborating entity "somador1bit" for hierarchy "contador8bit:FRENTE|somador8bit:SUM|somador1bit:S0"
-Info (12128): Elaborating entity "comparador4bit" for hierarchy "comparador4bit:IGUALDADE"
-Info (12128): Elaborating entity "mainram" for hierarchy "mainram:MEMORIA_RAM"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "mainram:MEMORIA_RAM|altsyncram:altsyncram_component"
-Info (12130): Elaborated megafunction instantiation "mainram:MEMORIA_RAM|altsyncram:altsyncram_component"
-Info (12133): Instantiated megafunction "mainram:MEMORIA_RAM|altsyncram:altsyncram_component" with the following parameter:
+Info (12128): Elaborating entity "contador8bit" for hierarchy "fifo:FILA|contador8bit:FRENTE"
+Info (12128): Elaborating entity "mux16x8" for hierarchy "fifo:FILA|contador8bit:FRENTE|mux16x8:MUX"
+Info (12128): Elaborating entity "mux2x1" for hierarchy "fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0"
+Info (12128): Elaborating entity "reg8bit" for hierarchy "fifo:FILA|contador8bit:FRENTE|reg8bit:REG"
+Info (12128): Elaborating entity "reg4bit" for hierarchy "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1"
+Info (12128): Elaborating entity "ffd" for hierarchy "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0"
+Info (12128): Elaborating entity "somador8bit" for hierarchy "fifo:FILA|contador8bit:FRENTE|somador8bit:SUM"
+Info (12128): Elaborating entity "somador1bit" for hierarchy "fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S0"
+Info (12128): Elaborating entity "comparador4bit" for hierarchy "fifo:FILA|comparador4bit:IGUALDADE"
+Info (12128): Elaborating entity "mainram" for hierarchy "fifo:FILA|mainram:MEMORIA_RAM"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "mainram.mif"
@@ -638,37 +832,81 @@ Info (12133): Instantiated megafunction "mainram:MEMORIA_RAM|altsyncram:altsyncr
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_50d1.tdf
     Info (12023): Found entity 1: altsyncram_50d1
-Info (12128): Elaborating entity "altsyncram_50d1" for hierarchy "mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated"
-Info (12128): Elaborating entity "mux8x4" for hierarchy "mux8x4:MUX"
-Warning (13012): Latch mde_b:MOORE|y_next.init_514 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal reset_fifo
-Warning (13012): Latch mde_b:MOORE|y_next.waitMT_491 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal reset_fifo
-Warning (13012): Latch mde_b:MOORE|y_next.waitFull_330 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal reset_fifo
-Warning (13012): Latch mde_b:MOORE|y_next.reead_376 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mde_b:MOORE|y_present.waiit
-Warning (13012): Latch mde_b:MOORE|y_next.readFull_307 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal reset_fifo
-Warning (13012): Latch mde_b:MOORE|y_next.writeMT_468 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal reset_fifo
-Warning (13012): Latch mde_b:MOORE|y_next.wriite_422 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mde_b:MOORE|y_present.waiit
-Warning (13012): Latch mde_b:MOORE|y_next.waiit_445 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mde_b:MOORE|y_present.waiit
+Info (12128): Elaborating entity "altsyncram_50d1" for hierarchy "fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated"
+Info (12128): Elaborating entity "mux8x4" for hierarchy "fifo:FILA|mux8x4:MUX"
+Info (12128): Elaborating entity "mainrom" for hierarchy "mainrom:ROM"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "mainrom:ROM|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "mainrom:ROM|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "mainrom:ROM|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "mainrom.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "64"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "6"
+    Info (12134): Parameter "width_a" = "13"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lt71.tdf
+    Info (12023): Found entity 1: altsyncram_lt71
+Info (12128): Elaborating entity "altsyncram_lt71" for hierarchy "mainrom:ROM|altsyncram:altsyncram_component|altsyncram_lt71:auto_generated"
+Info (12128): Elaborating entity "bin_bcd" for hierarchy "bin_bcd:H0123"
+Info (12128): Elaborating entity "bloco" for hierarchy "bin_bcd:H0123|bloco:B1"
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waitFull_330 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.init_514 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waitMT_491 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.reead_376 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal fifo:FILA|mde_b:MOORE|y_present.waiit
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.readFull_307 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.writeMT_468 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.wriite_422 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal fifo:FILA|mde_b:MOORE|y_present.waiit
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waiit_445 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal fifo:FILA|mde_b:MOORE|y_present.waiit
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "ffd:FLIPFLOPD|qS" is converted into an equivalent circuit using register "ffd:FLIPFLOPD|qS~_emulated" and latch "ffd:FLIPFLOPD|qS~1"
+    Warning (13310): Register "fifo:FILA|ffd:FLIPFLOPD|qS" is converted into an equivalent circuit using register "fifo:FILA|ffd:FLIPFLOPD|qS~_emulated" and latch "fifo:FILA|ffd:FLIPFLOPD|qS~1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "H0[4]" is stuck at GND
+    Warning (13410): Pin "H0[5]" is stuck at GND
+    Warning (13410): Pin "H0[6]" is stuck at GND
+    Warning (13410): Pin "H1[4]" is stuck at GND
+    Warning (13410): Pin "H1[5]" is stuck at GND
+    Warning (13410): Pin "H1[6]" is stuck at GND
+    Warning (13410): Pin "H2[2]" is stuck at GND
+    Warning (13410): Pin "H2[3]" is stuck at GND
+    Warning (13410): Pin "H2[4]" is stuck at GND
+    Warning (13410): Pin "H2[5]" is stuck at GND
+    Warning (13410): Pin "H2[6]" is stuck at GND
+    Warning (13410): Pin "H3[4]" is stuck at GND
+    Warning (13410): Pin "H3[5]" is stuck at GND
+    Warning (13410): Pin "H3[6]" is stuck at GND
+    Warning (13410): Pin "HX0[4]" is stuck at GND
+    Warning (13410): Pin "HX0[5]" is stuck at GND
+    Warning (13410): Pin "HX0[6]" is stuck at GND
+    Warning (13410): Pin "HX1[3]" is stuck at GND
+    Warning (13410): Pin "HX1[4]" is stuck at GND
+    Warning (13410): Pin "HX1[5]" is stuck at GND
+    Warning (13410): Pin "HX1[6]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 110 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 56 logic cells
-    Info (21064): Implemented 13 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4661 megabytes
-    Info: Processing ended: Sun Mar 15 13:07:41 2020
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+Info (21057): Implemented 172 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 44 output pins
+    Info (21061): Implemented 98 logic cells
+    Info (21064): Implemented 26 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 4669 megabytes
+    Info: Processing ended: Sun Mar 15 23:44:33 2020
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

@@ -1,5 +1,5 @@
 
-State Machine - |fifo|mde_b:MOORE|y_present
+State Machine - |main|fifo:FILA|mde_b:MOORE|y_present
 Name y_present.readFull y_present.waitFull y_present.reead2 y_present.reead y_present.wriite2 y_present.wriite y_present.waiit y_present.writeMT y_present.waitMT y_present.init 
 y_present.init 0 0 0 0 0 0 0 0 0 0 
 y_present.waitMT 0 0 0 0 0 0 0 0 1 1 

@@ -1,4 +1,59 @@
-|fifo
+|main
+SW0 => fifo:FILA.rd_fifo
+SW1 => fifo:FILA.wr_fifo
+SW1 => contador8bit:CONTADOR.SEL_contador8bit
+clk_main => fifo:FILA.clk_fifo
+clk_main => contador8bit:CONTADOR.clk_contador8bit
+clk_main => mainrom:ROM.clock
+KEY3 => contador8bit:CONTADOR.clr_contador8bit
+KEY3 => fifo:FILA.reset_fifo
+H0[0] <= bin_bcd:H0123.HEX0[0]
+H0[1] <= bin_bcd:H0123.HEX0[1]
+H0[2] <= bin_bcd:H0123.HEX0[2]
+H0[3] <= bin_bcd:H0123.HEX0[3]
+H0[4] <= bin_bcd:H0123.HEX0[4]
+H0[5] <= bin_bcd:H0123.HEX0[5]
+H0[6] <= bin_bcd:H0123.HEX0[6]
+H1[0] <= bin_bcd:H0123.HEX1[0]
+H1[1] <= bin_bcd:H0123.HEX1[1]
+H1[2] <= bin_bcd:H0123.HEX1[2]
+H1[3] <= bin_bcd:H0123.HEX1[3]
+H1[4] <= bin_bcd:H0123.HEX1[4]
+H1[5] <= bin_bcd:H0123.HEX1[5]
+H1[6] <= bin_bcd:H0123.HEX1[6]
+H2[0] <= bin_bcd:H0123.HEX2[0]
+H2[1] <= bin_bcd:H0123.HEX2[1]
+H2[2] <= bin_bcd:H0123.HEX2[2]
+H2[3] <= bin_bcd:H0123.HEX2[3]
+H2[4] <= bin_bcd:H0123.HEX2[4]
+H2[5] <= bin_bcd:H0123.HEX2[5]
+H2[6] <= bin_bcd:H0123.HEX2[6]
+H3[0] <= bin_bcd:H4.HEX0[0]
+H3[1] <= bin_bcd:H4.HEX0[1]
+H3[2] <= bin_bcd:H4.HEX0[2]
+H3[3] <= bin_bcd:H4.HEX0[3]
+H3[4] <= bin_bcd:H4.HEX0[4]
+H3[5] <= bin_bcd:H4.HEX0[5]
+H3[6] <= bin_bcd:H4.HEX0[6]
+HX0[0] <= bin_bcd:SEGMENTOS.HEX0[0]
+HX0[1] <= bin_bcd:SEGMENTOS.HEX0[1]
+HX0[2] <= bin_bcd:SEGMENTOS.HEX0[2]
+HX0[3] <= bin_bcd:SEGMENTOS.HEX0[3]
+HX0[4] <= bin_bcd:SEGMENTOS.HEX0[4]
+HX0[5] <= bin_bcd:SEGMENTOS.HEX0[5]
+HX0[6] <= bin_bcd:SEGMENTOS.HEX0[6]
+HX1[0] <= bin_bcd:SEGMENTOS.HEX1[0]
+HX1[1] <= bin_bcd:SEGMENTOS.HEX1[1]
+HX1[2] <= bin_bcd:SEGMENTOS.HEX1[2]
+HX1[3] <= bin_bcd:SEGMENTOS.HEX1[3]
+HX1[4] <= bin_bcd:SEGMENTOS.HEX1[4]
+HX1[5] <= bin_bcd:SEGMENTOS.HEX1[5]
+HX1[6] <= bin_bcd:SEGMENTOS.HEX1[6]
+LEDR0 <= fifo:FILA.fu
+LEDR1 <= fifo:FILA.em
+
+
+|main|fifo:FILA
 clk_fifo => mde_b:MOORE.clk
 clk_fifo => contador8bit:FRENTE.clk_contador8bit
 clk_fifo => contador8bit:TRAZEIRA.clk_contador8bit
@@ -46,7 +101,7 @@ rd_data_fifo[11] <= mainram:MEMORIA_RAM.q[11]
 rd_data_fifo[12] <= mainram:MEMORIA_RAM.q[12]
 
 
-|fifo|mde_b:MOORE
+|main|fifo:FILA|mde_b:MOORE
 clk => y_present~5.DATAIN
 wr => process_0~1.IN0
 wr => process_0~0.IN0
@@ -75,7 +130,7 @@ full <= full~0.DB_MAX_OUTPUT_PORT_TYPE
 empty <= empty~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE
+|main|fifo:FILA|contador8bit:FRENTE
 clk_contador8bit => reg8bit:REG.clk_reg8bit
 clr_contador8bit => reg8bit:REG.clr_reg8bit
 SEL_contador8bit => mux16x8:MUX.SELECIONAR
@@ -89,7 +144,7 @@ Qs_contador8bit[6] <= reg8bit:REG.Qs_reg8bit[6]
 Qs_contador8bit[7] <= reg8bit:REG.Qs_reg8bit[7]
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX
 ENTA[0] => mux2x1:M0.Ea
 ENTA[1] => mux2x1:M1.Ea
 ENTA[2] => mux2x1:M2.Ea
@@ -124,7 +179,7 @@ SS[6] <= mux2x1:M6.Saida
 SS[7] <= mux2x1:M7.Saida
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M0
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -132,7 +187,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M1
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M1
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -140,7 +195,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M2
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M2
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -148,7 +203,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M3
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M3
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -156,7 +211,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M4
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M4
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -164,7 +219,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M5
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M5
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -172,7 +227,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M6
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M6
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -180,7 +235,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M7
+|main|fifo:FILA|contador8bit:FRENTE|mux16x8:MUX|mux2x1:M7
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -188,7 +243,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG
 clk_reg8bit => reg4bit:REG1.clk_reg4bit
 clk_reg8bit => reg4bit:REG2.clk_reg4bit
 clr_reg8bit => reg4bit:REG1.clr_reg4bit
@@ -211,7 +266,7 @@ Qs_reg8bit[6] <= reg4bit:REG2.Qs_reg4bit[2]
 Qs_reg8bit[7] <= reg4bit:REG2.Qs_reg4bit[3]
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1
 clk_reg4bit => ffd:D0.clk
 clk_reg4bit => ffd:D1.clk
 clk_reg4bit => ffd:D2.clk
@@ -230,7 +285,7 @@ Qs_reg4bit[2] <= ffd:D2.q
 Qs_reg4bit[3] <= ffd:D3.q
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -239,7 +294,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -248,7 +303,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -257,7 +312,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -266,7 +321,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2
 clk_reg4bit => ffd:D0.clk
 clk_reg4bit => ffd:D1.clk
 clk_reg4bit => ffd:D2.clk
@@ -285,7 +340,7 @@ Qs_reg4bit[2] <= ffd:D2.q
 Qs_reg4bit[3] <= ffd:D3.q
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2|ffd:D0
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2|ffd:D0
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -294,7 +349,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2|ffd:D1
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2|ffd:D1
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -303,7 +358,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2|ffd:D2
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2|ffd:D2
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -312,7 +367,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2|ffd:D3
+|main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG2|ffd:D3
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -321,7 +376,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM
 S81[0] => somador1bit:S0.S11
 S81[1] => somador1bit:S1.S11
 S81[2] => somador1bit:S2.S11
@@ -350,7 +405,7 @@ Z[7] <= somador1bit:S7.S
 Cs <= somador1bit:S7.Cout
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S0
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S0
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -361,7 +416,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S1
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S1
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -372,7 +427,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S2
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S2
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -383,7 +438,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S3
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S3
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -394,7 +449,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S4
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S4
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -405,7 +460,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S5
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S5
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -416,7 +471,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S6
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S6
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -427,7 +482,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S7
+|main|fifo:FILA|contador8bit:FRENTE|somador8bit:SUM|somador1bit:S7
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -438,7 +493,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA
+|main|fifo:FILA|contador8bit:TRAZEIRA
 clk_contador8bit => reg8bit:REG.clk_reg8bit
 clr_contador8bit => reg8bit:REG.clr_reg8bit
 SEL_contador8bit => mux16x8:MUX.SELECIONAR
@@ -452,7 +507,7 @@ Qs_contador8bit[6] <= reg8bit:REG.Qs_reg8bit[6]
 Qs_contador8bit[7] <= reg8bit:REG.Qs_reg8bit[7]
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX
 ENTA[0] => mux2x1:M0.Ea
 ENTA[1] => mux2x1:M1.Ea
 ENTA[2] => mux2x1:M2.Ea
@@ -487,7 +542,7 @@ SS[6] <= mux2x1:M6.Saida
 SS[7] <= mux2x1:M7.Saida
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M0
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M0
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -495,7 +550,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M1
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M1
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -503,7 +558,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M2
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M2
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -511,7 +566,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M3
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M3
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -519,7 +574,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M4
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M4
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -527,7 +582,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M5
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M5
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -535,7 +590,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M6
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M6
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -543,7 +598,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M7
+|main|fifo:FILA|contador8bit:TRAZEIRA|mux16x8:MUX|mux2x1:M7
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -551,7 +606,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG
 clk_reg8bit => reg4bit:REG1.clk_reg4bit
 clk_reg8bit => reg4bit:REG2.clk_reg4bit
 clr_reg8bit => reg4bit:REG1.clr_reg4bit
@@ -574,7 +629,7 @@ Qs_reg8bit[6] <= reg4bit:REG2.Qs_reg4bit[2]
 Qs_reg8bit[7] <= reg4bit:REG2.Qs_reg4bit[3]
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1
 clk_reg4bit => ffd:D0.clk
 clk_reg4bit => ffd:D1.clk
 clk_reg4bit => ffd:D2.clk
@@ -593,7 +648,7 @@ Qs_reg4bit[2] <= ffd:D2.q
 Qs_reg4bit[3] <= ffd:D3.q
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D0
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D0
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -602,7 +657,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D1
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D1
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -611,7 +666,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D2
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D2
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -620,7 +675,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D3
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D3
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -629,7 +684,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2
 clk_reg4bit => ffd:D0.clk
 clk_reg4bit => ffd:D1.clk
 clk_reg4bit => ffd:D2.clk
@@ -648,7 +703,7 @@ Qs_reg4bit[2] <= ffd:D2.q
 Qs_reg4bit[3] <= ffd:D3.q
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2|ffd:D0
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2|ffd:D0
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -657,7 +712,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2|ffd:D1
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2|ffd:D1
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -666,7 +721,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2|ffd:D2
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2|ffd:D2
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -675,7 +730,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2|ffd:D3
+|main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG2|ffd:D3
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -684,7 +739,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM
 S81[0] => somador1bit:S0.S11
 S81[1] => somador1bit:S1.S11
 S81[2] => somador1bit:S2.S11
@@ -713,7 +768,7 @@ Z[7] <= somador1bit:S7.S
 Cs <= somador1bit:S7.Cout
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S0
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S0
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -724,7 +779,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S1
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S1
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -735,7 +790,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S2
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S2
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -746,7 +801,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S3
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S3
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -757,7 +812,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S4
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S4
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -768,7 +823,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S5
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S5
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -779,7 +834,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S6
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S6
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -790,7 +845,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S7
+|main|fifo:FILA|contador8bit:TRAZEIRA|somador8bit:SUM|somador1bit:S7
 S11 => S~0.IN0
 S11 => Cout~1.IN0
 S12 => S~0.IN1
@@ -801,7 +856,7 @@ S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|comparador4bit:IGUALDADE
+|main|fifo:FILA|comparador4bit:IGUALDADE
 A[0] => AUX0[3].IN0
 A[0] => AUX1[3].IN1
 A[1] => AUX0[2].IN0
@@ -823,7 +878,7 @@ A_maior_B <= A_maior_B~2.DB_MAX_OUTPUT_PORT_TYPE
 A_menor_B <= A_menor_B~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|ffd:FLIPFLOPD
+|main|fifo:FILA|ffd:FLIPFLOPD
 clk => qS.CLK
 D => qS.DATAIN
 P => qS~0.IN0
@@ -832,7 +887,7 @@ C => qS~0.IN1
 q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|mainram:MEMORIA_RAM
+|main|fifo:FILA|mainram:MEMORIA_RAM
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -867,7 +922,7 @@ q[11] <= altsyncram:altsyncram_component.q_a[11]
 q[12] <= altsyncram:altsyncram_component.q_a[12]
 
 
-|fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component
+|main|fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component
 wren_a => altsyncram_50d1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -922,7 +977,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|fifo|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated
+|main|fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -1029,7 +1084,7 @@ wren_a => ram_block1a11.PORTAWE
 wren_a => ram_block1a12.PORTAWE
 
 
-|fifo|mux8x4:MUX
+|main|fifo:FILA|mux8x4:MUX
 Ea_4bits[0] => mux2x1:M0.Ea
 Ea_4bits[1] => mux2x1:M1.Ea
 Ea_4bits[2] => mux2x1:M2.Ea
@@ -1048,7 +1103,7 @@ S_4bits[2] <= mux2x1:M2.Saida
 S_4bits[3] <= mux2x1:M3.Saida
 
 
-|fifo|mux8x4:MUX|mux2x1:M0
+|main|fifo:FILA|mux8x4:MUX|mux2x1:M0
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -1056,7 +1111,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|mux8x4:MUX|mux2x1:M1
+|main|fifo:FILA|mux8x4:MUX|mux2x1:M1
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -1064,7 +1119,7 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|mux8x4:MUX|mux2x1:M2
+|main|fifo:FILA|mux8x4:MUX|mux2x1:M2
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
@@ -1072,11 +1127,1224 @@ SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fifo|mux8x4:MUX|mux2x1:M3
+|main|fifo:FILA|mux8x4:MUX|mux2x1:M3
 Ea => Saida~0.IN0
 Eb => Saida~1.IN0
 SEL => Saida~1.IN1
 SEL => Saida~0.IN1
 Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR
+clk_contador8bit => reg8bit:REG.clk_reg8bit
+clr_contador8bit => reg8bit:REG.clr_reg8bit
+SEL_contador8bit => mux16x8:MUX.SELECIONAR
+Qs_contador8bit[0] <= reg8bit:REG.Qs_reg8bit[0]
+Qs_contador8bit[1] <= reg8bit:REG.Qs_reg8bit[1]
+Qs_contador8bit[2] <= reg8bit:REG.Qs_reg8bit[2]
+Qs_contador8bit[3] <= reg8bit:REG.Qs_reg8bit[3]
+Qs_contador8bit[4] <= reg8bit:REG.Qs_reg8bit[4]
+Qs_contador8bit[5] <= reg8bit:REG.Qs_reg8bit[5]
+Qs_contador8bit[6] <= reg8bit:REG.Qs_reg8bit[6]
+Qs_contador8bit[7] <= reg8bit:REG.Qs_reg8bit[7]
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX
+ENTA[0] => mux2x1:M0.Ea
+ENTA[1] => mux2x1:M1.Ea
+ENTA[2] => mux2x1:M2.Ea
+ENTA[3] => mux2x1:M3.Ea
+ENTA[4] => mux2x1:M4.Ea
+ENTA[5] => mux2x1:M5.Ea
+ENTA[6] => mux2x1:M6.Ea
+ENTA[7] => mux2x1:M7.Ea
+ENTB[0] => mux2x1:M0.Eb
+ENTB[1] => mux2x1:M1.Eb
+ENTB[2] => mux2x1:M2.Eb
+ENTB[3] => mux2x1:M3.Eb
+ENTB[4] => mux2x1:M4.Eb
+ENTB[5] => mux2x1:M5.Eb
+ENTB[6] => mux2x1:M6.Eb
+ENTB[7] => mux2x1:M7.Eb
+SELECIONAR => mux2x1:M0.SEL
+SELECIONAR => mux2x1:M1.SEL
+SELECIONAR => mux2x1:M2.SEL
+SELECIONAR => mux2x1:M3.SEL
+SELECIONAR => mux2x1:M4.SEL
+SELECIONAR => mux2x1:M5.SEL
+SELECIONAR => mux2x1:M6.SEL
+SELECIONAR => mux2x1:M7.SEL
+SS[0] <= mux2x1:M0.Saida
+SS[1] <= mux2x1:M1.Saida
+SS[2] <= mux2x1:M2.Saida
+SS[3] <= mux2x1:M3.Saida
+SS[4] <= mux2x1:M4.Saida
+SS[5] <= mux2x1:M5.Saida
+SS[6] <= mux2x1:M6.Saida
+SS[7] <= mux2x1:M7.Saida
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX|mux2x1:M0
+Ea => Saida~0.IN0
+Eb => Saida~1.IN0
+SEL => Saida~1.IN1
+SEL => Saida~0.IN1
+Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX|mux2x1:M1
+Ea => Saida~0.IN0
+Eb => Saida~1.IN0
+SEL => Saida~1.IN1
+SEL => Saida~0.IN1
+Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX|mux2x1:M2
+Ea => Saida~0.IN0
+Eb => Saida~1.IN0
+SEL => Saida~1.IN1
+SEL => Saida~0.IN1
+Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX|mux2x1:M3
+Ea => Saida~0.IN0
+Eb => Saida~1.IN0
+SEL => Saida~1.IN1
+SEL => Saida~0.IN1
+Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX|mux2x1:M4
+Ea => Saida~0.IN0
+Eb => Saida~1.IN0
+SEL => Saida~1.IN1
+SEL => Saida~0.IN1
+Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX|mux2x1:M5
+Ea => Saida~0.IN0
+Eb => Saida~1.IN0
+SEL => Saida~1.IN1
+SEL => Saida~0.IN1
+Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX|mux2x1:M6
+Ea => Saida~0.IN0
+Eb => Saida~1.IN0
+SEL => Saida~1.IN1
+SEL => Saida~0.IN1
+Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|mux16x8:MUX|mux2x1:M7
+Ea => Saida~0.IN0
+Eb => Saida~1.IN0
+SEL => Saida~1.IN1
+SEL => Saida~0.IN1
+Saida <= Saida~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG
+clk_reg8bit => reg4bit:REG1.clk_reg4bit
+clk_reg8bit => reg4bit:REG2.clk_reg4bit
+clr_reg8bit => reg4bit:REG1.clr_reg4bit
+clr_reg8bit => reg4bit:REG2.clr_reg4bit
+E_reg8bit[0] => reg4bit:REG1.I_reg4bit[0]
+E_reg8bit[1] => reg4bit:REG1.I_reg4bit[1]
+E_reg8bit[2] => reg4bit:REG1.I_reg4bit[2]
+E_reg8bit[3] => reg4bit:REG1.I_reg4bit[3]
+E_reg8bit[4] => reg4bit:REG2.I_reg4bit[0]
+E_reg8bit[5] => reg4bit:REG2.I_reg4bit[1]
+E_reg8bit[6] => reg4bit:REG2.I_reg4bit[2]
+E_reg8bit[7] => reg4bit:REG2.I_reg4bit[3]
+Qs_reg8bit[0] <= reg4bit:REG1.Qs_reg4bit[0]
+Qs_reg8bit[1] <= reg4bit:REG1.Qs_reg4bit[1]
+Qs_reg8bit[2] <= reg4bit:REG1.Qs_reg4bit[2]
+Qs_reg8bit[3] <= reg4bit:REG1.Qs_reg4bit[3]
+Qs_reg8bit[4] <= reg4bit:REG2.Qs_reg4bit[0]
+Qs_reg8bit[5] <= reg4bit:REG2.Qs_reg4bit[1]
+Qs_reg8bit[6] <= reg4bit:REG2.Qs_reg4bit[2]
+Qs_reg8bit[7] <= reg4bit:REG2.Qs_reg4bit[3]
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1
+clk_reg4bit => ffd:D0.clk
+clk_reg4bit => ffd:D1.clk
+clk_reg4bit => ffd:D2.clk
+clk_reg4bit => ffd:D3.clk
+clr_reg4bit => ffd:D0.C
+clr_reg4bit => ffd:D1.C
+clr_reg4bit => ffd:D2.C
+clr_reg4bit => ffd:D3.C
+I_reg4bit[0] => ffd:D0.D
+I_reg4bit[1] => ffd:D1.D
+I_reg4bit[2] => ffd:D2.D
+I_reg4bit[3] => ffd:D3.D
+Qs_reg4bit[0] <= ffd:D0.q
+Qs_reg4bit[1] <= ffd:D1.q
+Qs_reg4bit[2] <= ffd:D2.q
+Qs_reg4bit[3] <= ffd:D3.q
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1|ffd:D0
+clk => qS.CLK
+D => qS.DATAIN
+P => qS~0.IN0
+P => qS.PRESET
+C => qS~0.IN1
+q <= qS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1|ffd:D1
+clk => qS.CLK
+D => qS.DATAIN
+P => qS~0.IN0
+P => qS.PRESET
+C => qS~0.IN1
+q <= qS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1|ffd:D2
+clk => qS.CLK
+D => qS.DATAIN
+P => qS~0.IN0
+P => qS.PRESET
+C => qS~0.IN1
+q <= qS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG1|ffd:D3
+clk => qS.CLK
+D => qS.DATAIN
+P => qS~0.IN0
+P => qS.PRESET
+C => qS~0.IN1
+q <= qS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2
+clk_reg4bit => ffd:D0.clk
+clk_reg4bit => ffd:D1.clk
+clk_reg4bit => ffd:D2.clk
+clk_reg4bit => ffd:D3.clk
+clr_reg4bit => ffd:D0.C
+clr_reg4bit => ffd:D1.C
+clr_reg4bit => ffd:D2.C
+clr_reg4bit => ffd:D3.C
+I_reg4bit[0] => ffd:D0.D
+I_reg4bit[1] => ffd:D1.D
+I_reg4bit[2] => ffd:D2.D
+I_reg4bit[3] => ffd:D3.D
+Qs_reg4bit[0] <= ffd:D0.q
+Qs_reg4bit[1] <= ffd:D1.q
+Qs_reg4bit[2] <= ffd:D2.q
+Qs_reg4bit[3] <= ffd:D3.q
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2|ffd:D0
+clk => qS.CLK
+D => qS.DATAIN
+P => qS~0.IN0
+P => qS.PRESET
+C => qS~0.IN1
+q <= qS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2|ffd:D1
+clk => qS.CLK
+D => qS.DATAIN
+P => qS~0.IN0
+P => qS.PRESET
+C => qS~0.IN1
+q <= qS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2|ffd:D2
+clk => qS.CLK
+D => qS.DATAIN
+P => qS~0.IN0
+P => qS.PRESET
+C => qS~0.IN1
+q <= qS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2|ffd:D3
+clk => qS.CLK
+D => qS.DATAIN
+P => qS~0.IN0
+P => qS.PRESET
+C => qS~0.IN1
+q <= qS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM
+S81[0] => somador1bit:S0.S11
+S81[1] => somador1bit:S1.S11
+S81[2] => somador1bit:S2.S11
+S81[3] => somador1bit:S3.S11
+S81[4] => somador1bit:S4.S11
+S81[5] => somador1bit:S5.S11
+S81[6] => somador1bit:S6.S11
+S81[7] => somador1bit:S7.S11
+S82[0] => somador1bit:S0.S12
+S82[1] => somador1bit:S1.S12
+S82[2] => somador1bit:S2.S12
+S82[3] => somador1bit:S3.S12
+S82[4] => somador1bit:S4.S12
+S82[5] => somador1bit:S5.S12
+S82[6] => somador1bit:S6.S12
+S82[7] => somador1bit:S7.S12
+Ce => somador1bit:S0.Cin
+Z[0] <= somador1bit:S0.S
+Z[1] <= somador1bit:S1.S
+Z[2] <= somador1bit:S2.S
+Z[3] <= somador1bit:S3.S
+Z[4] <= somador1bit:S4.S
+Z[5] <= somador1bit:S5.S
+Z[6] <= somador1bit:S6.S
+Z[7] <= somador1bit:S7.S
+Cs <= somador1bit:S7.Cout
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM|somador1bit:S0
+S11 => S~0.IN0
+S11 => Cout~1.IN0
+S12 => S~0.IN1
+S12 => Cout~1.IN1
+Cin => S~1.IN1
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM|somador1bit:S1
+S11 => S~0.IN0
+S11 => Cout~1.IN0
+S12 => S~0.IN1
+S12 => Cout~1.IN1
+Cin => S~1.IN1
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM|somador1bit:S2
+S11 => S~0.IN0
+S11 => Cout~1.IN0
+S12 => S~0.IN1
+S12 => Cout~1.IN1
+Cin => S~1.IN1
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM|somador1bit:S3
+S11 => S~0.IN0
+S11 => Cout~1.IN0
+S12 => S~0.IN1
+S12 => Cout~1.IN1
+Cin => S~1.IN1
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM|somador1bit:S4
+S11 => S~0.IN0
+S11 => Cout~1.IN0
+S12 => S~0.IN1
+S12 => Cout~1.IN1
+Cin => S~1.IN1
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM|somador1bit:S5
+S11 => S~0.IN0
+S11 => Cout~1.IN0
+S12 => S~0.IN1
+S12 => Cout~1.IN1
+Cin => S~1.IN1
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM|somador1bit:S6
+S11 => S~0.IN0
+S11 => Cout~1.IN0
+S12 => S~0.IN1
+S12 => Cout~1.IN1
+Cin => S~1.IN1
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador8bit:CONTADOR|somador8bit:SUM|somador1bit:S7
+S11 => S~0.IN0
+S11 => Cout~1.IN0
+S12 => S~0.IN1
+S12 => Cout~1.IN1
+Cin => S~1.IN1
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mainrom:ROM
+address[0] => altsyncram:altsyncram_component.address_a[0]
+address[1] => altsyncram:altsyncram_component.address_a[1]
+address[2] => altsyncram:altsyncram_component.address_a[2]
+address[3] => altsyncram:altsyncram_component.address_a[3]
+address[4] => altsyncram:altsyncram_component.address_a[4]
+address[5] => altsyncram:altsyncram_component.address_a[5]
+clock => altsyncram:altsyncram_component.clock0
+q[0] <= altsyncram:altsyncram_component.q_a[0]
+q[1] <= altsyncram:altsyncram_component.q_a[1]
+q[2] <= altsyncram:altsyncram_component.q_a[2]
+q[3] <= altsyncram:altsyncram_component.q_a[3]
+q[4] <= altsyncram:altsyncram_component.q_a[4]
+q[5] <= altsyncram:altsyncram_component.q_a[5]
+q[6] <= altsyncram:altsyncram_component.q_a[6]
+q[7] <= altsyncram:altsyncram_component.q_a[7]
+q[8] <= altsyncram:altsyncram_component.q_a[8]
+q[9] <= altsyncram:altsyncram_component.q_a[9]
+q[10] <= altsyncram:altsyncram_component.q_a[10]
+q[11] <= altsyncram:altsyncram_component.q_a[11]
+q[12] <= altsyncram:altsyncram_component.q_a[12]
+
+
+|main|mainrom:ROM|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_a[1] => ~NO_FANOUT~
+data_a[2] => ~NO_FANOUT~
+data_a[3] => ~NO_FANOUT~
+data_a[4] => ~NO_FANOUT~
+data_a[5] => ~NO_FANOUT~
+data_a[6] => ~NO_FANOUT~
+data_a[7] => ~NO_FANOUT~
+data_a[8] => ~NO_FANOUT~
+data_a[9] => ~NO_FANOUT~
+data_a[10] => ~NO_FANOUT~
+data_a[11] => ~NO_FANOUT~
+data_a[12] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_lt71:auto_generated.address_a[0]
+address_a[1] => altsyncram_lt71:auto_generated.address_a[1]
+address_a[2] => altsyncram_lt71:auto_generated.address_a[2]
+address_a[3] => altsyncram_lt71:auto_generated.address_a[3]
+address_a[4] => altsyncram_lt71:auto_generated.address_a[4]
+address_a[5] => altsyncram_lt71:auto_generated.address_a[5]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_lt71:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_lt71:auto_generated.q_a[0]
+q_a[1] <= altsyncram_lt71:auto_generated.q_a[1]
+q_a[2] <= altsyncram_lt71:auto_generated.q_a[2]
+q_a[3] <= altsyncram_lt71:auto_generated.q_a[3]
+q_a[4] <= altsyncram_lt71:auto_generated.q_a[4]
+q_a[5] <= altsyncram_lt71:auto_generated.q_a[5]
+q_a[6] <= altsyncram_lt71:auto_generated.q_a[6]
+q_a[7] <= altsyncram_lt71:auto_generated.q_a[7]
+q_a[8] <= altsyncram_lt71:auto_generated.q_a[8]
+q_a[9] <= altsyncram_lt71:auto_generated.q_a[9]
+q_a[10] <= altsyncram_lt71:auto_generated.q_a[10]
+q_a[11] <= altsyncram_lt71:auto_generated.q_a[11]
+q_a[12] <= altsyncram_lt71:auto_generated.q_a[12]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|main|mainrom:ROM|altsyncram:altsyncram_component|altsyncram_lt71:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[0] => ram_block1a1.PORTAADDR
+address_a[0] => ram_block1a2.PORTAADDR
+address_a[0] => ram_block1a3.PORTAADDR
+address_a[0] => ram_block1a4.PORTAADDR
+address_a[0] => ram_block1a5.PORTAADDR
+address_a[0] => ram_block1a6.PORTAADDR
+address_a[0] => ram_block1a7.PORTAADDR
+address_a[0] => ram_block1a8.PORTAADDR
+address_a[0] => ram_block1a9.PORTAADDR
+address_a[0] => ram_block1a10.PORTAADDR
+address_a[0] => ram_block1a11.PORTAADDR
+address_a[0] => ram_block1a12.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[1] => ram_block1a1.PORTAADDR1
+address_a[1] => ram_block1a2.PORTAADDR1
+address_a[1] => ram_block1a3.PORTAADDR1
+address_a[1] => ram_block1a4.PORTAADDR1
+address_a[1] => ram_block1a5.PORTAADDR1
+address_a[1] => ram_block1a6.PORTAADDR1
+address_a[1] => ram_block1a7.PORTAADDR1
+address_a[1] => ram_block1a8.PORTAADDR1
+address_a[1] => ram_block1a9.PORTAADDR1
+address_a[1] => ram_block1a10.PORTAADDR1
+address_a[1] => ram_block1a11.PORTAADDR1
+address_a[1] => ram_block1a12.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[2] => ram_block1a1.PORTAADDR2
+address_a[2] => ram_block1a2.PORTAADDR2
+address_a[2] => ram_block1a3.PORTAADDR2
+address_a[2] => ram_block1a4.PORTAADDR2
+address_a[2] => ram_block1a5.PORTAADDR2
+address_a[2] => ram_block1a6.PORTAADDR2
+address_a[2] => ram_block1a7.PORTAADDR2
+address_a[2] => ram_block1a8.PORTAADDR2
+address_a[2] => ram_block1a9.PORTAADDR2
+address_a[2] => ram_block1a10.PORTAADDR2
+address_a[2] => ram_block1a11.PORTAADDR2
+address_a[2] => ram_block1a12.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[3] => ram_block1a1.PORTAADDR3
+address_a[3] => ram_block1a2.PORTAADDR3
+address_a[3] => ram_block1a3.PORTAADDR3
+address_a[3] => ram_block1a4.PORTAADDR3
+address_a[3] => ram_block1a5.PORTAADDR3
+address_a[3] => ram_block1a6.PORTAADDR3
+address_a[3] => ram_block1a7.PORTAADDR3
+address_a[3] => ram_block1a8.PORTAADDR3
+address_a[3] => ram_block1a9.PORTAADDR3
+address_a[3] => ram_block1a10.PORTAADDR3
+address_a[3] => ram_block1a11.PORTAADDR3
+address_a[3] => ram_block1a12.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[4] => ram_block1a1.PORTAADDR4
+address_a[4] => ram_block1a2.PORTAADDR4
+address_a[4] => ram_block1a3.PORTAADDR4
+address_a[4] => ram_block1a4.PORTAADDR4
+address_a[4] => ram_block1a5.PORTAADDR4
+address_a[4] => ram_block1a6.PORTAADDR4
+address_a[4] => ram_block1a7.PORTAADDR4
+address_a[4] => ram_block1a8.PORTAADDR4
+address_a[4] => ram_block1a9.PORTAADDR4
+address_a[4] => ram_block1a10.PORTAADDR4
+address_a[4] => ram_block1a11.PORTAADDR4
+address_a[4] => ram_block1a12.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[5] => ram_block1a1.PORTAADDR5
+address_a[5] => ram_block1a2.PORTAADDR5
+address_a[5] => ram_block1a3.PORTAADDR5
+address_a[5] => ram_block1a4.PORTAADDR5
+address_a[5] => ram_block1a5.PORTAADDR5
+address_a[5] => ram_block1a6.PORTAADDR5
+address_a[5] => ram_block1a7.PORTAADDR5
+address_a[5] => ram_block1a8.PORTAADDR5
+address_a[5] => ram_block1a9.PORTAADDR5
+address_a[5] => ram_block1a10.PORTAADDR5
+address_a[5] => ram_block1a11.PORTAADDR5
+address_a[5] => ram_block1a12.PORTAADDR5
+clock0 => ram_block1a0.CLK0
+clock0 => ram_block1a1.CLK0
+clock0 => ram_block1a2.CLK0
+clock0 => ram_block1a3.CLK0
+clock0 => ram_block1a4.CLK0
+clock0 => ram_block1a5.CLK0
+clock0 => ram_block1a6.CLK0
+clock0 => ram_block1a7.CLK0
+clock0 => ram_block1a8.CLK0
+clock0 => ram_block1a9.CLK0
+clock0 => ram_block1a10.CLK0
+clock0 => ram_block1a11.CLK0
+clock0 => ram_block1a12.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+q_a[1] <= ram_block1a1.PORTADATAOUT
+q_a[2] <= ram_block1a2.PORTADATAOUT
+q_a[3] <= ram_block1a3.PORTADATAOUT
+q_a[4] <= ram_block1a4.PORTADATAOUT
+q_a[5] <= ram_block1a5.PORTADATAOUT
+q_a[6] <= ram_block1a6.PORTADATAOUT
+q_a[7] <= ram_block1a7.PORTADATAOUT
+q_a[8] <= ram_block1a8.PORTADATAOUT
+q_a[9] <= ram_block1a9.PORTADATAOUT
+q_a[10] <= ram_block1a10.PORTADATAOUT
+q_a[11] <= ram_block1a11.PORTADATAOUT
+q_a[12] <= ram_block1a12.PORTADATAOUT
+
+
+|main|bin_bcd:H0123
+SW[0] => HEX0[0].DATAIN
+SW[1] => bloco:B7.A[0]
+SW[2] => bloco:B5.A[0]
+SW[3] => bloco:B3.A[0]
+SW[4] => bloco:B2.A[0]
+SW[5] => bloco:B1.A[0]
+SW[6] => bloco:B1.A[1]
+SW[7] => bloco:B1.A[2]
+HEX0[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= bloco:B7.S[0]
+HEX0[2] <= bloco:B7.S[1]
+HEX0[3] <= bloco:B7.S[2]
+HEX0[4] <= <GND>
+HEX0[5] <= <GND>
+HEX0[6] <= <GND>
+HEX1[0] <= bloco:B7.S[3]
+HEX1[1] <= bloco:B6.S[0]
+HEX1[2] <= bloco:B6.S[1]
+HEX1[3] <= bloco:B6.S[2]
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= bloco:B6.S[3]
+HEX2[1] <= bloco:B4.S[3]
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= <GND>
+
+
+|main|bin_bcd:H0123|bloco:B1
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H0123|bloco:B2
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H0123|bloco:B3
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H0123|bloco:B4
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H0123|bloco:B5
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H0123|bloco:B6
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H0123|bloco:B7
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H4
+SW[0] => HEX0[0].DATAIN
+SW[1] => bloco:B7.A[0]
+SW[2] => bloco:B5.A[0]
+SW[3] => bloco:B3.A[0]
+SW[4] => bloco:B2.A[0]
+SW[5] => bloco:B1.A[0]
+SW[6] => bloco:B1.A[1]
+SW[7] => bloco:B1.A[2]
+HEX0[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= bloco:B7.S[0]
+HEX0[2] <= bloco:B7.S[1]
+HEX0[3] <= bloco:B7.S[2]
+HEX0[4] <= <GND>
+HEX0[5] <= <GND>
+HEX0[6] <= <GND>
+HEX1[0] <= bloco:B7.S[3]
+HEX1[1] <= bloco:B6.S[0]
+HEX1[2] <= bloco:B6.S[1]
+HEX1[3] <= bloco:B6.S[2]
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= bloco:B6.S[3]
+HEX2[1] <= bloco:B4.S[3]
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= <GND>
+
+
+|main|bin_bcd:H4|bloco:B1
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H4|bloco:B2
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H4|bloco:B3
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H4|bloco:B4
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H4|bloco:B5
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H4|bloco:B6
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:H4|bloco:B7
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:SEGMENTOS
+SW[0] => HEX0[0].DATAIN
+SW[1] => bloco:B7.A[0]
+SW[2] => bloco:B5.A[0]
+SW[3] => bloco:B3.A[0]
+SW[4] => bloco:B2.A[0]
+SW[5] => bloco:B1.A[0]
+SW[6] => bloco:B1.A[1]
+SW[7] => bloco:B1.A[2]
+HEX0[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= bloco:B7.S[0]
+HEX0[2] <= bloco:B7.S[1]
+HEX0[3] <= bloco:B7.S[2]
+HEX0[4] <= <GND>
+HEX0[5] <= <GND>
+HEX0[6] <= <GND>
+HEX1[0] <= bloco:B7.S[3]
+HEX1[1] <= bloco:B6.S[0]
+HEX1[2] <= bloco:B6.S[1]
+HEX1[3] <= bloco:B6.S[2]
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= bloco:B6.S[3]
+HEX2[1] <= bloco:B4.S[3]
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= <GND>
+
+
+|main|bin_bcd:SEGMENTOS|bloco:B1
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:SEGMENTOS|bloco:B2
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:SEGMENTOS|bloco:B3
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:SEGMENTOS|bloco:B4
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:SEGMENTOS|bloco:B5
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:SEGMENTOS|bloco:B6
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bin_bcd:SEGMENTOS|bloco:B7
+A[0] => S~0.IN0
+A[0] => S~4.IN0
+A[0] => S~9.IN0
+A[0] => S~14.IN1
+A[0] => S~6.IN1
+A[0] => S~11.IN0
+A[0] => S~16.IN1
+A[1] => S~2.IN0
+A[1] => S~8.IN0
+A[1] => S~9.IN1
+A[1] => S~5.IN0
+A[2] => S~0.IN1
+A[2] => S~2.IN1
+A[2] => S~5.IN1
+A[2] => S~8.IN1
+A[2] => S~13.IN0
+A[3] => S~1.IN1
+A[3] => S~4.IN1
+A[3] => S~11.IN1
+A[3] => S~13.IN1
+S[0] <= S~17.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S~12.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S~7.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S~3.DB_MAX_OUTPUT_PORT_TYPE
 
 
