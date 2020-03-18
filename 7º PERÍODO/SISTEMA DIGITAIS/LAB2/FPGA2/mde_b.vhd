@@ -82,8 +82,9 @@ end process ;
 rear_clr <= '1' when y_present = init else '0';
 front_clr <= '1' when y_present = init else '0';
 
-rf_rd <= '1' when (y_present = reead or y_present = readFull) else '0';
-rf_wr <= '1' when (y_present = writeMT or y_present = wriite) else '0';
+rf_rd <= '1' when (y_present = reead or y_present = readFull or y_present = reead2 or  y_present = waiit or y_present = waitFull) else '0';
+rf_wr <= '1' when (y_present = writeMT or y_present = wriite or y_present = wriite2 or y_present = waiit) else '0';
+
 
 empty <= '1' when (y_present = waitMT or y_present = init) else '0';
 

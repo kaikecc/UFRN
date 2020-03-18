@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Sun Mar 15 23:44:33 2020
+Mon Mar 16 17:12:06 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -28,15 +28,15 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
  20. Port Connectivity Checks: "bin_bcd:H0123|bloco:B4"
  21. Port Connectivity Checks: "bin_bcd:H0123|bloco:B1"
  22. Port Connectivity Checks: "contador8bit:CONTADOR"
- 23. Port Connectivity Checks: "fifo:FILA|ffd:FLIPFLOPD"
- 24. Port Connectivity Checks: "fifo:FILA|comparador4bit:IGUALDADE"
- 25. Port Connectivity Checks: "fifo:FILA|contador8bit:TRAZEIRA"
- 26. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|somador8bit:SUM"
- 27. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3"
- 28. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2"
- 29. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1"
- 30. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0"
- 31. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE"
+ 23. Port Connectivity Checks: "fifo:FILA|comparador4bit:IGUALDADE"
+ 24. Port Connectivity Checks: "fifo:FILA|contador8bit:TRAZEIRA"
+ 25. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|somador8bit:SUM"
+ 26. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3"
+ 27. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2"
+ 28. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1"
+ 29. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0"
+ 30. Port Connectivity Checks: "fifo:FILA|contador8bit:FRENTE"
+ 31. Port Connectivity Checks: "fifo:FILA|mde_b:MOORE"
  32. Port Connectivity Checks: "fifo:FILA"
  33. Elapsed Time Per Partition
  34. Analysis & Synthesis Messages
@@ -65,16 +65,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 15 23:44:32 2020      ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 16 17:12:06 2020      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; main                                       ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 88                                         ;
-;     Total combinational functions  ; 88                                         ;
-;     Dedicated logic registers      ; 25                                         ;
-; Total registers                    ; 25                                         ;
-; Total pins                         ; 48                                         ;
+; Total logic elements               ; 85                                         ;
+;     Total combinational functions  ; 85                                         ;
+;     Dedicated logic registers      ; 24                                         ;
+; Total registers                    ; 24                                         ;
+; Total pins                         ; 49                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 1,040                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -221,29 +221,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 88       ;
+; Estimated Total logic elements              ; 85       ;
 ;                                             ;          ;
-; Total combinational functions               ; 88       ;
+; Total combinational functions               ; 85       ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 49       ;
-;     -- 3 input functions                    ; 29       ;
-;     -- <=2 input functions                  ; 10       ;
+;     -- 4 input functions                    ; 53       ;
+;     -- 3 input functions                    ; 24       ;
+;     -- <=2 input functions                  ; 8        ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 88       ;
+;     -- normal mode                          ; 85       ;
 ;     -- arithmetic mode                      ; 0        ;
 ;                                             ;          ;
-; Total registers                             ; 25       ;
-;     -- Dedicated logic registers            ; 25       ;
+; Total registers                             ; 24       ;
+;     -- Dedicated logic registers            ; 24       ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 48       ;
+; I/O pins                                    ; 49       ;
 ; Total memory bits                           ; 1040     ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; clk_main ;
-; Maximum fan-out                             ; 51       ;
-; Total fan-out                               ; 582      ;
-; Average fan-out                             ; 3.11     ;
+; Maximum fan-out                             ; 37       ;
+; Total fan-out                               ; 576      ;
+; Average fan-out                             ; 3.13     ;
 +---------------------------------------------+----------+
 
 
@@ -252,7 +252,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
-; |main                                        ; 88 (0)            ; 25 (0)       ; 1040        ; 0            ; 0       ; 0         ; 48   ; 0            ; |main                                                                                              ;              ;
+; |main                                        ; 85 (0)            ; 24 (0)       ; 1040        ; 0            ; 0       ; 0         ; 49   ; 0            ; |main                                                                                              ;              ;
 ;    |bin_bcd:H0123|                           ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123                                                                                ;              ;
 ;       |bloco:B1|                             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B1                                                                       ;              ;
 ;       |bloco:B2|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:H0123|bloco:B2                                                                       ;              ;
@@ -277,27 +277,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |reg4bit:REG2|                      ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2                                               ;              ;
 ;             |ffd:D0|                         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2|ffd:D0                                        ;              ;
 ;             |ffd:D1|                         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:CONTADOR|reg8bit:REG|reg4bit:REG2|ffd:D1                                        ;              ;
-;    |fifo:FILA|                               ; 46 (0)            ; 19 (0)       ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA                                                                                    ;              ;
+;    |fifo:FILA|                               ; 43 (2)            ; 18 (0)       ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA                                                                                    ;              ;
 ;       |comparador4bit:IGUALDADE|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|comparador4bit:IGUALDADE                                                           ;              ;
 ;       |contador8bit:FRENTE|                  ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE                                                                ;              ;
 ;          |reg8bit:REG|                       ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG                                                    ;              ;
 ;             |reg4bit:REG1|                   ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1                                       ;              ;
 ;                |ffd:D0|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D0                                ;              ;
-;                |ffd:D1|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1                                ;              ;
-;                |ffd:D2|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2                                ;              ;
+;                |ffd:D1|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D1                                ;              ;
+;                |ffd:D2|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D2                                ;              ;
 ;                |ffd:D3|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:FRENTE|reg8bit:REG|reg4bit:REG1|ffd:D3                                ;              ;
 ;       |contador8bit:TRAZEIRA|                ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA                                                              ;              ;
 ;          |reg8bit:REG|                       ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG                                                  ;              ;
 ;             |reg4bit:REG1|                   ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1                                     ;              ;
 ;                |ffd:D0|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D0                              ;              ;
-;                |ffd:D1|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D1                              ;              ;
+;                |ffd:D1|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D1                              ;              ;
 ;                |ffd:D2|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D2                              ;              ;
-;                |ffd:D3|                      ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D3                              ;              ;
-;       |ffd:FLIPFLOPD|                        ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|ffd:FLIPFLOPD                                                                      ;              ;
+;                |ffd:D3|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|contador8bit:TRAZEIRA|reg8bit:REG|reg4bit:REG1|ffd:D3                              ;              ;
 ;       |mainram:MEMORIA_RAM|                  ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mainram:MEMORIA_RAM                                                                ;              ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component                                ;              ;
 ;             |altsyncram_50d1:auto_generated| ; 0 (0)             ; 0 (0)        ; 208         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mainram:MEMORIA_RAM|altsyncram:altsyncram_component|altsyncram_50d1:auto_generated ;              ;
-;       |mde_b:MOORE|                          ; 26 (26)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mde_b:MOORE                                                                        ;              ;
+;       |mde_b:MOORE|                          ; 25 (25)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mde_b:MOORE                                                                        ;              ;
 ;       |mux8x4:MUX|                           ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mux8x4:MUX                                                                         ;              ;
 ;          |mux2x1:M0|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mux8x4:MUX|mux2x1:M0                                                               ;              ;
 ;          |mux2x1:M1|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|fifo:FILA|mux8x4:MUX|mux2x1:M1                                                               ;              ;
@@ -354,16 +353,16 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+----------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal              ; Free of Timing Hazards ;
 +-----------------------------------------------------+----------------------------------+------------------------+
-; fifo:FILA|mde_b:MOORE|y_next.waitFull_330           ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.init_514               ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.waitMT_491             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.reead_376              ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.readFull_307           ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.writeMT_468            ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.wriite_422             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.wriite2_399            ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.waiit_445              ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
-; fifo:FILA|mde_b:MOORE|y_next.reead2_353             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.waitFull_340           ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.init_524               ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.waitMT_501             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.writeMT_478            ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.wriite_432             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.waiit_455              ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.wriite2_409            ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.reead_386              ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.readFull_317           ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
+; fifo:FILA|mde_b:MOORE|y_next.reead2_363             ; fifo:FILA|mde_b:MOORE|Selector12 ; yes                    ;
 ; Number of user-specified and inferred latches = 10  ;                                  ;                        ;
 +-----------------------------------------------------+----------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -374,10 +373,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 25    ;
+; Total registers                              ; 24    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -603,15 +602,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "fifo:FILA|ffd:FLIPFLOPD" ;
-+------+-------+----------+---------------------------+
-; Port ; Type  ; Severity ; Details                   ;
-+------+-------+----------+---------------------------+
-; d    ; Input ; Info     ; Stuck at GND              ;
-+------+-------+----------+---------------------------+
-
-
 +---------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "fifo:FILA|comparador4bit:IGUALDADE"                                                      ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -688,6 +678,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fifo:FILA|mde_b:MOORE"                                                               ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; rf_rd ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "fifo:FILA"                                                                          ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -714,7 +713,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Mar 15 23:44:27 2020
+    Info: Processing started: Mon Mar 16 17:12:01 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fifo -c main
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file bloco.vhd
@@ -789,6 +788,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux8x4.
 Info (12127): Elaborating entity "main" for the top level hierarchy
 Critical Warning (10920): VHDL Incomplete Partial Association warning at main.vhd(63): port or argument "Qs_contador8bit" has 2/8 unassociated elements
 Info (12128): Elaborating entity "fifo" for hierarchy "fifo:FILA"
+Warning (10036): Verilog HDL or VHDL warning at fifo.vhd(61): object "rf_rd_ram" assigned a value but never read
 Critical Warning (10920): VHDL Incomplete Partial Association warning at fifo.vhd(73): port or argument "Qs_contador8bit" has 4/8 unassociated elements
 Critical Warning (10920): VHDL Incomplete Partial Association warning at fifo.vhd(75): port or argument "Qs_contador8bit" has 4/8 unassociated elements
 Info (12128): Elaborating entity "mde_b" for hierarchy "fifo:FILA|mde_b:MOORE"
@@ -856,24 +856,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_lt71" for hierarchy "mainrom:ROM|altsyncram:altsyncram_component|altsyncram_lt71:auto_generated"
 Info (12128): Elaborating entity "bin_bcd" for hierarchy "bin_bcd:H0123"
 Info (12128): Elaborating entity "bloco" for hierarchy "bin_bcd:H0123|bloco:B1"
-Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waitFull_330 has unsafe behavior
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waitFull_340 has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
-Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.init_514 has unsafe behavior
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.init_524 has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
-Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waitMT_491 has unsafe behavior
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waitMT_501 has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
-Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.reead_376 has unsafe behavior
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.writeMT_478 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.wriite_432 has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal fifo:FILA|mde_b:MOORE|y_present.waiit
-Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.readFull_307 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
-Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.writeMT_468 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
-Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.wriite_422 has unsafe behavior
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waiit_455 has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal fifo:FILA|mde_b:MOORE|y_present.waiit
-Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.waiit_445 has unsafe behavior
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.reead_386 has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal fifo:FILA|mde_b:MOORE|y_present.waiit
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "fifo:FILA|ffd:FLIPFLOPD|qS" is converted into an equivalent circuit using register "fifo:FILA|ffd:FLIPFLOPD|qS~_emulated" and latch "fifo:FILA|ffd:FLIPFLOPD|qS~1"
+Warning (13012): Latch fifo:FILA|mde_b:MOORE|y_next.readFull_317 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal KEY3
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "H0[4]" is stuck at GND
     Warning (13410): Pin "H0[5]" is stuck at GND
@@ -898,15 +896,15 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HX1[6]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 172 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Info (21057): Implemented 169 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 44 output pins
-    Info (21061): Implemented 98 logic cells
+    Info (21061): Implemented 94 logic cells
     Info (21064): Implemented 26 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 45 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 44 warnings
     Info: Peak virtual memory: 4669 megabytes
-    Info: Processing ended: Sun Mar 15 23:44:33 2020
-    Info: Elapsed time: 00:00:06
+    Info: Processing ended: Mon Mar 16 17:12:06 2020
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 

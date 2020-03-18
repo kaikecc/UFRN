@@ -76,7 +76,9 @@ TRAZEIRA: contador8bit port map(clk_fifo, not rear_clr_cont, not rear_inc_cont, 
 
 IGUALDADE: comparador4bit port map(A => F, B => T, AeqB => eq_cont);
 												
-FLIPFLOPD: ffd port map(clk_fifo, '0', not rf_wr_ram, not rf_rd_ram, sel_ram);
+--FLIPFLOPD: ffd port map(clk_fifo, '0', not rf_wr_ram, not rf_rd_ram, sel_ram);
+
+sel_ram <= wr_fifo and rf_wr_ram;
 
 MEMORIA_RAM: mainram port map(M, clk_fifo, wr_data_fifo, sel_ram, rd_data_fifo);
 

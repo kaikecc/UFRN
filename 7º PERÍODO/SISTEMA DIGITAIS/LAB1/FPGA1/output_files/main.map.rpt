@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Thu Mar 12 18:43:54 2020
+Wed Mar 18 08:57:35 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -16,23 +16,25 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. State Machine - |main|mde_b:MOORE|y_present
- 11. General Register Statistics
- 12. Source assignments for mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated
- 13. Parameter Settings for User Entity Instance: mainROM:MEMORIA|altsyncram:altsyncram_component
- 14. altsyncram Parameter Settings by Entity Instance
- 15. Port Connectivity Checks: "contador8bit:COUNTER|somador8bit:SUM"
- 16. Port Connectivity Checks: "contador8bit:COUNTER"
- 17. Port Connectivity Checks: "bin_bcd:ENTRADA_A"
- 18. Port Connectivity Checks: "bin_bcd:ACUMULADOR_REG|bloco:B4"
- 19. Port Connectivity Checks: "bin_bcd:ACUMULADOR_REG|bloco:B1"
- 20. Port Connectivity Checks: "datapath:OPERACIONAL|somador8bit:ADDER"
- 21. Port Connectivity Checks: "datapath:OPERACIONAL|comparador8bit:COMP"
- 22. Port Connectivity Checks: "datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D3"
- 23. Port Connectivity Checks: "datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D2"
- 24. Port Connectivity Checks: "datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D1"
- 25. Port Connectivity Checks: "datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D0"
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
+ 11. State Machine - |main|botao:SW|y_present
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Source assignments for mainROM:MEMORIA|altsyncram:altsyncram_component|altsyncram_rh71:auto_generated
+ 15. Parameter Settings for User Entity Instance: mainROM:MEMORIA|altsyncram:altsyncram_component
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "contador8bit:COUNTER|somador8bit:SUM"
+ 18. Port Connectivity Checks: "contador8bit:COUNTER"
+ 19. Port Connectivity Checks: "bin_bcd:ENTRADA_A"
+ 20. Port Connectivity Checks: "bin_bcd:ACUMULADOR_REG|bloco:B4"
+ 21. Port Connectivity Checks: "bin_bcd:ACUMULADOR_REG|bloco:B1"
+ 22. Port Connectivity Checks: "datapath:OPERACIONAL|somador8bit:ADDER"
+ 23. Port Connectivity Checks: "datapath:OPERACIONAL|comparador8bit:COMP"
+ 24. Port Connectivity Checks: "datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D3"
+ 25. Port Connectivity Checks: "datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D2"
+ 26. Port Connectivity Checks: "datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D1"
+ 27. Port Connectivity Checks: "datapath:OPERACIONAL|reg8bit:REG8|reg4bit:REG1|ffd:D0"
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
 
 
 
@@ -58,16 +60,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 12 18:43:54 2020      ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 18 08:57:35 2020      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; main                                       ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 80                                         ;
-;     Total combinational functions  ; 80                                         ;
-;     Dedicated logic registers      ; 18                                         ;
-; Total registers                    ; 18                                         ;
-; Total pins                         ; 53                                         ;
+; Total logic elements               ; 82                                         ;
+;     Total combinational functions  ; 82                                         ;
+;     Dedicated logic registers      ; 20                                         ;
+; Total registers                    ; 20                                         ;
+; Total pins                         ; 47                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 512                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -192,6 +194,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; bloco.vhd                        ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA1/bloco.vhd                               ;         ;
 ; bin_bcd.vhd                      ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA1/bin_bcd.vhd                             ;         ;
 ; main.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/kaike/Desktop/FPGA1/main.mif                                ;         ;
+; botao.vhd                        ; yes             ; User VHDL File                   ; C:/Users/kaike/Desktop/FPGA1/botao.vhd                               ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -210,29 +213,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 80       ;
+; Estimated Total logic elements              ; 82       ;
 ;                                             ;          ;
-; Total combinational functions               ; 80       ;
+; Total combinational functions               ; 82       ;
 ; Logic element usage by number of LUT inputs ;          ;
 ;     -- 4 input functions                    ; 57       ;
 ;     -- 3 input functions                    ; 17       ;
-;     -- <=2 input functions                  ; 6        ;
+;     -- <=2 input functions                  ; 8        ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 80       ;
+;     -- normal mode                          ; 82       ;
 ;     -- arithmetic mode                      ; 0        ;
 ;                                             ;          ;
-; Total registers                             ; 18       ;
-;     -- Dedicated logic registers            ; 18       ;
+; Total registers                             ; 20       ;
+;     -- Dedicated logic registers            ; 20       ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 53       ;
+; I/O pins                                    ; 47       ;
 ; Total memory bits                           ; 512      ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; clk_main ;
-; Maximum fan-out                             ; 26       ;
-; Total fan-out                               ; 425      ;
-; Average fan-out                             ; 2.67     ;
+; Maximum fan-out                             ; 28       ;
+; Total fan-out                               ; 428      ;
+; Average fan-out                             ; 2.73     ;
 +---------------------------------------------+----------+
 
 
@@ -241,7 +244,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
-; |main                                     ; 80 (0)            ; 18 (0)       ; 512         ; 0            ; 0       ; 0         ; 53   ; 0            ; |main                                                                                ;              ;
+; |main                                     ; 82 (0)            ; 20 (0)       ; 512         ; 0            ; 0       ; 0         ; 47   ; 0            ; |main                                                                                ;              ;
 ;    |bin_bcd:ACUMULADOR_REG|               ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:ACUMULADOR_REG                                                         ;              ;
 ;       |bloco:B1|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:ACUMULADOR_REG|bloco:B1                                                ;              ;
 ;       |bloco:B2|                          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:ACUMULADOR_REG|bloco:B2                                                ;              ;
@@ -257,6 +260,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |bloco:B5|                          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:ENTRADA_A|bloco:B5                                                     ;              ;
 ;       |bloco:B6|                          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:ENTRADA_A|bloco:B6                                                     ;              ;
 ;       |bloco:B7|                          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bin_bcd:ENTRADA_A|bloco:B7                                                     ;              ;
+;    |botao:SW|                             ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|botao:SW                                                                       ;              ;
 ;    |contador8bit:COUNTER|                 ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:COUNTER                                                           ;              ;
 ;       |reg8bit:REG|                       ; 7 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:COUNTER|reg8bit:REG                                               ;              ;
 ;          |reg4bit:REG1|                   ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador8bit:COUNTER|reg8bit:REG|reg4bit:REG1                                  ;              ;
@@ -333,15 +337,37 @@ Encoding Type:  One-Hot
 +--------------------+--------------------+-----------------+-------------------+------------------+
 
 
+Encoding Type:  One-Hot
++-------------------------------------------------------+
+; State Machine - |main|botao:SW|y_present              ;
++-------------+-------------+-------------+-------------+
+; Name        ; y_present.c ; y_present.b ; y_present.a ;
++-------------+-------------+-------------+-------------+
+; y_present.a ; 0           ; 0           ; 0           ;
+; y_present.b ; 0           ; 1           ; 1           ;
+; y_present.c ; 1           ; 0           ; 1           ;
++-------------+-------------+-------------+-------------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; botao:SW|y_present.c                  ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 18    ;
+; Total registers                              ; 20    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 18    ;
+; Number of registers using Asynchronous Clear ; 20    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -557,7 +583,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Thu Mar 12 18:43:49 2020
+    Info: Processing started: Wed Mar 18 08:57:30 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off maquinadevedas -c main
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file mainrom.vhd
@@ -620,7 +646,14 @@ Info (12021): Found 2 design units, including 1 entities, in source file bloco.v
 Info (12021): Found 2 design units, including 1 entities, in source file bin_bcd.vhd
     Info (12022): Found design unit 1: bin_bcd-CKTO
     Info (12023): Found entity 1: bin_bcd
+Info (12021): Found 2 design units, including 1 entities, in source file botao.vhd
+    Info (12022): Found design unit 1: botao-button
+    Info (12023): Found entity 1: botao
+Info (12021): Found 2 design units, including 1 entities, in source file inverte.vhd
+    Info (12022): Found design unit 1: inverte-ckt
+    Info (12023): Found entity 1: inverte
 Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "botao" for hierarchy "botao:SW"
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:OPERACIONAL"
 Info (12128): Elaborating entity "mux16x8" for hierarchy "datapath:OPERACIONAL|mux16x8:MUX"
 Info (12128): Elaborating entity "mux2x1" for hierarchy "datapath:OPERACIONAL|mux16x8:MUX|mux2x1:M0"
@@ -683,16 +716,17 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "tot_2[4]" is stuck at GND
     Warning (13410): Pin "tot_2[5]" is stuck at GND
     Warning (13410): Pin "tot_2[6]" is stuck at GND
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 149 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 145 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 88 logic cells
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 90 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Thu Mar 12 18:43:54 2020
+    Info: Peak virtual memory: 4650 megabytes
+    Info: Processing ended: Wed Mar 18 08:57:35 2020
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

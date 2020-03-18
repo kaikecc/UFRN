@@ -46,6 +46,15 @@ port(SW : in  std_logic_vector(7 downto 0);
   
 end component;
 
+component inverte is
+generic(n : integer := 7);
+
+port(v : in std_logic_vector(n-1 downto 0);
+
+		o : out std_logic_vector(n-1 downto 0));
+
+end component;
+
 component contador8bit is
   port( 
   clk_contador8bit: in std_logic;
@@ -66,13 +75,22 @@ port ( clk_in : in std_logic;
 clk_out : out std_logic );
 end component;
 
- signal clr, ld, tot_s, cc, depositar : std_logic; 
+component botao is
+    port (clk , r, bi: in std_logic ;
+            bo : out std_logic);
+end component;
+
+ signal clr, ld, tot_s, moeda, aux, depositar : std_logic; 
  signal REG, A_main: std_logic_vector(7 downto 0);
- signal H0,H1, H2: std_logic_vector(6 downto 0);
+ signal H0,H1, H2, NH0, NH1, NH2: std_logic_vector(6 downto 0);
  signal A0, A1: std_logic_vector(6 downto 0);
  signal addr : std_logic_vector(7 downto 0); -- 6 bits : 64 posicoes de memoria
  
 begin
+
+SW: botao port map(clk_main, not depositar, c_main, aux);
+
+moeda <= not aux;
   
  OPERACIONAL: datapath port map(
  
@@ -112,13 +130,13 @@ ENTRADA_A: bin_bcd port map(
    HEX0 => A0, 
    HEX1 => A1);
 	
-	cc <= not c_main;
+	
   
 COUNTER: contador8bit port map(
   
   clk_contador8bit => clk_main,
   clr_contador8bit => clr_main,
-  SEL_contador8bit => cc, -- 0 está UP, 1 está PARADO
+  SEL_contador8bit => moeda, -- 0 está UP, 1 está PARADO
   Qs_contador8bit => addr);
 
 MEMORIA: mainROM port map( 
@@ -127,7 +145,8 @@ address => addr(5 downto 0),
 clock => clk_main,
 q => A_main);  
   
-  
+--INVERSAO: inverte port map(H0, NH0);
+ 
 d_main <= depositar;
 
 tot_0 <= H0;

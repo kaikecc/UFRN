@@ -1,6 +1,7 @@
 |main
+c_main => botao:SW.bi
 c_main => mde_b:MOORE.c
-c_main => contador8bit:COUNTER.SEL_contador8bit
+clk_main => botao:SW.clk
 clk_main => datapath:OPERACIONAL.clk_dat
 clk_main => mde_b:MOORE.clk
 clk_main => contador8bit:COUNTER.clk_contador8bit
@@ -16,12 +17,6 @@ S_main[5] => datapath:OPERACIONAL.s_dat[5]
 S_main[6] => datapath:OPERACIONAL.s_dat[6]
 S_main[7] => datapath:OPERACIONAL.s_dat[7]
 d_main <= mde_b:MOORE.d_mde
-cont[0] <= contador8bit:COUNTER.Qs_contador8bit[0]
-cont[1] <= contador8bit:COUNTER.Qs_contador8bit[1]
-cont[2] <= contador8bit:COUNTER.Qs_contador8bit[2]
-cont[3] <= contador8bit:COUNTER.Qs_contador8bit[3]
-cont[4] <= contador8bit:COUNTER.Qs_contador8bit[4]
-cont[5] <= contador8bit:COUNTER.Qs_contador8bit[5]
 A_0[0] <= bin_bcd:ENTRADA_A.HEX0[0]
 A_0[1] <= bin_bcd:ENTRADA_A.HEX0[1]
 A_0[2] <= bin_bcd:ENTRADA_A.HEX0[2]
@@ -57,6 +52,15 @@ tot_2[3] <= bin_bcd:ACUMULADOR_REG.HEX2[3]
 tot_2[4] <= bin_bcd:ACUMULADOR_REG.HEX2[4]
 tot_2[5] <= bin_bcd:ACUMULADOR_REG.HEX2[5]
 tot_2[6] <= bin_bcd:ACUMULADOR_REG.HEX2[6]
+
+
+|main|botao:SW
+clk => y_present~5.DATAIN
+r => y_present~9.DATAIN
+bi => y_next.a.IN0
+bi => Selector0.IN1
+bi => y_next.b.DATAB
+bo <= bo~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|datapath:OPERACIONAL

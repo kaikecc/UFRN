@@ -5,3 +5,9 @@ y_present.inicio 0 0 0 0
 y_present.esperar 0 0 1 1 
 y_present.somar 0 1 0 1 
 y_present.fornecer 1 0 0 1 
+
+State Machine - |main|botao:SW|y_present
+Name y_present.c y_present.b y_present.a 
+y_present.a 0 0 0 
+y_present.b 0 1 1 
+y_present.c 1 0 1 

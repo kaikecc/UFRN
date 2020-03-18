@@ -5,7 +5,7 @@ use ieee.std_logic_1164.all;
 entity main is
   
   port(SW0, SW1: in std_logic;
-		  clk_main: in std_logic;
+		  clk_main, clk_rom: in std_logic;
 		  KEY3: in std_logic;
 		  H0, H1, H2, H3: out std_logic_vector(6 downto 0);
 		  HX0, HX1: out std_logic_vector(6 downto 0);
@@ -62,7 +62,7 @@ reset_fifo => not KEY3, em => LEDR1, fu => LEDR0, wr_data_fifo => WR_DATA, rd_da
 
 CONTADOR: contador8bit port map(clk_main, KEY3, not SW1, Qs_contador8bit(5 downto 0) => endereco);
 
-ROM: mainrom port map(endereco, clk_main, WR_DATA);
+ROM: mainrom port map(endereco, clk_rom, WR_DATA);
 
 H0123: bin_bcd port map(RD_DATA(7 downto 0), H0, H1, H2);
 

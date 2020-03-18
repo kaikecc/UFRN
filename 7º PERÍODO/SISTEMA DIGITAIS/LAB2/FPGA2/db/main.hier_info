@@ -4,7 +4,7 @@ SW1 => fifo:FILA.wr_fifo
 SW1 => contador8bit:CONTADOR.SEL_contador8bit
 clk_main => fifo:FILA.clk_fifo
 clk_main => contador8bit:CONTADOR.clk_contador8bit
-clk_main => mainrom:ROM.clock
+clk_rom => mainrom:ROM.clock
 KEY3 => contador8bit:CONTADOR.clr_contador8bit
 KEY3 => fifo:FILA.reset_fifo
 H0[0] <= bin_bcd:H0123.HEX0[0]
@@ -57,14 +57,14 @@ LEDR1 <= fifo:FILA.em
 clk_fifo => mde_b:MOORE.clk
 clk_fifo => contador8bit:FRENTE.clk_contador8bit
 clk_fifo => contador8bit:TRAZEIRA.clk_contador8bit
-clk_fifo => ffd:FLIPFLOPD.clk
 clk_fifo => mainram:MEMORIA_RAM.clock
+wr_fifo => sel_ram.IN1
 wr_fifo => mde_b:MOORE.wr
 rd_fifo => mde_b:MOORE.rd
 reset_fifo => mde_b:MOORE.reset
 em <= mde_b:MOORE.empty
 fu <= mde_b:MOORE.full
-ss <= ffd:FLIPFLOPD.q
+ss <= sel_ram.DB_MAX_OUTPUT_PORT_TYPE
 CF[0] <= contador8bit:FRENTE.Qs_contador8bit[0]
 CF[1] <= contador8bit:FRENTE.Qs_contador8bit[1]
 CF[2] <= contador8bit:FRENTE.Qs_contador8bit[2]
@@ -124,8 +124,8 @@ rear_clr <= rear_clr~0.DB_MAX_OUTPUT_PORT_TYPE
 rear_inc <= rear_inc~0.DB_MAX_OUTPUT_PORT_TYPE
 front_clr <= front_clr~0.DB_MAX_OUTPUT_PORT_TYPE
 front_inc <= front_inc~0.DB_MAX_OUTPUT_PORT_TYPE
-rf_wr <= rf_wr~0.DB_MAX_OUTPUT_PORT_TYPE
-rf_rd <= rf_rd~0.DB_MAX_OUTPUT_PORT_TYPE
+rf_wr <= rf_wr~1.DB_MAX_OUTPUT_PORT_TYPE
+rf_rd <= rf_rd~2.DB_MAX_OUTPUT_PORT_TYPE
 full <= full~0.DB_MAX_OUTPUT_PORT_TYPE
 empty <= empty~0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -876,15 +876,6 @@ B[3] => AUX1[0].IN1
 AeqB <= AeqB~2.DB_MAX_OUTPUT_PORT_TYPE
 A_maior_B <= A_maior_B~2.DB_MAX_OUTPUT_PORT_TYPE
 A_menor_B <= A_menor_B~0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|fifo:FILA|ffd:FLIPFLOPD
-clk => qS.CLK
-D => qS.DATAIN
-P => qS~0.IN0
-P => qS.PRESET
-C => qS~0.IN1
-q <= qS.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|fifo:FILA|mainram:MEMORIA_RAM

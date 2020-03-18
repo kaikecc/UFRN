@@ -48,6 +48,11 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name QIP_FILE mainROM.qip
 set_global_assignment -name VHDL_FILE mainROM.vhd
 set_global_assignment -name VHDL_FILE contador8bit.vhd
@@ -75,8 +80,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE contador8bit.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name VECTOR_WAVEFORM_FILE datapath.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE main.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE mde.vwf
@@ -84,9 +87,9 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE ROM.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE somador8bit.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE reg8bit.vwf
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VHDL_FILE botao.vhd
+set_global_assignment -name VHDL_FILE inverte.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE inverte.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
