@@ -1,0 +1,14 @@
+PARA ABRIR 1 ENTRE NO CADE SIMU E VÁ EM ABRIR... E SELECIONE Os ARQUIVOs DESTA PASTA
+
+caso tenha algum arquivo cujo nome esteja apenas arquivo, renomeie para o final .cad
+
+exemplo: partida direta
+renomeado: partida direta.cad
+
+ENSINANDO ELETRICA
+
+https://www.ensinandoeletrica.blogspot.com
+
+https://www.cadesimu.net
+
+https://www.coletaneaeletrica.com.br
