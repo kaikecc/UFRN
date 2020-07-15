@@ -1,0 +1,403 @@
+function sysCall_init() 
+
+    
+    motorLeft=sim.getObjectHandle("Pioneer_p3dx_leftMotor")
+    motorRight=sim.getObjectHandle("Pioneer_p3dx_rightMotor")   
+    robot_pose=sim.getObjectHandle('robot_pose')
+    
+    R = 0.1955 / 2
+    max_v = 0.03
+    max_giro = 0.3
+    v = 0
+    giro = 0
+    b_robo = 0.1655
+    
+    b1 = sim.getObjectHandle('B1')
+    b2 = sim.getObjectHandle('B2')
+    b3 = sim.getObjectHandle('B3')
+    b4 = sim.getObjectHandle('B4')
+    b5 = sim.getObjectHandle('B5')
+    b6 = sim.getObjectHandle('B6')
+    b7 = sim.getObjectHandle('B7')
+
+    b = {b1,b2,b3,b4,b5,b6,b7}
+
+    end_pose = sim.getObjectHandle('end_pose')
+    end_P = sim.getObjectPosition(end_pose,-1)
+        
+    pose = updateRobotPose()
+    B = gradeR(end_P)
+end
+
+function move(v,w)
+
+sim.setJointTargetVelocity(motorRight,(v - b_robo*w) / R)
+sim.setJointTargetVelocity(motorLeft,(v + b_robo*w) / R)
+
+end
+
+function moveFoward()
+
+
+sim.setJointTargetVelocity(motorRight,0.5*max_v / R)
+sim.setJointTargetVelocity(motorLeft,0.5*max_v / R)
+
+end
+
+function moveBackwards()
+
+sim.setJointTargetVelocity(motorRight,-0.5*max_v / R)
+sim.setJointTargetVelocity(motorLeft,-0.5*max_v / R)
+
+end
+
+function giroL()
+
+sim.setJointTargetVelocity(motorRight,0.5*max_v / R)
+sim.setJointTargetVelocity(motorLeft,-0.5*max_v / R)
+
+end
+
+function giroR()
+
+sim.setJointTargetVelocity(motorRight,-0.5*max_v / R)
+sim.setJointTargetVelocity(motorLeft,0.5*max_v / R)
+
+end
+
+function parar()
+
+sim.setJointTargetVelocity(motorRight,0)
+sim.setJointTargetVelocity(motorLeft,0)
+
+end
+function gradeR(endP) -- funcao para criar grade retangular
+
+
+
+xr = end_P[1]
+yr = end_P[2]
+
+if xr > 2.5 then
+    xr = 2.5
+end
+
+if xr < -2.5 then
+    xr = -2.5
+end
+
+if yr > 2.5 then
+    yr = 2.5
+end
+
+if yr < -2.5 then
+    yr = -2.5
+end
+
+x = math.floor(2*xr + 6)
+y = math.floor(2*yr + 6)
+
+pxx, pyy = obstaculos(b1,b2,b3,b4,b5,b6,b7)
+
+
+ox = {}
+oy = {}
+
+for k = 1,7,1 do
+
+ox[k] = math.floor(2*pxx[k] + 6)
+oy[k] = math.floor(2*pyy[k] + 6)
+
+end
+
+A = {}
+v = {}
+
+
+for i=1,10,1 do -- for 1
+
+    A[i] = {}
+   
+    
+    for j=1,10,1 do -- for 2
+
+      if x == i and y == j then
+      A[i][j] = 0
+      v[j] = 0
+      end
+        
+     
+        if x + y - j - 1 >= (x - 1) then  -- 3     
+           
+            if x + y - i - 1 >= (x - 1) then -- 4
+
+            A[i][j] = x + y - i - j -------------------------------------------------
+            
+
+           else 
+            A[i][j] = i - j ---------------------------------------------------------
+            
+           end -- end 4
+                
+           else -- ***************
+        
+            if i <= x then -- 5
+                A[i][j] = j - i ----------------------------------------------------- 
+                v[j] = j - i
+            else
+                A[i][j] = v[j] + 1
+                v[j] = A[i][j]
+            end -- end 5
+        end -- end 3
+   
+end -- for 2
+  
+    end  -- for 1
+
+
+     
+
+
+
+for m = 1,7,1 do -- muda a posicao dos obstaculos para valores altos
+    
+        
+    A[oy[m]][ox[m]] = math.random(100,200)
+    
+
+ end
+
+
+--[[
+B = {{9,8,7,6,5,4,3,2,1,2},
+     {8,7,6,170,4,3,2,1,0,1},
+     {9,8,7,6,5,4,3,2,1,2},
+     {10,125,8,7,6,5,4,3,2,3},
+     {11,10,9,8,7,6,5,87,3,4},
+    {12,11,10,9,67,7,6,5,4,5},
+    {13,12,11,10,9,8,7,6,5,6},
+    {14,13,12,11,10,9,8,7,6,7},
+    {15,14,13,77,11,10,220,320,7,8},
+    {16,15,14,13,12,11,10,9,8,9}
+ }
+--]]
+return A
+end -- termina function
+
+
+function procedimento_manhattan()
+
+acc = 0 -- acumulador
+caminho = {} 
+potencial = 10000
+
+robo = {math.floor(2*pose[2] + 6), math.floor(2*pose[1] + 6)} -- i,j
+
+while (potencial ~= 0) do
+
+-- contem a vizinhan?a do robo
+
+if B[robo[1] - 1][robo[2] + 1] ~= nil then
+
+b1 = B[robo[1] - 1][robo[2] + 1]
+else
+b1 = math.random(100,200)
+end
+
+if B[robo[1] - 1][robo[2]] ~= nil then
+b2 = B[robo[1] - 1][robo[2]]
+else
+b2 = math.random(100,200)
+end
+
+if B[robo[1] - 1][robo[2] - 1] ~= nil then
+b3 = B[robo[1] - 1][robo[2] - 1]
+else
+b3 = math.random(100,200)
+end
+
+if B[robo[1]][robo[2] + 1] ~= nil then
+b4 = B[robo[1]][robo[2] + 1]
+else
+b4 = math.random(100,200)
+end
+
+if B[robo[1]][robo[2]] ~= nil then
+b5 = B[robo[1]][robo[2]]
+else
+b5 = math.random(100,200)
+end
+
+if B[robo[1]][robo[2] - 1] ~= nil then
+b6 = B[robo[1]][robo[2] - 1]
+else
+b6 = math.random(100,200)
+end
+
+if B[robo[1] + 1][robo[2] + 1] ~= nil then
+b7 = B[robo[1] + 1][robo[2] + 1]
+else
+b7 = math.random(100,200)
+end
+
+if B[robo[1] + 1][robo[2]] ~= nil then
+b8 = B[robo[1] + 1][robo[2]]
+else
+b8 = math.random(100,200)
+end
+
+if  B[robo[1] + 1][robo[2] - 1] ~= nil then
+b9 =  B[robo[1] + 1][robo[2] - 1]
+else
+b9 = math.random(100,200)
+end
+
+bloco = {{b1, b2, b3},
+
+         {b4, b5, b6},
+
+         {b7,  b8, b9}
+        }
+
+
+
+valor_min = 1000 
+ori = {0,0} -- orientacao
+
+for i = 1,3,1 do
+    
+    for j = 1,3,1 do
+
+        if (bloco[i][j] - bloco[2][2]) < valor_min then
+            valor_min = bloco[i][j] - bloco[2][2]
+            ori = {i,j}
+         end
+
+    end
+
+end
+
+potencial = bloco[ori[1]][ori[2]]
+
+acc = acc + 1
+
+
+if ori[1] == 1 and ori[2] == 1 then
+
+robo = {robo[1]-1, robo[2]+1}
+caminho[acc] = 1
+
+elseif ori[1] == 1 and ori[2] == 2 then
+
+robo = {robo[1]-1, robo[2]}
+caminho[acc] = 2
+
+elseif ori[1] == 1 and ori[2] == 3 then
+
+robo = {robo[1]-1, robo[2]-1}
+caminho[acc] = 3
+
+elseif ori[1] == 2 and ori[2] == 1 then
+
+robo = {robo[1],robo[2]+1}
+caminho[acc] = 4
+
+elseif ori[1] == 2 and ori[2] == 2 then
+
+potencial = bloco[robo[1]][robo[2]]
+robo = robo
+caminho[acc] = 5
+
+elseif ori[1] == 2 and ori[2] == 3 then
+
+robo = {robo[1],robo[2]-1}
+caminho[acc] = 6
+
+elseif ori[1] == 3 and ori[2] == 1 then
+
+robo = {robo[1]+1,robo[2]+1}
+caminho[acc] = 7
+
+
+elseif ori[1] == 3 and ori[2] == 2 then
+
+robo = {robo[1]+1,robo[2]}
+caminho[acc] = 8
+
+elseif ori[1] == 3 and ori[2] == 3 then
+
+robo = {robo[1]+1,robo[2]-1}
+caminho[acc] = 9
+end
+
+end
+
+return caminho
+
+end
+
+function obstaculos(b1,b2,b3,b4,b5,b6,b7)
+
+     p1 =sim.getObjectPosition(b1,-1)
+     p2 =sim.getObjectPosition(b2,-1)
+     p3 =sim.getObjectPosition(b3,-1)
+     p4 =sim.getObjectPosition(b4,-1)
+     p5 =sim.getObjectPosition(b5,-1)
+     p6 =sim.getObjectPosition(b6,-1)
+     p7 =sim.getObjectPosition(b7,-1)
+    
+     px = {p1[1], p2[1], p3[1], p4[1], p5[1], p6[1], p7[1]}
+     py = {p1[2], p2[2], p3[2], p4[2], p5[2], p6[2], p7[2]}
+
+    return px,py
+
+end
+
+
+
+function getPotencial(p)
+
+
+p_x = p[1] -- posicao do robo em x
+p_y = p[2] -- posicao do robo em y
+
+ind_j = math.floor(2*p_x + 6)
+ind_i = math.floor(2*p_y + 6)
+
+
+U = B[ind_i][ind_j]
+
+return U
+
+end
+
+
+
+
+function updateRobotPose()
+
+    local pose
+    position=sim.getObjectPosition(robot_pose,-1)
+    orientation=sim.getObjectOrientation(robot_pose,-1)
+    pose={position[1],position[2],orientation[3]}
+    return pose
+
+end
+
+function seguir_caminho()
+
+
+end
+
+
+function sysCall_actuation() 
+
+pose = updateRobotPose()
+
+
+
+-- moveFoward()  
+print(procedimento_manhattan())
+
+sim.stopSimulation()
+end 
