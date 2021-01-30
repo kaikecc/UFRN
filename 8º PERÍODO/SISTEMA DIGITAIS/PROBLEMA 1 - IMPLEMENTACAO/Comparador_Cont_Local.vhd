@@ -25,7 +25,7 @@ entity Comparador_Cont_Local is
       eq_comparador_Local, grt_comparador_Local, It_comparador_Local: out std_logic);
 end;
     
-architecture ckt_comparador8bits of comparador8bit is
+architecture ckt_Comparador_Cont_Locals of Comparador_Cont_Local is
   
 signal out_xnor, out_and : std_logic_vector(7 downto 0);
 signal XiY, XMY, XmmY: std_logic;
@@ -57,4 +57,4 @@ grt_comparador_Local <= XMY;
 It_comparador_Local <= XmmY;
 eq_comparador_Local <= XiY;  
    
-end ckt_comparador8bits; 
+end ckt_Comparador_Cont_Locals; 

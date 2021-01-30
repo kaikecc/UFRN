@@ -1,8 +1,99 @@
-|mux2x1
+|MUX_S
+ENTA_S[0] => mux2x1:M0.Ea
+ENTA_S[1] => mux2x1:M1.Ea
+ENTA_S[2] => mux2x1:M2.Ea
+ENTA_S[3] => mux2x1:M3.Ea
+ENTA_S[4] => mux2x1:M4.Ea
+ENTA_S[5] => mux2x1:M5.Ea
+ENTA_S[6] => mux2x1:M6.Ea
+ENTA_S[7] => mux2x1:M7.Ea
+ENTB_S[0] => mux2x1:M0.Eb
+ENTB_S[1] => mux2x1:M1.Eb
+ENTB_S[2] => mux2x1:M2.Eb
+ENTB_S[3] => mux2x1:M3.Eb
+ENTB_S[4] => mux2x1:M4.Eb
+ENTB_S[5] => mux2x1:M5.Eb
+ENTB_S[6] => mux2x1:M6.Eb
+ENTB_S[7] => mux2x1:M7.Eb
+SEL_S => mux2x1:M0.SEL
+SEL_S => mux2x1:M1.SEL
+SEL_S => mux2x1:M2.SEL
+SEL_S => mux2x1:M3.SEL
+SEL_S => mux2x1:M4.SEL
+SEL_S => mux2x1:M5.SEL
+SEL_S => mux2x1:M6.SEL
+SEL_S => mux2x1:M7.SEL
+S_S[0] <= mux2x1:M0.Saida
+S_S[1] <= mux2x1:M1.Saida
+S_S[2] <= mux2x1:M2.Saida
+S_S[3] <= mux2x1:M3.Saida
+S_S[4] <= mux2x1:M4.Saida
+S_S[5] <= mux2x1:M5.Saida
+S_S[6] <= mux2x1:M6.Saida
+S_S[7] <= mux2x1:M7.Saida
+
+
+|MUX_S|mux2x1:M0
 Ea => Saida.IN0
 Eb => Saida.IN0
 SEL => Saida.IN1
 SEL => Saida.IN1
-Saida << Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUX_S|mux2x1:M1
+Ea => Saida.IN0
+Eb => Saida.IN0
+SEL => Saida.IN1
+SEL => Saida.IN1
+Saida <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUX_S|mux2x1:M2
+Ea => Saida.IN0
+Eb => Saida.IN0
+SEL => Saida.IN1
+SEL => Saida.IN1
+Saida <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUX_S|mux2x1:M3
+Ea => Saida.IN0
+Eb => Saida.IN0
+SEL => Saida.IN1
+SEL => Saida.IN1
+Saida <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUX_S|mux2x1:M4
+Ea => Saida.IN0
+Eb => Saida.IN0
+SEL => Saida.IN1
+SEL => Saida.IN1
+Saida <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUX_S|mux2x1:M5
+Ea => Saida.IN0
+Eb => Saida.IN0
+SEL => Saida.IN1
+SEL => Saida.IN1
+Saida <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUX_S|mux2x1:M6
+Ea => Saida.IN0
+Eb => Saida.IN0
+SEL => Saida.IN1
+SEL => Saida.IN1
+Saida <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUX_S|mux2x1:M7
+Ea => Saida.IN0
+Eb => Saida.IN0
+SEL => Saida.IN1
+SEL => Saida.IN1
+Saida <= Saida.DB_MAX_OUTPUT_PORT_TYPE
 
 

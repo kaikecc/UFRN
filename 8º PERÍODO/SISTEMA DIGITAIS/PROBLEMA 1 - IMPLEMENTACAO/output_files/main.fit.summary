@@ -1,15 +1,15 @@
-Fitter Status : Successful - Wed Jan 27 20:31:09 2021
+Fitter Status : Successful - Sat Jan 30 08:48:08 2021
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : main
-Top-level Entity Name : mux2x1
+Top-level Entity Name : comparador8bit
 Family : Cyclone IV GX
 Device : EP4CGX15BF14C6
 Timing Models : Final
-Total logic elements : 1 / 14,400 ( < 1 % )
-    Total combinational functions : 1 / 14,400 ( < 1 % )
+Total logic elements : 12 / 14,400 ( < 1 % )
+    Total combinational functions : 12 / 14,400 ( < 1 % )
     Dedicated logic registers : 0 / 14,400 ( 0 % )
 Total registers : 0
-Total pins : 4 / 81 ( 5 % )
+Total pins : 19 / 81 ( 23 % )
 Total virtual pins : 0
 Total memory bits : 0 / 552,960 ( 0 % )
 Embedded Multiplier 9-bit elements : 0

@@ -1,5 +1,5 @@
 Assembler report for main
-Wed Jan 27 20:31:16 2021
+Sat Jan 30 08:48:13 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/kaike/Desktop/UFRN/8º PERÍODO/SISTEMA DIGITAIS/PROBLEMA 1 - IMPLEMENTACAO/output_files/main.sof
+  5. Assembler Device Options: C:/altera/13.1/ANS_MACHINE/output_files/main.sof
   6. Assembler Messages
 
 
@@ -37,9 +37,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Jan 27 20:31:16 2021 ;
+; Assembler Status      ; Successful - Sat Jan 30 08:48:13 2021 ;
 ; Revision Name         ; main                                  ;
-; Top-level Entity Name ; mux2x1                                ;
+; Top-level Entity Name ; comparador8bit                        ;
 ; Family                ; Cyclone IV GX                         ;
 ; Device                ; EP4CGX15BF14C6                        ;
 +-----------------------+---------------------------------------+
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                ;
-+----------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                ;
-+----------------------------------------------------------------------------------------------------------+
-; C:/Users/kaike/Desktop/UFRN/8º PERÍODO/SISTEMA DIGITAIS/PROBLEMA 1 - IMPLEMENTACAO/output_files/main.sof ;
-+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Assembler Generated Files                        ;
++--------------------------------------------------+
+; File Name                                        ;
++--------------------------------------------------+
+; C:/altera/13.1/ANS_MACHINE/output_files/main.sof ;
++--------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/kaike/Desktop/UFRN/8º PERÍODO/SISTEMA DIGITAIS/PROBLEMA 1 - IMPLEMENTACAO/output_files/main.sof ;
-+----------------+-------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                           ;
-+----------------+-------------------------------------------------------------------------------------------------------------------+
-; Device         ; EP4CGX15BF14C6                                                                                                    ;
-; JTAG usercode  ; 0x000BB7BE                                                                                                        ;
-; Checksum       ; 0x000BB7BE                                                                                                        ;
-+----------------+-------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+; Assembler Device Options: C:/altera/13.1/ANS_MACHINE/output_files/main.sof ;
++----------------+-----------------------------------------------------------+
+; Option         ; Setting                                                   ;
++----------------+-----------------------------------------------------------+
+; Device         ; EP4CGX15BF14C6                                            ;
+; JTAG usercode  ; 0x000BD95B                                                ;
+; Checksum       ; 0x000BD95B                                                ;
++----------------+-----------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Jan 27 20:31:13 2021
-Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PROJETO1-IMPL -c main
+    Info: Processing started: Sat Jan 30 08:48:11 2021
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ANS_MACHINE -c main
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Wed Jan 27 20:31:17 2021
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Sat Jan 30 08:48:13 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

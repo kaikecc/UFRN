@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Wed Jan 27 20:30:56 2021
+Sat Jan 30 11:34:11 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 27 20:30:56 2021      ;
+; Analysis & Synthesis Status        ; Successful - Sat Jan 30 11:34:11 2021      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
-; Top-level Entity Name              ; mux2x1                                     ;
+; Top-level Entity Name              ; MUX_S                                      ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 1                                          ;
-;     Total combinational functions  ; 1                                          ;
+; Total logic elements               ; 8                                          ;
+;     Total combinational functions  ; 8                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 4                                          ;
+; Total pins                         ; 25                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; mux2x1             ; main               ;
+; Top-level entity name                                                      ; MUX_S              ; main               ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -165,13 +165,14 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; ../LAB1/CODE VHD/mux2x1.vhd      ; yes             ; User VHDL File  ; C:/Users/kaike/Desktop/UFRN/8º PERÍODO/SISTEMA DIGITAIS/LAB1/CODE VHD/mux2x1.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                 ;
++----------------------------------+-----------------+-----------------+---------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path          ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------+---------+
+; mux2x1.vhd                       ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/mux2x1.vhd ;         ;
+; MUX_S.vhd                        ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/MUX_S.vhd  ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -179,12 +180,12 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 4                ;
+; I/O pins                 ; 25               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; Saida~0          ;
-; Maximum fan-out          ; 1                ;
-; Total fan-out            ; 8                ;
-; Average fan-out          ; 0.89             ;
+; Maximum fan-out node     ; SEL_S~input      ;
+; Maximum fan-out          ; 8                ;
+; Total fan-out            ; 57               ;
+; Average fan-out          ; 0.98             ;
 +--------------------------+------------------+
 
 
@@ -193,7 +194,15 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |mux2x1                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 4    ; 0            ; |mux2x1             ; work         ;
+; |MUX_S                     ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; |MUX_S              ; work         ;
+;    |mux2x1:M0|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M0    ; work         ;
+;    |mux2x1:M1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M1    ; work         ;
+;    |mux2x1:M2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M2    ; work         ;
+;    |mux2x1:M3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M3    ; work         ;
+;    |mux2x1:M4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M4    ; work         ;
+;    |mux2x1:M5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M5    ; work         ;
+;    |mux2x1:M6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M6    ; work         ;
+;    |mux2x1:M7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M7    ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -218,7 +227,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -228,78 +237,125 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Jan 27 20:30:51 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO1-IMPL -c main
+    Info: Processing started: Sat Jan 30 11:34:08 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ANS_MACHINE -c main
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/somador8bit.vhd
-    Info (12022): Found design unit 1: somador8bit-ckt
-    Info (12023): Found entity 1: somador8bit
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/somador1bit.vhd
-    Info (12022): Found design unit 1: somador1bit-ckt
-    Info (12023): Found entity 1: somador1bit
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/reg8bit.vhd
-    Info (12022): Found design unit 1: reg8bit-ckto
-    Info (12023): Found entity 1: reg8bit
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/reg4bit.vhd
-    Info (12022): Found design unit 1: reg4bit-ckto
-    Info (12023): Found entity 1: reg4bit
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/reg2bit.vhd
-    Info (12022): Found design unit 1: reg2bit-ckto
-    Info (12023): Found entity 1: reg2bit
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/mux16x8.vhd
-    Info (12022): Found design unit 1: mux16x8-ckt_mux16x8
-    Info (12023): Found entity 1: mux16x8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/mux2x1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file mux4x1.vhd
+    Info (12022): Found design unit 1: mux4x1-ckt_mux4x1
+    Info (12023): Found entity 1: mux4x1
+Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
     Info (12022): Found design unit 1: mux2x1-ckt_mux2x1
     Info (12023): Found entity 1: mux2x1
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/mde_b.vhd
-    Info (12022): Found design unit 1: mde_b-ckt
-    Info (12023): Found entity 1: mde_b
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/main.vhd
-    Info (12022): Found design unit 1: main-ckt
-    Info (12023): Found entity 1: main
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/ffd.vhd
+Warning (12090): Entity "MUX" obtained from "MUX.vhd" instead of from Quartus II megafunction library
+Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
+    Info (12022): Found design unit 1: MUX-ckt_mux24x8
+    Info (12023): Found entity 1: MUX
+Info (12021): Found 2 design units, including 1 entities, in source file mux_sum.vhd
+    Info (12022): Found design unit 1: MUX_SUM-ckt_mux32x8
+    Info (12023): Found entity 1: MUX_SUM
+Info (12021): Found 2 design units, including 1 entities, in source file mux8x1.vhd
+    Info (12022): Found design unit 1: mux8x1-circuito
+    Info (12023): Found entity 1: mux8x1
+Info (12021): Found 2 design units, including 1 entities, in source file mux_display.vhd
+    Info (12022): Found design unit 1: MUX_Display-ckt_MUX_Display
+    Info (12023): Found entity 1: MUX_Display
+Info (12021): Found 2 design units, including 1 entities, in source file mux1_comp1.vhd
+    Info (12022): Found design unit 1: MUX1_comp1-ckt_MUX1_comp1
+    Info (12023): Found entity 1: MUX1_comp1
+Info (12021): Found 2 design units, including 1 entities, in source file mux2_comp1.vhd
+    Info (12022): Found design unit 1: MUX2_comp1-ckt_MUX2_comp1
+    Info (12023): Found entity 1: MUX2_comp1
+Info (12021): Found 2 design units, including 1 entities, in source file ffd.vhd
     Info (12022): Found design unit 1: ffd-ckt_ffd
     Info (12023): Found entity 1: ffd
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/datapath.vhd
-    Info (12022): Found design unit 1: datapath-ckt_dat
-    Info (12023): Found entity 1: datapath
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/controller.vhd
-    Info (12022): Found design unit 1: controller-ckkto
-    Info (12023): Found entity 1: controller
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/contador8bit.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file reg4bit.vhd
+    Info (12022): Found design unit 1: reg4bit-ckto
+    Info (12023): Found entity 1: reg4bit
+Info (12021): Found 2 design units, including 1 entities, in source file regs_grv.vhd
+    Info (12022): Found design unit 1: REGS_GRV-ckt_REGS_GRV
+    Info (12023): Found entity 1: REGS_GRV
+Info (12021): Found 2 design units, including 1 entities, in source file regs_rep_s.vhd
+    Info (12022): Found design unit 1: REGS_REP_S-ckt_REGS_REP_S
+    Info (12023): Found entity 1: REGS_REP_S
+Info (12021): Found 2 design units, including 1 entities, in source file regs_rep_sq.vhd
+    Info (12022): Found design unit 1: REGS_REP_SQ-ckt_REGS_REP_SQ
+    Info (12023): Found entity 1: REGS_REP_SQ
+Info (12021): Found 2 design units, including 1 entities, in source file somador1bit.vhd
+    Info (12022): Found design unit 1: somador1bit-ckt
+    Info (12023): Found entity 1: somador1bit
+Info (12021): Found 2 design units, including 1 entities, in source file somador8bit.vhd
+    Info (12022): Found design unit 1: somador8bit-ckt
+    Info (12023): Found entity 1: somador8bit
+Info (12021): Found 2 design units, including 1 entities, in source file mux16x8.vhd
+    Info (12022): Found design unit 1: mux16x8-ckt_mux16x8
+    Info (12023): Found entity 1: mux16x8
+Info (12021): Found 2 design units, including 1 entities, in source file reg8bit.vhd
+    Info (12022): Found design unit 1: reg8bit-ckto
+    Info (12023): Found entity 1: reg8bit
+Info (12021): Found 2 design units, including 1 entities, in source file contador8bit.vhd
     Info (12022): Found design unit 1: contador8bit-ckto
     Info (12023): Found entity 1: contador8bit
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/comparador8bit.vhd
-    Info (12022): Found design unit 1: comparador8bit-ckt_comparador8bits
-    Info (12023): Found entity 1: comparador8bit
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/comparador4bit.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file ct_msg.vhd
+    Info (12022): Found design unit 1: CT_Msg-ckto
+    Info (12023): Found entity 1: CT_Msg
+Info (12021): Found 2 design units, including 1 entities, in source file cont_local.vhd
+    Info (12022): Found design unit 1: Cont_Local-ckto_Cont_Local
+    Info (12023): Found entity 1: Cont_Local
+Info (12021): Found 2 design units, including 1 entities, in source file display_val.vhd
+    Info (12022): Found design unit 1: Display_VAL-ckto_Display_VAL
+    Info (12023): Found entity 1: Display_VAL
+Info (12021): Found 2 design units, including 1 entities, in source file ct_inat.vhd
+    Info (12022): Found design unit 1: CT_INAT-ckto_CT_INAT
+    Info (12023): Found entity 1: CT_INAT
+Info (12021): Found 2 design units, including 1 entities, in source file contador_on.vhd
+    Info (12022): Found design unit 1: Contador_ON-ckto_Contador_ON
+    Info (12023): Found entity 1: Contador_ON
+Info (12021): Found 2 design units, including 1 entities, in source file addr.vhd
+    Info (12022): Found design unit 1: addr-ckt_addr
+    Info (12023): Found entity 1: addr
+Info (12021): Found 2 design units, including 1 entities, in source file subtrator8bit.vhd
+    Info (12022): Found design unit 1: subtrator8bit-ckt
+    Info (12023): Found entity 1: subtrator8bit
+Info (12021): Found 2 design units, including 1 entities, in source file multiplicador4bit.vhd
+    Info (12022): Found design unit 1: multiplicador4bit-ckt_multiplicador4bit
+    Info (12023): Found entity 1: multiplicador4bit
+Info (12021): Found 2 design units, including 1 entities, in source file multiplicador8bit.vhd
+    Info (12022): Found design unit 1: multiplicador8bit-ckt_multiplicador8bit
+    Info (12023): Found entity 1: multiplicador8bit
+Info (12021): Found 2 design units, including 1 entities, in source file comparador4bit.vhd
     Info (12022): Found design unit 1: comparador4bit-ckt_comparador4bits
     Info (12023): Found entity 1: comparador4bit
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/combinational_logic.vhd
-    Info (12022): Found design unit 1: combinational_logic-ckto
-    Info (12023): Found entity 1: combinational_logic
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/clk_div.vhd
-    Info (12022): Found design unit 1: CLK_Div-ckt
-    Info (12023): Found entity 1: CLK_Div
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/bloco.vhd
-    Info (12022): Found design unit 1: bloco-CKT
-    Info (12023): Found entity 1: bloco
-Info (12021): Found 2 design units, including 1 entities, in source file /users/kaike/desktop/ufrn/8º perÍodo/sistema digitais/lab1/code vhd/bin_bcd.vhd
-    Info (12022): Found design unit 1: bin_bcd-CKTO
-    Info (12023): Found entity 1: bin_bcd
-Info (12127): Elaborating entity "mux2x1" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file comparador8bit.vhd
+    Info (12022): Found design unit 1: comparador8bit-ckt_comparador8bits
+    Info (12023): Found entity 1: comparador8bit
+Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
+    Info (12022): Found design unit 1: Comparador-ckt_Comparador
+    Info (12023): Found entity 1: Comparador
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_ct_on.vhd
+    Info (12022): Found design unit 1: Comparador_CT_ON-ckt_Comparador_CT_ONs
+    Info (12023): Found entity 1: Comparador_CT_ON
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_cont_local.vhd
+    Info (12022): Found design unit 1: Comparador_Cont_Local-ckt_Comparador_Cont_Locals
+    Info (12023): Found entity 1: Comparador_Cont_Local
+Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
+    Info (12022): Found design unit 1: datapath-ckt_datapath
+    Info (12023): Found entity 1: datapath
+Info (12021): Found 2 design units, including 1 entities, in source file mux_s.vhd
+    Info (12022): Found design unit 1: MUX_S-ckt_MUX_S
+    Info (12023): Found entity 1: MUX_S
+Info (12127): Elaborating entity "MUX_S" for the top level hierarchy
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:M0"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4707 megabytes
-    Info: Processing ended: Wed Jan 27 20:30:56 2021
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4719 megabytes
+    Info: Processing ended: Sat Jan 30 11:34:11 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

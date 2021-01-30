@@ -1,0 +1,23 @@
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity datapath is
+  
+  port(return_display, sum_Display, sub_display : in std_logic;
+		 clr_addr, s1_comp1, sl1_comp1, sl2_comp1 : in std_logic;
+		 clr_Cont_Local, clr_CT_ON, clr_CT_Msg : in std_logic;
+		 clr_CT_INAT, en_CT_INAT, en_Cont_Local: in std_logic;
+		 en_CT_Msg, en_CT_ON, ld_REGS_REP_S, ld_REGS_REP_SQ  in std_logic;
+		 ld_REGS_GRV, Flag_rep_s, Flag_sq, s_sum in std_logic;
+		 clr_REGS_GRV, clr_REGS_REP,
+  
+  
+  
+  
+      : out std_logic);
+end;
+    
+architecture ckt_datapath of datapath is

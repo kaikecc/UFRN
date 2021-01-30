@@ -25,7 +25,7 @@ entity Comparador is
       eq_comparador, grt_comparador, It_comparador: out std_logic);
 end;
     
-architecture ckt_comparador8bits of comparador8bit is
+architecture ckt_Comparador of Comparador is
   
 signal out_xnor, out_and : std_logic_vector(7 downto 0);
 signal XiY, XMY, XmmY: std_logic;
@@ -57,4 +57,4 @@ grt_comparador <= XMY;
 It_comparador <= XmmY;
 eq_comparador <= XiY;  
    
-end ckt_comparador8bits; 
+end ckt_Comparador; 
