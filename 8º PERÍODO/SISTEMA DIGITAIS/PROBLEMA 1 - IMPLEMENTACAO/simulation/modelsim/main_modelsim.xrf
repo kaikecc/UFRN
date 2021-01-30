@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.1/ANS_MACHINE/mux4x1.vhd
+source_file = 1, C:/altera/13.1/ANS_MACHINE/mux2x1.vhd
+source_file = 1, C:/altera/13.1/ANS_MACHINE/db/main.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = mux4x1
+instance = comp, \M_Saida~output\, M_Saida~output, mux4x1, 1
+instance = comp, \Ea~input\, Ea~input, mux4x1, 1
+instance = comp, \Eb~input\, Eb~input, mux4x1, 1
+instance = comp, \Ec~input\, Ec~input, mux4x1, 1
+instance = comp, \Ed~input\, Ed~input, mux4x1, 1
+instance = comp, \SELEC[0]~input\, SELEC[0]~input, mux4x1, 1
+instance = comp, \SELEC[1]~input\, SELEC[1]~input, mux4x1, 1

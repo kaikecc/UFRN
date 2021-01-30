@@ -1,0 +1,45 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity REGS_REP_S is
+  port( 
+  clk_reg8_s_bit: in std_logic;
+  clr_reg8_s_bit: in std_logic;
+  ld_s: in std_logic;
+  data_s: in std_logic_vector(7 downto 0);
+  Qs_reg8_s_bit: out std_logic_vector(7 downto 0));
+  
+end;
+
+architecture ckt_REGS_REP_S of REGS_REP_S is
+
+component reg4bit is
+  port( 
+  clk_reg4bit: in std_logic;
+  clr_reg4bit: in std_logic;
+  load: in std_logic;
+  I_reg4bit: in std_logic_vector(3 downto 0);
+  Qs_reg4bit: out std_logic_vector(3 downto 0));
+  
+end component;
+
+signal REG_OUT: std_logic_vector(7 downto 0);
+begin
+
+REG1: reg4bit port map(
+      clk_reg4bit => clk_reg8_s_bit,
+		clr_reg4bit => clr_reg8_s_bit,
+		load => ld_s,
+		I_reg4bit => data_s(3 downto 0),
+		Qs_reg4bit => REG_OUT(3 downto 0));
+
+REG2: reg4bit port map(
+      clk_reg4bit => clk_reg8_s_bit,
+		clr_reg4bit => clr_reg8_s_bit,
+		load => ld_s,
+		I_reg4bit => data_s(7 downto 4),
+		Qs_reg4bit => REG_OUT(7 downto 4));
+		
+Qs_reg8_s_bit <= REG_OUT;
+
+end ckt_REGS_REP_S;

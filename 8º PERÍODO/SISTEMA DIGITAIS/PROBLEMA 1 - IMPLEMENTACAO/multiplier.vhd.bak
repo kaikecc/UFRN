@@ -1,0 +1,35 @@
+
+
+
+entity multiplier is
+port (MPLIER: in std_logic_vector(7 downto 0);
+ MCAND: in std_logic_vector(7 downto 0);
+ PRODUCT: out std_logic_vector(15 downto 0);
+ CLOCK: in std_logic;
+ START: in std_logic;
+ RESET: in std_logic;
+ DONE: out std_logic);
+end multiplier;
+
+
+architecture structure of multiplier is
+use work.mult_components.all; -- component declarations
+ -- internal signals to interconnect components
+signal MR, QR, AR: std_logic_vector(7 downto 0);
+signal AD: std_logic_vector(8 downto 0);
+signal LoadA, LoadM, LoadQ, ShiftAQ, ClearA: std_logic;
+ 
+ begin
+ 
+ 
+PRODUCT <= AR & QR; -- 16-bit product from A and Q registers
+M: mreg port map (MCAND, MR, LoadM, CLOCK);
+Q: Qreg port map (MPLIER, QR, AR(0), LoadQ, ShiftAQ, CLOCK);
+A: areg port map (AD, AR, LoadA, ShiftAQ, ClearA, CLOCK);
+ADR: adder port map (AR, MR, AD);
+C: mctrl port map (RESET, START, CLOCK, QR(0), LoadA, LoadM, LoadQ,
+ ShiftAQ, ClearA, DONE);
+end;
+
+
+

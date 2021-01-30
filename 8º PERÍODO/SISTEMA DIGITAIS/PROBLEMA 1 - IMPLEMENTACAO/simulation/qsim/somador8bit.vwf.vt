@@ -1,0 +1,437 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "01/29/2021 13:12:03"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    somador8bit
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module somador8bit_vlg_sample_tst(
+	Ce,
+	S81,
+	S82,
+	sampler_tx
+);
+input  Ce;
+input [7:0] S81;
+input [7:0] S82;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(Ce or S81 or S82)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module somador8bit_vlg_check_tst (
+	Cs,
+	Z,
+	sampler_rx
+);
+input  Cs;
+input [7:0] Z;
+input sampler_rx;
+
+reg  Cs_expected;
+reg [7:0] Z_expected;
+
+reg  Cs_prev;
+reg [7:0] Z_prev;
+
+reg  Cs_expected_prev;
+reg [7:0] Z_expected_prev;
+
+reg  last_Cs_exp;
+reg [7:0] last_Z_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:2] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 2'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	Cs_prev = Cs;
+	Z_prev = Z;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	Cs_expected_prev = Cs_expected;
+	Z_expected_prev = Z_expected;
+end
+
+
+
+// expected Cs
+initial
+begin
+	Cs_expected = 1'bX;
+end 
+// expected Z[ 7 ]
+initial
+begin
+	Z_expected[7] = 1'bX;
+end 
+// expected Z[ 6 ]
+initial
+begin
+	Z_expected[6] = 1'bX;
+end 
+// expected Z[ 5 ]
+initial
+begin
+	Z_expected[5] = 1'bX;
+end 
+// expected Z[ 4 ]
+initial
+begin
+	Z_expected[4] = 1'bX;
+end 
+// expected Z[ 3 ]
+initial
+begin
+	Z_expected[3] = 1'bX;
+end 
+// expected Z[ 2 ]
+initial
+begin
+	Z_expected[2] = 1'bX;
+end 
+// expected Z[ 1 ]
+initial
+begin
+	Z_expected[1] = 1'bX;
+end 
+// expected Z[ 0 ]
+initial
+begin
+	Z_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(Cs_expected or Cs or Z_expected or Z)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected Cs = %b | expected Z = %b | ",Cs_expected_prev,Z_expected_prev);
+	$display("| real Cs = %b | real Z = %b | ",Cs_prev,Z_prev);
+`endif
+	if (
+		( Cs_expected_prev !== 1'bx ) && ( Cs_prev !== Cs_expected_prev )
+		&& ((Cs_expected_prev !== last_Cs_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Cs :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Cs_expected_prev);
+		$display ("     Real value = %b", Cs_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_Cs_exp = Cs_expected_prev;
+	end
+	if (
+		( Z_expected_prev[0] !== 1'bx ) && ( Z_prev[0] !== Z_expected_prev[0] )
+		&& ((Z_expected_prev[0] !== last_Z_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Z[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Z_expected_prev);
+		$display ("     Real value = %b", Z_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Z_exp[0] = Z_expected_prev[0];
+	end
+	if (
+		( Z_expected_prev[1] !== 1'bx ) && ( Z_prev[1] !== Z_expected_prev[1] )
+		&& ((Z_expected_prev[1] !== last_Z_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Z[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Z_expected_prev);
+		$display ("     Real value = %b", Z_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Z_exp[1] = Z_expected_prev[1];
+	end
+	if (
+		( Z_expected_prev[2] !== 1'bx ) && ( Z_prev[2] !== Z_expected_prev[2] )
+		&& ((Z_expected_prev[2] !== last_Z_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Z[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Z_expected_prev);
+		$display ("     Real value = %b", Z_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Z_exp[2] = Z_expected_prev[2];
+	end
+	if (
+		( Z_expected_prev[3] !== 1'bx ) && ( Z_prev[3] !== Z_expected_prev[3] )
+		&& ((Z_expected_prev[3] !== last_Z_exp[3]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Z[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Z_expected_prev);
+		$display ("     Real value = %b", Z_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Z_exp[3] = Z_expected_prev[3];
+	end
+	if (
+		( Z_expected_prev[4] !== 1'bx ) && ( Z_prev[4] !== Z_expected_prev[4] )
+		&& ((Z_expected_prev[4] !== last_Z_exp[4]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Z[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Z_expected_prev);
+		$display ("     Real value = %b", Z_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Z_exp[4] = Z_expected_prev[4];
+	end
+	if (
+		( Z_expected_prev[5] !== 1'bx ) && ( Z_prev[5] !== Z_expected_prev[5] )
+		&& ((Z_expected_prev[5] !== last_Z_exp[5]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Z[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Z_expected_prev);
+		$display ("     Real value = %b", Z_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Z_exp[5] = Z_expected_prev[5];
+	end
+	if (
+		( Z_expected_prev[6] !== 1'bx ) && ( Z_prev[6] !== Z_expected_prev[6] )
+		&& ((Z_expected_prev[6] !== last_Z_exp[6]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Z[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Z_expected_prev);
+		$display ("     Real value = %b", Z_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Z_exp[6] = Z_expected_prev[6];
+	end
+	if (
+		( Z_expected_prev[7] !== 1'bx ) && ( Z_prev[7] !== Z_expected_prev[7] )
+		&& ((Z_expected_prev[7] !== last_Z_exp[7]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Z[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Z_expected_prev);
+		$display ("     Real value = %b", Z_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Z_exp[7] = Z_expected_prev[7];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module somador8bit_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Ce;
+reg [7:0] S81;
+reg [7:0] S82;
+// wires                                               
+wire Cs;
+wire [7:0] Z;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+somador8bit i1 (
+// port map - connection between master ports and signals/registers   
+	.Ce(Ce),
+	.Cs(Cs),
+	.S81(S81),
+	.S82(S82),
+	.Z(Z)
+);
+
+// Ce
+initial
+begin
+	Ce = 1'b0;
+end 
+// S81[ 7 ]
+initial
+begin
+	S81[7] = 1'b0;
+end 
+// S81[ 6 ]
+initial
+begin
+	S81[6] = 1'b0;
+end 
+// S81[ 5 ]
+initial
+begin
+	S81[5] = 1'b0;
+end 
+// S81[ 4 ]
+initial
+begin
+	S81[4] = 1'b0;
+end 
+// S81[ 3 ]
+initial
+begin
+	S81[3] = 1'b0;
+end 
+// S81[ 2 ]
+initial
+begin
+	S81[2] = 1'b1;
+	S81[2] = #100000 1'b0;
+end 
+// S81[ 1 ]
+initial
+begin
+	S81[1] = 1'b1;
+	S81[1] = #240000 1'b0;
+end 
+// S81[ 0 ]
+initial
+begin
+	S81[0] = 1'b0;
+	S81[0] = #100000 1'b1;
+	S81[0] = #140000 1'b0;
+end 
+// S82[ 7 ]
+initial
+begin
+	S82[7] = 1'b0;
+end 
+// S82[ 6 ]
+initial
+begin
+	S82[6] = 1'b0;
+end 
+// S82[ 5 ]
+initial
+begin
+	S82[5] = 1'b0;
+end 
+// S82[ 4 ]
+initial
+begin
+	S82[4] = 1'b0;
+end 
+// S82[ 3 ]
+initial
+begin
+	S82[3] = 1'b0;
+	S82[3] = #100000 1'b1;
+	S82[3] = #140000 1'b0;
+end 
+// S82[ 2 ]
+initial
+begin
+	S82[2] = 1'b1;
+	S82[2] = #100000 1'b0;
+end 
+// S82[ 1 ]
+initial
+begin
+	S82[1] = 1'b0;
+end 
+// S82[ 0 ]
+initial
+begin
+	S82[0] = 1'b1;
+	S82[0] = #240000 1'b0;
+end 
+
+somador8bit_vlg_sample_tst tb_sample (
+	.Ce(Ce),
+	.S81(S81),
+	.S82(S82),
+	.sampler_tx(sampler)
+);
+
+somador8bit_vlg_check_tst tb_out(
+	.Cs(Cs),
+	.Z(Z),
+	.sampler_rx(sampler)
+);
+endmodule
+

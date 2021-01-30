@@ -1,0 +1,477 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "01/29/2021 09:38:40"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    MUX2_comp1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module MUX2_comp1_vlg_sample_tst(
+	CT_Msg,
+	DISPLAY_SUBT_MUL,
+	REGS_GRV,
+	s1_comp1,
+	s2_comp1,
+	s_comp1,
+	sampler_tx
+);
+input [7:0] CT_Msg;
+input [7:0] DISPLAY_SUBT_MUL;
+input [7:0] REGS_GRV;
+input  s1_comp1;
+input  s2_comp1;
+input  s_comp1;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(CT_Msg or DISPLAY_SUBT_MUL or REGS_GRV or s1_comp1 or s2_comp1 or s_comp1)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module MUX2_comp1_vlg_check_tst (
+	M2C,
+	sampler_rx
+);
+input [7:0] M2C;
+input sampler_rx;
+
+reg [7:0] M2C_expected;
+
+reg [7:0] M2C_prev;
+
+reg [7:0] M2C_expected_prev;
+
+reg [7:0] last_M2C_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	M2C_prev = M2C;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	M2C_expected_prev = M2C_expected;
+end
+
+
+// expected M2C[ 7 ]
+initial
+begin
+	M2C_expected[7] = 1'bX;
+end 
+// expected M2C[ 6 ]
+initial
+begin
+	M2C_expected[6] = 1'bX;
+end 
+// expected M2C[ 5 ]
+initial
+begin
+	M2C_expected[5] = 1'bX;
+end 
+// expected M2C[ 4 ]
+initial
+begin
+	M2C_expected[4] = 1'bX;
+end 
+// expected M2C[ 3 ]
+initial
+begin
+	M2C_expected[3] = 1'bX;
+end 
+// expected M2C[ 2 ]
+initial
+begin
+	M2C_expected[2] = 1'bX;
+end 
+// expected M2C[ 1 ]
+initial
+begin
+	M2C_expected[1] = 1'bX;
+end 
+// expected M2C[ 0 ]
+initial
+begin
+	M2C_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(M2C_expected or M2C)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected M2C = %b | ",M2C_expected_prev);
+	$display("| real M2C = %b | ",M2C_prev);
+`endif
+	if (
+		( M2C_expected_prev[0] !== 1'bx ) && ( M2C_prev[0] !== M2C_expected_prev[0] )
+		&& ((M2C_expected_prev[0] !== last_M2C_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2C[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2C_expected_prev);
+		$display ("     Real value = %b", M2C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_M2C_exp[0] = M2C_expected_prev[0];
+	end
+	if (
+		( M2C_expected_prev[1] !== 1'bx ) && ( M2C_prev[1] !== M2C_expected_prev[1] )
+		&& ((M2C_expected_prev[1] !== last_M2C_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2C[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2C_expected_prev);
+		$display ("     Real value = %b", M2C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_M2C_exp[1] = M2C_expected_prev[1];
+	end
+	if (
+		( M2C_expected_prev[2] !== 1'bx ) && ( M2C_prev[2] !== M2C_expected_prev[2] )
+		&& ((M2C_expected_prev[2] !== last_M2C_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2C[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2C_expected_prev);
+		$display ("     Real value = %b", M2C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_M2C_exp[2] = M2C_expected_prev[2];
+	end
+	if (
+		( M2C_expected_prev[3] !== 1'bx ) && ( M2C_prev[3] !== M2C_expected_prev[3] )
+		&& ((M2C_expected_prev[3] !== last_M2C_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2C[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2C_expected_prev);
+		$display ("     Real value = %b", M2C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_M2C_exp[3] = M2C_expected_prev[3];
+	end
+	if (
+		( M2C_expected_prev[4] !== 1'bx ) && ( M2C_prev[4] !== M2C_expected_prev[4] )
+		&& ((M2C_expected_prev[4] !== last_M2C_exp[4]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2C[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2C_expected_prev);
+		$display ("     Real value = %b", M2C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_M2C_exp[4] = M2C_expected_prev[4];
+	end
+	if (
+		( M2C_expected_prev[5] !== 1'bx ) && ( M2C_prev[5] !== M2C_expected_prev[5] )
+		&& ((M2C_expected_prev[5] !== last_M2C_exp[5]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2C[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2C_expected_prev);
+		$display ("     Real value = %b", M2C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_M2C_exp[5] = M2C_expected_prev[5];
+	end
+	if (
+		( M2C_expected_prev[6] !== 1'bx ) && ( M2C_prev[6] !== M2C_expected_prev[6] )
+		&& ((M2C_expected_prev[6] !== last_M2C_exp[6]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2C[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2C_expected_prev);
+		$display ("     Real value = %b", M2C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_M2C_exp[6] = M2C_expected_prev[6];
+	end
+	if (
+		( M2C_expected_prev[7] !== 1'bx ) && ( M2C_prev[7] !== M2C_expected_prev[7] )
+		&& ((M2C_expected_prev[7] !== last_M2C_exp[7]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2C[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2C_expected_prev);
+		$display ("     Real value = %b", M2C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_M2C_exp[7] = M2C_expected_prev[7];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module MUX2_comp1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [7:0] CT_Msg;
+reg [7:0] DISPLAY_SUBT_MUL;
+reg [7:0] REGS_GRV;
+reg s1_comp1;
+reg s2_comp1;
+reg s_comp1;
+// wires                                               
+wire [7:0] M2C;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+MUX2_comp1 i1 (
+// port map - connection between master ports and signals/registers   
+	.CT_Msg(CT_Msg),
+	.DISPLAY_SUBT_MUL(DISPLAY_SUBT_MUL),
+	.M2C(M2C),
+	.REGS_GRV(REGS_GRV),
+	.s1_comp1(s1_comp1),
+	.s2_comp1(s2_comp1),
+	.s_comp1(s_comp1)
+);
+// CT_Msg[ 7 ]
+initial
+begin
+	CT_Msg[7] = 1'b0;
+end 
+// CT_Msg[ 6 ]
+initial
+begin
+	CT_Msg[6] = 1'b0;
+end 
+// CT_Msg[ 5 ]
+initial
+begin
+	CT_Msg[5] = 1'b0;
+end 
+// CT_Msg[ 4 ]
+initial
+begin
+	CT_Msg[4] = 1'b0;
+end 
+// CT_Msg[ 3 ]
+initial
+begin
+	CT_Msg[3] = 1'b1;
+end 
+// CT_Msg[ 2 ]
+initial
+begin
+	CT_Msg[2] = 1'b1;
+end 
+// CT_Msg[ 1 ]
+initial
+begin
+	CT_Msg[1] = 1'b1;
+end 
+// CT_Msg[ 0 ]
+initial
+begin
+	CT_Msg[0] = 1'b1;
+end 
+// DISPLAY_SUBT_MUL[ 7 ]
+initial
+begin
+	DISPLAY_SUBT_MUL[7] = 1'b0;
+end 
+// DISPLAY_SUBT_MUL[ 6 ]
+initial
+begin
+	DISPLAY_SUBT_MUL[6] = 1'b0;
+end 
+// DISPLAY_SUBT_MUL[ 5 ]
+initial
+begin
+	DISPLAY_SUBT_MUL[5] = 1'b0;
+end 
+// DISPLAY_SUBT_MUL[ 4 ]
+initial
+begin
+	DISPLAY_SUBT_MUL[4] = 1'b0;
+end 
+// DISPLAY_SUBT_MUL[ 3 ]
+initial
+begin
+	DISPLAY_SUBT_MUL[3] = 1'b1;
+end 
+// DISPLAY_SUBT_MUL[ 2 ]
+initial
+begin
+	DISPLAY_SUBT_MUL[2] = 1'b0;
+end 
+// DISPLAY_SUBT_MUL[ 1 ]
+initial
+begin
+	DISPLAY_SUBT_MUL[1] = 1'b1;
+end 
+// DISPLAY_SUBT_MUL[ 0 ]
+initial
+begin
+	DISPLAY_SUBT_MUL[0] = 1'b1;
+end 
+// REGS_GRV[ 7 ]
+initial
+begin
+	REGS_GRV[7] = 1'b0;
+end 
+// REGS_GRV[ 6 ]
+initial
+begin
+	REGS_GRV[6] = 1'b0;
+end 
+// REGS_GRV[ 5 ]
+initial
+begin
+	REGS_GRV[5] = 1'b0;
+end 
+// REGS_GRV[ 4 ]
+initial
+begin
+	REGS_GRV[4] = 1'b0;
+end 
+// REGS_GRV[ 3 ]
+initial
+begin
+	REGS_GRV[3] = 1'b1;
+end 
+// REGS_GRV[ 2 ]
+initial
+begin
+	REGS_GRV[2] = 1'b1;
+end 
+// REGS_GRV[ 1 ]
+initial
+begin
+	REGS_GRV[1] = 1'b0;
+end 
+// REGS_GRV[ 0 ]
+initial
+begin
+	REGS_GRV[0] = 1'b0;
+end 
+
+// s1_comp1
+always
+begin
+	s1_comp1 = 1'b0;
+	s1_comp1 = #10000 1'b1;
+	#10000;
+end 
+
+// s2_comp1
+always
+begin
+	s2_comp1 = 1'b0;
+	s2_comp1 = #20000 1'b1;
+	#20000;
+end 
+
+// s_comp1
+initial
+begin
+	repeat(16)
+	begin
+		s_comp1 = 1'b0;
+		s_comp1 = #30000 1'b1;
+		# 30000;
+	end
+	s_comp1 = 1'b0;
+	s_comp1 = #30000 1'b1;
+end 
+
+MUX2_comp1_vlg_sample_tst tb_sample (
+	.CT_Msg(CT_Msg),
+	.DISPLAY_SUBT_MUL(DISPLAY_SUBT_MUL),
+	.REGS_GRV(REGS_GRV),
+	.s1_comp1(s1_comp1),
+	.s2_comp1(s2_comp1),
+	.s_comp1(s_comp1),
+	.sampler_tx(sampler)
+);
+
+MUX2_comp1_vlg_check_tst tb_out(
+	.M2C(M2C),
+	.sampler_rx(sampler)
+);
+endmodule
+

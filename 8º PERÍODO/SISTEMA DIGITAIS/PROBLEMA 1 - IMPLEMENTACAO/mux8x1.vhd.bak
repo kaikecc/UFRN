@@ -1,0 +1,57 @@
+entity mux8x1 is
+  
+  port( SELE: in bit_vector(2 downto 0);
+        ENTRADA: in bit_vector(7 downto 0);
+        SAIDAA: out bit);
+        
+end;
+
+
+architecture circuito of mux8x1 is
+  
+component mux4x1 is
+  
+  port( E: in bit_vector(3 downto 0);
+      SEL: in bit_vector(1 downto 0);
+    
+        Sa1da : out bit);
+end component;
+ 
+ 
+component mux2x1 is
+  
+  port( Ea, Eb, SEL: in bit;
+    
+        Saida : out bit);
+        
+end component;  
+
+signal A, B, AUX: bit;
+
+begin
+   
+   
+ MX4_0: mux4x1 port map(
+ 
+        E => ENTRADA(3 downto 0),
+        SEL => SELE(1 downto 0),
+        Sa1da => A);
+        
+  MX4_1: mux4x1 port map(
+ 
+        E => ENTRADA(7 downto 4),
+        SEL => SELE(1 downto 0),
+        Sa1da => B);   
+        
+  MX2: mux2x1 port map(
+        Ea => A,
+        Eb => B,
+        SEL => SELE(2),
+        Saida => AUX);
+        
+  SAIDAA <= AUX;
+        
+  
+       
+    
+end circuito;

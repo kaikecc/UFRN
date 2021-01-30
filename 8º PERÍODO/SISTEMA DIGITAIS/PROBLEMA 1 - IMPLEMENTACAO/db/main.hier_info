@@ -1,0 +1,8 @@
+|mux2x1
+Ea => Saida.IN0
+Eb => Saida.IN0
+SEL => Saida.IN1
+SEL => Saida.IN1
+Saida << Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

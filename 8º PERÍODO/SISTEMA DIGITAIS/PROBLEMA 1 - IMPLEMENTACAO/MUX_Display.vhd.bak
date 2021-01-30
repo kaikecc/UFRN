@@ -1,0 +1,33 @@
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity MUX_Display is
+  
+  port( setUni, sum_Display, sub_Display: in std_logic;
+        CT_Msg, DISPLAY_VAL_1, DISPLAY_VAL_0: in std_logic_vector(7 downto 0); -- DISPLAY_VAL_+1 <= DISPLAY_VAL_1
+																										 -- DISPLAY_VAL_-1 <= DISPLAY_VAL_0
+																										 
+        MD: out vector(7 downto 0));
+        
+end;
+
+architecture ckt_MUX_Display of MUX_Display is
+ 
+component mux8x1 is
+  
+  port( SL: in std_logic_vector(2 downto 0);
+        E_IN: in std_logic_vector(7 downto 0);
+        M8: out std_logic);
+        
+end component;
+ 
+signal M_AUX : std_logic_vector(7 downto 0);
+
+begin
+
+
+
+end ckt_MUX_Display;

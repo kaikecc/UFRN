@@ -1,0 +1,461 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "01/28/2021 14:38:18"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    MUX
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module MUX_vlg_sample_tst(
+	Flag_rep_s,
+	Flag_rep_sq,
+	REGS_GRV,
+	REGS_REP_S,
+	REGS_REP_SQ,
+	sampler_tx
+);
+input  Flag_rep_s;
+input  Flag_rep_sq;
+input [7:0] REGS_GRV;
+input [7:0] REGS_REP_S;
+input [7:0] REGS_REP_SQ;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(Flag_rep_s or Flag_rep_sq or REGS_GRV or REGS_REP_S or REGS_REP_SQ)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module MUX_vlg_check_tst (
+	REG_OUT,
+	sampler_rx
+);
+input [7:0] REG_OUT;
+input sampler_rx;
+
+reg [7:0] REG_OUT_expected;
+
+reg [7:0] REG_OUT_prev;
+
+reg [7:0] REG_OUT_expected_prev;
+
+reg [7:0] last_REG_OUT_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	REG_OUT_prev = REG_OUT;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	REG_OUT_expected_prev = REG_OUT_expected;
+end
+
+
+// expected REG_OUT[ 7 ]
+initial
+begin
+	REG_OUT_expected[7] = 1'bX;
+end 
+// expected REG_OUT[ 6 ]
+initial
+begin
+	REG_OUT_expected[6] = 1'bX;
+end 
+// expected REG_OUT[ 5 ]
+initial
+begin
+	REG_OUT_expected[5] = 1'bX;
+end 
+// expected REG_OUT[ 4 ]
+initial
+begin
+	REG_OUT_expected[4] = 1'bX;
+end 
+// expected REG_OUT[ 3 ]
+initial
+begin
+	REG_OUT_expected[3] = 1'bX;
+end 
+// expected REG_OUT[ 2 ]
+initial
+begin
+	REG_OUT_expected[2] = 1'bX;
+end 
+// expected REG_OUT[ 1 ]
+initial
+begin
+	REG_OUT_expected[1] = 1'bX;
+end 
+// expected REG_OUT[ 0 ]
+initial
+begin
+	REG_OUT_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(REG_OUT_expected or REG_OUT)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected REG_OUT = %b | ",REG_OUT_expected_prev);
+	$display("| real REG_OUT = %b | ",REG_OUT_prev);
+`endif
+	if (
+		( REG_OUT_expected_prev[0] !== 1'bx ) && ( REG_OUT_prev[0] !== REG_OUT_expected_prev[0] )
+		&& ((REG_OUT_expected_prev[0] !== last_REG_OUT_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REG_OUT[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REG_OUT_expected_prev);
+		$display ("     Real value = %b", REG_OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_REG_OUT_exp[0] = REG_OUT_expected_prev[0];
+	end
+	if (
+		( REG_OUT_expected_prev[1] !== 1'bx ) && ( REG_OUT_prev[1] !== REG_OUT_expected_prev[1] )
+		&& ((REG_OUT_expected_prev[1] !== last_REG_OUT_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REG_OUT[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REG_OUT_expected_prev);
+		$display ("     Real value = %b", REG_OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_REG_OUT_exp[1] = REG_OUT_expected_prev[1];
+	end
+	if (
+		( REG_OUT_expected_prev[2] !== 1'bx ) && ( REG_OUT_prev[2] !== REG_OUT_expected_prev[2] )
+		&& ((REG_OUT_expected_prev[2] !== last_REG_OUT_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REG_OUT[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REG_OUT_expected_prev);
+		$display ("     Real value = %b", REG_OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_REG_OUT_exp[2] = REG_OUT_expected_prev[2];
+	end
+	if (
+		( REG_OUT_expected_prev[3] !== 1'bx ) && ( REG_OUT_prev[3] !== REG_OUT_expected_prev[3] )
+		&& ((REG_OUT_expected_prev[3] !== last_REG_OUT_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REG_OUT[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REG_OUT_expected_prev);
+		$display ("     Real value = %b", REG_OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_REG_OUT_exp[3] = REG_OUT_expected_prev[3];
+	end
+	if (
+		( REG_OUT_expected_prev[4] !== 1'bx ) && ( REG_OUT_prev[4] !== REG_OUT_expected_prev[4] )
+		&& ((REG_OUT_expected_prev[4] !== last_REG_OUT_exp[4]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REG_OUT[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REG_OUT_expected_prev);
+		$display ("     Real value = %b", REG_OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_REG_OUT_exp[4] = REG_OUT_expected_prev[4];
+	end
+	if (
+		( REG_OUT_expected_prev[5] !== 1'bx ) && ( REG_OUT_prev[5] !== REG_OUT_expected_prev[5] )
+		&& ((REG_OUT_expected_prev[5] !== last_REG_OUT_exp[5]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REG_OUT[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REG_OUT_expected_prev);
+		$display ("     Real value = %b", REG_OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_REG_OUT_exp[5] = REG_OUT_expected_prev[5];
+	end
+	if (
+		( REG_OUT_expected_prev[6] !== 1'bx ) && ( REG_OUT_prev[6] !== REG_OUT_expected_prev[6] )
+		&& ((REG_OUT_expected_prev[6] !== last_REG_OUT_exp[6]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REG_OUT[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REG_OUT_expected_prev);
+		$display ("     Real value = %b", REG_OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_REG_OUT_exp[6] = REG_OUT_expected_prev[6];
+	end
+	if (
+		( REG_OUT_expected_prev[7] !== 1'bx ) && ( REG_OUT_prev[7] !== REG_OUT_expected_prev[7] )
+		&& ((REG_OUT_expected_prev[7] !== last_REG_OUT_exp[7]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port REG_OUT[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", REG_OUT_expected_prev);
+		$display ("     Real value = %b", REG_OUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_REG_OUT_exp[7] = REG_OUT_expected_prev[7];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module MUX_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Flag_rep_s;
+reg Flag_rep_sq;
+reg [7:0] REGS_GRV;
+reg [7:0] REGS_REP_S;
+reg [7:0] REGS_REP_SQ;
+// wires                                               
+wire [7:0] REG_OUT;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+MUX i1 (
+// port map - connection between master ports and signals/registers   
+	.Flag_rep_s(Flag_rep_s),
+	.Flag_rep_sq(Flag_rep_sq),
+	.REG_OUT(REG_OUT),
+	.REGS_GRV(REGS_GRV),
+	.REGS_REP_S(REGS_REP_S),
+	.REGS_REP_SQ(REGS_REP_SQ)
+);
+
+// Flag_rep_s
+initial
+begin
+	Flag_rep_s = 1'b0;
+	Flag_rep_s = #340000 1'b1;
+	Flag_rep_s = #360000 1'b0;
+end 
+
+// Flag_rep_sq
+initial
+begin
+	Flag_rep_sq = 1'b0;
+	Flag_rep_sq = #180000 1'b1;
+	Flag_rep_sq = #150000 1'b0;
+	Flag_rep_sq = #140000 1'b1;
+	Flag_rep_sq = #230000 1'b0;
+end 
+// REGS_GRV[ 7 ]
+initial
+begin
+	REGS_GRV[7] = 1'b0;
+end 
+// REGS_GRV[ 6 ]
+initial
+begin
+	REGS_GRV[6] = 1'b0;
+end 
+// REGS_GRV[ 5 ]
+initial
+begin
+	REGS_GRV[5] = 1'b0;
+end 
+// REGS_GRV[ 4 ]
+initial
+begin
+	REGS_GRV[4] = 1'b0;
+end 
+// REGS_GRV[ 3 ]
+initial
+begin
+	REGS_GRV[3] = 1'b1;
+end 
+// REGS_GRV[ 2 ]
+initial
+begin
+	REGS_GRV[2] = 1'b0;
+end 
+// REGS_GRV[ 1 ]
+initial
+begin
+	REGS_GRV[1] = 1'b1;
+end 
+// REGS_GRV[ 0 ]
+initial
+begin
+	REGS_GRV[0] = 1'b0;
+end 
+// REGS_REP_S[ 7 ]
+initial
+begin
+	REGS_REP_S[7] = 1'b0;
+end 
+// REGS_REP_S[ 6 ]
+initial
+begin
+	REGS_REP_S[6] = 1'b0;
+end 
+// REGS_REP_S[ 5 ]
+initial
+begin
+	REGS_REP_S[5] = 1'b0;
+end 
+// REGS_REP_S[ 4 ]
+initial
+begin
+	REGS_REP_S[4] = 1'b0;
+end 
+// REGS_REP_S[ 3 ]
+initial
+begin
+	REGS_REP_S[3] = 1'b1;
+end 
+// REGS_REP_S[ 2 ]
+initial
+begin
+	REGS_REP_S[2] = 1'b1;
+end 
+// REGS_REP_S[ 1 ]
+initial
+begin
+	REGS_REP_S[1] = 1'b0;
+end 
+// REGS_REP_S[ 0 ]
+initial
+begin
+	REGS_REP_S[0] = 1'b0;
+end 
+// REGS_REP_SQ[ 7 ]
+initial
+begin
+	REGS_REP_SQ[7] = 1'b0;
+end 
+// REGS_REP_SQ[ 6 ]
+initial
+begin
+	REGS_REP_SQ[6] = 1'b0;
+end 
+// REGS_REP_SQ[ 5 ]
+initial
+begin
+	REGS_REP_SQ[5] = 1'b0;
+end 
+// REGS_REP_SQ[ 4 ]
+initial
+begin
+	REGS_REP_SQ[4] = 1'b0;
+end 
+// REGS_REP_SQ[ 3 ]
+initial
+begin
+	REGS_REP_SQ[3] = 1'b1;
+end 
+// REGS_REP_SQ[ 2 ]
+initial
+begin
+	REGS_REP_SQ[2] = 1'b1;
+end 
+// REGS_REP_SQ[ 1 ]
+initial
+begin
+	REGS_REP_SQ[1] = 1'b1;
+end 
+// REGS_REP_SQ[ 0 ]
+initial
+begin
+	REGS_REP_SQ[0] = 1'b0;
+end 
+
+MUX_vlg_sample_tst tb_sample (
+	.Flag_rep_s(Flag_rep_s),
+	.Flag_rep_sq(Flag_rep_sq),
+	.REGS_GRV(REGS_GRV),
+	.REGS_REP_S(REGS_REP_S),
+	.REGS_REP_SQ(REGS_REP_SQ),
+	.sampler_tx(sampler)
+);
+
+MUX_vlg_check_tst tb_out(
+	.REG_OUT(REG_OUT),
+	.sampler_rx(sampler)
+);
+endmodule
+
