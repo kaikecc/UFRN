@@ -18,40 +18,42 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "01/29/2021 08:48:55"
+// Generated on "01/31/2021 12:56:06"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    MUX_comp1
+// Verilog Self-Checking Test Bench (with test vectors) for design :    MUX1_comp1
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module MUX_comp1_vlg_sample_tst(
-	CT_Msg,
-	CT_ON,
-	DISPLAY_VAL,
-	REG_GRV,
-	REGS_REP_S,
-	REGS_REP_SQ,
-	s1_comp1,
-	s2_comp1,
-	s_comp1,
+module MUX1_comp1_vlg_sample_tst(
+	MUX1_CONT_LOCAL,
+	MUX1_CT_Msg,
+	MUX1_CT_ON,
+	MUX1_DISPLAY_VAL,
+	MUX1_REGS_GRV,
+	MUX1_REGS_REP_S,
+	MUX1_REGS_REP_SQ,
+	MUX1_s1_comp1,
+	MUX1_s2_comp1,
+	MUX1_s_comp1,
 	sampler_tx
 );
-input [7:0] CT_Msg;
-input [7:0] CT_ON;
-input [7:0] DISPLAY_VAL;
-input [7:0] REG_GRV;
-input [7:0] REGS_REP_S;
-input [7:0] REGS_REP_SQ;
-input  s1_comp1;
-input  s2_comp1;
-input  s_comp1;
+input [7:0] MUX1_CONT_LOCAL;
+input [7:0] MUX1_CT_Msg;
+input [7:0] MUX1_CT_ON;
+input [7:0] MUX1_DISPLAY_VAL;
+input [7:0] MUX1_REGS_GRV;
+input [7:0] MUX1_REGS_REP_S;
+input [7:0] MUX1_REGS_REP_SQ;
+input  MUX1_s1_comp1;
+input  MUX1_s2_comp1;
+input  MUX1_s_comp1;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(CT_Msg or CT_ON or DISPLAY_VAL or REG_GRV or REGS_REP_S or REGS_REP_SQ or s1_comp1 or s2_comp1 or s_comp1)
+always @(MUX1_CONT_LOCAL or MUX1_CT_Msg or MUX1_CT_ON or MUX1_DISPLAY_VAL or MUX1_REGS_GRV or MUX1_REGS_REP_S or MUX1_REGS_REP_SQ or MUX1_s1_comp1 or MUX1_s2_comp1 or MUX1_s_comp1)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -70,7 +72,7 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module MUX_comp1_vlg_check_tst (
+module MUX1_comp1_vlg_check_tst (
 	MC,
 	sampler_rx
 );
@@ -290,322 +292,364 @@ $finish;
 end 
 endmodule
 
-module MUX_comp1_vlg_vec_tst();
+module MUX1_comp1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [7:0] CT_Msg;
-reg [7:0] CT_ON;
-reg [7:0] DISPLAY_VAL;
-reg [7:0] REG_GRV;
-reg [7:0] REGS_REP_S;
-reg [7:0] REGS_REP_SQ;
-reg s1_comp1;
-reg s2_comp1;
-reg s_comp1;
+reg [7:0] MUX1_CONT_LOCAL;
+reg [7:0] MUX1_CT_Msg;
+reg [7:0] MUX1_CT_ON;
+reg [7:0] MUX1_DISPLAY_VAL;
+reg [7:0] MUX1_REGS_GRV;
+reg [7:0] MUX1_REGS_REP_S;
+reg [7:0] MUX1_REGS_REP_SQ;
+reg MUX1_s1_comp1;
+reg MUX1_s2_comp1;
+reg MUX1_s_comp1;
 // wires                                               
 wire [7:0] MC;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-MUX_comp1 i1 (
+MUX1_comp1 i1 (
 // port map - connection between master ports and signals/registers   
-	.CT_Msg(CT_Msg),
-	.CT_ON(CT_ON),
-	.DISPLAY_VAL(DISPLAY_VAL),
 	.MC(MC),
-	.REG_GRV(REG_GRV),
-	.REGS_REP_S(REGS_REP_S),
-	.REGS_REP_SQ(REGS_REP_SQ),
-	.s1_comp1(s1_comp1),
-	.s2_comp1(s2_comp1),
-	.s_comp1(s_comp1)
+	.MUX1_CONT_LOCAL(MUX1_CONT_LOCAL),
+	.MUX1_CT_Msg(MUX1_CT_Msg),
+	.MUX1_CT_ON(MUX1_CT_ON),
+	.MUX1_DISPLAY_VAL(MUX1_DISPLAY_VAL),
+	.MUX1_REGS_GRV(MUX1_REGS_GRV),
+	.MUX1_REGS_REP_S(MUX1_REGS_REP_S),
+	.MUX1_REGS_REP_SQ(MUX1_REGS_REP_SQ),
+	.MUX1_s1_comp1(MUX1_s1_comp1),
+	.MUX1_s2_comp1(MUX1_s2_comp1),
+	.MUX1_s_comp1(MUX1_s_comp1)
 );
-// CT_Msg[ 7 ]
+// MUX1_CONT_LOCAL[ 7 ]
 initial
 begin
-	CT_Msg[7] = 1'b0;
+	MUX1_CONT_LOCAL[7] = 1'b0;
 end 
-// CT_Msg[ 6 ]
+// MUX1_CONT_LOCAL[ 6 ]
 initial
 begin
-	CT_Msg[6] = 1'b0;
+	MUX1_CONT_LOCAL[6] = 1'b0;
 end 
-// CT_Msg[ 5 ]
+// MUX1_CONT_LOCAL[ 5 ]
 initial
 begin
-	CT_Msg[5] = 1'b0;
+	MUX1_CONT_LOCAL[5] = 1'b0;
 end 
-// CT_Msg[ 4 ]
+// MUX1_CONT_LOCAL[ 4 ]
 initial
 begin
-	CT_Msg[4] = 1'b0;
+	MUX1_CONT_LOCAL[4] = 1'b0;
 end 
-// CT_Msg[ 3 ]
+// MUX1_CONT_LOCAL[ 3 ]
 initial
 begin
-	CT_Msg[3] = 1'b1;
+	MUX1_CONT_LOCAL[3] = 1'b0;
 end 
-// CT_Msg[ 2 ]
+// MUX1_CONT_LOCAL[ 2 ]
 initial
 begin
-	CT_Msg[2] = 1'b1;
+	MUX1_CONT_LOCAL[2] = 1'b0;
 end 
-// CT_Msg[ 1 ]
+// MUX1_CONT_LOCAL[ 1 ]
 initial
 begin
-	CT_Msg[1] = 1'b1;
+	MUX1_CONT_LOCAL[1] = 1'b1;
 end 
-// CT_Msg[ 0 ]
+// MUX1_CONT_LOCAL[ 0 ]
 initial
 begin
-	CT_Msg[0] = 1'b1;
+	MUX1_CONT_LOCAL[0] = 1'b1;
 end 
-// CT_ON[ 7 ]
+// MUX1_CT_Msg[ 7 ]
 initial
 begin
-	CT_ON[7] = 1'b0;
+	MUX1_CT_Msg[7] = 1'b0;
 end 
-// CT_ON[ 6 ]
+// MUX1_CT_Msg[ 6 ]
 initial
 begin
-	CT_ON[6] = 1'b0;
+	MUX1_CT_Msg[6] = 1'b0;
 end 
-// CT_ON[ 5 ]
+// MUX1_CT_Msg[ 5 ]
 initial
 begin
-	CT_ON[5] = 1'b0;
+	MUX1_CT_Msg[5] = 1'b0;
 end 
-// CT_ON[ 4 ]
+// MUX1_CT_Msg[ 4 ]
 initial
 begin
-	CT_ON[4] = 1'b0;
+	MUX1_CT_Msg[4] = 1'b0;
 end 
-// CT_ON[ 3 ]
+// MUX1_CT_Msg[ 3 ]
 initial
 begin
-	CT_ON[3] = 1'b1;
+	MUX1_CT_Msg[3] = 1'b0;
 end 
-// CT_ON[ 2 ]
+// MUX1_CT_Msg[ 2 ]
 initial
 begin
-	CT_ON[2] = 1'b0;
+	MUX1_CT_Msg[2] = 1'b1;
 end 
-// CT_ON[ 1 ]
+// MUX1_CT_Msg[ 1 ]
 initial
 begin
-	CT_ON[1] = 1'b1;
+	MUX1_CT_Msg[1] = 1'b0;
 end 
-// CT_ON[ 0 ]
+// MUX1_CT_Msg[ 0 ]
 initial
 begin
-	CT_ON[0] = 1'b1;
+	MUX1_CT_Msg[0] = 1'b1;
 end 
-// DISPLAY_VAL[ 7 ]
+// MUX1_CT_ON[ 7 ]
 initial
 begin
-	DISPLAY_VAL[7] = 1'b0;
+	MUX1_CT_ON[7] = 1'b0;
 end 
-// DISPLAY_VAL[ 6 ]
+// MUX1_CT_ON[ 6 ]
 initial
 begin
-	DISPLAY_VAL[6] = 1'b0;
+	MUX1_CT_ON[6] = 1'b0;
 end 
-// DISPLAY_VAL[ 5 ]
+// MUX1_CT_ON[ 5 ]
 initial
 begin
-	DISPLAY_VAL[5] = 1'b0;
+	MUX1_CT_ON[5] = 1'b0;
 end 
-// DISPLAY_VAL[ 4 ]
+// MUX1_CT_ON[ 4 ]
 initial
 begin
-	DISPLAY_VAL[4] = 1'b0;
+	MUX1_CT_ON[4] = 1'b0;
 end 
-// DISPLAY_VAL[ 3 ]
+// MUX1_CT_ON[ 3 ]
 initial
 begin
-	DISPLAY_VAL[3] = 1'b1;
+	MUX1_CT_ON[3] = 1'b0;
 end 
-// DISPLAY_VAL[ 2 ]
+// MUX1_CT_ON[ 2 ]
 initial
 begin
-	DISPLAY_VAL[2] = 1'b1;
+	MUX1_CT_ON[2] = 1'b1;
 end 
-// DISPLAY_VAL[ 1 ]
+// MUX1_CT_ON[ 1 ]
 initial
 begin
-	DISPLAY_VAL[1] = 1'b0;
+	MUX1_CT_ON[1] = 1'b1;
 end 
-// DISPLAY_VAL[ 0 ]
+// MUX1_CT_ON[ 0 ]
 initial
 begin
-	DISPLAY_VAL[0] = 1'b1;
+	MUX1_CT_ON[0] = 1'b1;
 end 
-// REG_GRV[ 7 ]
+// MUX1_DISPLAY_VAL[ 7 ]
 initial
 begin
-	REG_GRV[7] = 1'b0;
+	MUX1_DISPLAY_VAL[7] = 1'b0;
 end 
-// REG_GRV[ 6 ]
+// MUX1_DISPLAY_VAL[ 6 ]
 initial
 begin
-	REG_GRV[6] = 1'b0;
+	MUX1_DISPLAY_VAL[6] = 1'b0;
 end 
-// REG_GRV[ 5 ]
+// MUX1_DISPLAY_VAL[ 5 ]
 initial
 begin
-	REG_GRV[5] = 1'b1;
+	MUX1_DISPLAY_VAL[5] = 1'b0;
 end 
-// REG_GRV[ 4 ]
+// MUX1_DISPLAY_VAL[ 4 ]
 initial
 begin
-	REG_GRV[4] = 1'b0;
+	MUX1_DISPLAY_VAL[4] = 1'b0;
 end 
-// REG_GRV[ 3 ]
+// MUX1_DISPLAY_VAL[ 3 ]
 initial
 begin
-	REG_GRV[3] = 1'b0;
+	MUX1_DISPLAY_VAL[3] = 1'b1;
 end 
-// REG_GRV[ 2 ]
+// MUX1_DISPLAY_VAL[ 2 ]
 initial
 begin
-	REG_GRV[2] = 1'b0;
+	MUX1_DISPLAY_VAL[2] = 1'b0;
 end 
-// REG_GRV[ 1 ]
+// MUX1_DISPLAY_VAL[ 1 ]
 initial
 begin
-	REG_GRV[1] = 1'b0;
+	MUX1_DISPLAY_VAL[1] = 1'b1;
 end 
-// REG_GRV[ 0 ]
+// MUX1_DISPLAY_VAL[ 0 ]
 initial
 begin
-	REG_GRV[0] = 1'b1;
+	MUX1_DISPLAY_VAL[0] = 1'b1;
 end 
-// REGS_REP_S[ 7 ]
+// MUX1_REGS_GRV[ 7 ]
 initial
 begin
-	REGS_REP_S[7] = 1'b0;
+	MUX1_REGS_GRV[7] = 1'b0;
 end 
-// REGS_REP_S[ 6 ]
+// MUX1_REGS_GRV[ 6 ]
 initial
 begin
-	REGS_REP_S[6] = 1'b0;
+	MUX1_REGS_GRV[6] = 1'b0;
 end 
-// REGS_REP_S[ 5 ]
+// MUX1_REGS_GRV[ 5 ]
 initial
 begin
-	REGS_REP_S[5] = 1'b0;
+	MUX1_REGS_GRV[5] = 1'b0;
 end 
-// REGS_REP_S[ 4 ]
+// MUX1_REGS_GRV[ 4 ]
 initial
 begin
-	REGS_REP_S[4] = 1'b1;
+	MUX1_REGS_GRV[4] = 1'b0;
 end 
-// REGS_REP_S[ 3 ]
+// MUX1_REGS_GRV[ 3 ]
 initial
 begin
-	REGS_REP_S[3] = 1'b0;
+	MUX1_REGS_GRV[3] = 1'b1;
 end 
-// REGS_REP_S[ 2 ]
+// MUX1_REGS_GRV[ 2 ]
 initial
 begin
-	REGS_REP_S[2] = 1'b1;
+	MUX1_REGS_GRV[2] = 1'b1;
 end 
-// REGS_REP_S[ 1 ]
+// MUX1_REGS_GRV[ 1 ]
 initial
 begin
-	REGS_REP_S[1] = 1'b1;
+	MUX1_REGS_GRV[1] = 1'b1;
 end 
-// REGS_REP_S[ 0 ]
+// MUX1_REGS_GRV[ 0 ]
 initial
 begin
-	REGS_REP_S[0] = 1'b0;
+	MUX1_REGS_GRV[0] = 1'b1;
 end 
-// REGS_REP_SQ[ 7 ]
+// MUX1_REGS_REP_S[ 7 ]
 initial
 begin
-	REGS_REP_SQ[7] = 1'b0;
+	MUX1_REGS_REP_S[7] = 1'b0;
 end 
-// REGS_REP_SQ[ 6 ]
+// MUX1_REGS_REP_S[ 6 ]
 initial
 begin
-	REGS_REP_SQ[6] = 1'b0;
+	MUX1_REGS_REP_S[6] = 1'b0;
 end 
-// REGS_REP_SQ[ 5 ]
+// MUX1_REGS_REP_S[ 5 ]
 initial
 begin
-	REGS_REP_SQ[5] = 1'b0;
+	MUX1_REGS_REP_S[5] = 1'b0;
 end 
-// REGS_REP_SQ[ 4 ]
+// MUX1_REGS_REP_S[ 4 ]
 initial
 begin
-	REGS_REP_SQ[4] = 1'b0;
+	MUX1_REGS_REP_S[4] = 1'b0;
 end 
-// REGS_REP_SQ[ 3 ]
+// MUX1_REGS_REP_S[ 3 ]
 initial
 begin
-	REGS_REP_SQ[3] = 1'b1;
+	MUX1_REGS_REP_S[3] = 1'b1;
 end 
-// REGS_REP_SQ[ 2 ]
+// MUX1_REGS_REP_S[ 2 ]
 initial
 begin
-	REGS_REP_SQ[2] = 1'b1;
+	MUX1_REGS_REP_S[2] = 1'b1;
 end 
-// REGS_REP_SQ[ 1 ]
+// MUX1_REGS_REP_S[ 1 ]
 initial
 begin
-	REGS_REP_SQ[1] = 1'b1;
+	MUX1_REGS_REP_S[1] = 1'b0;
 end 
-// REGS_REP_SQ[ 0 ]
+// MUX1_REGS_REP_S[ 0 ]
 initial
 begin
-	REGS_REP_SQ[0] = 1'b0;
+	MUX1_REGS_REP_S[0] = 1'b0;
+end 
+// MUX1_REGS_REP_SQ[ 7 ]
+initial
+begin
+	MUX1_REGS_REP_SQ[7] = 1'b0;
+end 
+// MUX1_REGS_REP_SQ[ 6 ]
+initial
+begin
+	MUX1_REGS_REP_SQ[6] = 1'b0;
+end 
+// MUX1_REGS_REP_SQ[ 5 ]
+initial
+begin
+	MUX1_REGS_REP_SQ[5] = 1'b0;
+end 
+// MUX1_REGS_REP_SQ[ 4 ]
+initial
+begin
+	MUX1_REGS_REP_SQ[4] = 1'b0;
+end 
+// MUX1_REGS_REP_SQ[ 3 ]
+initial
+begin
+	MUX1_REGS_REP_SQ[3] = 1'b1;
+end 
+// MUX1_REGS_REP_SQ[ 2 ]
+initial
+begin
+	MUX1_REGS_REP_SQ[2] = 1'b0;
+end 
+// MUX1_REGS_REP_SQ[ 1 ]
+initial
+begin
+	MUX1_REGS_REP_SQ[1] = 1'b0;
+end 
+// MUX1_REGS_REP_SQ[ 0 ]
+initial
+begin
+	MUX1_REGS_REP_SQ[0] = 1'b0;
 end 
 
-// s1_comp1
-initial
+// MUX1_s2_comp1
+always
 begin
-	s1_comp1 = 1'b0;
-	s1_comp1 = #390000 1'b1;
-	s1_comp1 = #80000 1'b0;
-	s1_comp1 = #100000 1'b1;
-	s1_comp1 = #60000 1'b0;
+	MUX1_s2_comp1 = 1'b0;
+	MUX1_s2_comp1 = #10000 1'b1;
+	#10000;
 end 
 
-// s2_comp1
-initial
+// MUX1_s1_comp1
+always
 begin
-	s2_comp1 = 1'b0;
-	s2_comp1 = #280000 1'b1;
-	s2_comp1 = #80000 1'b0;
-	s2_comp1 = #210000 1'b1;
-	s2_comp1 = #60000 1'b0;
+	MUX1_s1_comp1 = 1'b0;
+	MUX1_s1_comp1 = #20000 1'b1;
+	#20000;
 end 
 
-// s_comp1
+// MUX1_s_comp1
 initial
 begin
-	s_comp1 = 1'b0;
-	s_comp1 = #160000 1'b1;
-	s_comp1 = #80000 1'b0;
-	s_comp1 = #330000 1'b1;
-	s_comp1 = #60000 1'b0;
+	repeat(16)
+	begin
+		MUX1_s_comp1 = 1'b0;
+		MUX1_s_comp1 = #30000 1'b1;
+		# 30000;
+	end
+	MUX1_s_comp1 = 1'b0;
+	MUX1_s_comp1 = #30000 1'b1;
 end 
 
-MUX_comp1_vlg_sample_tst tb_sample (
-	.CT_Msg(CT_Msg),
-	.CT_ON(CT_ON),
-	.DISPLAY_VAL(DISPLAY_VAL),
-	.REG_GRV(REG_GRV),
-	.REGS_REP_S(REGS_REP_S),
-	.REGS_REP_SQ(REGS_REP_SQ),
-	.s1_comp1(s1_comp1),
-	.s2_comp1(s2_comp1),
-	.s_comp1(s_comp1),
+MUX1_comp1_vlg_sample_tst tb_sample (
+	.MUX1_CONT_LOCAL(MUX1_CONT_LOCAL),
+	.MUX1_CT_Msg(MUX1_CT_Msg),
+	.MUX1_CT_ON(MUX1_CT_ON),
+	.MUX1_DISPLAY_VAL(MUX1_DISPLAY_VAL),
+	.MUX1_REGS_GRV(MUX1_REGS_GRV),
+	.MUX1_REGS_REP_S(MUX1_REGS_REP_S),
+	.MUX1_REGS_REP_SQ(MUX1_REGS_REP_SQ),
+	.MUX1_s1_comp1(MUX1_s1_comp1),
+	.MUX1_s2_comp1(MUX1_s2_comp1),
+	.MUX1_s_comp1(MUX1_s_comp1),
 	.sampler_tx(sampler)
 );
 
-MUX_comp1_vlg_check_tst tb_out(
+MUX1_comp1_vlg_check_tst tb_out(
 	.MC(MC),
 	.sampler_rx(sampler)
 );

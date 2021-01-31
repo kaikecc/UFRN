@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 entity MUX_Display is
   
   port( setUni, sum_Display, sub_Display: in std_logic;
-        CT_Msg, DISPLAY_VAL_1, DISPLAY_VAL_0: in std_logic_vector(7 downto 0); -- DISPLAY_VAL_+1 <= DISPLAY_VAL_1
+        MUX_Display_CT_Msg, DISPLAY_VAL_1, DISPLAY_VAL_0: in std_logic_vector(7 downto 0); -- DISPLAY_VAL_+1 <= DISPLAY_VAL_1
 																										 -- DISPLAY_VAL_-1 <= DISPLAY_VAL_0
 																										 
         MD: out std_logic_vector(7 downto 0));
@@ -30,13 +30,13 @@ begin
 
 MD0: mux8x1 port map(
 
-		E_IN(0) => CT_Msg(0),
+		E_IN(0) => MUX_Display_CT_Msg(0),
 		E_IN(1) => DISPLAY_VAL_0(0),
 		E_IN(2) => DISPLAY_VAL_1(0),
-		E_IN(3) => '1',
-		E_IN(4) => '1',
-		E_IN(5) => '0',
-		E_IN(6) => '0',
+		E_IN(3) => '0',
+		E_IN(4) => '0',
+		E_IN(5) => '1',
+		E_IN(6) => '1',
 		E_IN(7) => '0',
 		SL(0) => setUni,
 		SL(1) => sum_Display,
@@ -45,11 +45,11 @@ MD0: mux8x1 port map(
 		
 MD1: mux8x1 port map(
 
-		E_IN(0) => CT_Msg(1),
+		E_IN(0) => MUX_Display_CT_Msg(1),
 		E_IN(1) => DISPLAY_VAL_0(1),
 		E_IN(2) => DISPLAY_VAL_1(1),
-		E_IN(3) => '1',
-		E_IN(4) => '1',
+		E_IN(3) => '0',
+		E_IN(4) => '0',
 		E_IN(5) => '0',
 		E_IN(6) => '0',
 		E_IN(7) => '0',
@@ -60,11 +60,11 @@ MD1: mux8x1 port map(
 
 MD2: mux8x1 port map(
 
-		E_IN(0) => CT_Msg(2),
+		E_IN(0) => MUX_Display_CT_Msg(2),
 		E_IN(1) => DISPLAY_VAL_0(2),
 		E_IN(2) => DISPLAY_VAL_1(2),
-		E_IN(3) => '1',
-		E_IN(4) => '1',
+		E_IN(3) => '0',
+		E_IN(4) => '0',
 		E_IN(5) => '0',
 		E_IN(6) => '0',
 		E_IN(7) => '0',
@@ -75,11 +75,11 @@ MD2: mux8x1 port map(
 
 MD3: mux8x1 port map(
 
-		E_IN(0) => CT_Msg(3),
+		E_IN(0) => MUX_Display_CT_Msg(3),
 		E_IN(1) => DISPLAY_VAL_0(3),
 		E_IN(2) => DISPLAY_VAL_1(3),
-		E_IN(3) => '1',
-		E_IN(4) => '1',
+		E_IN(3) => '0',
+		E_IN(4) => '0',
 		E_IN(5) => '0',
 		E_IN(6) => '0',
 		E_IN(7) => '0',
@@ -91,11 +91,11 @@ MD3: mux8x1 port map(
 	
 MD4: mux8x1 port map(
 
-		E_IN(0) => CT_Msg(4),
+		E_IN(0) => MUX_Display_CT_Msg(4),
 		E_IN(1) => DISPLAY_VAL_0(4),
 		E_IN(2) => DISPLAY_VAL_1(4),
-		E_IN(3) => '1',
-		E_IN(4) => '1',
+		E_IN(3) => '0',
+		E_IN(4) => '0',
 		E_IN(5) => '0',
 		E_IN(6) => '0',
 		E_IN(7) => '0',
@@ -106,11 +106,11 @@ MD4: mux8x1 port map(
 		
 MD5: mux8x1 port map(
 
-		E_IN(0) => CT_Msg(5),
+		E_IN(0) => MUX_Display_CT_Msg(5),
 		E_IN(1) => DISPLAY_VAL_0(5),
 		E_IN(2) => DISPLAY_VAL_1(5),
-		E_IN(3) => '1',
-		E_IN(4) => '1',
+		E_IN(3) => '0',
+		E_IN(4) => '0',
 		E_IN(5) => '0',
 		E_IN(6) => '0',
 		E_IN(7) => '0',
@@ -121,11 +121,11 @@ MD5: mux8x1 port map(
 		
 MD6: mux8x1 port map(
 
-		E_IN(0) => CT_Msg(6),
+		E_IN(0) => MUX_Display_CT_Msg(6),
 		E_IN(1) => DISPLAY_VAL_0(6),
 		E_IN(2) => DISPLAY_VAL_1(6),
-		E_IN(3) => '1',
-		E_IN(4) => '1',
+		E_IN(3) => '0',
+		E_IN(4) => '0',
 		E_IN(5) => '0',
 		E_IN(6) => '0',
 		E_IN(7) => '0',
@@ -136,11 +136,11 @@ MD6: mux8x1 port map(
 		
 MD7: mux8x1 port map(
 
-		E_IN(0) => CT_Msg(7),
+		E_IN(0) => MUX_Display_CT_Msg(7),
 		E_IN(1) => DISPLAY_VAL_0(7),
 		E_IN(2) => DISPLAY_VAL_1(7),
-		E_IN(3) => '1',
-		E_IN(4) => '1',
+		E_IN(3) => '0',
+		E_IN(4) => '0',
 		E_IN(5) => '0',
 		E_IN(6) => '0',
 		E_IN(7) => '0',

@@ -5,74 +5,41 @@ entity Display_VAL is
   port( 
   clk_Display_VAL: in std_logic;
   clr_Display_VAL: in std_logic;
-  en_Display_VAL: in std_logic;
+  ld_Display_VAL: in std_logic;
+  data_Display_VAL: in std_logic_vector(7 downto 0);
   Qs_Display_VAL: out std_logic_vector(7 downto 0));
   
 end;
 
-architecture ckto_Display_VAL of Display_VAL is
+architecture ckt_Display_VAL of Display_VAL is
 
-
-component mux16x8 is
-  
-  port( ENTA, ENTB: in std_logic_vector(7 downto 0);
-        SELECIONAR: in std_logic;
-    
-        SS : out std_logic_vector(7 downto 0));
-end component;
-
-component reg8bit is
-  
+component reg4bit is
   port( 
-  clk_reg8bit: in std_logic;
-  clr_reg8bit: in std_logic;
-  load8: in std_logic;
-  E_reg8bit: in std_logic_vector(7 downto 0);
-  Qs_reg8bit: out std_logic_vector(7 downto 0));
+  clk_reg4bit: in std_logic;
+  clr_reg4bit: in std_logic;
+  load: in std_logic;
+  I_reg4bit: in std_logic_vector(3 downto 0);
+  Qs_reg4bit: out std_logic_vector(3 downto 0));
   
 end component;
 
-component somador8bit is
-  
-  port( S81, S82: in std_logic_vector(7 downto 0);
-        Ce: in std_logic;
-        Z: out std_logic_vector( 7 downto 0);
-        Cs: out std_logic);
-        
-end component;
-
-signal out_reg8bit, out_mux16x8, out_sum: std_logic_vector(7 downto 0);
+signal REG_OUT: std_logic_vector(7 downto 0);
 begin
-  
-MUX: mux16x8 port map(
-  
-  ENTA => out_reg8bit,
-  ENTB => out_sum,
-  SELECIONAR => en_Display_VAL,
-  SS => out_mux16x8);
 
-REG: reg8bit port map(
-  
-  clk_reg8bit => clk_Display_VAL,
-  clr_reg8bit => clr_Display_VAL,
-  load8 => '1',
-  E_reg8bit => out_mux16x8,
-  Qs_reg8bit => out_reg8bit);
-  
-SUM: somador8bit port map(
-  
-  S81(0) => '1',
-  S81(1) => '0',
-  S81(2) => '0',
-  S81(3) => '0',
-  S81(4) => '0',
-  S81(5) => '0',
-  S81(6) => '0',
-  S81(7) => '0',
-  S82 => out_reg8bit,
-  Ce => '0',
-  Z => out_sum);
-  
-Qs_Display_VAL <= out_reg8bit;
+REG1: reg4bit port map(
+      clk_reg4bit => clk_Display_VAL,
+		clr_reg4bit => clr_Display_VAL,
+		load => ld_Display_VAL,
+		I_reg4bit => data_Display_VAL(3 downto 0),
+		Qs_reg4bit => REG_OUT(3 downto 0));
 
-end ckto_Display_VAL;
+REG2: reg4bit port map(
+      clk_reg4bit => clk_Display_VAL,
+		clr_reg4bit => clr_Display_VAL,
+		load => ld_Display_VAL,
+		I_reg4bit => data_Display_VAL(7 downto 4),
+		Qs_reg4bit => REG_OUT(7 downto 4));
+		
+Qs_Display_VAL <= REG_OUT;
+
+end ckt_Display_VAL;

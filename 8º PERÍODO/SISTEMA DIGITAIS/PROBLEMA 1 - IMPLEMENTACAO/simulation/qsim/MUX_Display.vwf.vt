@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "01/28/2021 18:50:29"
+// Generated on "01/30/2021 16:12:02"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    MUX_Display
 // 
@@ -342,7 +342,7 @@ end
 // CT_Msg[ 1 ]
 initial
 begin
-	CT_Msg[1] = 1'b1;
+	CT_Msg[1] = 1'b0;
 end 
 // CT_Msg[ 0 ]
 initial
@@ -412,7 +412,7 @@ end
 // DISPLAY_VAL_1[ 3 ]
 initial
 begin
-	DISPLAY_VAL_1[3] = 1'b1;
+	DISPLAY_VAL_1[3] = 1'b0;
 end 
 // DISPLAY_VAL_1[ 2 ]
 initial
@@ -422,36 +422,41 @@ end
 // DISPLAY_VAL_1[ 1 ]
 initial
 begin
-	DISPLAY_VAL_1[1] = 1'b1;
+	DISPLAY_VAL_1[1] = 1'b0;
 end 
 // DISPLAY_VAL_1[ 0 ]
 initial
 begin
-	DISPLAY_VAL_1[0] = 1'b0;
+	DISPLAY_VAL_1[0] = 1'b1;
+end 
+
+// sub_Display
+always
+begin
+	sub_Display = 1'b0;
+	sub_Display = #10000 1'b1;
+	#10000;
+end 
+
+// sum_Display
+always
+begin
+	sum_Display = 1'b0;
+	sum_Display = #20000 1'b1;
+	#20000;
 end 
 
 // setUni
 initial
 begin
+	repeat(16)
+	begin
+		setUni = 1'b0;
+		setUni = #30000 1'b1;
+		# 30000;
+	end
 	setUni = 1'b0;
-	setUni = #140000 1'b1;
-	setUni = #50000 1'b0;
-end 
-
-// sub_Display
-initial
-begin
-	sub_Display = 1'b0;
-	sub_Display = #200000 1'b1;
-	sub_Display = #50000 1'b0;
-end 
-
-// sum_Display
-initial
-begin
-	sum_Display = 1'b0;
-	sum_Display = #260000 1'b1;
-	sum_Display = #60000 1'b0;
+	setUni = #30000 1'b1;
 end 
 
 MUX_Display_vlg_sample_tst tb_sample (

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Sat Jan 30 11:34:11 2021
+Sun Jan 31 14:58:29 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -13,9 +13,70 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_1"
+ 12. Port Connectivity Checks: "subtrator8bit:SUB1"
+ 13. Port Connectivity Checks: "subtrator8bit:SUB0|somador1bit:S0"
+ 14. Port Connectivity Checks: "subtrator8bit:SUB0"
+ 15. Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C7"
+ 16. Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C6"
+ 17. Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C5"
+ 18. Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C4"
+ 19. Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C3"
+ 20. Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C2"
+ 21. Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C1"
+ 22. Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C0"
+ 23. Port Connectivity Checks: "somador8bit:SOMADOR"
+ 24. Port Connectivity Checks: "Comparador_CT_ON:COMPARADORON"
+ 25. Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC7"
+ 26. Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC6"
+ 27. Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC5"
+ 28. Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC4"
+ 29. Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC3"
+ 30. Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC2"
+ 31. Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC1"
+ 32. Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC0"
+ 33. Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM2"
+ 34. Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM1"
+ 35. Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM0"
+ 36. Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM2"
+ 37. Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM1"
+ 38. Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM0"
+ 39. Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0"
+ 40. Port Connectivity Checks: "MUX:MUXX|mux4x1:M7"
+ 41. Port Connectivity Checks: "MUX:MUXX|mux4x1:M6"
+ 42. Port Connectivity Checks: "MUX:MUXX|mux4x1:M5"
+ 43. Port Connectivity Checks: "MUX:MUXX|mux4x1:M4"
+ 44. Port Connectivity Checks: "MUX:MUXX|mux4x1:M3"
+ 45. Port Connectivity Checks: "MUX:MUXX|mux4x1:M2"
+ 46. Port Connectivity Checks: "MUX:MUXX|mux4x1:M1"
+ 47. Port Connectivity Checks: "MUX:MUXX|mux4x1:M0"
+ 48. Port Connectivity Checks: "Contador_ON:CONTON|somador8bit:SUM"
+ 49. Port Connectivity Checks: "Contador_ON:CONTON|reg8bit:REG"
+ 50. Port Connectivity Checks: "CT_INAT:CTINAT|somador8bit:SUM"
+ 51. Port Connectivity Checks: "CT_INAT:CTINAT|reg8bit:REG"
+ 52. Port Connectivity Checks: "CT_INAT:CTINAT"
+ 53. Port Connectivity Checks: "Cont_Local:CONTLOCAL|somador8bit:SUM"
+ 54. Port Connectivity Checks: "Cont_Local:CONTLOCAL|reg8bit:REG"
+ 55. Port Connectivity Checks: "CT_Msg:CTMSG|somador8bit:SUM"
+ 56. Port Connectivity Checks: "CT_Msg:CTMSG|reg8bit:REG"
+ 57. Port Connectivity Checks: "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D3"
+ 58. Port Connectivity Checks: "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D2"
+ 59. Port Connectivity Checks: "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D1"
+ 60. Port Connectivity Checks: "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D0"
+ 61. Port Connectivity Checks: "Comparador_Cont_Local:COMPARADOR10"
+ 62. Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD7"
+ 63. Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD6"
+ 64. Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD5"
+ 65. Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD4"
+ 66. Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD3"
+ 67. Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD2"
+ 68. Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD1"
+ 69. Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD0"
+ 70. Elapsed Time Per Partition
+ 71. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +102,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jan 30 11:34:11 2021      ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan 31 14:58:29 2021      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
-; Top-level Entity Name              ; MUX_S                                      ;
+; Top-level Entity Name              ; datapath                                   ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 8                                          ;
-;     Total combinational functions  ; 8                                          ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 25                                         ;
+; Total logic elements               ; 177                                        ;
+;     Total combinational functions  ; 177                                        ;
+;     Dedicated logic registers      ; 48                                         ;
+; Total registers                    ; 48                                         ;
+; Total pins                         ; 53                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -67,7 +128,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; MUX_S              ; main               ;
+; Top-level entity name                                                      ; datapath           ; main               ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -165,14 +226,43 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                 ;
-+----------------------------------+-----------------+-----------------+---------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path          ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------+---------+
-; mux2x1.vhd                       ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/mux2x1.vhd ;         ;
-; MUX_S.vhd                        ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/MUX_S.vhd  ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
+; mux4x1.vhd                       ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/mux4x1.vhd                ;         ;
+; mux2x1.vhd                       ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/mux2x1.vhd                ;         ;
+; MUX.vhd                          ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/MUX.vhd                   ;         ;
+; MUX_SUM.vhd                      ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/MUX_SUM.vhd               ;         ;
+; mux8x1.vhd                       ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/mux8x1.vhd                ;         ;
+; MUX_Display.vhd                  ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/MUX_Display.vhd           ;         ;
+; MUX1_comp1.vhd                   ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/MUX1_comp1.vhd            ;         ;
+; MUX2_comp1.vhd                   ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/MUX2_comp1.vhd            ;         ;
+; ffd.vhd                          ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/ffd.vhd                   ;         ;
+; reg4bit.vhd                      ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/reg4bit.vhd               ;         ;
+; REGS_GRV.vhd                     ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/REGS_GRV.vhd              ;         ;
+; REGS_REP_S.vhd                   ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/REGS_REP_S.vhd            ;         ;
+; REGS_REP_SQ.vhd                  ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/REGS_REP_SQ.vhd           ;         ;
+; somador1bit.vhd                  ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/somador1bit.vhd           ;         ;
+; somador8bit.vhd                  ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/somador8bit.vhd           ;         ;
+; mux16x8.vhd                      ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/mux16x8.vhd               ;         ;
+; reg8bit.vhd                      ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/reg8bit.vhd               ;         ;
+; CT_Msg.vhd                       ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/CT_Msg.vhd                ;         ;
+; Cont_Local.vhd                   ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/Cont_Local.vhd            ;         ;
+; Display_VAL.vhd                  ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/Display_VAL.vhd           ;         ;
+; CT_INAT.vhd                      ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/CT_INAT.vhd               ;         ;
+; Contador_ON.vhd                  ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/Contador_ON.vhd           ;         ;
+; addr.vhd                         ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/addr.vhd                  ;         ;
+; subtrator8bit.vhd                ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/subtrator8bit.vhd         ;         ;
+; multiplicador4bit.vhd            ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/multiplicador4bit.vhd     ;         ;
+; multiplicador8bit.vhd            ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/multiplicador8bit.vhd     ;         ;
+; Comparador.vhd                   ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/Comparador.vhd            ;         ;
+; Comparador_CT_ON.vhd             ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/Comparador_CT_ON.vhd      ;         ;
+; Comparador_Cont_Local.vhd        ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/Comparador_Cont_Local.vhd ;         ;
+; datapath.vhd                     ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/datapath.vhd              ;         ;
+; MUX_S.vhd                        ; yes             ; User VHDL File  ; C:/altera/13.1/ANS_MACHINE/MUX_S.vhd                 ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -180,31 +270,208 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 25               ;
+; I/O pins                 ; 53               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; SEL_S~input      ;
-; Maximum fan-out          ; 8                ;
-; Total fan-out            ; 57               ;
-; Average fan-out          ; 0.98             ;
+; Maximum fan-out node     ; clk~input        ;
+; Maximum fan-out          ; 48               ;
+; Total fan-out            ; 877              ;
+; Average fan-out          ; 2.65             ;
 +--------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |MUX_S                     ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; |MUX_S              ; work         ;
-;    |mux2x1:M0|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M0    ; work         ;
-;    |mux2x1:M1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M1    ; work         ;
-;    |mux2x1:M2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M2    ; work         ;
-;    |mux2x1:M3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M3    ; work         ;
-;    |mux2x1:M4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M4    ; work         ;
-;    |mux2x1:M5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M5    ; work         ;
-;    |mux2x1:M6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M6    ; work         ;
-;    |mux2x1:M7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MUX_S|mux2x1:M7    ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                  ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Library Name ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
+; |datapath                               ; 177 (0)           ; 48 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 53   ; 0            ; |datapath                                                                                           ; work         ;
+;    |CT_Msg:CTMSG|                       ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG                                                                              ; work         ;
+;       |reg8bit:REG|                     ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG                                                                  ; work         ;
+;          |reg4bit:REG1|                 ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG1                                                     ; work         ;
+;             |ffd:D0|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG1|ffd:D0                                              ; work         ;
+;             |ffd:D1|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG1|ffd:D1                                              ; work         ;
+;             |ffd:D2|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG1|ffd:D2                                              ; work         ;
+;             |ffd:D3|                    ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG1|ffd:D3                                              ; work         ;
+;          |reg4bit:REG2|                 ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG2                                                     ; work         ;
+;             |ffd:D0|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG2|ffd:D0                                              ; work         ;
+;             |ffd:D1|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG2|ffd:D1                                              ; work         ;
+;             |ffd:D2|                    ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG2|ffd:D2                                              ; work         ;
+;             |ffd:D3|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|CT_Msg:CTMSG|reg8bit:REG|reg4bit:REG2|ffd:D3                                              ; work         ;
+;    |Comparador:COMPARATTOR|             ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Comparador:COMPARATTOR                                                                    ; work         ;
+;    |Comparador_CT_ON:COMPARADORON|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Comparador_CT_ON:COMPARADORON                                                             ; work         ;
+;    |Comparador_Cont_Local:COMPARADOR10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Comparador_Cont_Local:COMPARADOR10                                                        ; work         ;
+;    |Cont_Local:CONTLOCAL|               ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL                                                                      ; work         ;
+;       |reg8bit:REG|                     ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG                                                          ; work         ;
+;          |reg4bit:REG1|                 ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG1                                             ; work         ;
+;             |ffd:D0|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG1|ffd:D0                                      ; work         ;
+;             |ffd:D1|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG1|ffd:D1                                      ; work         ;
+;             |ffd:D2|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG1|ffd:D2                                      ; work         ;
+;             |ffd:D3|                    ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG1|ffd:D3                                      ; work         ;
+;          |reg4bit:REG2|                 ; 6 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG2                                             ; work         ;
+;             |ffd:D0|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG2|ffd:D0                                      ; work         ;
+;             |ffd:D1|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG2|ffd:D1                                      ; work         ;
+;             |ffd:D2|                    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG2|ffd:D2                                      ; work         ;
+;             |ffd:D3|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Cont_Local:CONTLOCAL|reg8bit:REG|reg4bit:REG2|ffd:D3                                      ; work         ;
+;    |Contador_ON:CONTON|                 ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON                                                                        ; work         ;
+;       |reg8bit:REG|                     ; 11 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG                                                            ; work         ;
+;          |reg4bit:REG1|                 ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG1                                               ; work         ;
+;             |ffd:D0|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG1|ffd:D0                                        ; work         ;
+;             |ffd:D1|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG1|ffd:D1                                        ; work         ;
+;             |ffd:D2|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG1|ffd:D2                                        ; work         ;
+;             |ffd:D3|                    ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG1|ffd:D3                                        ; work         ;
+;          |reg4bit:REG2|                 ; 6 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG2                                               ; work         ;
+;             |ffd:D0|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG2|ffd:D0                                        ; work         ;
+;             |ffd:D1|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG2|ffd:D1                                        ; work         ;
+;             |ffd:D2|                    ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG2|ffd:D2                                        ; work         ;
+;             |ffd:D3|                    ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Contador_ON:CONTON|reg8bit:REG|reg4bit:REG2|ffd:D3                                        ; work         ;
+;    |Display_VAL:DISPLAYVAL|             ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL                                                                    ; work         ;
+;       |reg4bit:REG1|                    ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG1                                                       ; work         ;
+;          |ffd:D0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG1|ffd:D0                                                ; work         ;
+;          |ffd:D1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG1|ffd:D1                                                ; work         ;
+;          |ffd:D2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG1|ffd:D2                                                ; work         ;
+;          |ffd:D3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG1|ffd:D3                                                ; work         ;
+;       |reg4bit:REG2|                    ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG2                                                       ; work         ;
+;          |ffd:D0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG2|ffd:D0                                                ; work         ;
+;          |ffd:D1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG2|ffd:D1                                                ; work         ;
+;          |ffd:D2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG2|ffd:D2                                                ; work         ;
+;          |ffd:D3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|Display_VAL:DISPLAYVAL|reg4bit:REG2|ffd:D3                                                ; work         ;
+;    |MUX1_comp1:MUX1|                    ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1                                                                           ; work         ;
+;       |mux8x1:MC0|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1|mux8x1:MC0                                                                ; work         ;
+;       |mux8x1:MC1|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1|mux8x1:MC1                                                                ; work         ;
+;       |mux8x1:MC2|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1|mux8x1:MC2                                                                ; work         ;
+;       |mux8x1:MC3|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1|mux8x1:MC3                                                                ; work         ;
+;       |mux8x1:MC4|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1|mux8x1:MC4                                                                ; work         ;
+;       |mux8x1:MC5|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1|mux8x1:MC5                                                                ; work         ;
+;       |mux8x1:MC6|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1|mux8x1:MC6                                                                ; work         ;
+;       |mux8x1:MC7|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX1_comp1:MUX1|mux8x1:MC7                                                                ; work         ;
+;    |MUX2_comp1:MUX2|                    ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2                                                                           ; work         ;
+;       |mux8x1:M2C0|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2|mux8x1:M2C0                                                               ; work         ;
+;       |mux8x1:M2C1|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2|mux8x1:M2C1                                                               ; work         ;
+;       |mux8x1:M2C2|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2|mux8x1:M2C2                                                               ; work         ;
+;       |mux8x1:M2C3|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2|mux8x1:M2C3                                                               ; work         ;
+;       |mux8x1:M2C4|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2|mux8x1:M2C4                                                               ; work         ;
+;       |mux8x1:M2C5|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2|mux8x1:M2C5                                                               ; work         ;
+;       |mux8x1:M2C6|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2|mux8x1:M2C6                                                               ; work         ;
+;       |mux8x1:M2C7|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX2_comp1:MUX2|mux8x1:M2C7                                                               ; work         ;
+;    |MUX:MUXX|                           ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX                                                                                  ; work         ;
+;       |mux4x1:M0|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX|mux4x1:M0                                                                        ; work         ;
+;       |mux4x1:M1|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX|mux4x1:M1                                                                        ; work         ;
+;       |mux4x1:M2|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX|mux4x1:M2                                                                        ; work         ;
+;       |mux4x1:M3|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX|mux4x1:M3                                                                        ; work         ;
+;       |mux4x1:M4|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX|mux4x1:M4                                                                        ; work         ;
+;       |mux4x1:M5|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX|mux4x1:M5                                                                        ; work         ;
+;       |mux4x1:M6|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX|mux4x1:M6                                                                        ; work         ;
+;       |mux4x1:M7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX:MUXX|mux4x1:M7                                                                        ; work         ;
+;    |MUX_Display:MUXDISPLAY|             ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY                                                                    ; work         ;
+;       |mux8x1:MD0|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY|mux8x1:MD0                                                         ; work         ;
+;       |mux8x1:MD1|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY|mux8x1:MD1                                                         ; work         ;
+;       |mux8x1:MD2|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY|mux8x1:MD2                                                         ; work         ;
+;       |mux8x1:MD3|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY|mux8x1:MD3                                                         ; work         ;
+;       |mux8x1:MD4|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY|mux8x1:MD4                                                         ; work         ;
+;       |mux8x1:MD5|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY|mux8x1:MD5                                                         ; work         ;
+;       |mux8x1:MD6|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY|mux8x1:MD6                                                         ; work         ;
+;       |mux8x1:MD7|                      ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_Display:MUXDISPLAY|mux8x1:MD7                                                         ; work         ;
+;    |MUX_S:MUXS|                         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_S:MUXS                                                                                ; work         ;
+;       |mux2x1:M0|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_S:MUXS|mux2x1:M0                                                                      ; work         ;
+;    |MUX_SUM:MUXSUM|                     ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_SUM:MUXSUM                                                                            ; work         ;
+;       |mux4x1:M0|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_SUM:MUXSUM|mux4x1:M0                                                                  ; work         ;
+;       |mux4x1:M1|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_SUM:MUXSUM|mux4x1:M1                                                                  ; work         ;
+;       |mux4x1:M2|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_SUM:MUXSUM|mux4x1:M2                                                                  ; work         ;
+;       |mux4x1:M3|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_SUM:MUXSUM|mux4x1:M3                                                                  ; work         ;
+;       |mux4x1:M4|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_SUM:MUXSUM|mux4x1:M4                                                                  ; work         ;
+;       |mux4x1:M5|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_SUM:MUXSUM|mux4x1:M5                                                                  ; work         ;
+;       |mux4x1:M6|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|MUX_SUM:MUXSUM|mux4x1:M6                                                                  ; work         ;
+;    |REGS_REP_S:REGSREPS|                ; 7 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS                                                                       ; work         ;
+;       |reg4bit:REG1|                    ; 3 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1                                                          ; work         ;
+;          |ffd:D0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1|ffd:D0                                                   ; work         ;
+;          |ffd:D1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1|ffd:D1                                                   ; work         ;
+;          |ffd:D2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1|ffd:D2                                                   ; work         ;
+;          |ffd:D3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1|ffd:D3                                                   ; work         ;
+;          |mux2x1:MUX1|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1|mux2x1:MUX1                                              ; work         ;
+;          |mux2x1:MUX2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1|mux2x1:MUX2                                              ; work         ;
+;          |mux2x1:MUX3|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1|mux2x1:MUX3                                              ; work         ;
+;       |reg4bit:REG2|                    ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2                                                          ; work         ;
+;          |ffd:D0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2|ffd:D0                                                   ; work         ;
+;          |ffd:D1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2|ffd:D1                                                   ; work         ;
+;          |ffd:D2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2|ffd:D2                                                   ; work         ;
+;          |ffd:D3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2|ffd:D3                                                   ; work         ;
+;          |mux2x1:MUX0|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2|mux2x1:MUX0                                              ; work         ;
+;          |mux2x1:MUX1|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2|mux2x1:MUX1                                              ; work         ;
+;          |mux2x1:MUX2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2|mux2x1:MUX2                                              ; work         ;
+;          |mux2x1:MUX3|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG2|mux2x1:MUX3                                              ; work         ;
+;    |addr:ADDRR|                         ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR                                                                                ; work         ;
+;       |reg4bit:REG1|                    ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG1                                                                   ; work         ;
+;          |ffd:D0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG1|ffd:D0                                                            ; work         ;
+;          |ffd:D1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG1|ffd:D1                                                            ; work         ;
+;          |ffd:D2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG1|ffd:D2                                                            ; work         ;
+;          |ffd:D3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG1|ffd:D3                                                            ; work         ;
+;       |reg4bit:REG2|                    ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG2                                                                   ; work         ;
+;          |ffd:D0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG2|ffd:D0                                                            ; work         ;
+;          |ffd:D1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG2|ffd:D1                                                            ; work         ;
+;          |ffd:D2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG2|ffd:D2                                                            ; work         ;
+;          |ffd:D3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|addr:ADDRR|reg4bit:REG2|ffd:D3                                                            ; work         ;
+;    |multiplicador8bit:MULTPLICADOR10_0| ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_0                                                        ; work         ;
+;       |multiplicador4bit:M4_0|          ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0                                 ; work         ;
+;          |somador8bit:SUM2|             ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM2                ; work         ;
+;             |somador1bit:S4|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM2|somador1bit:S4 ; work         ;
+;             |somador1bit:S5|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM2|somador1bit:S5 ; work         ;
+;       |somador8bit:SUM1|                ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM1                                       ; work         ;
+;          |somador1bit:S1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM1|somador1bit:S1                        ; work         ;
+;          |somador1bit:S2|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM1|somador1bit:S2                        ; work         ;
+;    |multiplicador8bit:MULTPLICADOR10_1| ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1                                                        ; work         ;
+;       |multiplicador4bit:M4_0|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1|multiplicador4bit:M4_0                                 ; work         ;
+;          |somador8bit:SUM2|             ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1|multiplicador4bit:M4_0|somador8bit:SUM2                ; work         ;
+;             |somador1bit:S4|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1|multiplicador4bit:M4_0|somador8bit:SUM2|somador1bit:S4 ; work         ;
+;             |somador1bit:S5|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1|multiplicador4bit:M4_0|somador8bit:SUM2|somador1bit:S5 ; work         ;
+;       |somador8bit:SUM1|                ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1|somador8bit:SUM1                                       ; work         ;
+;          |somador1bit:S1|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1|somador8bit:SUM1|somador1bit:S1                        ; work         ;
+;          |somador1bit:S2|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1|somador8bit:SUM1|somador1bit:S2                        ; work         ;
+;          |somador1bit:S3|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|multiplicador8bit:MULTPLICADOR10_1|somador8bit:SUM1|somador1bit:S3                        ; work         ;
+;    |somador8bit:SOMADOR|                ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|somador8bit:SOMADOR                                                                       ; work         ;
+;       |somador1bit:S1|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|somador8bit:SOMADOR|somador1bit:S1                                                        ; work         ;
+;       |somador1bit:S2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|somador8bit:SOMADOR|somador1bit:S2                                                        ; work         ;
+;       |somador1bit:S3|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|somador8bit:SOMADOR|somador1bit:S3                                                        ; work         ;
+;       |somador1bit:S5|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|somador8bit:SOMADOR|somador1bit:S5                                                        ; work         ;
+;       |somador1bit:S6|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|somador8bit:SOMADOR|somador1bit:S6                                                        ; work         ;
+;       |somador1bit:S7|                  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|somador8bit:SOMADOR|somador1bit:S7                                                        ; work         ;
+;    |subtrator8bit:SUB0|                 ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB0                                                                        ; work         ;
+;       |somador1bit:S2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB0|somador1bit:S2                                                         ; work         ;
+;       |somador1bit:S4|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB0|somador1bit:S4                                                         ; work         ;
+;       |somador1bit:S5|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB0|somador1bit:S5                                                         ; work         ;
+;       |somador1bit:S6|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB0|somador1bit:S6                                                         ; work         ;
+;       |somador1bit:S7|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB0|somador1bit:S7                                                         ; work         ;
+;    |subtrator8bit:SUB1|                 ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB1                                                                        ; work         ;
+;       |somador1bit:S2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB1|somador1bit:S2                                                         ; work         ;
+;       |somador1bit:S3|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB1|somador1bit:S3                                                         ; work         ;
+;       |somador1bit:S5|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB1|somador1bit:S5                                                         ; work         ;
+;       |somador1bit:S6|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|subtrator8bit:SUB1|somador1bit:S6                                                         ; work         ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++----------------------------------------------+----------------------------------------+
+; Register name                                ; Reason for Removal                     ;
++----------------------------------------------+----------------------------------------+
+; REGS_REP_SQ:REGSREPSQ|reg4bit:REG2|ffd:D3|qS ; Stuck at GND due to stuck port data_in ;
+; REGS_REP_SQ:REGSREPSQ|reg4bit:REG2|ffd:D2|qS ; Stuck at GND due to stuck port data_in ;
+; REGS_REP_SQ:REGSREPSQ|reg4bit:REG2|ffd:D1|qS ; Stuck at GND due to stuck port data_in ;
+; REGS_REP_SQ:REGSREPSQ|reg4bit:REG2|ffd:D0|qS ; Stuck at GND due to stuck port data_in ;
+; REGS_REP_SQ:REGSREPSQ|reg4bit:REG1|ffd:D3|qS ; Stuck at GND due to stuck port data_in ;
+; REGS_REP_SQ:REGSREPSQ|reg4bit:REG1|ffd:D2|qS ; Stuck at GND due to stuck port data_in ;
+; REGS_REP_SQ:REGSREPSQ|reg4bit:REG1|ffd:D1|qS ; Stuck at GND due to stuck port data_in ;
+; REGS_REP_SQ:REGSREPSQ|reg4bit:REG1|ffd:D0|qS ; Stuck at GND due to stuck port data_in ;
+; REGS_GRV:REGSGRV|reg4bit:REG2|ffd:D3|qS      ; Stuck at GND due to stuck port data_in ;
+; REGS_GRV:REGSGRV|reg4bit:REG2|ffd:D2|qS      ; Stuck at GND due to stuck port data_in ;
+; REGS_GRV:REGSGRV|reg4bit:REG2|ffd:D1|qS      ; Stuck at GND due to stuck port data_in ;
+; REGS_GRV:REGSGRV|reg4bit:REG2|ffd:D0|qS      ; Stuck at GND due to stuck port data_in ;
+; REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D3|qS      ; Stuck at GND due to stuck port data_in ;
+; REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D2|qS      ; Stuck at GND due to stuck port data_in ;
+; REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D1|qS      ; Stuck at GND due to stuck port data_in ;
+; REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D0|qS      ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 16       ;                                        ;
++----------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -212,14 +479,628 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 48    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 48    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |datapath|REGS_REP_S:REGSREPS|reg4bit:REG1|ffd:D3|qS ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_1"                                                          ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; m8_b[7..4]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; m8_b[3]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; m8_b[2]       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; m8_b[1]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; m8_b[0]       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; m8_out[15..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "subtrator8bit:SUB1"                                                                       ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; su82[7..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; su82[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; cs_su      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "subtrator8bit:SUB0|somador1bit:S0" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                        ;
++------+-------+----------+-------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "subtrator8bit:SUB0"                                                                       ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; su82[7..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; su82[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; cs_su      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C7" ;
++------------+-------+----------+-------------------------+
+; Port       ; Type  ; Severity ; Details                 ;
++------------+-------+----------+-------------------------+
+; e_in[6..5] ; Input ; Info     ; Stuck at GND            ;
+; e_in[2..0] ; Input ; Info     ; Stuck at GND            ;
++------------+-------+----------+-------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C6" ;
++------------+-------+----------+-------------------------+
+; Port       ; Type  ; Severity ; Details                 ;
++------------+-------+----------+-------------------------+
+; e_in[6..5] ; Input ; Info     ; Stuck at GND            ;
+; e_in[2..0] ; Input ; Info     ; Stuck at GND            ;
++------------+-------+----------+-------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C5" ;
++------------+-------+----------+-------------------------+
+; Port       ; Type  ; Severity ; Details                 ;
++------------+-------+----------+-------------------------+
+; e_in[2..0] ; Input ; Info     ; Stuck at GND            ;
+; e_in[6]    ; Input ; Info     ; Stuck at VCC            ;
+; e_in[5]    ; Input ; Info     ; Stuck at GND            ;
++------------+-------+----------+-------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C4" ;
++------------+-------+----------+-------------------------+
+; Port       ; Type  ; Severity ; Details                 ;
++------------+-------+----------+-------------------------+
+; e_in[6..5] ; Input ; Info     ; Stuck at VCC            ;
+; e_in[2..0] ; Input ; Info     ; Stuck at GND            ;
++------------+-------+----------+-------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C3" ;
++------------+-------+----------+-------------------------+
+; Port       ; Type  ; Severity ; Details                 ;
++------------+-------+----------+-------------------------+
+; e_in[6..5] ; Input ; Info     ; Stuck at VCC            ;
+; e_in[2..0] ; Input ; Info     ; Stuck at GND            ;
++------------+-------+----------+-------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C2" ;
++------------+-------+----------+-------------------------+
+; Port       ; Type  ; Severity ; Details                 ;
++------------+-------+----------+-------------------------+
+; e_in[2..0] ; Input ; Info     ; Stuck at GND            ;
+; e_in[6]    ; Input ; Info     ; Stuck at VCC            ;
+; e_in[5]    ; Input ; Info     ; Stuck at GND            ;
++------------+-------+----------+-------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C1" ;
++------------+-------+----------+-------------------------+
+; Port       ; Type  ; Severity ; Details                 ;
++------------+-------+----------+-------------------------+
+; e_in[6..5] ; Input ; Info     ; Stuck at GND            ;
+; e_in[1..0] ; Input ; Info     ; Stuck at GND            ;
+; e_in[2]    ; Input ; Info     ; Stuck at VCC            ;
++------------+-------+----------+-------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "MUX2_comp1:MUX2|mux8x1:M2C0" ;
++---------+-------+----------+----------------------------+
+; Port    ; Type  ; Severity ; Details                    ;
++---------+-------+----------+----------------------------+
+; e_in[6] ; Input ; Info     ; Stuck at GND               ;
+; e_in[5] ; Input ; Info     ; Stuck at VCC               ;
+; e_in[2] ; Input ; Info     ; Stuck at GND               ;
+; e_in[1] ; Input ; Info     ; Stuck at VCC               ;
+; e_in[0] ; Input ; Info     ; Stuck at GND               ;
++---------+-------+----------+----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "somador8bit:SOMADOR"                                                                     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s82[7..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s82[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Comparador_CT_ON:COMPARADORON"                                                                      ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                 ; Type   ; Severity ; Details                                                                             ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; y[7..3]              ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[2]                 ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; y[1]                 ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[0]                 ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; eq_comparador_ct_on  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; grt_comparador_ct_on ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC7" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; e_in[7] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC6" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; e_in[7] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC5" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; e_in[7] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC4" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; e_in[7] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC3" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; e_in[7] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC2" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; e_in[7] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC1" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; e_in[7] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "MUX1_comp1:MUX1|mux8x1:MC0" ;
++---------+-------+----------+---------------------------+
+; Port    ; Type  ; Severity ; Details                   ;
++---------+-------+----------+---------------------------+
+; e_in[7] ; Input ; Info     ; Stuck at GND              ;
++---------+-------+----------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM2"                                     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..5] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM1"                                     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..4] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|somador8bit:SUM0" ;
++------+-------+----------+-------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                               ;
++------+-------+----------+-------------------------------------------------------+
+; ce   ; Input ; Info     ; Stuck at GND                                          ;
++------+-------+----------+-------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM2"              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s82[2..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s82[7]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM1"              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s82[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s82[1..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; z[7..6]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0|somador8bit:SUM0"              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..4] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s82[7..5] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s82[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; z[7..6]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplicador8bit:MULTPLICADOR10_0"                                                          ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; m8_b[7..4]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; m8_b[3]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; m8_b[2]       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; m8_b[1]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; m8_b[0]       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; m8_out[15..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "MUX:MUXX|mux4x1:M7" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ed   ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "MUX:MUXX|mux4x1:M6" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ed   ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "MUX:MUXX|mux4x1:M5" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ed   ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "MUX:MUXX|mux4x1:M4" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ed   ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "MUX:MUXX|mux4x1:M3" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ed   ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "MUX:MUXX|mux4x1:M2" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ed   ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "MUX:MUXX|mux4x1:M1" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ed   ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "MUX:MUXX|mux4x1:M0" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ed   ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Contador_ON:CONTON|somador8bit:SUM"                                                      ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s81[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "Contador_ON:CONTON|reg8bit:REG" ;
++-------+-------+----------+---------------------------------+
+; Port  ; Type  ; Severity ; Details                         ;
++-------+-------+----------+---------------------------------+
+; load8 ; Input ; Info     ; Stuck at VCC                    ;
++-------+-------+----------+---------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CT_INAT:CTINAT|somador8bit:SUM"                                                          ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s81[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "CT_INAT:CTINAT|reg8bit:REG" ;
++-------+-------+----------+-----------------------------+
+; Port  ; Type  ; Severity ; Details                     ;
++-------+-------+----------+-----------------------------+
+; load8 ; Input ; Info     ; Stuck at VCC                ;
++-------+-------+----------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CT_INAT:CTINAT"                                                                           ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; qs_ct_inat ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Cont_Local:CONTLOCAL|somador8bit:SUM"                                                    ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s81[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "Cont_Local:CONTLOCAL|reg8bit:REG" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; load8 ; Input ; Info     ; Stuck at VCC                      ;
++-------+-------+----------+-----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CT_Msg:CTMSG|somador8bit:SUM"                                                            ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; s81[7..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s81[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ce        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cs        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "CT_Msg:CTMSG|reg8bit:REG" ;
++-------+-------+----------+---------------------------+
+; Port  ; Type  ; Severity ; Details                   ;
++-------+-------+----------+---------------------------+
+; load8 ; Input ; Info     ; Stuck at VCC              ;
++-------+-------+----------+---------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D3" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; p    ; Input ; Info     ; Stuck at VCC                           ;
++------+-------+----------+----------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D2" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; p    ; Input ; Info     ; Stuck at VCC                           ;
++------+-------+----------+----------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D1" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; p    ; Input ; Info     ; Stuck at VCC                           ;
++------+-------+----------+----------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D0" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; p    ; Input ; Info     ; Stuck at VCC                           ;
++------+-------+----------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Comparador_Cont_Local:COMPARADOR10"                                                                 ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                 ; Type   ; Severity ; Details                                                                             ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; y[7..4]              ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[3]                 ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; y[2]                 ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[1]                 ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; y[0]                 ; Input  ; Info     ; Stuck at GND                                                                        ;
+; grt_comparador_local ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; it_comparador_local  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD7" ;
++------------+-------+----------+-------------------------------+
+; Port       ; Type  ; Severity ; Details                       ;
++------------+-------+----------+-------------------------------+
+; e_in[7..3] ; Input ; Info     ; Stuck at GND                  ;
++------------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD6" ;
++------------+-------+----------+-------------------------------+
+; Port       ; Type  ; Severity ; Details                       ;
++------------+-------+----------+-------------------------------+
+; e_in[7..3] ; Input ; Info     ; Stuck at GND                  ;
++------------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD5" ;
++------------+-------+----------+-------------------------------+
+; Port       ; Type  ; Severity ; Details                       ;
++------------+-------+----------+-------------------------------+
+; e_in[7..3] ; Input ; Info     ; Stuck at GND                  ;
++------------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD4" ;
++------------+-------+----------+-------------------------------+
+; Port       ; Type  ; Severity ; Details                       ;
++------------+-------+----------+-------------------------------+
+; e_in[7..3] ; Input ; Info     ; Stuck at GND                  ;
++------------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD3" ;
++------------+-------+----------+-------------------------------+
+; Port       ; Type  ; Severity ; Details                       ;
++------------+-------+----------+-------------------------------+
+; e_in[7..3] ; Input ; Info     ; Stuck at GND                  ;
++------------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD2" ;
++------------+-------+----------+-------------------------------+
+; Port       ; Type  ; Severity ; Details                       ;
++------------+-------+----------+-------------------------------+
+; e_in[7..3] ; Input ; Info     ; Stuck at GND                  ;
++------------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD1" ;
++------------+-------+----------+-------------------------------+
+; Port       ; Type  ; Severity ; Details                       ;
++------------+-------+----------+-------------------------------+
+; e_in[7..3] ; Input ; Info     ; Stuck at GND                  ;
++------------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "MUX_Display:MUXDISPLAY|mux8x1:MD0" ;
++------------+-------+----------+-------------------------------+
+; Port       ; Type  ; Severity ; Details                       ;
++------------+-------+----------+-------------------------------+
+; e_in[6..5] ; Input ; Info     ; Stuck at VCC                  ;
+; e_in[4..3] ; Input ; Info     ; Stuck at GND                  ;
+; e_in[7]    ; Input ; Info     ; Stuck at GND                  ;
++------------+-------+----------+-------------------------------+
 
 
 +-------------------------------+
@@ -227,7 +1108,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -237,7 +1118,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sat Jan 30 11:34:08 2021
+    Info: Processing started: Sun Jan 31 14:58:24 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ANS_MACHINE -c main
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x1.vhd
@@ -248,10 +1129,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.
     Info (12023): Found entity 1: mux2x1
 Warning (12090): Entity "MUX" obtained from "MUX.vhd" instead of from Quartus II megafunction library
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: MUX-ckt_mux24x8
+    Info (12022): Found design unit 1: MUX-ckt_MUX
     Info (12023): Found entity 1: MUX
 Info (12021): Found 2 design units, including 1 entities, in source file mux_sum.vhd
-    Info (12022): Found design unit 1: MUX_SUM-ckt_mux32x8
+    Info (12022): Found design unit 1: MUX_SUM-ckt_MUX_SUM
     Info (12023): Found entity 1: MUX_SUM
 Info (12021): Found 2 design units, including 1 entities, in source file mux8x1.vhd
     Info (12022): Found design unit 1: mux8x1-circuito
@@ -302,7 +1183,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file cont_lo
     Info (12022): Found design unit 1: Cont_Local-ckto_Cont_Local
     Info (12023): Found entity 1: Cont_Local
 Info (12021): Found 2 design units, including 1 entities, in source file display_val.vhd
-    Info (12022): Found design unit 1: Display_VAL-ckto_Display_VAL
+    Info (12022): Found design unit 1: Display_VAL-ckt_Display_VAL
     Info (12023): Found entity 1: Display_VAL
 Info (12021): Found 2 design units, including 1 entities, in source file ct_inat.vhd
     Info (12022): Found design unit 1: CT_INAT-ckto_CT_INAT
@@ -343,19 +1224,63 @@ Info (12021): Found 2 design units, including 1 entities, in source file datapat
 Info (12021): Found 2 design units, including 1 entities, in source file mux_s.vhd
     Info (12022): Found design unit 1: MUX_S-ckt_MUX_S
     Info (12023): Found entity 1: MUX_S
-Info (12127): Elaborating entity "MUX_S" for the top level hierarchy
-Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:M0"
+Info (12127): Elaborating entity "datapath" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at datapath.vhd(269): used implicit default value for signal "auxData_REGS_GRV" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at datapath.vhd(271): used implicit default value for signal "auxData_REGS_REP_SQ" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(273): object "auxQs_CT_INAT" assigned a value but never read
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(399): port or argument "M8_OUT" has 8/16 unassociated elements
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(515): port or argument "M8_OUT" has 8/16 unassociated elements
+Info (12128): Elaborating entity "MUX_S" for hierarchy "MUX_S:MUXS"
+Info (12128): Elaborating entity "mux2x1" for hierarchy "MUX_S:MUXS|mux2x1:M0"
+Info (12128): Elaborating entity "MUX_Display" for hierarchy "MUX_Display:MUXDISPLAY"
+Info (12128): Elaborating entity "mux8x1" for hierarchy "MUX_Display:MUXDISPLAY|mux8x1:MD0"
+Info (12128): Elaborating entity "Comparador_Cont_Local" for hierarchy "Comparador_Cont_Local:COMPARADOR10"
+Info (12128): Elaborating entity "REGS_GRV" for hierarchy "REGS_GRV:REGSGRV"
+Info (12128): Elaborating entity "reg4bit" for hierarchy "REGS_GRV:REGSGRV|reg4bit:REG1"
+Info (12128): Elaborating entity "ffd" for hierarchy "REGS_GRV:REGSGRV|reg4bit:REG1|ffd:D0"
+Info (12128): Elaborating entity "REGS_REP_S" for hierarchy "REGS_REP_S:REGSREPS"
+Info (12128): Elaborating entity "REGS_REP_SQ" for hierarchy "REGS_REP_SQ:REGSREPSQ"
+Info (12128): Elaborating entity "CT_Msg" for hierarchy "CT_Msg:CTMSG"
+Info (12128): Elaborating entity "mux16x8" for hierarchy "CT_Msg:CTMSG|mux16x8:MUX"
+Info (12128): Elaborating entity "reg8bit" for hierarchy "CT_Msg:CTMSG|reg8bit:REG"
+Info (12128): Elaborating entity "somador8bit" for hierarchy "CT_Msg:CTMSG|somador8bit:SUM"
+Info (12128): Elaborating entity "somador1bit" for hierarchy "CT_Msg:CTMSG|somador8bit:SUM|somador1bit:S0"
+Info (12128): Elaborating entity "Cont_Local" for hierarchy "Cont_Local:CONTLOCAL"
+Info (12128): Elaborating entity "Display_VAL" for hierarchy "Display_VAL:DISPLAYVAL"
+Info (12128): Elaborating entity "CT_INAT" for hierarchy "CT_INAT:CTINAT"
+Info (12128): Elaborating entity "Contador_ON" for hierarchy "Contador_ON:CONTON"
+Info (12128): Elaborating entity "MUX_SUM" for hierarchy "MUX_SUM:MUXSUM"
+Info (12128): Elaborating entity "mux4x1" for hierarchy "MUX_SUM:MUXSUM|mux4x1:M0"
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:MUXX"
+Info (12128): Elaborating entity "multiplicador8bit" for hierarchy "multiplicador8bit:MULTPLICADOR10_0"
+Warning (10036): Verilog HDL or VHDL warning at multiplicador8bit.vhd(31): object "carry2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at multiplicador8bit.vhd(31): object "carry3" assigned a value but never read
+Info (12128): Elaborating entity "multiplicador4bit" for hierarchy "multiplicador8bit:MULTPLICADOR10_0|multiplicador4bit:M4_0"
+Info (12128): Elaborating entity "MUX1_comp1" for hierarchy "MUX1_comp1:MUX1"
+Info (12128): Elaborating entity "Comparador_CT_ON" for hierarchy "Comparador_CT_ON:COMPARADORON"
+Info (12128): Elaborating entity "addr" for hierarchy "addr:ADDRR"
+Info (12128): Elaborating entity "MUX2_comp1" for hierarchy "MUX2_comp1:MUX2"
+Info (12128): Elaborating entity "subtrator8bit" for hierarchy "subtrator8bit:SUB0"
+Info (12128): Elaborating entity "Comparador" for hierarchy "Comparador:COMPARATTOR"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4719 megabytes
-    Info: Processing ended: Sat Jan 30 11:34:11 2021
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clr_INAT"
+    Warning (15610): No output dependent on input pin "en_INAT"
+    Warning (15610): No output dependent on input pin "ld_REP_SQ"
+    Warning (15610): No output dependent on input pin "ld_GRV"
+    Warning (15610): No output dependent on input pin "s_sum"
+    Warning (15610): No output dependent on input pin "clr_GRV"
+    Warning (15610): No output dependent on input pin "clr_REP_SQ"
+Info (21057): Implemented 230 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 32 input pins
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 177 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4714 megabytes
+    Info: Processing ended: Sun Jan 31 14:58:29 2021
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 
