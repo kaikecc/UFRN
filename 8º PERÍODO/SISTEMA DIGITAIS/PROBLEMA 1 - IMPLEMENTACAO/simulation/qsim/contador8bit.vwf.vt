@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "01/29/2021 14:21:48"
+// Generated on "02/01/2021 15:24:40"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    contador8bit
 // 
@@ -310,13 +310,16 @@ end
 initial
 begin
 	clr_contador8bit = 1'b1;
+	clr_contador8bit = #340000 1'b0;
+	clr_contador8bit = #610000 1'b1;
 end 
 
 // SEL_contador8bit
 initial
 begin
 	SEL_contador8bit = 1'b0;
-	SEL_contador8bit = #230000 1'b1;
+	SEL_contador8bit = #150000 1'b1;
+	SEL_contador8bit = #770000 1'b0;
 end 
 
 contador8bit_vlg_sample_tst tb_sample (

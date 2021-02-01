@@ -13,7 +13,7 @@
  
  -- X_igual_Y = eq_comparador
  -- X_maior_Y = grt_comparador
- -- It_comparador = It_comparador
+ -- X_menor_Y = It_comparador
  
  
 library ieee;

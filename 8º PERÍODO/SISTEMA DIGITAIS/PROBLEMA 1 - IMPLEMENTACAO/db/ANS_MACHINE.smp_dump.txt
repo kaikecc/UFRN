@@ -1,0 +1,23 @@
+
+State Machine - |mde|estado
+Name estado.e_back estado.setDisplay_val estado.setnext estado.e_next estado.desligar estado.resetar estado.cont estado.setPonteiro estado.Produzir_S estado.Produzir_SQ estado.Pause estado.Gravar estado.addr estado.Display_val_soma estado.soma estado.Check estado.Cheio estado.Repouso estado.Ligar estado.Checkin 
+estado.Checkin 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+estado.Ligar 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+estado.Repouso 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+estado.Cheio 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+estado.Check 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+estado.soma 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+estado.Display_val_soma 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+estado.addr 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+estado.Gravar 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+estado.Pause 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+estado.Produzir_SQ 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+estado.Produzir_S 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+estado.setPonteiro 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.cont 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.resetar 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.desligar 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.e_next 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.setnext 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.setDisplay_val 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.e_back 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

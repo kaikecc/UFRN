@@ -1,5 +1,5 @@
 Flow report for main
-Sun Jan 31 14:58:58 2021
+Mon Feb 01 15:40:11 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,26 +40,24 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Sun Jan 31 14:58:58 2021      ;
+; Flow Status                        ; Flow Failed - Mon Feb 01 15:40:11 2021     ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
-; Top-level Entity Name              ; datapath                                   ;
+; Top-level Entity Name              ; mde                                        ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 177 / 21,280 ( < 1 % )                     ;
-;     Total combinational functions  ; 177 / 21,280 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 48 / 21,280 ( < 1 % )                      ;
-; Total registers                    ; 48                                         ;
-; Total pins                         ; 53 / 167 ( 32 % )                          ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0 / 774,144 ( 0 % )                        ;
-; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                             ;
-; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                              ;
-; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                              ;
-; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                              ;
-; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                              ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
-; Device                             ; EP4CGX22CF19C6                             ;
-; Timing Models                      ; Final                                      ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -68,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/31/2021 14:58:25 ;
+; Start date & time ; 02/01/2021 15:40:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; main                ;
 +-------------------+---------------------+
@@ -79,55 +77,43 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                       ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 273406400469647.161211590400724             ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 273406400469647.161220480911360             ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                          ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/altera/13.1/ANS_MACHINE/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                 ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                   ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                        ; --            ; --          ; eda_simulation ;
-; PARTITION_COLOR                     ; 16764057                                    ; --            ; datapath    ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                       ; --            ; datapath    ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                      ; --            ; datapath    ; Top            ;
+; PARTITION_COLOR                     ; 16764057                                    ; --            ; mde         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                       ; --            ; mde         ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                      ; --            ; mde         ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; datapath                                    ; main          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; mde                                         ; main          ; --          ; --             ;
 +-------------------------------------+---------------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4714 MB             ; 00:00:04                           ;
-; Fitter                    ; 00:00:12     ; 1.1                     ; 5255 MB             ; 00:00:14                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4656 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4669 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4602 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:24                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4706 MB             ; 00:00:02                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-CBSMP2K  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-CBSMP2K  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-CBSMP2K  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-CBSMP2K  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-CBSMP2K  ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-CBSMP2K  ; Windows 7 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ANS_MACHINE -c main
-quartus_fit --read_settings_files=off --write_settings_files=off ANS_MACHINE -c main
-quartus_asm --read_settings_files=off --write_settings_files=off ANS_MACHINE -c main
-quartus_sta ANS_MACHINE -c main
-quartus_eda --read_settings_files=off --write_settings_files=off ANS_MACHINE -c main
 
 
 

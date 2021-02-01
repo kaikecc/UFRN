@@ -1,6 +1,3 @@
-		 
-		 
-		 
 		 library ieee;
 		 use ieee.std_logic_1164.all;
 		 
@@ -29,7 +26,7 @@
 		 
 		 component MUX_S is
 			
-			port( ENTA_S, ENTB_S: in std_logic_vector(7 downto 0);
+			port(ENTA_S, ENTB_S: in std_logic_vector(7 downto 0);
 			  SEL_S: in std_logic;
 			
 			  S_S : out std_logic_vector(7 downto 0));
@@ -276,7 +273,7 @@
 		 signal auxQs_subtrator,auxQs_subtrator1, auxQs_MUX2: std_logic_vector(7 downto 0);
 		 signal aux_Cont_Local, aux_CT_ON_5 : std_logic;
 		 signal aux_eq_Comparator, aux_grt_Comparator, aux_It_Comparator: std_logic;
-		 
+		 signal auxFlag_rep_s, auxFlag_rep_sq: std_logic;
 		 begin
 		 
 		 MUXS: MUX_S port map(
@@ -319,7 +316,7 @@
 			clk_REGS_GRV => clk,
 			clr_REGS_GRV => clr_GRV,
 			ld_REGS_GRV => ld_GRV,
-			data_REGS_GRV => auxData_REGS_GRV,
+			data_REGS_GRV => data_Somador,
 			Qs_REGS_GRV => auxQs_REGS_GRV);
 			
 		 REGSREPS: REGS_REP_S port map(
@@ -335,7 +332,7 @@
 			clk_REGS_REP_SQ => clk,
 			clr_REGS_REP_SQ => clr_REP_SQ,
 			ld_REGS_REP_SQ => ld_REP_SQ,
-			data_REGS_REP_SQ => auxData_REGS_REP_SQ,
+			data_REGS_REP_SQ => data_Somador,
 			Qs_REGS_REP_SQ => auxQs_REGS_REP_SQ);
 			
 			
@@ -375,6 +372,9 @@
 			en_Contador_ON => en_CT_ON,
 			Qs_Contador_ON => auxQs_CT_ON);
 		  
+		 auxFlag_rep_s <= s_sum or Flag_rep_s; -- ADAPTAR PARA PUDER FUNCIONAR
+		 auxFlag_rep_sq <= s_sum or Flag_rep_sq;
+
 		 MUXSUM: MUX_SUM port map( -- OLHAR A VARIAVEL s_sum
 		 
 		 MUX_SUM_REGS_GRV => auxQs_REGS_GRV,
@@ -382,8 +382,8 @@
 		 MUX_SUM_REGS_REP_S => auxQs_REGS_REP_S,
 		 MUX_SUM_DISPLAY_VAL => auxQs_Display_VAL,
 		 
-		 MUX_SUM_Flag_rep_s => Flag_rep_s,
-		 MUX_SUM_Flag_rep_sq => Flag_rep_sq,   
+		 MUX_SUM_Flag_rep_s => auxFlag_rep_s,
+		 MUX_SUM_Flag_rep_sq => auxFlag_rep_sq,   
 		 SUM_OUT => auxQs_MUX_SUM);
 		 
 		 MUXX: MUX  port map(
@@ -535,6 +535,7 @@
 			eq_comparador => aux_eq_Comparator,
 			grt_comparador => aux_grt_Comparator, 
 			It_comparador => aux_It_Comparator);
+		
 		
 		
 		

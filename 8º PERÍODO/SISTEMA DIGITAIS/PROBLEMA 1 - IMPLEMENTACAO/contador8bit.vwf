@@ -171,7 +171,9 @@ TRANSITION_LIST("clr_contador8bit")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 340.0;
+		LEVEL 0 FOR 610.0;
+		LEVEL 1 FOR 50.0;
 	}
 }
 
@@ -252,8 +254,9 @@ TRANSITION_LIST("SEL_contador8bit")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 230.0;
+		LEVEL 0 FOR 150.0;
 		LEVEL 1 FOR 770.0;
+		LEVEL 0 FOR 80.0;
 	}
 }
 
