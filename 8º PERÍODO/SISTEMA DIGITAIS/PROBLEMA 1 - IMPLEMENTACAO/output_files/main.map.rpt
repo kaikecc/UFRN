@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Mon Feb 01 15:40:11 2021
+Mon Feb 01 16:39:36 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Feb 01 15:40:11 2021          ;
+; Analysis & Synthesis Status        ; Failed - Mon Feb 01 16:39:36 2021          ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; main                                       ;
 ; Top-level Entity Name              ; mde                                        ;
@@ -166,7 +166,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Feb 01 15:40:09 2021
+    Info: Processing started: Mon Feb 01 16:39:34 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ANS_MACHINE -c main
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x1.vhd
@@ -279,20 +279,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file mde.vhd
     Info (12022): Found design unit 1: mde-logica
     Info (12023): Found entity 1: mde
 Info (12127): Elaborating entity "mde" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at mde.vhd(12): used implicit default value for signal "clr_addr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at mde.vhd(12): used implicit default value for signal "clr_CT_Msg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at mde.vhd(12): used implicit default value for signal "en_Cont_local" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at mde.vhd(12): used implicit default value for signal "ld_REGS_REP_SQ" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at mde.vhd(12): used implicit default value for signal "ld_REGS_GRV" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at mde.vhd(20): object "r_tudo" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mde.vhd(20): object "p_p" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mde.vhd(20): object "flag_next" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at mde.vhd(20): object "ld_addr" assigned a value but never read
-Error (10313): VHDL Case Statement error at mde.vhd(201): Case Statement choices must cover all possible values of expression File: C:/altera/13.1/ANS_MACHINE/mde.vhd Line: 201
+Error (10028): Can't resolve multiple constant drivers for net "clr_Cont_local" at mde.vhd(199) File: C:/altera/13.1/ANS_MACHINE/mde.vhd Line: 199
+Error (10029): Constant driver at mde.vhd(95) File: C:/altera/13.1/ANS_MACHINE/mde.vhd Line: 95
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 10 warnings
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 4 warnings
     Error: Peak virtual memory: 4706 megabytes
-    Error: Processing ended: Mon Feb 01 15:40:11 2021
+    Error: Processing ended: Mon Feb 01 16:39:36 2021
     Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:02
 

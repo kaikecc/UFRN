@@ -1,0 +1,403 @@
+C:/Users/kaike/Desktop/PROBL1/ffd.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/ffd.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ffd
+-- Compiling architecture ckt_ffd of ffd
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/ram_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/ram_1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram_1
+-- Compiling architecture hardware of ram_1
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/reg4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/reg4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg4bit
+-- Compiling architecture ckto of reg4bit
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/comparador4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/comparador4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparador4bit
+-- Compiling architecture ckt_comparador4bits of comparador4bit
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/Contador_ON.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/Contador_ON.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Contador_ON
+-- Compiling architecture ckto_Contador_ON of Contador_ON
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/REGS_GRV.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/REGS_GRV.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity REGS_GRV
+-- Compiling architecture ckt_REGS_GRV of REGS_GRV
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/Cont_Local.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/Cont_Local.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Cont_Local
+-- Compiling architecture ckto_Cont_Local of Cont_Local
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/Comparador_CT_ON.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/Comparador_CT_ON.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comparador_CT_ON
+-- Compiling architecture ckt_Comparador_CT_ONs of Comparador_CT_ON
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/contador8bit.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/contador8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity contador8bit
+-- Compiling architecture ckto of contador8bit
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/somador8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/somador8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity somador8bit
+-- Compiling architecture ckt of somador8bit
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/MUX_S.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/MUX_S.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_S
+-- Compiling architecture ckt_MUX_S of MUX_S
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/CT_INAT.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/CT_INAT.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CT_INAT
+-- Compiling architecture ckto_CT_INAT of CT_INAT
+
+} {} {}} C:/Users/kaike/Desktop/Alura/mde.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/Alura/mde.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mde
+-- Compiling architecture logica of mde
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/multiplicador4bit.vhd {0 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/multiplicador4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity multiplicador4bit
+-- Compiling architecture ckt_multiplicador4bit of multiplicador4bit
+** Error: C:/Users/kaike/Desktop/PROBL1/multiplicador4bit.vhd(28): (vcom-1436) Actual expression (infix expression) of formal "S81" is not globally static.
+
+** Error: C:/Users/kaike/Desktop/PROBL1/multiplicador4bit.vhd(39): (vcom-1436) Actual expression (infix expression) of formal "S82" is not globally static.
+
+** Error: C:/Users/kaike/Desktop/PROBL1/multiplicador4bit.vhd(64): (vcom-1436) Actual expression (infix expression) of formal "S82" is not globally static.
+
+** Error: C:/Users/kaike/Desktop/PROBL1/multiplicador4bit.vhd(89): (vcom-1436) Actual expression (infix expression) of formal "S82" is not globally static.
+
+** Error: C:/Users/kaike/Desktop/PROBL1/multiplicador4bit.vhd(102): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0} {}} C:/altera/13.1/ANS_MACHINE/comparador4bit.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/comparador4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparador4bit
+-- Compiling architecture ckt_comparador4bits of comparador4bit
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/mux4x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/mux4x1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux4x1
+-- Compiling architecture ckt_mux4x1 of mux4x1
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/contador8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/contador8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity contador8bit
+-- Compiling architecture ckto of contador8bit
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/Display_VAL.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/Display_VAL.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Display_VAL
+-- Compiling architecture ckt_Display_VAL of Display_VAL
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/mux8x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/mux8x1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux8x1
+-- Compiling architecture circuito of mux8x1
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/subtrator8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/subtrator8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity subtrator8bit
+-- Compiling architecture ckt of subtrator8bit
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/CT_Msg.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/CT_Msg.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CT_Msg
+-- Compiling architecture ckto of CT_Msg
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/MUX_Display.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/MUX_Display.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_Display
+-- Compiling architecture ckt_MUX_Display of MUX_Display
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/mux16x8.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/mux16x8.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux16x8
+-- Compiling architecture ckt_mux16x8 of mux16x8
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/ffd.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/ffd.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ffd
+-- Compiling architecture ckt_ffd of ffd
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/reg8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/reg8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg8bit
+-- Compiling architecture ckto of reg8bit
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/mde.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/mde.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mde
+-- Compiling architecture logica of mde
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/MUX_SUM.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/MUX_SUM.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_SUM
+-- Compiling architecture ckt_MUX_SUM of MUX_SUM
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/comparador8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/comparador8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparador8bit
+-- Compiling architecture ckt_comparador8bits of comparador8bit
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/Contador_ON.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/Contador_ON.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Contador_ON
+-- Compiling architecture ckto_Contador_ON of Contador_ON
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/Comparador.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/Comparador.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comparador
+-- Compiling architecture ckt_Comparador of Comparador
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/MUX1_comp1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/MUX1_comp1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX1_comp1
+-- Compiling architecture ckt_MUX1_comp1 of MUX1_comp1
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/addr.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/addr.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity addr
+-- Compiling architecture ckt_addr of addr
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/Comparador_Cont_Local.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/Comparador_Cont_Local.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comparador_Cont_Local
+-- Compiling architecture ckt_Comparador_Cont_Locals of Comparador_Cont_Local
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/Comparador_Cont_Local.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/Comparador_Cont_Local.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comparador_Cont_Local
+-- Compiling architecture ckt_Comparador_Cont_Locals of Comparador_Cont_Local
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/CT_Msg.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/CT_Msg.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CT_Msg
+-- Compiling architecture ckto of CT_Msg
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/REGS_REP_S.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/REGS_REP_S.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity REGS_REP_S
+-- Compiling architecture ckt_REGS_REP_S of REGS_REP_S
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/REGS_REP_SQ.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/REGS_REP_SQ.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity REGS_REP_SQ
+-- Compiling architecture ckt_REGS_REP_SQ of REGS_REP_SQ
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/MUX.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/MUX.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX
+-- Compiling architecture ckt_MUX of MUX
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/CT_INAT.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/CT_INAT.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CT_INAT
+-- Compiling architecture ckto_CT_INAT of CT_INAT
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/mux2x1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/mux2x1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2x1
+-- Compiling architecture ckt_mux2x1 of mux2x1
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/Cont_Local.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/Cont_Local.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Cont_Local
+-- Compiling architecture ckto_Cont_Local of Cont_Local
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/Display_VAL.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/Display_VAL.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Display_VAL
+-- Compiling architecture ckt_Display_VAL of Display_VAL
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/multiplicador8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/multiplicador8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity multiplicador8bit
+-- Compiling architecture ckt_multiplicador8bit of multiplicador8bit
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/comparador8bit.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/comparador8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparador8bit
+-- Compiling architecture ckt_comparador8bits of comparador8bit
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/Comparador.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/Comparador.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comparador
+-- Compiling architecture ckt_Comparador of Comparador
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/addr.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/addr.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity addr
+-- Compiling architecture ckt_addr of addr
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/MUX2_comp1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/MUX2_comp1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX2_comp1
+-- Compiling architecture ckt_MUX2_comp1 of MUX2_comp1
+
+} {} {}} C:/altera/13.1/ANS_MACHINE/Comparador_CT_ON.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.1/ANS_MACHINE/Comparador_CT_ON.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comparador_CT_ON
+-- Compiling architecture ckt_Comparador_CT_ONs of Comparador_CT_ON
+
+} {} {}} C:/Users/kaike/Desktop/PROBL1/somador1bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaike/Desktop/PROBL1/somador1bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity somador1bit
+-- Compiling architecture ckt of somador1bit
+
+} {} {}}
